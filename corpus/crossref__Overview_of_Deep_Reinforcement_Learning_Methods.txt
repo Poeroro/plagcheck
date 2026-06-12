@@ -1,0 +1,3 @@
+Overview of Deep Reinforcement Learning Methods
+
+This video gives an overview of methods for deep reinforcement learning, including deep Q-learning, actor-critic methods, deep policy networks, and policy gradient optimization algorithms.

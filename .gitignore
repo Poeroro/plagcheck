@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+corpus/.embeddings_cache/
+uploads/
+reports/*.html
+reports/*.json
+samples/_synthetic_*

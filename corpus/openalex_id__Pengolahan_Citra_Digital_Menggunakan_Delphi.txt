@@ -1,0 +1,7 @@
+Pengolahan Citra Digital Menggunakan Delphi
+
+Buku ini ditujukan sebagai pegangan dalam praktik kuliah Pengolahan Citra di laboratorium komputer bagi mahasiswa berbagai program studi, misalnya Teknik Elektro, Teknik Informatika, Teknik Industri, Teknik Fisika, Ilmu Komputer, Fisika, Elektronika, dan Instrumentasi sehingga mahasiswa memperoleh gambaran yang jelas mengenai teknik-teknik pengolahan citra digital serta memiliki pengalaman dalam mengimplementasikan berbagai teknik tersebut dalam bentuk program komputer. Hal ini tentunya menjadi nilai tambah bagi mahasiswa daripada sekedar mempelajari teori yang terdapat dalam buku teks yang ada.
+
+Materi yang terdapat dalam buku ini meliputi berbagai teknik pengolahan citra digital yang dikelompokkan dalam operasi titik, operasi global, operasi berbasis bingkai, operasi geometrik, dan operasi bertetangga. Citra yang diolah adalah citra digital yang di-load dari file berekstensi BMP atau JPG dengan format keabuan 256 tingkat dan citra warna true color.
+
+Buku ini dilengkapi dengan CD yang memuat 36 contoh program pengolahan citra dalam bahasa Pascal menggunakan kompiler Borland Delphi sehingga pembaca dapat lebih mudah dalam mencoba teknik pengolahan citra yang dibahas.

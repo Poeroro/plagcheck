@@ -1,0 +1,10 @@
+Robotika : desain, kontrol dan kecerdasan buatan
+
+Buku ini membahas tentang:
+-Prinsip dasar dan perkembangan ilmu pengetahuan,teknologi da penelitian dibidang robotik
+-teknik desain robotik berbasis kontrol prosesor da komputer dilengkapi dengan teknik sensoraktuator dan interfacing.
+-teknik kontrol robotik yang meliputi kontrol klasik
+-teori kinematik dan pemodelan dinamik dalam robotik dari prinsip dasar hingga teori lanjutan 
+-robot tangan satu dan dua sendi
+-desain,simulasi dan eksperimen robot manipulator
+-prinsip dasar penggunaan skema iterative learning control dalam teknik kontrol robotik.

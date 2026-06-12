@@ -1,0 +1,6 @@
+The Current State of Industrial Practice in Artificial Intelligence Ethics
+
+Authors: Ville Vakkuri, Kai‐Kristian Kemell, Joni Kultanen, Pekka Abrahamsson
+Year: 2020
+
+High-level guidelines and tools for managing artificial intelligence (AI) ethics have been introduced to help industry organizations make more ethical AI systems. The results of a survey of 211 software companies provide insights into the current state of industrial practice.

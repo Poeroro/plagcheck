@@ -1,0 +1,6 @@
+HISTORIAE, History of Socio-Cultural Transformation as Linguistic Data Science. A Humanities Use Case
+
+Authors: Yinhan Liu, Myle Ott, Goyal, Naman, Jingfei Du, Mandar Joshi
+Year: 2019
+
+Given a combinatorial optimisation problem, there are typically multiple ways of modelling it for presentation to an automated solver. Choosing the right combination of model and target solver can have a significant impact on the effectiveness of the solving process. The best combination of model and solver can also be instance-dependent: there may not exist a single combination that works best for all instances of the same problem. We consider the task of building machine learning models to automatically select the best combination for a problem instance. Critical to the learning process is to define instance features, which serve as input to the selection model. Our contribution is the automatic learning of instance features directly from the high-level representation of a problem instance using a transformer encoder. We evaluate the performance of our approach using the Essence modelling language via a case study of three problem classes.

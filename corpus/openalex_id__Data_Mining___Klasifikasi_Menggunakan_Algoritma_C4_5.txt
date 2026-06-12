@@ -1,0 +1,3 @@
+Data Mining : Klasifikasi Menggunakan Algoritma C4.5
+
+Data mining merupakan bagian dari tahapan proses Knowledge Discovery in Database (KDD) . Dengan data mining, kita dapat melakukan pengklasifikasian, memprediksi, memperkirakan dan mendapatkan informasi lain yang bermanfaat dari kumpulan data dalam jumlah yang besar. Klasifikasi dalam data mining dapat dilakukan dengan menggunakan algoritma C4.5. Dengan algoritma C4.5, akan didapatkan sebuah pohon keputusan yang mudah dipahami dan mudah dimengerti.

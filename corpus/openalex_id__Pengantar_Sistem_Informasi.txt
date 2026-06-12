@@ -1,0 +1,14 @@
+Pengantar Sistem Informasi
+
+Sistem adalah sekelompok elemen – elemen yang terintegrasi dengan tujuan yang sama untuk mencapai tujuan. Informasi adalah data yang diolah menjadi bentuk lebih berguna dan lebih berarti bagi yang menerimanya. Sistem informasi adalah suatu sistem di dalam suatu organisasi yang mempertemukan kebutuhan pengolahan data transaksi harian, mendukung operasi, bersifat manajerial, dan kegiatan strategi dari suatu organisasi. Pembahasan dalam 
+buku ini mengenai pengantar system informasi meliputi:
+•	Konsep Dasar Sistem, Data dan Informasi
+•	System Informasi dan Manajemen
+•	System manajemen pengetahuan
+•	Pengantar basis data
+•	Pengantar system informasi berbasis computer
+•	Pengantar teknologi informasi
+•	Keunggulan kompetitif dan system informasi strategis
+•	Pengantar E-Business
+•	Pengembangan system informasi
+•	Proses pemodelan system informasi

@@ -1,0 +1,6 @@
+Gaussian Processes for Machine Learning
+
+Authors: Carl Edward Rasmussen, Christopher K. I. Williams
+Year: 2005
+
+A comprehensive and self-contained introduction to Gaussian processes, which provide a principled, practical, probabilistic approach to learning in kernel machines.

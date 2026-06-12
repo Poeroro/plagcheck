@@ -1,0 +1,3 @@
+Pengenalan Sistem Informasi
+
+Buku ini memberikan gambaran sistem informasi secara lebih mendalam, mencakup pengertian sistem informasi, komponen yang menyusun sistem informasi, macam-macam sistem informasi, teknologi informasi yang mendukungnya, hingga bagaimana sistem informasi dikembangkan.

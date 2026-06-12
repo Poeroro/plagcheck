@@ -1,0 +1,4 @@
+Autonomous Weapons and the Ethics of Artificial Intelligence
+
+Abstract 
+                As the militaries of technologically advanced nations seek to apply increasingly sophisticated AI and automation to weapons technologies, a host of ethical, legal, social, and political questions arise. Central among these is whether it is ethical to delegate the decision to use lethal force to an autonomous system that is not under meaningful human control. Further questions arise as to who or what could or should be held responsible when lethal force is used improperly by such systems. This chapter argues that current autonomous weapons are not legal or moral agents that can be held morally responsible or legally accountable for their choices and actions, and that therefore humans need to maintain control over such weapons systems.

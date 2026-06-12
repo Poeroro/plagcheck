@@ -1,0 +1,12 @@
+Konsep Kecerdasan Buatan
+
+Secara garis besar, materi buku ini membahas:
+- Teknik dasar pencarian
+- Representasi pengetahuan
+- Inteligent agent
+- Pemahaman bahasa alami
+- Jaringan saraf tiruan
+- Algoritma genetika
+- Sistem pakar
+- Teknologi dokumen mining
+- Komputer vision

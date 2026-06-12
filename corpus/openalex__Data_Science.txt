@@ -1,0 +1,6 @@
+Data Science
+
+Authors: Longbing Cao
+Year: 2017
+
+The 21st century has ushered in the age of big data and data economy, in which data DNA , which carries important knowledge, insights, and potential, has become an intrinsic constituent of all data-based organisms. An appropriate understanding of data DNA and its organisms relies on the new field of data science and its keystone, analytics . Although it is widely debated whether big data is only hype and buzz, and data science is still in a very early phase, significant challenges and opportunities are emerging or have been inspired by the research, innovation, business, profession, and education of data science. This article provides a comprehensive survey and tutorial of the fundamental aspects of data science: the evolution from data analysis to data science, the data science concepts, a big picture of the era of data science, the major challenges and directions in data innovation, the nature of data analytics, new industrialization and service opportunities in the data economy, the profession and competency of data education, and the future of data science. This article is the first in the field to draw a comprehensive big picture, in addition to offering rich observations, lessons, and thinking about data science and analytics.

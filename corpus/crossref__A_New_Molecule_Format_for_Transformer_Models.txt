@@ -1,0 +1,3 @@
+A New Molecule Format for Transformer Models
+
+A new molecule representation is described. The new format is focused on bonds in the molecule, and represent molecules in a 2D matrix. Each row in the matrix represents a bond in the molecule, which two columns are used for positions (atom number in the molecule), and one or more columns to represent bond properties. The new format represents molecules in the format of sequential data with 2D position, so it can be directly used by transformer. Two datasets are tested by using the new format for the transformer regression model and achieve relative good results.

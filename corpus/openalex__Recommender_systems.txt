@@ -1,0 +1,6 @@
+Recommender systems
+
+Authors: Paul Resnick, Hal R. Varian
+Year: 1997
+
+Recommender systems assist and augment a natural social process. In a typical recommender system people, provide recommendations as inputs, which tile system then aggregates and directs to appropriate recipients. In some cases, the primary transformation is in the aggregation; in others, the system's value lies in its ability to make good matches between recommenders and those seeking recommendations. This special section includes descriptions of five recommender systems. A sixth article analyzes incentives for provision of recommendations. Recommender systems introduce two interesting incentive problems. First, once one has established a profile of interests, it is easy to free ride by consuming evaluations provided by others. Second, if anyone can provide recommendations, content owners may generate mountains of positive recommendations for their own materials and negative recommendations for their competitors. Recommender systems also raise concerns about personal privacy.

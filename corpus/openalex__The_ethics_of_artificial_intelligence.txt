@@ -1,0 +1,6 @@
+The ethics of artificial intelligence
+
+Authors: Nick Bostrom, Eliezer Yudkowsky
+Year: 2014
+
+This chapter surveys some of the ethical challenges that may arise as one can create artificial intelligences (AI) of various kinds and degrees. Some challenges of machine ethics are much like many other challenges involved in designing machines. There is nearly universal agreement among modern AI professionals that artificial intelligence falls short of human capabilities in some critical sense, even though AI algorithms have beaten humans in many specific domains such as chess. In creating a superhuman chess player, the human programmers necessarily sacrificed their ability to predict Deep Blue's local, specific game behavior. A different set of ethical issues arises when one can contemplate the possibility that some future AI systems might be candidates for having moral status. One also has moral reasons to treat them in certain ways, and to refrain from treating them in certain other ways. Superintelligence may be achievable by increasing processing speed.

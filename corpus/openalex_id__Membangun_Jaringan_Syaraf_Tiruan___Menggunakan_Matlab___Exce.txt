@@ -1,0 +1,3 @@
+Membangun Jaringan Syaraf Tiruan : Menggunakan Matlab & Excel Link
+
+Buku ini bertujuan utnuk membantu memperkenalkan metode-metode pembelajaran pada jaringan syaraf tiruan, mulai dari konsep, implementasinya dengan menggunakan MATLAB disertai dengan beberapa contoh kasus yang diselesaikan dengan jaringan syaraf beserta coding-nya. Buku ini juga menyertakan bagaimana memanggil fungsi-fungsi yang ditulis dengan MATLAB, akan dipanggil oleh Microsoft Excel link.

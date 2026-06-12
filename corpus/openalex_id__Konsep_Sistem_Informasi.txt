@@ -1,0 +1,9 @@
+Konsep Sistem Informasi
+
+Materi buku ini membahas antara lain:
+- Menjelaskan tentang konsep dasar data, sistem, informasi, dan sistem informasi
+- Menjelaskan struktur sistem informasi 
+- Membahas sistem informasi berbasis internet
+- Menguraikan tentang konsep keamanan sistem informasi
+- Menjelaskan konsep pengembangan sistem informasi
+- Menguraikan tentang konsep audit sistem informasi

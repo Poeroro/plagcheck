@@ -1,0 +1,6 @@
+Data science and prediction
+
+Authors: Vasant Dhar
+Year: 2013
+
+Big data promises automated actionable knowledge creation and predictive models for use by both humans and computers.

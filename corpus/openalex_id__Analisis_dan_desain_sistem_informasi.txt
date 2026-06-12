@@ -1,0 +1,3 @@
+Analisis dan desain sistem informasi
+
+Analisis dan Desain Sistem Informasi merupakan bagian ilmu komputer yang selalu membahasa konsep ilmu komputer secara teoritis, dan teori tersebut harus bisa diimplementasikan pada pemanfaatan software dan hardware teknologi informasi berupa program-program aplikasi dan teknologi jaringan komunikasi. Buku ini menawarkan kepada para pembaca keterampilan dan keahlian yang dibutuhkan untuk merancang sistem saat ini.

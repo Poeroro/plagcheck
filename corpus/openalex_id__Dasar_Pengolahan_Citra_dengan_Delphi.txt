@@ -1,0 +1,5 @@
+Dasar Pengolahan Citra dengan Delphi
+
+uku ini ditujukan untuk mahasiswa yang sedang menekuni kuliah Pengolahan Citra atau siapa saja yang berminat menggeluti pengolahan citra agar bisa memahami teori dan sekaligus mampu menerapkannya dalam bentuk aplikasi. Materi-materi yang dibahas disertai dengan implementasi dengan menggunakan Delphi XE2, tetapi tidak menutup kemungkinan untuk diterapkan di versi yang lain. Contoh-contoh yang diberikan diharapkan dapat memacu mahasiswa untuk lebih bersemangat di dalam menuangkan rumus-rumus matematika menjadi sesuatu yang dapat dirasakan secara visual.
+
+Untuk mempermudah di dalam mempelajari materi-materi yang disajikan, kode sumber dan juga aplikasi yang bersifat executable disertakan bersama buku ini. Contoh-contoh yang diberikan diusahakan sesederhana mungkin sehingga mahasiswa bisa memusatkan perhatian pada persoalan yang dibahas dan bukan pada antarmuka aplikasi. Tentu saja, untuk kepentingan lebih lanjut, mahasiswa diharapkan dapat mengembangkan sendiri antarmuka yang lebih baik.

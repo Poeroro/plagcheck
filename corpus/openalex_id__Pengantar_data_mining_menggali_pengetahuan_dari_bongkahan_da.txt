@@ -1,0 +1,35 @@
+Pengantar data mining menggali pengetahuan dari bongkahan data
+
+Data Mining sebagai salah satu cabang ilmu komputer yang relatif baru mempunyai potensi pengembangan yang sangat besar, karena data menyangkut langsung pada sebuah sistem aplikasi. Data mining sendiri merupakan sebuah proses ekstraksi informasi atau pola yang penting atau menarik dari data yang ada di database yang besar.
+
+ 
+
+Dalam buku ini data mining akan dibahas secara luas, mulai dari pengertian dasar mengenai data mining itu sendiri hingga pembahasan fungsi-fungsinya, baik fungsi mayor maupun fungsi minornya, seperti deskripsi, estimasi, prediksi, klasifikasi, pengelompokan maupun asosiasi. Lebih lanjut, bahasan dalam buku ini meliputi :
+
+ 
+
+- Pengertian Data Mining
+
+ 
+
+- Fungsi-fungsi dalam data mining
+
+ 
+
+- Fungsi Minor-Deskripsi
+
+ 
+
+- Fungsi Minor-Estimasi
+
+ 
+
+- Fungsi Minor-Prediksi
+
+ 
+
+- Fungsi Mayor-Klasifikasi
+
+ 
+
+- Fungsi Mayor-Pengelompokan

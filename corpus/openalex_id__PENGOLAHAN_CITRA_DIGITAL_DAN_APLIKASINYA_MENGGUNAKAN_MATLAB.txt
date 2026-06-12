@@ -1,0 +1,3 @@
+PENGOLAHAN CITRA DIGITAL DAN APLIKASINYA MENGGUNAKAN MATLAB
+
+Buku ini didedikasikan sebagai panduan belajar sekaligus memperluas ketrampilan dalam pengolahan citra digital. Ditulis dengan gaya bahasa yang mudah dipahami oleh semua kalangan, baik mahasiswa yang baru belajar, dosen yang mengajar mata kuliah pengolahan citra digital, maupun praktisi yang sudah ahli dalam bidangnya. Penjelasan yang detail serta contoh kode program implementasi di MATLAB semakin memudahkan pembaca untuk memelajari buku ini.

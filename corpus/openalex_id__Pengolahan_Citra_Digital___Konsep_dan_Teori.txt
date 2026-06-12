@@ -1,0 +1,8 @@
+Pengolahan Citra Digital : Konsep dan Teori
+
+Buku ini disusun atas dasar kurangnya penerbitan buku dalam bahasa Indonesia yang khusus membahas pengolahan citra digital. Buku ini secara khusus juga ditujukan sebagai diktat atau buku ajar untuk mata kuliah Pengolahan Citra Digital di jurusan Teknik Informatika Universitas 17 Agustus 1945 Surabaya. 
+
+Buku ini terdiri dari beberapa bagian.yaitu:
+1. Bab 1 Pendahuluan.yang memberi pengantar dan pemahaman mengenai tujuan dari pengolahan citra digital, aplikasi dari citra digital, apa itu citra digital, serta elemen-elemen pengolahan citra digital.
+2. Bab 2 Dasar Citra Digital, membahas mengenai apa itu struktur mata manusia hubungannya dengan bagaimana mata manusia mengartikan gambar, proses digitalisasi, bagaimana representasi citra digital, dan komponen-komponen dalam citra digital.
+3. Bab 3 Peningkatan Mutu Citra pada Domain Spasial, membahas bagaimana memperbaiki citra dengan menggunakan pengolahan piksel yang meliputi contrast stretching, pengolahan histogram

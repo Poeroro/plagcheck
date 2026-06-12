@@ -1,0 +1,8 @@
+Sistem Informasi Keperilakuan
+
+Buku ini membahas tentang:
+1.Konsep dasar sistem informasi keperilakun
+2.Teori tindakan Beralasan
+3.Teori perilaku rencanaan
+4.Model penerimaan teknologi
+5.Penelitian-penelitian penerapan TAM,dll.

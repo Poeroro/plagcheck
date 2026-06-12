@@ -1,0 +1,3 @@
+Why Data Science Projects Fail
+
+Data Science is a modern Data Intelligence practice, which is the core of many businesses and helps businesses build smart strategies around to deal with businesses challenges more efficiently. Data Science practice also helps in automating business processes using the algorithm, and it has several other benefits, which also deliver in a non-profitable framework. In regards to data science, three key components primarily influence the effective outcome of a data science project. Those are 1.Availability of Data 2.Algorithm 3.Processing power or infrastructure

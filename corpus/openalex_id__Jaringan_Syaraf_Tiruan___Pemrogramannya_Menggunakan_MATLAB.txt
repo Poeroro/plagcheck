@@ -1,0 +1,3 @@
+Jaringan Syaraf Tiruan & Pemrogramannya Menggunakan MATLAB
+
+Buku ini disusun secara sistematis dan terstruktur, dimulai dengan konsep dasar JST hingga model-model yang sering dipakai juga pemrograman JST.

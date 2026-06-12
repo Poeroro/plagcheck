@@ -1,0 +1,4 @@
+Artificial Intelligence
+
+Abstract 
+                This chapter argues that there is very little chance that we humans can specify our objectives completely and correctly, in such a way that the pursuit of those objectives by more capable machines is guaranteed to result in beneficial outcomes for humans. Consequently, this chapter defends and further articulates the need for “provably beneficial AI,” which is the idea that to the extent that human values are revealed in our behavior, we should be able to get machines to learn underlying human preferences from observing human behavior. It then discusses the technical challenges involved in building provably beneficial AI and responds to some possible concerns to this approach.

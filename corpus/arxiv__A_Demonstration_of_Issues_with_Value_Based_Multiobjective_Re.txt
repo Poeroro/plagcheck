@@ -1,0 +1,3 @@
+A Demonstration of Issues with Value-Based Multiobjective Reinforcement Learning Under Stochastic State Transitions
+
+We report a previously unidentified issue with model-free, value-based approaches to multiobjective reinforcement learning in the context of environments with stochastic state transitions. An example multiobjective Markov Decision Process (MOMDP) is used to demonstrate that under such conditions these approaches may be unable to discover the policy which maximises the Scalarised Expected Return, and in fact may converge to a Pareto-dominated solution. We discuss several alternative methods which may be more suitable for maximising SER in MOMDPs with stochastic transitions.

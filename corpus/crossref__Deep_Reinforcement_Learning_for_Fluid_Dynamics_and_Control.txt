@@ -1,0 +1,3 @@
+Deep Reinforcement Learning for Fluid Dynamics and Control
+
+Reinforcement learning based on deep learning is currently being used for impressive control of fluid dynamic systems.  This video will describe recent advances, including for mimicking the behavior of birds and fish, for turbulence closure modeling with sub-grid-scale models, and for robotic flight demonstrations.

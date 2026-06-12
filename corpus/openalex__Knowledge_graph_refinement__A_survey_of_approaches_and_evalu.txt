@@ -1,0 +1,6 @@
+Knowledge graph refinement: A survey of approaches and evaluation methods
+
+Authors: Heiko Paulheim
+Year: 2016
+
+In the recent years, different Web knowledge graphs, both free and commercial, have been created. While Google coined the term “Knowledge Graph” in 2012, there are also a few openly available knowledge graphs, with DBpedia, YAGO, and Freebase being a

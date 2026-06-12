@@ -1,0 +1,3 @@
+Pengolahan Citra : Dasar dan Contoh Penerapannya
+
+Pengolahan Citra merupakan topic yang sangat menarik dan telah diaplikasikan dalam banyak hal. Hal penting yang dipelajari dalam topic ini antara lain: asal mula pengolahan citra, dasar-dasar citra digital, transformasi intensitas dan penapisan, pemulihan citra, pemampatan citra, dasar-dasar rekonstruksi citra, dan penguraian citra. Buku ini dirancang dengan pendekatan konsep sederhana pengolahan citra, dan dapat digunakan untuk mendukung perkuliahan pengolahan citra, dan bagi masyarakat yang ingin mempelajari secara cepat.

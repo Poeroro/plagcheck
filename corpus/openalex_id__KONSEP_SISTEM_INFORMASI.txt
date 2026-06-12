@@ -1,0 +1,3 @@
+KONSEP SISTEM INFORMASI
+
+Data dan informasi berbeda tetapi konsepnya saling berhubungan. Data adalah material mentah dari informasi yang dihasilkan. Informasi formal dibedakan dari informasi informal merupakan hasil legitimasi dari suatu sistem informasi. Suatu sistem adalah suatu himpunan objek-objek dan hubungan antar objek-objek itu yang disusun untuk suatu tujuan bersama. Sistem Informasi dapat merupakan gagasan dari suatu deretan berkas yang dibuat menyatakan sumber terstruktur atau didesain dan alasan atau tuntutan untuk struktur ini. Perkembangan atau modifikasi dari sistem informasi sering diistilahkan sebagai suatu projek. Projek dapat ditelaah sebagai lingkaran kehidupan, yang dalam kasus sistem informasi, dapat dibagi ke dalam empat fase

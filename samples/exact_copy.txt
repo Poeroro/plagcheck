@@ -1,0 +1,7 @@
+QUOTE TEST
+
+Recent advances in deep learning, particularly convolutional neural networks and transformer architectures, have made it possible to analyze medical images with accuracy comparable to expert radiologists. This paragraph is copied verbatim from the source so the shingling fingerprint should match exactly.
+
+Penelitian ini bertujuan untuk mengukur tingkat akurasi sistem pengenalan pola berbasis deep learning pada dataset citra medis Indonesia. Kami menggunakan dataset sebanyak 10.000 gambar rontgen yang dikumpulkan dari tiga rumah sakit di Jawa Tengah.
+
+A discussion section follows in the next paragraph that has no relation to the corpus and should not flag.

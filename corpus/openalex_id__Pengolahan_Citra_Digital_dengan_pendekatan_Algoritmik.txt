@@ -1,0 +1,3 @@
+Pengolahan Citra Digital dengan pendekatan Algoritmik
+
+Pengolahan citra digital merupakan salah satu bidang kajian didalam ilmu komputer. Tujuan pengolahan citra digital adalah memperbaiki kualitas citra agar mudah diinterpretasikan oleh manusia atau mesin. Teknik-teknik pengolahan citra mentranformasikan citra menjadi citra lain. jadi, masukannya adalah citra dan keluarannya adlah citra namun citra keluaran mempunyai kualitas lebih baik daripda citra masukan. pengolahan citra juga merupakan proses awal pada komputer vision.

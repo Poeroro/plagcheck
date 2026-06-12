@@ -1,0 +1,6 @@
+Jaringan Syaraf Tiruan dan Pemrogramannya Menggunakan MATLAB
+
+Pokok bahasa buku ini antara lain:
+Dasar-dasar JST: dasar-dasar matematika yangidbutuhkan, konsep dasar JST, komponen-komnponen JST, dll
+Model-model JST : Model sederhana seperti McCulloch-Pitts, hebb, hingga model-model yang umum dipakai seperti perceptron, adaline, madaline, back propagation, jaringan hamming, dan kohonen.
+Pemrograman JST: pengenalan dan konsep dasar matlab, pemrograman model-model JST dengan Matlab

@@ -1,0 +1,6 @@
+Ethics of artificial intelligence and robotics
+
+Authors: Vincent C. Müller
+Year: 2020
+
+Artificial intelligence (AI) and robotics are digital technologies that will have significant impact on the development of humanity in the near future. They have raised fundamental questions about what we should do with these systems, what the systems themselves should do, what risks they involve, and how we can control these. - After the Introduction to the field (§1), the main themes (§2) of this article are: Ethical issues that arise with AI systems as objects, i.e., tools made and used by humans. This includes issues of privacy (§2.1) and manipulation (§2.2), opacity (§2.3) and bias (§2.4), human-robot interaction (§2.5), employment (§2.6), and the effects of autonomy (§2.7). Then AI systems as subjects, i.e., ethics for the AI systems themselves in machine ethics (§2.8) and artificial moral agency (§2.9). Finally, the problem of a possible future AI superintelligence leading to a “singularity” (§2.10). We close with a remark on the vision of AI (§3). - For each section within these themes, we provide a general explanation of the ethical issues, outline existing positions and arguments, then analyse how these play out with current technologies and finally, what policy consequences may be drawn.

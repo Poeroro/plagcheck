@@ -1,0 +1,3 @@
+Data Mining Teori dan Aplikasi Rapidminer
+
+Buku data mining : teori dan aplikasi rapidminer ini mengulas tentang konsep dan penerapan metode data mining dengan menggunakan aplikasi rapidminer untuk proses pengolahannya. pembahasannya terdiri dari 7 bab yaitu : konsep dasar data mining, teknik klasifikasi decision tree, teknik klasifikasi teorema bayes, teknik klasifikasi analisa diskriminan, teknik klaster k-means, dan data mining tools

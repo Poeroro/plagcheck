@@ -1,0 +1,4 @@
+Jaringan Syaraf Tiruan : konsep dasar, algoritma dan aplikasi
+
+Jaringan Syaraf Tiruan yang selanjutnya dikenal dengan nama JST merupakan cabang ilmu multidisiplin yang relatif masih baru. Pada dasarnya JSt mencoba meniru cara kerja otak manusia . Salah satu struktur yang ingin ditiru adalah bentuk neuron-nya (sel saraf).
+Dalam melakukan proses belajar, jaringan syaraf tiruan dapat memodifikasikan tingkah lakunya sesuai dengan keadaan lingkungannya. Jaringan syaraf dapat mengatur dirinya sendiri untuk menghasilkan suatu respon yang konsisten terhadap serangkain masukan.

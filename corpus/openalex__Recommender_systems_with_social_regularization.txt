@@ -1,0 +1,6 @@
+Recommender systems with social regularization
+
+Authors: Hao Ma, Dengyong Zhou, Chao Liu, Michael R. Lyu, Irwin King
+Year: 2011
+
+Although Recommender Systems have been comprehensively analyzed in the past decade, the study of social-based recommender systems just started. In this paper, aiming at providing a general method for improving recommender systems by incorporating social network information, we propose a matrix factorization framework with social regularization. The contributions of this paper are four-fold: (1) We elaborate how social network information can benefit recommender systems; (2) We interpret the differences between social-based recommender systems and trust-aware recommender systems; (3) We coin the term Social Regularization to represent the social constraints on recommender systems, and we systematically illustrate how to design a matrix factorization objective function with social regularization; and (4) The proposed method is quite general, which can be easily extended to incorporate other contextual information, like social tags, etc. The empirical analysis on two large datasets demonstrates that our approaches outperform other state-of-the-art methods.

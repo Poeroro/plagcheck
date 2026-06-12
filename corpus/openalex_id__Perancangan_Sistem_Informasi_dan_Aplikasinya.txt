@@ -1,0 +1,19 @@
+Perancangan Sistem Informasi dan Aplikasinya
+
+sebuah sistem informasi merupakan kumpulan dari perangkat keras, perangkat lunak komputer serta perangkat manusia yang akan mengolah data menggunakan perangkat keras dan perangkat lunak tersebut. sistem informasi tanpa ada data yang akan diolah juga akan percuma. data yang akan dimasukkan dalam sebuah sistem informasi dapat berupa formulir-formulir, prosedur-prosedur dan bentuk data lainnya.
+
+buku ini akan menuntun anda langkah demui langkah dalam memahami suatu permasalahan dan nantinya akan diterapkan dalam pembuatan atau perancangan suatu sistem informasi yang dapat membantu dalam pengolahan data. selain itu, buku ini dilengkapi contoh studi kasus sehingga dapat memudahkan anda untuk memahami permasalahan yang sering terjadi di lingkungan sekitar anda dan bahkan terjadi dalam kehidupan sehari-hari serta tak lupa akan disertai contoh program yang dapat digunakan untuk membantu dalam penerapan perangan sistem informasi yang dibuat. 
+
+secara garis besar materi dalam buku ini berisi: definisi sistem, klasifikasi sistem, sistem analisis, sistem informasi, SIM, komponen sistem organisasi, organisasi, metode pengumpulan data, studi kelayakan, pengembangan sistem, DFD, kamus data, diagram prosedur, formulir output, formulir input, layout layar, pengkodean, dan teknik normalisasi. 
+
+buku ini terdiri dari 10 bab yang berisi:
+bab I konsep dasar sistem informasi
+bab II konsep organisasi dan SIM
+bab III pengembangan sistem informasi
+bab IV desain sistem
+bab V desain basis data
+bab VI desain form dan tampilan masukan
+bab VII desain form dan tamplan keluaran
+bab VIII implementasi sistem
+bab IX studi kasus sistem penggajian
+bab X studi kasus sistem persediaan barang

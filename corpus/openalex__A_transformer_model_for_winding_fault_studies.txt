@@ -1,0 +1,6 @@
+A transformer model for winding fault studies
+
+Authors: P. Bastard, Ph. Bertrand, Michel Meunier
+Year: 1994
+
+This paper deals with a method of modeling internal faults in a power transformer. The method leads to a model which is entirely compatible with EMTP software. It enables simulation of faults between any turn and the earth or between any two turns of the transformer windings. Implementation of the proposed method assumes knowledge of how to evaluate the leakage factors between the various coils of the transformer. A very simple method is proposed to evaluate these leakage factors. At last, an experimental validation of the model allows the estimation of its accuracy.< <ETX xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">&gt;</ETX>

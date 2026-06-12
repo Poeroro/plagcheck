@@ -118,9 +118,12 @@ class OnnxEncoder:
         return f"<OnnxEncoder {self.name} dim={self.dim} path={self.model_path}>"
 
 
+from .corpus import _preprocess_indonesian, looks_indonesian as _looks_id_paragraph  # noqa: E402
+
+
 # Default thresholds
 DEFAULT_NEAR = 0.30
-DEFAULT_SEMANTIC = 0.85
+DEFAULT_SEMANTIC = 0.80
 DEFAULT_CROSS_ENCODER = 0.50
 
 # Default ensemble models (lighter, faster, all multilingual)
@@ -323,7 +326,16 @@ class PlagEngine:
             from .citations import CitationStats
             cite_stats = CitationStats(original_chars=len(raw_text), cleaned_chars=len(raw_text))
 
-        paragraphs = split_paragraphs(text, min_len=min_paragraph_chars)
+        # Per-paragraph Indonesian preprocessing (preserves blank-line boundaries
+        # so split_paragraphs can detect them — _preprocess_indonesian joins on
+        # single space and would otherwise collapse the doc into one mega-paragraph).
+        pre_split = split_paragraphs(text, min_len=min_paragraph_chars)
+        if pre_split:
+            text = "\n\n".join(
+                _preprocess_indonesian(p) if _looks_id_paragraph(p) else p
+                for p in pre_split
+            )
+        paragraphs = pre_split or ([text] if text else [])
         if not paragraphs:
             return CheckResult(
                 document_name=Path(file_path).name,

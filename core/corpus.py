@@ -42,13 +42,14 @@ _ID_FUNCTION_WORDS = frozenset({
 def looks_indonesian(text: str) -> bool:
     """Heuristic: does this text look Indonesian?
 
-    Requires >=20 words AND >=8% of them are Indonesian function words.
-    Threshold tuned to avoid false positives on English text.
+    Requires >=6 words AND >=8% of them are Indonesian function words.
+    Threshold tuned to avoid false positives on English text while catching
+    short Indonesian queries (paragraphs often <20 words).
     """
     if not text:
         return False
     words = re.findall(r"\w+", text.lower())
-    if len(words) < 20:
+    if len(words) < 6:
         return False
     hits = sum(1 for w in words if w in _ID_FUNCTION_WORDS)
     ratio = hits / len(words)

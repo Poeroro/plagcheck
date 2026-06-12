@@ -1,0 +1,6 @@
+Koneksi Politik dan Aggresivitas Pajak: Fenomena di Indonesia
+
+Authors: Agung Prasetyo Nugroho Wicaksono
+Year: 2017
+
+This paper examines the effect of political connections and tax agressiveness in Indonesia. We used precentage of goverment ownership and firm’s directors who have informal ties with leading politicans or goverment for measuring political connections. The effective tax rates used for measurements of tax agressiveness. Data of this research is secondary data from annual report listed on Indonesia Stock Exchange with 148 listed companies in period 2013 – 2015. Method of analysis used panel data estimation prosedures. We find firms with political connections pay tax at significantly higher effective tax rates than the other firms.

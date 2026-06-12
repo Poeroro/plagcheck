@@ -1,0 +1,6 @@
+Analisis Faktor yang Mempengaruhi Struktur Modal Serta Pengaruhnya Terhadap Harga Saham Perusahaan Real Estate yang Go Public di Bursa Efek Indonesia
+
+Authors: Ali Kesuma
+Year: 2009
+
+The main objective of the study is to examine the impact of these factors on capital structure and stock price in indonesian stock exchange.Data is used secondary data that Published in indonesian stock exchange from 2003-2008.this analisys used Structural Euvation Modeling. The result of the study : 1).There are impact of growth sale on capital structure with regression weight 0,19; 2).There are impact profitability on capital structure with regression weight 0,19 3).There are impact of debt ratio on capital structure; 4).There are not impact of growth sales on stock prices; 5).There are not impact of assets structure on stock price with regression weight 0,12; 6).There are impact of profitability on stock price with regression weight 0,53; 7) There are not significant impact of debt ratio on stock price; 8).There are not significant impact of capital structure on stock price.

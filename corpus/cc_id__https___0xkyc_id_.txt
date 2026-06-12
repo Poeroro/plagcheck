@@ -1,0 +1,38 @@
+=== https://0xkyc.id/ ===
+
+0xKYC x Mava Integration
+Our Discord Bot strengthens its user support capabilities through integration with Mava.
+Our community-driven project provides privacy-preserving identity verification solutions:
+- Onchain attestations for your Proof of Personhood
+- Uniqueness Verification ✅
+- Web3 fraud wallet lists check ✅
+- Real world sanctions verification ✅
+- Unique across different wallets and cross-chain 🌐
+- We also enable reusable solutions on the edge of what's possible.
+All of our checks can be permissionless and are interoperable 🗻⛺ Backed by New Order DAO, Outlier Ventures and Bufficorn Ventures as well as angels. We are officially a part of the Scroll ecosystem 📜
+Our Discord Bot strengthens its user support capabilities through integration with Mava.
+0xKYC partnered with Onfido (now Entrust) to provide fraud protection protocols on blockchain and in the Metaverse.
+Our integration utilizes blockchain-based identity verification and token-gating solutions to combat fraud, ensuring a safer gaming environment.
+"Thrilled to partner with 0xKYC at Insert Stonks! Their robust identity verification system is a game-changer, ensuring only genuine players get the rewards. We're stepping up our platform's security while maintaining a fair gaming environment. 0xKYC is unique because of their Proof of Uniqueness solution. It lets us verify user identities without sharing any personally identifiable information onchain, truly respecting our players' privacy. No personal data is shared with Insert Stonks, as 0xKYC handles all verification and stores the results securely. Our partnership is a big leap towards a safer and fairer gaming future in the Web3 world. Here's to enhanced security and privacy with 0xKYC!"
+Przemysław Wierzbicki
+Visionary Officer and Founder
+"At Lomads, we take compliance and security very seriously. That's why we're excited to partner with 0xKYC to offer our customers an easy way to verify each contributor's uniqueness within their organization. This helps ensure that funds aren't sent to sanctioned individuals and keeps the organisation compliant. This service will be available through Soulbound tokens launched on our platform, and we're proud to offer one of the most reliable and user-friendly solutions out there with 0xKYC."
+Nishant Bhaskar
+CEO and Co-Founder
+We built the most decentralized system for a Proof of Personhood. Our open-source Discord bot provided uniqueness verification as well as verification if you are a real person. It helped organizations get rid of users with duplicate accounts and enable fair giveaways, airdrops etc.
+This open-source stack previously enabled organizations to 10x their user onboarding, create new experiences via fair distribution of rewards, and enhance game experiences (like in the example of Insert Stonks integration). The project is currently being revived by the open-source community.
+Web3 Games
+Verify if your users have the amount of accounts they claim to have with our Proof of Uniqueness solution.
+Onchain KYC
+Verify users and streamline the process to lower your compliance risk with our onchain attestations.
+Fairdrops and DAOs
+Eliminate abuse of minting mechanisms and illegitimate votes by verifying each user's identity
+Visit our Technical Documentation
+Over 100 Discord servers have used our bot to protect their communities. While the bot is currently not operational, you can learn about its implementation on GitHub.
+Understanding Our System: Facial Biometrics
+Our cutting-edge system previously utilized Onfido's facial biometrics to ensure authentic and unique user identification. We work on an open source alternative that analyzes facial features to verify individuality, ensuring each account is distinct and genuine.
+Unique vs. Verified Roles: What's the Difference?
+Our system assigns two distinct roles: Unique ❤️ Role (assigned when you have only one account in a server) and Verified ✅ Role (granted when our system confirms you're a real person). Typically, users have both roles, indicating a sole, verified account.
+Integration with Zealy and Galaxe: Enhancing Bot Functionality
+Seamlessly integrate with bots like Zealy or Galaxe. Use our 'required role' feature to allow only unique and verified users to access specific rewards. This integration empowers you to create a more secure and exclusive community experience.
+Help us rebuild 0xKYC as a fully open source privacy-preserving identity verification solution. While our Discord bot is currently not operational, you can explore the implementation and contribute to the future of decentralized identity.

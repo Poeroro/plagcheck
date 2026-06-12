@@ -1,0 +1,6 @@
+Implementasi Algoritma Advanced Encryption Standard (AES) 128 Untuk Enkripsi dan Dekripsi File Dokumen
+
+Authors: Asri Prameshwari, Nyoman Putra Sastra
+Year: 2018
+
+Keamanan data atau informasi adalah hal yang sangat penting bagi pengguna jaringan internet saat ini. Kasus penyadapan akan pesan atau informasi merupakan salah satu hal yang sangat merugikan, dengan adanya kemungkinan terjadinya kejadian ini, maka perlunya peningkatan dalam hal keamanan pertukaran informasi menjadi penting. Pada saat ini, keamanan pertukaran informasi ini perlu mendapatkan perhatian khusus, maka penelitian ini akan membuat suatu implementasi kriptografi algoritma AES-128 untuk enkripsi dan dekripsi data yang berupa file dokumen (PDF, DOC, TXT). Algoritma Advanced Encryption Standard (AES) dipilih karena memiliki suatu tingkat keamanan pertukaran informasi yang cukup bagus, dan pada penelitian ini diuji coba file dokumen untuk melihat kecepatan waktu yang dibutuhkan selama proses enkripsi dan dekripsi.

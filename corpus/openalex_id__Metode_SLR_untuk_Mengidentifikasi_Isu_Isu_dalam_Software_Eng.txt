@@ -1,0 +1,6 @@
+Metode SLR untuk Mengidentifikasi Isu-Isu dalam Software Engineering
+
+Authors: Lusiana Lusiana, Melva Suryani
+Year: 2018
+
+Software Engineering (SE) merupakan disiplin ilmu yang berkaitan dengan semua aspek produksi software yang dimulai dari tahap awal spesifikasi sampai pada pemeliharaan sistem yang digunakan [1], oleh sebab itu SE memiliki peran penting terhadap perkembangan dunia teknologi informasi. Penelitian ini mengkaji isu dan pedekatan yang digunakan dalam SE empat tahun terakhir (2010-2013) yang belum teridentifikasi dengan baik, dengan menggunakan metode SLR. SLR merupakan cara untuk mengidentifikasi, mengevaluasi dan menafsirkan semua penelitian yang tersedia dengan pertanyaan penelitian tertentu, bidang topik, atau fenomena yang menarik [2] (Kitchenham 2007). Dengan metode SLR isu-isu yang berhubungan dalam software engineering akan diidentifikasi dengan menggunakan kata kunci â€œwhat the problemâ€ (apa masalah) dan â€œhow to solve the problemâ€ (bagaimana memecahkan masalah tersebut). Hasil penelitian dapat dijadikan panduan oleh mahasiswa dan pembaca lainnya untuk melakukan penelitian yang berhubungan dengan SE selain itu, penelitian ini juga dapat membantu pembaca untuk mencari topik yang dominan penelitian dalam bidang SE

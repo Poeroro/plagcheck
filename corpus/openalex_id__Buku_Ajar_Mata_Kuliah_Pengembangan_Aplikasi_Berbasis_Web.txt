@@ -1,0 +1,6 @@
+Buku Ajar Mata Kuliah Pengembangan Aplikasi Berbasis Web
+
+Authors: Mohammad Suryawinata
+Year: 2019
+
+Jutaan bisnis menggunakan internet sebagai channel komunikasi yang efektif. Internet memudahkan mereka bertukar informasi dengan target market mereka dan transaksi bisa dilakukan secara cepat dan aman. Namun komunikasi yang efektif hanya dimungkinkan ketika bisnis tersebut dapat menangkap dan menyimpan data-data yang dibutuhkan serta memiliki tujuan untuk memproses informasi ini dan mempresentasikan hasilnya kepada user.

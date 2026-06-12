@@ -1,0 +1,12 @@
+Smart city beserta cloud computing dan teknologi-teknologi pendukung lainnya
+
+Authors: I Putu Agus Eka Pratama
+Year: 2014
+
+Memahami tentang Smart City serta bagaimana peranan teknologi Cloud Computing di dalamnya. Disajikan juga ulasan sejarah komputer dan jaringan komputer, yang turut berperan di dalamnya.
+
+Memahami teknologi-teknologi pendukung Smart City dan beberapa teknologi yang mengawali Cloud Computing: Grid Computing, Cluster Computing, Green Computing, Augmented Reality, RFID, Near Field Communication, Internet Of Things/Machine To Machine.
+
+Cloud Computing adalah salah satu kunci utama penerapan Smart City. Maka disediakan praktek langsung pada buku ini tentang Cloud Computing sederhana di komputer anda memanfaatkan sistem operasi Linux dan aplikasi-aplikasi open source, seperti: Eye OS, Owncloud, Sugar CRM, dan Phreedom.
+
+Bonus DVD memuat file iso Linux IGOS Nusantara, XAMPP Linux, Eye OS, Owncloud, Sugar CRM, dan Phreedom.

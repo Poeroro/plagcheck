@@ -1,0 +1,6 @@
+Deteksi financial statement fraud: Pengujian dengan fraud diamond
+
+Authors: Merissa Yesiariani, Isti Rahayu
+Year: 2017
+
+This research is an empirical research that aims to determine the effect of fraud diamond toward financial statement fraud on the public companies LQ-45 listed in Indonesia Stock Exchange (IDX) from 2010 to 2014. The test is performed by using multiple linear regression on the 22 data samples. The results show that external pressure and rationalization variables proved to be significantly positive, while financial stability, financial targets, change of auditors, personal financial need, nature of industry, ineffective monitoring and capability were not proven against financial statement fraud. The results of this study are expected to be a reference for further researchers and users of other financial information in detecting fraud on the financial statements.

@@ -1,0 +1,6 @@
+PENGARUH PROFITABILITAS, LIKUIDITAS, LEVERAGE, KEBIJAKAN DIVIDEN, DAN UKURAN PERUSAHAAN TERHADAP NILAI PERUSAHAAN
+
+Authors: Fakhrana Oktaviarni
+Year: 2019
+
+Penelitian ini bertujuan untuk mengetahui secara empiris pengaruh profitabilitas, likuiditas, leverage, kebijakan dividen, dan ukuran perusahaan terhadap nilai perusahaan. Populasi dalam penelitian ini adalah perusahaan sektor real estate, properti, dan konstruksi bangunan yang terdaftar di Bursa Efek Indonesia tahun 2014-2016. Pengambilan sampel ditentukan dengan menggunakan metode purposive sampling sehingga didapat 22 perusahaan. Jenis data yang digunakan adalah data sekunder yang diperoleh dari www.idx.co.id. Metode analisis yang digunakan adalah analisis regresi berganda. Hasil yang ditunjukkan pada penelitian ini menunjukkan bahwa rasio profitabilitas yang diproksikan dengan Return on Assets (ROA), likuiditas yang diproksikan dengan Current Ratio (CR), kebijakan dividen yang diproksikan dengan Dividend Payout Ratio (DPR), dan ukuran perusahaan yang diproksikan dengan logaritma natural total aset berpengaruh terhadap nilai perusahaan, sedangankan leverage yang diproksikan dengan Debt to Equity Ratio (DER) tidak berpengaruh terhadap nilai perusahaan.

@@ -1,0 +1,6 @@
+Kriptografi Keamanan Internet dan Jaringan Komunikasi
+
+Authors: Yusuf Kurniawan
+Year: 2004
+
+Buku ini berisi: Algoritma kriptografi klasik,cara memcahkan kode rahasia algoritma klasik,Algoritma Enkripsi yang tidak dapat dipecahkan,Algoritma enkripsi modem:AES,DES,RSA dan lain-lain,Algoritma enkripsi yg digunakan jerman, dan Unisfyet,VIC,Analisis sandi algoritma dll.

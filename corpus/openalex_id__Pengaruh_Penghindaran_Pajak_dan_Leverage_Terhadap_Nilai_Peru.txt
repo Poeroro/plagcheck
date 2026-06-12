@@ -1,0 +1,6 @@
+Pengaruh Penghindaran Pajak dan Leverage Terhadap Nilai Perusahaan dengan Transparansi Perusahaan Sebagai Variabel Moderasi
+
+Authors: Anita Tarihoran
+Year: 2017
+
+Penelitian ini bertujuan untuk mengetahui dan menganalisis pengaruh Penghindaran Pajak dan Leverage sebagai variabel independen, secara simultan dan parsial terhadap Nilai Perusahaan sebagai variabel dependennya, dengan Transparansi Perusahaan sebagai variabel moderasi.Penelitian ini dilakukan pada perusahaan manufaktur yang terdaftar di Bursa Efek Indonesia periode 2011-2014. Populasi dalam penelitian ini berjumlah 141 perusahaan. Pemilihan sampel menggunakan teknik purposive sampling, sehingga diperoleh total sampel sebanyak 228 perusahaan. Metode pengujian data yang digunakan adalah analisis regresi linear berganda. Secara simultan, Penghindaran Pajak dan Leverage berpengaruh signifikan terhadap Nilai Perusahaan. Secara parsial, Leverage berpengaruh signifikan terhadap Nilai Perusahaan. Penghindaran Pajak tidak berpengaruh signifikan terhadap Nilai Perusahaan. Transparansi Perusahaan mampu memoderasi hubungan antara Penghindaran Pajak dan Leverage terhadap Nilai Perusahaan.

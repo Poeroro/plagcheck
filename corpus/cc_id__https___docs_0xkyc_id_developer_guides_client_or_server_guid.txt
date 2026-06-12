@@ -1,0 +1,11 @@
+=== https://docs.0xkyc.id/developer-guides/client-or-server-guide/sunscreen-uniquness-verification/get-unique-identifier-of-an-address ===
+
+Get Unique Identifier of an Address
+const soulbound = new web3.eth.Contract(abi, soulboundContractAddress);
+const uuidData = await soulbound.methods.getUUIDData(walletAddress).call();Last updated
+⌘Ctrlk
+A user will be assigned a UUID (Universally Unique Identifier) if they have gone done a document scan + biomentric scan (selfie) OR just a biomentric scan (motion)
+To query the UUID of a wallet simply call:
+const soulbound = new web3.eth.Contract(abi, soulboundContractAddress);
+const uuidData = await soulbound.methods.getUUIDData(walletAddress).call();Or call our "GET /api/v1/uuid" API directly here:
+Last updated

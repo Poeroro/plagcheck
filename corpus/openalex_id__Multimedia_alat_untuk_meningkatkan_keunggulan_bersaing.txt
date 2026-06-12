@@ -1,0 +1,6 @@
+Multimedia alat untuk meningkatkan keunggulan bersaing
+
+Authors: M. Suyanto
+Year: 2005
+
+Buku ini memberikan gambaran bagaimana multimedia dalam aplikasi sebagai alat untuk meningkatkan keunggulan bersaing. Buku ini juga memberikan definisi multimedia, perangkat keras multimedia, perangkat lunak authoring, perankat lunak editing, dan perangkat lunak berbasis web multimedia, serta obyek-obyek multimedia.Buku ini juga memuat aplikasi multimedia, Aplikasi multimedia yang digunakan dalam berbagai bidang mencakup bisnis, bidang hiburan, bidang kesehatan, bidang pendidikan, bidang pemerintahan, dan sebagainya.

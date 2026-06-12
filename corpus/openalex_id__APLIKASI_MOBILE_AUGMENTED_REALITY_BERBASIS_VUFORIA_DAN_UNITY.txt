@@ -1,0 +1,6 @@
+APLIKASI MOBILE AUGMENTED REALITY BERBASIS VUFORIA DAN UNITY PADA PENGENALAN OBJEK 3D DENGAN STUDI KASUS GEDUNG M UNIVERSITAS SEMARANG
+
+Authors: Atmoko Nugroho, Basworo Ardi Pramono
+Year: 2017
+
+Realitas tertambah, atau kadang dikenal dengan singkatan bahasa Inggrisnya AR (augmented reality), adalah teknologi yang menggabungkan benda maya dua dimensi dan ataupun tiga dimensi ke dalam sebuah lingkungan nyata tiga dimensi lalu memproyeksikan benda-benda maya tersebut dalam waktu nyata. Tidak seperti realitas maya yang sepenuhnya menggantikan kenyataan, realitas tertambah sekedar menambahkan atau melengkapi kenyataan.Penelitian ini menggunakan metode pengembangan sistem waterfall, dimana alur penelitian akan mengikuti fase fase yang ada di waterfall. Aplikasi ini akan dibangun dengan menggunakan Unity3D dan Vuforia.Tujuan dari penelitian ini adalah menghasilkan suatu aplikasi bantu pembelajaran untuk memudahkan mahasiswa dalam memahami materi augmented reality melalui perangkat mobile. Sehingga mahasiswa juga dapat memahami bagaimana mobile augmented reality dapat membantu mahasiswa melihat secara nyata objek 3D secara interaktif.

@@ -1,0 +1,13 @@
+E-LEARNING TEORI DAN APLIKASI
+
+Authors: Dian Wahyuningsih, Rakhmat Makmur
+Year: 2017
+
+E-Learning Teori Dan Aplikasi (ProsesPembelajaran Berbasis Aplikasi,Web,dan Cloud Computing dalam Dunia Teknologi Informasi
+-	Konsep E-Learning
+-	Komunikasi Synchoronous & Asynchoronous
+-	Interaftifitas
+-	User dalam E-Learning
+-	Penerapan Teori Pembelajaran dalam E-Learning
+-	Startegi Pembelajaran dalam E-learning
+-	Aplikasi Pendukung E-Learning

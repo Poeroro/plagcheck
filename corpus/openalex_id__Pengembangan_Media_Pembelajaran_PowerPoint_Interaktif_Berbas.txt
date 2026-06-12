@@ -1,0 +1,6 @@
+Pengembangan Media Pembelajaran PowerPoint Interaktif Berbasis RME Materi Aljabar Kelas VII SMP
+
+Authors: Maharani Delta Dewi, Nur Izzati
+Year: 2020
+
+Kurangnya variasi media pembelajaran matematika menyebabkan ketertarikan peserta didik terhadap pembelajaran berkurang. Untuk itu perlu dikembangkan media pembelajaran yang bervariasi, salah satunya adalah media yang berbasis teknologi. Tujuan penelitian ini untuk menghasilkan PowerPoint interaktif berbasis RME. Jenis penelitian ini adalah Research and Development dengan menggunakan model penelitian 4D. Teknik pengumpulan data melalui angket. Instrumen yang digunakan berupa lembar validasi dan lembar angket respon peserta didik. Subjek penelitian adalah siswa kelas VII C SMP Negeri 3 Tanjungpinang sebanyak 25 orang. Data yang diperoleh merupakan data kualitatif kemudian diubah menjadi data kuantitatif dengan menggunakan teknik Method of Summated Ratings. Hasil penelitian menunjukkan bahwa media yang dikembangkan dinyatakan valid dengan persentase dari dua validator ahli sebesar 87% dan dari angket respon peserta didik sebesar 76% berkategori praktis

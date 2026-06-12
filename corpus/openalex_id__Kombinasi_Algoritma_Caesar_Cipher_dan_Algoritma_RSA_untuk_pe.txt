@@ -1,0 +1,6 @@
+Kombinasi Algoritma Caesar Cipher dan Algoritma RSA untuk pengamanan File Dokumen dan Pesan Teks
+
+Authors: Indra Gunawan
+Year: 2018
+
+Pada saat sekarang ini, kemajuan teknologi dibidang ilmu komputer dan telekomunikasi sangatlah berkembang dan maju dengan pesat. Pengamanan data merupakan hal yang sangat penting untuk menjaga isi data yang penting dari pihak-pihak yang dapat merugikan dengan cara merusak data-data penting dari pemilik data. Dengan meningkatkan keamanan data menggunakan kombinasi algoritma, dapat menjaga keamanan data lebih terjamin dari serangan-serangan yang dapat membahayakan isi dari data yang tersimpan, terutama data dalam bentuk berkas dokumen dan pesan teks. Kombinasi algoritma yang digunakan untuk pengamanan data yang digunakan yaitu algoritma caesar cipher dan algoritma RSA. Jadi dengan menggunakan kombinasi algotitma caesar cipher dan algoritma RSA, tingkat pengamanan file dokumen dan pesan teks bisa lebih terjaga keaslian datanya.

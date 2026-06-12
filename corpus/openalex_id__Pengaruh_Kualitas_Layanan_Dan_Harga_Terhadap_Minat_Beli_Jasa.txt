@@ -1,0 +1,6 @@
+Pengaruh Kualitas Layanan Dan Harga Terhadap Minat Beli Jasa Go-Jek
+
+Authors: Angga Aptaguna, Endang Pitaloka
+Year: 2016
+
+Penelitian ini bertujuan menganalisa dampak kualitas pelayanan dan harga terhadap minta beli GO-JEK. GO-JEK adalah jasa transportasi berbasis aplikasi online. Pada penelitian ini layanan GO-JEK dikhususkan pada layanan GO-ride di kalangan mahasiswa/i yang berdomisili di Tangerang Selatan. Responden penelitian ini adalah 100 mahasiswa yang dipilih secara acak (random sampling). instrumen penelitian yang digunakan adalah kuesioner. Data dari kuesioner yang sudah diisi kemudian diolah dengan teknik regresi linier berganda. Hasil penelitian menunjukan bahwa variabel kualitas layanan berpengaruh secara signifikan terhadap minat beli jasa GO-JEK GO-ride. Sedangkan variabel harga tidak berpengaruh secara signifikan terhadap minat beli jasa GO-JEK GO-ride.Kata Kunci : kualitas layanan, harga, minat beli, GO-JEK

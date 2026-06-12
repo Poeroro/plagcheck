@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlagCheck — Deteksi Plagiarisme AI · Powered by Open Source</title>
+<style>
+  /* ============================================
+     DESIGN SYSTEM
+     ============================================ */
+  :root {
+    /* Surfaces */
+    --bg:           #0A0A0B;
+    --bg-elev-1:    #111114;
+    --bg-elev-2:    #18181C;
+    --bg-elev-3:    #1F1F24;
+    --border:       #27272A;
+    --border-soft:  #1C1C20;
+    --border-hover: #3A3A40;
+
+    /* Text */
+    --text:         #FAFAFA;
+    --text-2:       #A1A1AA;
+    --text-3:       #71717A;
+    --text-4:       #52525B;
+
+    /* Brand / accents */
+    --green:        #10B981;
+    --green-soft:   rgba(16, 185, 129, 0.12);
+    --green-border: rgba(16, 185, 129, 0.25);
+    --amber:        #F59E0B;
+    --amber-soft:   rgba(245, 158, 11, 0.12);
+    --red:          #EF4444;
+    --red-soft:     rgba(239, 68, 68, 0.12);
+    --violet:       #8B5CF6;
+    --violet-soft:  rgba(139, 92, 246, 0.12);
+    --blue:         #3B82F6;
+    --blue-soft:    rgba(59, 130, 246, 0.12);
+    --cyan:         #06B6D4;
+
+    /* Typography */
+    --font-sans:    -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+    --font-mono:    "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+
+    /* Sizing */
+    --radius:       8px;
+    --radius-lg:    12px;
+    --radius-sm:    6px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: var(--font-sans);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a { color: var(--text); text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 5px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--border-hover); }
+
+  /* ============================================
+     LAYOUT
+     ============================================ */
+  .app { display: flex; min-height: 100vh; }
+
+  /* Sidebar */
+  .sidebar {
+    width: 240px;
+    background: var(--bg-elev-1);
+    border-right: 1px solid var(--border-soft);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 12px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 10px;
+    padding: 4px 8px 24px;
+  }
+  .brand-mark {
+    width: 28px; height: 28px;
+    background: linear-gradient(135deg, var(--green), var(--cyan));
+    border-radius: 7px;
+    display: grid; place-items: center;
+    box-shadow: 0 0 24px rgba(16, 185, 129, 0.3);
+  }
+  .brand-mark::after {
+    content: "✓";
+    color: #000;
+    font-weight: 800;
+    font-size: 16px;
+  }
+  .brand-text { font-weight: 600; font-size: 15px; letter-spacing: -0.01em; }
+  .brand-text span { color: var(--text-3); font-weight: 400; font-size: 11px; display: block; }
+
+  .nav { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+  .nav-section { margin-top: 16px; }
+  .nav-section-title {
+    font-size: 11px; color: var(--text-4);
+    text-transform: uppercase; letter-spacing: 0.05em;
+    padding: 6px 8px; font-weight: 500;
+  }
+  .nav-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 7px 8px;
+    border-radius: var(--radius-sm);
+    color: var(--text-2);
+    font-size: 13px;
+    transition: all 0.15s;
+  }
+  .nav-item:hover { background: var(--bg-elev-2); color: var(--text); }
+  .nav-item.active { background: var(--bg-elev-2); color: var(--text); }
+  .nav-item.active::before {
+    content: ""; width: 2px; height: 14px;
+    background: var(--green);
+    margin-right: 4px; margin-left: -8px;
+    border-radius: 0 2px 2px 0;
+  }
+  .nav-icon { width: 16px; height: 16px; opacity: 0.7; }
+  .nav-badge {
+    margin-left: auto;
+    background: var(--green-soft);
+    color: var(--green);
+    font-size: 10px; font-weight: 600;
+    padding: 2px 6px; border-radius: 10px;
+  }
+
+  .sidebar-footer {
+    border-top: 1px solid var(--border-soft);
+    padding-top: 12px; margin-top: 12px;
+  }
+  .user-chip {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px; border-radius: var(--radius-sm);
+  }
+  .user-chip:hover { background: var(--bg-elev-2); }
+  .avatar {
+    width: 26px; height: 26px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--violet), var(--blue));
+    display: grid; place-items: center;
+    font-size: 11px; font-weight: 600;
+  }
+  .user-name { font-size: 12px; font-weight: 500; }
+  .user-plan { font-size: 10px; color: var(--text-3); }
+
+  /* Main */
+  .main { flex: 1; padding: 24px 32px; max-width: 1400px; margin: 0 auto; width: 100%; }
+
+  /* Top bar */
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  .crumbs { color: var(--text-3); font-size: 12px; }
+  .crumbs span { color: var(--text); }
+  .topbar-actions { display: flex; align-items: center; gap: 8px; }
+  .icon-btn {
+    width: 32px; height: 32px;
+    display: grid; place-items: center;
+    background: var(--bg-elev-1);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-sm);
+    color: var(--text-2);
+  }
+  .icon-btn:hover { background: var(--bg-elev-2); color: var(--text); }
+
+  /* ============================================
+     PAGE: UPLOAD
+     ============================================ */
+  .upload-page { padding: 32px 0; }
+  .upload-hero { text-align: center; max-width: 720px; margin: 40px auto 48px; }
+  .upload-eyebrow {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--green-soft);
+    color: var(--green);
+    padding: 4px 10px; border-radius: 20px;
+    font-size: 11px; font-weight: 600;
+    margin-bottom: 16px;
+    border: 1px solid var(--green-border);
+  }
+  .upload-eyebrow::before {
+    content: ""; width: 5px; height: 5px;
+    background: var(--green); border-radius: 50%;
+    box-shadow: 0 0 8px var(--green);
+  }
+  .upload-title {
+    font-size: 36px; font-weight: 700; letter-spacing: -0.02em;
+    line-height: 1.1; margin-bottom: 12px;
+  }
+  .upload-title .grad {
+    background: linear-gradient(135deg, var(--green) 0%, var(--cyan) 50%, var(--blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .upload-sub {
+    color: var(--text-2);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .dropzone {
+    max-width: 720px; margin: 0 auto;
+    background: var(--bg-elev-1);
+    border: 2px dashed var(--border);
+    border-radius: var(--radius-lg);
+    padding: 56px 32px;
+    text-align: center;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .dropzone::before {
+    content: "";
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at 50% 0%, var(--green-soft), transparent 60%);
+    pointer-events: none;
+  }
+  .dropzone:hover { border-color: var(--green); background: var(--bg-elev-2); }
+  .drop-icon {
+    width: 56px; height: 56px;
+    background: var(--green-soft);
+    border-radius: 14px;
+    display: grid; place-items: center;
+    margin: 0 auto 20px;
+    color: var(--green);
+  }
+  .drop-title { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+  .drop-sub { color: var(--text-3); font-size: 13px; margin-bottom: 20px; }
+  .drop-browse {
+    display: inline-block;
+    background: var(--green);
+    color: #000;
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.15s;
+  }
+  .drop-browse:hover { background: #34D399; }
+  .drop-formats {
+    margin-top: 16px;
+    font-size: 11px; color: var(--text-4);
+    display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+  }
+  .drop-formats span { padding: 2px 8px; background: var(--bg-elev-2); border-radius: 4px; }
+
+  /* Config */
+  .config-grid {
+    max-width: 720px;
+    margin: 32px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .config-card {
+    background: var(--bg-elev-1);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    display: flex; align-items: flex-start; gap: 12px;
+  }
+  .config-toggle {
+    appearance: none;
+    width: 32px; height: 18px;
+    background: var(--bg-elev-3);
+    border-radius: 9px;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.2s;
+    margin-top: 2px;
+  }
+  .config-toggle::after {
+    content: ""; width: 14px; height: 14px;
+    background: var(--text-3);
+    border-radius: 50%;
+    position: absolute; top: 2px; left: 2px;
+    transition: all 0.2s;
+  }
+  .config-toggle:checked { background: var(--green-soft); }
+  .config-toggle:checked::after { background: var(--green); left: 16px; }
+  .config-body { flex: 1; min-width: 0; }
+  .config-title {
+    font-size: 13px; font-weight: 500;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .config-badge {
+    background: var(--violet-soft);
+    color: var(--violet);
+    font-size: 9px; font-weight: 700;
+    padding: 1px 5px; border-radius: 3px;
+    letter-spacing: 0.05em;
+  }
+  .config-desc { font-size: 11px; color: var(--text-3); margin-top: 2px; line-height: 1.4; }
+
+  /* Stats row */
+  .stats-row {
+    max-width: 720px;
+    margin: 24px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .stat {
+    text-align: center;
+    padding: 16px 12px;
+    background: var(--bg-elev-1);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius);
+  }
+  .stat-val {
+    font-family: var(--font-mono);
+    font-size: 18px; font-weight: 600;
+    color: var(--text);
+  }
+  .stat-label { font-size: 10px; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; }
+
+  /* Recent checks */
+  .recent { max-width: 720px; margin: 32px auto 0; }
+  .recent-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+  .recent-title { font-size: 13px; font-weight: 600; }
+  .recent-title span { color: var(--text-3); font-weight: 400; }
+  .recent-link { color: var(--text-3); font-size: 12px; }
+  .recent-link:hover { color: var(--text); }
+  .recent-list {
+    background: var(--bg-elev-1);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .recent-item {
+    display: grid;
+    grid-template-columns: 28px 1fr 80px 100px 80px;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-soft);
+    transition: background 0.15s;
+  }
+  .recent-item:last-child { border-bottom: none; }
+  .recent-item:hover { background: var(--bg-elev-2); cursor: pointer; }
+  .file-icon {
+    width: 28px; height: 28px;
+    background: var(--bg-elev-3);
+    border-radius: 6px;
+    display: grid; place-items: center;
+    color: var(--text-2);
+    font-size: 10px; font-weight: 700;
+  }
+  .file-icon.pdf { background: rgba(239, 68, 68, 0.1); color: var(--red); }
+  .file-icon.docx { background: rgba(59, 130, 246, 0.1); color: var(--blue); }
+  .file-icon.txt { background: rgba(16, 185, 129, 0.1); color: var(--green); }
+  .recent-name { font-size: 13px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .recent-meta { font-size: 11px; color: var(--text-3); }
+  .recent-score {
+    font-family: var(--font-mono);
+    font-size: 13px; font-weight: 600;
+    text-align: right;
+  }
+  .recent-score.high { color: var(--red); }
+  .recent-score.med { color: var(--amber); }
+  .recent-score.low { color: var(--green); }
+  .recent-time { font-size: 11px; color: var(--text-3); text-align: right; }
+  .recent-ai {
+    font-size: 10px; font-weight: 600;
+    padding: 2px 6px; border-radius: 3px;
+    text-align: center;
+  }
+  .recent-ai.ai-high { background: var(--violet-soft); color: var(--violet); }
+  .recent-ai.ai-low { background: var(--green-soft); color: var(--green); }
+
+  /* ============================================
+     PAGE: RESULTS
+     ============================================ */
+  .results-page { display: grid; grid-template-columns: 1fr 340px; gap: 20px; }
+  .results-main { display: flex; flex-direction: column; gap: 20px; }
+  .results-aside { display: flex; flex-direction: column; gap: 16px; }
+
+  /* Header card */
+  .result-header {
+    background: var(--bg-elev-1);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    display: flex; align-items: center; gap: 28px;
+  }
+  .gauge {
+    position: relative;
+    width: 120px; height: 120px;
+    flex-shrink: 0;
+  }
+  .gauge svg { transform: rotate(-90deg); }
+  .gauge-bg { stroke: var(--bg-elev-3); }
+  .gauge-fg { stroke: var(--red); transition: stroke-dashoffset 1s ease; }
+  .gauge-text {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+  }
+  .gauge-num {
+    font-family: var(--font-mono);
+    font-size: 32px; font-weight: 700;
+    color: var(--red);
+    line-height: 1;
+  }
+  .gauge-label { font-size: 10px; color: var(--text-3); margin-top: 2px; }
+
+  .result-info { flex: 1; min-width: 0; }
+  .result-filename {
+    font-size: 18px; font-weight: 600;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .result-filename .pill {
+    font-size: 10px; font-weight: 500;
+    padding: 2px 8px;
+    background: var(--bg-elev-3);
+    border-radius: 10px;
+    color: var(--text-2);
+  }
+  .result-filename .pill.high { background: var(--red-soft); color: var(--red); }
+  .result-meta {
+    color: var(--text-3); font-size: 12px;
+    margin-top: 4px;
+    display: flex; gap: 16px;
+  }
+  .result-meta b { color: var(--text-2); font-weight: 500; }
+  .result-actions { display: flex; gap: 8px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 12px; font-weight: 500;
+    background: var(--bg-elev-2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    transition: all 0.15s;
+  }
+  .btn:hover { background: var(--bg-elev-3); border-color: var(--border-hover); }
+  .btn.primary {
+    background: var(--green);
+    color: #000; border-color: var(--green);
+    font-weight: 600;
+  }
+  .btn.primary:hover { background: #34D399; }
+
+  /* Stat cards */
+  .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .stat-card {
+    background: var(--bg-elev-1);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius);
+    padding: 16px;
+  }
+  .stat-card-label {
+    font-size: 11px; color: var(--text-3);
+    text-transform: uppercase; letter-spacing: 0.05em;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .stat-card-value {
+    font-family: var(--font-mono);
+    font-size: 22px; font-weight: 600;
+    margin-top: 8px;
+    display: flex; align-items: baseline; gap: 4px;
+  }
+  .stat-card-value .unit { font-size: 12px; color: var(--text-3); }
+  .stat-card-bar {
+    height: 3px;
+    background: var(--bg-elev-3);
+    border-radius: 2px;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  .stat-card-bar > div {
+    height: 100%;
+    background: var(--green);
+    border-radius: 2px;
+  }
+  .stat-card.high .stat-card-value { color: var(--red); }
+  .stat-card.high .stat-card-bar > div { background: var(--red); }
+  .stat-card.med .stat-card-value { color: var(--amber); }
+  .stat-card.med .stat-card-bar > div { background: var(--amber); }
+  .stat-card.ai .stat-card-value { color: var(--violet); }
+  .stat-card.ai .stat-card-bar > div { background: var(--violet); }
+
+  /* Summary band */
+  .summary-band {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), transparent 70%), var(--bg-elev-1);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    border-radius: var(--radius-lg);
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .summary-icon {
+    width: 40px; height: 40px;
+    background: var(--amber-soft);
+    border-radius: 10px;
+    display: grid; place-items: center;
+    color: var(--amber);
+    flex-shrink: 0;
+  }
+  .summary-body { flex: 1; min-width: 0; }
+  .summary-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+  .summary-desc { font-size: 12px; color: var(--text-2); line-height: 1.5; }
+  .summary-desc b { color: var(--text); font-weight: 500; }
+  .summary-action {
+    background: var(--amber);
+    color: #000;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 12px; font-weight: 600;
+    flex-shrink: 0;
+  }
+  .summary-action:hover { background: #FBBF24; }
+
+  /* Document viewer */
+  .doc-viewer {
+    background: var(--bg-elev-1);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  .doc-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 20px;
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .doc-tabs { display: flex; gap: 4px; }
+  .doc-tab {
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    color: var(--text-3);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .doc-tab:hover { color: var(--text); }
+  .doc-tab.active { background: var(--bg-elev-3); color: var(--text); }
+  .doc-legend { display: flex; gap: 12px; font-size: 11px; color: var(--text-3); }
+  .doc-legend span { display: flex; align-items: center; gap: 4px; }
+  .doc-legend i {
+    display: inline-block;
+    width: 10px; height: 10px;
+    border-radius: 2px;
+  }
+  .doc-legend .l-high { background: rgba(239, 68, 68, 0.3); border: 1px solid var(--red); }
+  .doc-legend .l-med { background: rgba(245, 158, 11, 0.3); border: 1px solid var(--amber); }
+  .doc-legend .l-cite { background: rgba(113, 113, 122, 0.2); }
+
+  .doc-body {
+    padding: 24px 32px;
+    max-height: 480px;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-2);
+  }
+  .doc-body p { margin-bottom: 16px; }
+  .doc-body .match-high {
+    background: rgba(239, 68, 68, 0.15);
+    border-bottom: 2px solid var(--red);
+    padding: 2px 0;
+    cursor: pointer;
+    color: var(--text);
+  }
+  .doc-body .match-high:hover { background: rgba(239, 68, 68, 0.25); }
+  .doc-body .match-med {
+    background: rgba(245, 158, 11, 0.15);
+    border-bottom: 2px solid var(--amber);
+    padding: 2px 0;
+    cursor: pointer;
+  }
+  .doc-body .citation {
+    background: rgba(113, 113, 122, 0.1);
+    color: var(--text-3);
+    font-style: italic;
+  }
+  .doc-body h3 {
+    color: var(--text);
+    font-size: 15px; font-weight: 600;
+    margin: 20px 0 10px;
+  }
+
+  /* Match list (sidebar) */
+  .match-list {
+    background: var(--bg-elev-1);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  .match-list-head {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border-soft);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .match-list-title { font-size: 13px; font-weight: 600; }
+  .match-list-count { font-size: 11px; color: var(--text-3); }
+  .match-item {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border-soft);
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .match-item:last-child { border-bottom: none; }
+  .match-item:hover { background: var(--bg-elev-2); }
+  .match-item.active { background: var(--bg-elev-2); border-left: 2px solid var(--green); }
+  .match-row1 {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 4px;
+  }
+  .match-source { font-size: 12px; font-weight: 500; }
+  .match-pct {
+    font-family: var(--font-mono);
+    font-size: 12px; font-weight: 600;
+  }
+  .match-pct.high { color: var(--red); }
+  .match-pct.med { color: var(--amber); }
+  .match-pct.low { color: var(--green); }
+  .match-row2 {
+    font-size: 10px; color: var(--text-3);
+    display: flex; gap: 8px; align-items: center;
+  }
+  .match-source-tag {
+    background: var(--bg-elev-3);
+    padding: 1px 6px; border-radius: 3px;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .match-excerpt {
+    margin-top: 8px;
+    padding: 8px 10px;
+    background: var(--bg);
+    border-radius: 4px;
+    font-size: 11px; line-height: 1.5;
+    color: var(--text-3);
+    border-left: 2px solid var(--border);
+  }
+  .match-excerpt em {
+    color: var(--text);
+    font-style: normal;
+    background: rgba(239, 68, 68, 0.1);
+    padding: 0 2px;
+  }
+
+  /* AI panel */
+  .ai-panel {
+    background: linear-gradient(135deg, var(--violet-soft), transparent 80%), var(--bg-elev-1);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+  }
+  .ai-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+  .ai-title { font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+  .ai-title-icon {
+    width: 22px; height: 22px;
+    background: var(--violet);
+    border-radius: 5px;
+    display: grid; place-items: center;
+    color: #000;
+  }
+  .ai-verdict {
+    font-size: 10px; font-weight: 700;
+    padding: 3px 8px; border-radius: 4px;
+    text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .ai-verdict.ai { background: var(--violet); color: #fff; }
+  .ai-verdict.mix { background: var(--amber-soft); color: var(--amber); }
+  .ai-verdict.human { background: var(--green-soft); color: var(--green); }
+
+  .ai-score {
+    display: flex; align-items: baseline; gap: 6px;
+    margin-bottom: 12px;
+  }
+  .ai-score-num {
+    font-family: var(--font-mono);
+    font-size: 28px; font-weight: 700;
+    color: var(--violet);
+  }
+  .ai-score-label { font-size: 11px; color: var(--text-3); }
+
+  .ai-bars { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+  .ai-bar-row { display: flex; align-items: center; gap: 8px; }
+  .ai-bar-label { font-size: 10px; color: var(--text-3); width: 60px; flex-shrink: 0; }
+  .ai-bar-track {
+    flex: 1; height: 6px;
+    background: var(--bg-elev-3);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .ai-bar-fill {
+    height: 100%; border-radius: 3px;
+    background: var(--violet);
+  }
+  .ai-bar-val { font-family: var(--font-mono); font-size: 10px; color: var(--text-2); width: 32px; text-align: right; }
+
+  .ai-signal {
+    margin-top: 12px;
+    padding: 10px 12px;
+    background: var(--bg-elev-2);
+    border-radius: var(--radius-sm);
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--text-2);
+  }
+  .ai-signal b { color: var(--text); }
+
+  /* Processing time */
+  .proc-card {
+    background: var(--bg-elev-1);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-lg);
+    padding: 16px;
+  }
+  .proc-title { font-size: 12px; font-weight: 600; margin-bottom: 12px; color: var(--text-2); }
+  .proc-row {
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 12px;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .proc-row:last-child { border-bottom: none; }
+  .proc-name { color: var(--text-2); }
+  .proc-time { font-family: var(--font-mono); color: var(--text); font-weight: 500; }
+
+  /* Tooltip on match */
+  .match-popup {
+    position: absolute;
+    background: var(--bg-elev-3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px;
+    font-size: 12px;
+    width: 280px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    display: none;
+  }
+
+  /* Responsive */
+  @media (max-width: 1100px) {
+    .results-page { grid-template-columns: 1fr; }
+    .config-grid, .stat-row, .stats-row { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .sidebar { display: none; }
+    .main { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark"></div>
+      <div class="brand-text">PlagCheck<span>v0.4 · $0</span></div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav-item active" href="#">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13l2 2 4-4"/></svg>
+        Cek Dokumen
+      </a>
+      <a class="nav-item" href="#">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
+        Riwayat
+        <span class="nav-badge">12</span>
+      </a>
+      <a class="nav-item" href="#">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Corpus
+      </a>
+      <a class="nav-item" href="#">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        Pengaturan
+      </a>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Engine</div>
+        <a class="nav-item" href="#">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          MinHash
+        </a>
+        <a class="nav-item" href="#">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Semantic
+        </a>
+        <a class="nav-item" href="#">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          Ensemble
+        </a>
+        <a class="nav-item" href="#">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          AI Detector
+        </a>
+      </div>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-chip">
+        <div class="avatar">H</div>
+        <div>
+          <div class="user-name">Hafidh</div>
+          <div class="user-plan">Free Tier · 0/1000</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- Top bar -->
+    <div class="topbar">
+      <div class="crumbs">PlagCheck <span style="margin:0 6px;color:var(--text-4)">/</span> <span>Hasil Pengecekan</span></div>
+      <div class="topbar-actions">
+        <button class="icon-btn" title="Refresh">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+        </button>
+        <button class="icon-btn" title="Help">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </button>
+        <button class="icon-btn" title="Settings">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- RESULTS PAGE -->
+    <div class="results-page">
+
+      <!-- Main column -->
+      <div class="results-main">
+
+        <!-- Header -->
+        <div class="result-header">
+          <div class="gauge">
+            <svg width="120" height="120" viewBox="0 0 120 120">
+              <circle class="gauge-bg" cx="60" cy="60" r="50" fill="none" stroke-width="10"/>
+              <circle class="gauge-fg" cx="60" cy="60" r="50" fill="none" stroke-width="10"
+                stroke-dasharray="314" stroke-dashoffset="183" stroke-linecap="round"/>
+            </svg>
+            <div class="gauge-text">
+              <div class="gauge-num">42</div>
+              <div class="gauge-label">% MATCH</div>
+            </div>
+          </div>
+          <div class="result-info">
+            <div class="result-filename">
+              <span class="display-name">Analisis Dampak AI pada Diagnosis Medis</span>
+              <span class="pill high">TINGGI</span>
+              <span class="pill">125 hal · 32.4k kata</span>
+            </div>
+            <div class="result-meta">
+              <span>📄 <b>skripsi_bab3.docx</b></span>
+              <span>👤 <b>Budi Santoso</b></span>
+              <span>📅 <b>12 Jun 2026</b> · 14:23</span>
+              <span>⏱ <b>19.2 detik</b></span>
+              <span>🔍 <b>3.452</b> dokumen</span>
+            </div>
+          </div>
+          <div class="result-actions">
+            <button class="btn">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              HTML
+            </button>
+            <button class="btn">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              PDF
+            </button>
+            <button class="btn primary">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+              Bagikan
+            </button>
+          </div>
+        </div>
+
+        <!-- Summary band -->
+        <div class="summary-band">
+          <div class="summary-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="summary-body">
+            <div class="summary-title">3 match kritis terdeteksi</div>
+            <div class="summary-desc">Paragraf tertinggi: <b>92.3% match di Bagian 3.1 Pendahuluan</b> (sumber: arXiv "Deep Learning for Medical Image Analysis"). Disarankan: parafrase atau sitasi yang lebih eksplisit.</div>
+          </div>
+          <div class="summary-actions">
+            <button class="summary-action">Lihat Match Kritis</button>
+          </div>
+        </div>
+
+        <!-- Stat row -->
+        <div class="stat-row">
+          <div class="stat-card high">
+            <div class="stat-card-label">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              Kemiripan
+            </div>
+            <div class="stat-card-value">41.7<span class="unit">%</span></div>
+            <div class="stat-card-bar"><div style="width: 41.7%"></div></div>
+          </div>
+          <div class="stat-card med">
+            <div class="stat-card-label">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Paragraf
+            </div>
+            <div class="stat-card-value">17<span class="unit">/125</span></div>
+            <div class="stat-card-bar"><div style="width: 13.6%; background: var(--amber)"></div></div>
+          </div>
+          <div class="stat-card med">
+            <div class="stat-card-label">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="17" y1="10" x2="3" y2="10"/><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="14" x2="3" y2="14"/><line x1="17" y1="18" x2="3" y2="18"/></svg>
+              Sumber
+            </div>
+            <div class="stat-card-value">8<span class="unit">match</span></div>
+            <div class="stat-card-bar"><div style="width: 50%; background: var(--amber)"></div></div>
+          </div>
+          <div class="stat-card ai">
+            <div class="stat-card-label">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              AI Text
+            </div>
+            <div class="stat-card-value">76<span class="unit">% kemungkinan</span></div>
+            <div class="stat-card-bar"><div style="width: 76%"></div></div>
+          </div>
+        </div>
+
+        <!-- Document viewer -->
+        <div class="doc-viewer">
+          <div class="doc-header">
+            <div class="doc-tabs">
+              <div class="doc-tab active">Teks + Highlight</div>
+              <div class="doc-tab">Side-by-side</div>
+              <div class="doc-tab">Hanya Match</div>
+            </div>
+            <div class="doc-legend">
+              <span><i class="l-high"></i> Tinggi</span>
+              <span><i class="l-med"></i> Sedang</span>
+              <span><i class="l-cite"></i> Sitasi</span>
+            </div>
+          </div>
+          <div class="doc-body">
+
+            <h3>3.1 Pendahuluan</h3>
+            <p>Bab ini membahas penerapan kecerdasan buatan dalam analisis citra medis. <span class="match-high" title="92.3% match dengan arXiv paper">Recent advances in deep learning, particularly convolutional neural networks and transformer architectures, have made it possible to analyze medical images with accuracy comparable to expert radiologists</span>. Hal ini menjadi motivasi utama penelitian ini.</p>
+
+            <h3>3.2 Tinjauan Pustaka</h3>
+            <p>Beberapa penelitian sebelumnya telah membahas topik serupa <span class="citation">(Smith et al., 2020; Lee &amp; Park, 2021)</span>. Menurut <span class="match-med" title="67.4% match dengan paper Indonesia">penelitian terdahulu, implementasi AI di bidang kesehatan telah menunjukkan hasil yang menjanjikan dalam deteksi dini penyakit</span>.</p>
+
+            <p><span class="match-high" title="88.1% match dengan paper OpenAlex">Studi terbaru menunjukkan bahwa aplikasi AI di setting klinis antara 2018 hingga 2024 meliputi penemuan obat, genomik, dan bedah robotik</span>. Banyak rumah sakit di Indonesia mulai mengadopsi teknologi ini untuk meningkatkan layanan mereka, meskipun masih ada tantangan terkait privasi data dan biaya implementasi.</p>
+
+            <h3>3.3 Metodologi</h3>
+            <p>Dataset yang digunakan dalam penelitian ini <span class="match-med" title="71.2% match">berasal dari tiga rumah sakit di Jawa Tengah yang telah memberikan izin etik penelitian</span>. Total data yang dikumpulkan sebanyak 10.000 gambar rontgen dengan anotasi dari radiologis bersertifikat.</p>
+
+            <p>Proses preprocessing meliputi normalisasi, augmentasi, dan segmentasi. <span class="match-high" title="84.6% match">Arsitektur CNN yang digunakan adalah ResNet-50 dengan modifikasi pada layer fully connected untuk menyesuaikan jumlah kelas output</span>. Model dilatih menggunakan optimizer Adam dengan learning rate 0.001 dan batch size 32.</p>
+
+            <p><span class="citation">[1] https://arxiv.org/abs/2103.12345</span> <span class="citation">[2] https://doi.org/10.1109/medai.2022.987654</span></p>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Aside -->
+      <aside class="results-aside">
+
+        <!-- AI panel -->
+        <div class="ai-panel">
+          <div class="ai-head">
+            <div class="ai-title">
+              <div class="ai-title-icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-11h-6m-6 0H1"/></svg>
+              </div>
+              AI Text Detector
+            </div>
+            <div class="ai-verdict ai">AI-LIKELY</div>
+          </div>
+
+          <div class="ai-score">
+            <div class="ai-score-num">76%</div>
+            <div class="ai-score-label">kemungkinan AI-generated</div>
+          </div>
+
+          <div class="ai-bars">
+            <div class="ai-bar-row">
+              <div class="ai-bar-label">Perplexity</div>
+              <div class="ai-bar-track"><div class="ai-bar-fill" style="width: 23%"></div></div>
+              <div class="ai-bar-val">0.23</div>
+            </div>
+            <div class="ai-bar-row">
+              <div class="ai-bar-label">Burstiness</div>
+              <div class="ai-bar-track"><div class="ai-bar-fill" style="width: 18%"></div></div>
+              <div class="ai-bar-val">0.18</div>
+            </div>
+            <div class="ai-bar-row">
+              <div class="ai-bar-label">RoBERTa</div>
+              <div class="ai-bar-track"><div class="ai-bar-fill" style="width: 84%"></div></div>
+              <div class="ai-bar-val">0.84</div>
+            </div>
+            <div class="ai-bar-row">
+              <div class="ai-bar-label">Stylometry</div>
+              <div class="ai-bar-track"><div class="ai-bar-fill" style="width: 71%"></div></div>
+              <div class="ai-bar-val">0.71</div>
+            </div>
+          </div>
+
+          <div class="ai-signal">
+            <b>Sinyal kuat:</b> Kalimat pendek-pendek, vocabulary konsisten, struktur paralel antar paragraf. Pola ini khas output GPT-4 / Claude.
+          </div>
+        </div>
+
+        <!-- Match list -->
+        <div class="match-list">
+          <div class="match-list-head">
+            <div class="match-list-title">Sumber Mirip</div>
+            <div class="match-list-count">8 dari 8</div>
+          </div>
+
+          <div class="match-item active">
+            <div class="match-row1">
+              <div class="match-source">Deep Learning for Medical Image Analysis</div>
+              <div class="match-pct high">92.3%</div>
+            </div>
+            <div class="match-row2">
+              <span class="match-source-tag">arXiv</span>
+              <span>Smith et al., 2021</span>
+            </div>
+            <div class="match-excerpt">"...convolutional neural networks and transformer architectures have made it possible to analyze medical images with accuracy comparable to expert <em>radiologists</em>..."</div>
+          </div>
+
+          <div class="match-item">
+            <div class="match-row1">
+              <div class="match-source">AI in Indonesian Healthcare</div>
+              <div class="match-pct med">71.2%</div>
+            </div>
+            <div class="match-row2">
+              <span class="match-source-tag">OpenAlex</span>
+              <span>Wijaya, 2023</span>
+            </div>
+          </div>
+
+          <div class="match-item">
+            <div class="match-row1">
+              <div class="match-source">CNN Architectures for Radiology</div>
+              <div class="match-pct high">88.1%</div>
+            </div>
+            <div class="match-row2">
+              <span class="match-source-tag">arXiv</span>
+              <span>Lee &amp; Park, 2022</span>
+            </div>
+            <div class="match-excerpt">"...aplikasi AI di setting klinis antara 2018 hingga 2024 meliputi penemuan obat, <em>genomik</em>, dan bedah robotik..."</div>
+          </div>
+
+          <div class="match-item">
+            <div class="match-row1">
+              <div class="match-source">Medical AI Ethics Review</div>
+              <div class="match-pct med">67.4%</div>
+            </div>
+            <div class="match-row2">
+              <span class="match-source-tag">Crossref</span>
+              <span>Garcia, 2020</span>
+            </div>
+          </div>
+
+          <div class="match-item">
+            <div class="match-row1">
+              <div class="match-source">ResNet Implementation Guide</div>
+              <div class="match-pct high">84.6%</div>
+            </div>
+            <div class="match-row2">
+              <span class="match-source-tag">arXiv</span>
+              <span>He et al., 2019</span>
+            </div>
+          </div>
+
+          <div class="match-item" style="text-align: center; color: var(--text-3); font-size: 11px;">
+            <div class="match-row1" style="justify-content: center;">
+              <span>+ 3 sumber lainnya</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Processing time -->
+        <div class="proc-card">
+          <div class="proc-title">Performa</div>
+          <div class="proc-row"><span class="proc-name">Total waktu</span><span class="proc-time">19.2s</span></div>
+          <div class="proc-row"><span class="proc-name">Pre-warm cache</span><span class="proc-time">hit</span></div>
+          <div class="proc-row"><span class="proc-name">Model semantic</span><span class="proc-time">2.8s</span></div>
+          <div class="proc-row"><span class="proc-name">Cross-encoder</span><span class="proc-time">11.4s</span></div>
+          <div class="proc-row"><span class="proc-name">AI detector</span><span class="proc-time">3.2s</span></div>
+          <div class="proc-row"><span class="proc-name">Report render</span><span class="proc-time">0.8s</span></div>
+        </div>
+
+      </aside>
+    </div>
+  </main>
+</div>
+
+<script>
+  // Minimal interactivity
+  document.querySelectorAll('.doc-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.doc-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+    });
+  });
+  document.querySelectorAll('.match-item').forEach(item => {
+    item.addEventListener('click', () => {
+      document.querySelectorAll('.match-item').forEach(i => i.classList.remove('active'));
+      item.classList.add('active');
+    });
+  });
+  document.querySelectorAll('.match-high, .match-med').forEach(span => {
+    span.addEventListener('click', e => {
+      e.stopPropagation();
+      const items = document.querySelectorAll('.match-item');
+      items.forEach((it, idx) => {
+        it.classList.toggle('active', idx === 0 && span.classList.contains('match-high'));
+      });
+    });
+  });
+</script>
+</body>
+</html>

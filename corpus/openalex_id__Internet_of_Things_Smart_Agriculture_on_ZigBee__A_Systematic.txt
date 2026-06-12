@@ -1,0 +1,6 @@
+Internet of Things Smart Agriculture on ZigBee: A Systematic Review
+
+Authors: Taufik Hidayat
+Year: 2017
+
+Teknologi WSN kini semakin meningkat diakhir-akhirnya dan banyak diterapkan diberbagai bidang. Salah satu dari penerapan WSN seperti pada Agiculture yang berbasis Internet of things. WSN ini contoh seperti ZigBee, penerapan ZigBee pada Agiculture sangat membantu pada berbagai bidang Agiculture dimulai dari system control irigasi, pemantauan iklim pada Agiculture serta pengendalian system control rantai makan pada system Agiculture. Internet of things ini mendukung system Agiculture untuk memberikan komunikasi pada sensor-sensor yang ada di Aguculture ini. Sistem Agiculture ini diharapkan bisa meningkatkan produktivitas maupun prediksi masalah yang ada di system pertanian. Systematic riview ini memberikan gambaran bahwa teknologi Internet of things di Agiculture sangat berpontensi baik karena dapat meningkat para petani dalam operasional produksi pangan maupun ternak.

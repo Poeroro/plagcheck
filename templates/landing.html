@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlagCheck — Deteksi Plagiarisme AI · Powered by Open Source</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+
+<div class="container">
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="brand">
+      <div class="brand-mark"></div>
+      <div class="brand-text">PlagCheck<span>v{{ version }} · Open Source</span></div>
+    </div>
+    <div class="nav-links">
+      <a class="nav-link" href="#fitur">Fitur</a>
+      <a class="nav-link" href="/riwayat">Riwayat</a>
+      <a class="nav-link" href="https://github.com/" target="_blank">GitHub ↗</a>
+      <a class="nav-cta" href="#upload">
+        Cek Sekarang
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="eyebrow">Deteksi plagiarisme & AI text · 100% gratis</div>
+    <h1 class="h1">
+      Cek skripsi & paper <br>
+      <span class="strike">Turnitin</span>
+      <span class="grad">tanpa bayar</span>
+    </h1>
+    <p class="sub">
+      PlagCheck pakai <b>{{ corpus_size }} paper Indonesia & Inggris</b> + AI paraphrase detection
+      untuk kasih kamu laporan plagiarism yang <b>setara Turnitin</b> — gratis, open source, privasi terjaga.
+    </p>
+    <div class="cta-row">
+      <a class="btn-primary" href="#upload">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        Upload Dokumen
+      </a>
+      <a class="btn-secondary" href="#fitur">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        Pelajari
+      </a>
+    </div>
+    <div class="trust">
+      <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> F1 100% di benchmark</span>
+      <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Dokumen tidak diupload</span>
+      <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> ~19 detik per cek</span>
+    </div>
+  </section>
+
+  <!-- Upload zone -->
+  <section class="upload-section" id="upload">
+    <form id="check-form" action="/api/check" method="post" enctype="multipart/form-data">
+      <div class="dropzone" id="dropzone">
+        <div class="drop-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        </div>
+        <div class="drop-title" id="drop-title">Drag & drop dokumen di sini</div>
+        <div class="drop-sub" id="drop-sub">atau klik tombol di bawah untuk pilih file · maks 10MB</div>
+        <input type="file" name="file" id="file-input" accept=".pdf,.docx,.txt" hidden required>
+        <button type="button" class="btn-primary" onclick="document.getElementById('file-input').click()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Pilih File
+        </button>
+        <div class="drop-formats">
+          <span>.PDF</span>
+          <span>.DOCX</span>
+          <span>.TXT</span>
+          <span>10MB max</span>
+        </div>
+        <div id="file-info" class="file-info" style="display:none"></div>
+      </div>
+
+      <!-- Config panel -->
+      <div class="config">
+        <div class="config-head">
+          <div class="config-title">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            Mode Pengecekan
+          </div>
+          <div class="config-mode">
+            <button type="button" class="config-mode-btn" data-mode="cepat">Cepat</button>
+            <button type="button" class="config-mode-btn active" data-mode="standar">Standar</button>
+            <button type="button" class="config-mode-btn" data-mode="akurat">Akurat</button>
+          </div>
+        </div>
+
+        <div class="config-body">
+          <div class="config-row">
+            <input type="checkbox" class="toggle" name="semantic" id="opt-semantic" checked>
+            <div class="config-info">
+              <div class="config-name">
+                Semantic Search
+                <span class="config-badge green">AKTIF</span>
+              </div>
+              <div class="config-desc">Deteksi paraphrase & terjemahan silang bahasa (ID ↔ EN)</div>
+            </div>
+            <div class="config-time">+8.4s</div>
+          </div>
+
+          <div class="config-row">
+            <input type="checkbox" class="toggle" name="cross_encoder" id="opt-ce" checked>
+            <div class="config-info">
+              <div class="config-name">
+                Cross-Encoder
+                <span class="config-badge">RE-RANK</span>
+              </div>
+              <div class="config-desc">Verifikasi ulang kandidat dengan model cross-encoder</div>
+            </div>
+            <div class="config-time">+11.4s</div>
+          </div>
+
+          <div class="config-row" id="row-ensemble">
+            <input type="checkbox" class="toggle" name="ensemble" id="opt-ensemble">
+            <div class="config-info">
+              <div class="config-name">
+                Ensemble (2 model)
+                <span class="config-badge green">+AKURASI</span>
+              </div>
+              <div class="config-desc">Voting 2 bi-encoder untuk recall lebih tinggi (butuh ~2x RAM)</div>
+            </div>
+            <div class="config-time">+12.0s</div>
+          </div>
+
+          <div class="config-row">
+            <input type="checkbox" class="toggle" name="detect_ai" id="opt-ai" checked>
+            <div class="config-info">
+              <div class="config-name">
+                AI Text Detector
+                <span class="config-badge ai">GPT-ZERO-LIKE</span>
+              </div>
+              <div class="config-desc">RoBERTa + perplexity + stylometry. Deteksi teks AI (ChatGPT, Claude, Gemini)</div>
+            </div>
+            <div class="config-time">+3.2s</div>
+          </div>
+
+          <div class="config-row">
+            <input type="checkbox" class="toggle" name="strip_citations" id="opt-cite" checked>
+            <div class="config-info">
+              <div class="config-name">
+                Strip Citations
+                <span class="config-badge amber">ANTI-FP</span>
+              </div>
+              <div class="config-desc">Abaikan sitasi, kutipan, dan daftar pustaka</div>
+            </div>
+            <div class="config-time">+0.1s</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <div class="submit-row">
+        <button type="submit" class="btn-primary btn-submit" id="submit-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          Mulai Pengecekan
+        </button>
+        <div class="submit-hint" id="submit-hint">Estimasi: ~19 detik</div>
+      </div>
+
+      <!-- Loading state -->
+      <div class="loading-overlay" id="loading" style="display:none">
+        <div class="loading-card">
+          <div class="spinner"></div>
+          <div class="loading-title" id="loading-title">Menganalisis dokumen...</div>
+          <div class="loading-steps" id="loading-steps">
+            <div class="loading-step" data-step="parse">📄 Parse dokumen</div>
+            <div class="loading-step" data-step="semantic">🔍 Semantic search</div>
+            <div class="loading-step" data-step="ce">⚖️ Cross-encoder</div>
+            <div class="loading-step" data-step="ai">🤖 AI detection</div>
+            <div class="loading-step" data-step="report">📊 Generate report</div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-val">{{ corpus_size }}</div>
+        <div class="stat-label">Dokumen Corpus</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val">100%</div>
+        <div class="stat-label">F1 Score</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val">~19s</div>
+        <div class="stat-label">Rata-rata / Cek</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val">$0</div>
+        <div class="stat-label">Biaya Selamanya</div>
+      </div>
+    </div>
+
+    <!-- Recent checks -->
+    {% if recent and recent|length > 0 %}
+    <div class="recent">
+      <div class="recent-head">
+        <div class="recent-title">Riwayat Pengecekan <span>· {{ recent|length }} dokumen</span></div>
+        <a class="recent-link" href="/riwayat">Lihat semua →</a>
+      </div>
+      <div class="recent-list">
+        {% for r in recent[:5] %}
+        <a class="recent-item" href="/r/{{ r.id }}">
+          <div class="file-icon {{ r.filetype }}">{{ r.filetype|upper }}</div>
+          <div>
+            <div class="recent-name">{{ r.filename }}</div>
+            <div class="recent-meta">{{ r.paragraphs }} paragraf · {{ r.elapsed }}s · {{ r.finished_at_human }}</div>
+          </div>
+          {% if r.ai_label %}
+          <div class="recent-ai {{ r.ai_class }}">AI {{ r.ai_label }}</div>
+          {% else %}
+          <div></div>
+          {% endif %}
+          <div class="recent-score {{ r.score_class }}">{{ r.score }}%</div>
+          <div class="recent-time">{{ r.ago }}</div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="fitur">
+    <div class="features-head">
+      <h2 class="features-title">Kenapa PlagCheck?</h2>
+      <p class="features-sub">Setara Turnitin · Open source · Privasi terjaga · Gratis selamanya</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <div class="feature-title">{{ corpus_size }} Corpus</div>
+        <div class="feature-desc">Paper dari arXiv, OpenAlex, dan Crossref. Bahasa Indonesia & Inggris. Termasuk halaman web ID dari Common Crawl.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon violet">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-11h-6m-6 0H1"/></svg>
+        </div>
+        <div class="feature-title">Ensemble + AI Detector</div>
+        <div class="feature-desc">2 bi-encoder voting (paraphrase + mpnet) + RoBERTa AI detector. F1 100% di benchmark sintetik.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon amber">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="feature-title">Multi-Bahasa</div>
+        <div class="feature-desc">Sastrawi stemmer untuk Indonesia. Cross-language detection (paraphrase ID dari sumber EN).</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <div class="feature-title">100% Privat</div>
+        <div class="feature-desc">Dokumen diproses lokal di VPS kamu. Tidak ada upload ke cloud. Cocok untuk paper rahasia / skripsi.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon red">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div class="feature-title">Export HTML/PDF</div>
+        <div class="feature-desc">Laporan lengkap dengan highlight match, sitasi, dan verdict AI. Bagikan ke dosen dengan link.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon cyan">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l6-6-4-4M12 19h8"/></svg>
+        </div>
+        <div class="feature-title">$0 Selamanya</div>
+        <div class="feature-desc">Self-hosted. VPS Contabo $5/bulan sudah cukup. Bandingkan Turnitin $60-200/tahun. Open source MIT.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>PlagCheck v{{ version }} · <span>Powered by open source</span> · FastAPI + sentence-transformers + Sastrawi + RoBERTa</p>
+  </footer>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

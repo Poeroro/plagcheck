@@ -1,0 +1,6 @@
+RANCANG BANGUN APLIKASI KRIPTOGRAFI PADA TEKS MENGGUNAKAN METODE REVERSE CHIPER DAN RSA BERBASIS ANDROID
+
+Authors: Yusfrizal Yusfrizal
+Year: 2019
+
+Quick progress also occurs in the field of cellular communication networks with the concept of open systems, making it easier for someone to enter into the network. This can cause the process of sending data to be unsafe because it can be used by other parties who are not responsible for taking data and information in the middle of the road. To achieve the goal of maintaining confidentiality, various kinds of security techniques have been developed. To protect and maintain the confidentiality of data to avoid people who are not entitled to obtain this information, namely using cryptographic methods. In terms of data security techniques, many cryptographic methods can be used. Cryptographic methods have their own techniques and methods. One of the cryptographic methods that can be used is the Reverse Cipher method. But if you only use the Reverse Cipher method, text data security is very weak. So to achieve a higher level of security this method is combined with the RSA method which uses a public key and has high security because the difficulty of factoring large numbers becomes prime factors in the RSA algorithm.

@@ -1,0 +1,6 @@
+PEMANFAATAN TEKNOLOGI BLOCKCHAIN PADA PLATFORM CROWDFUNDING
+
+Authors: Eka Purnama Harahap, Qurotul Aini, Reza Khaerul Anam
+Year: 2019
+
+Crowdfunding sebagai program sosial di era teknologi ini merupakan terobosan baru untuk penggalangan dana kepada orang-orang yang membutuhkan atau untuk permodalan suatu project tertentu dengan cepat melalui media internet. Penelitian ini bertujuan untuk mengetahui manfaat dari kemajuan teknologi blockchain dengan konsep smart contract sebagai media transaksi dalam platform crowdfunding, serta bagaimana teknologi ini dapat menyelesaikan masalah kepercayaan masyarakat karena platform ini melibatkan transaksi menggunakan uang. Dengan diterapkannya teknologi blockchain pada platform crowdfunding diharapkan dapat memastikan keamanan data serta transparansi dalam setiap transaksinya, sehingga tidak ada pemalsuan suatu project untuk mendapatkan keuntungan pribadi.

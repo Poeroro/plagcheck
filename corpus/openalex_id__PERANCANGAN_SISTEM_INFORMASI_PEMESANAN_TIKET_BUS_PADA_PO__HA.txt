@@ -1,0 +1,6 @@
+PERANCANGAN SISTEM INFORMASI PEMESANAN TIKET BUS PADA PO. HANDOYO BERBASIS ONLINE
+
+Authors: Setiawan Sianturi Julianto Simatupang
+Year: 2019
+
+Di tengah perkembangan ilmu pengetahuan dan teknologi yang sangat pesat ini, pemesanan tiket bus masih banyak dilakukan secara manual, cara ini kurang efektif dan efisien. Pada umumnya, prosedur atau metode yang digunakan saat ingin membeli tiket bus adalah datang langsung ke loket yang ada di terminal ataupun pada agen. Permasalahan yang sering terjadi adalah penumpang sering kehabisan tiket pada saat datang ke loket karena kurangnya informasi tentang jadwal keberangkatan. Oleh karena itu, penelitian ini mengangkat permasalahan mengenai sistem pemesanan tiket bus yang sampai saat ini masih dilakukan secara manual. Tujuannya untuk membangun sistem informasi pemesanan tiket berbasis online, dengan menerapkan siklus hidup pengembangan sistem yaitu metode waterfall. Dengan adanya sistem informasi pemesanan tiket bus ini diharapkan dapat menyelesaikan masalah-masalah yang terjadi dan dapat meningkatkan efisiensi dan efektifitas agar pelayanannya menjadi lebih baik dibanding dengan sistem yang terdahulu.

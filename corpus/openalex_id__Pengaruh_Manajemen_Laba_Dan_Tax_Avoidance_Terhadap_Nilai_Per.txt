@@ -1,0 +1,6 @@
+Pengaruh Manajemen Laba Dan Tax Avoidance Terhadap Nilai Perusahaan Dengan Kualitas Audit Sebagai Variabel Moderasi
+
+Authors: Nanik Lestari, Selvy Agita Ningrum
+Year: 2018
+
+Penelitian ini dilakukan untuk meneliti pengaruh manajemen laba dan tax avoidance terhadap nilai perusahaan dengan kualitas audit sebagai variable moderasi. Pengukuran manajemen laba dilakukan dengan menggunakan discretionary accrual dengan menggunakan model Jones dimodifikasi, tax avoidance dengan menggunakan effective tax rate (ETR) dan kualitas audit diukur menggunakan variabel dummy yaitu penggolongan auditor KAP Big Four dan auditor KAP Non-Big Four. Sampel yang digunakan dalam penelitian ini adalah 365 perusahaan yang sudah terdaftar di Bursa Efek Indonesia pada tahun 2012-2015 dan khusus untuk variabel tax avoidance periode yang digunakan tahun 2006-2015. Berdasarkan hasil hipotesis dalam penelitian ini, menunjukan bahwa (1) manajemen laba tidak berpengaruh signifikan terhadap nilai perusahaan, (2) tax avoidance berpengaruh signifikan negatif terhadap nilai perusahaan, (3) variabel moderasi kualitas audit tidak mempengaruhi hubungan manajemen laba terhadap nilai perusahaan, (4) variabel moderasi kualitas audit tidak mempengaruhi hubungan tax avoidance terhadap nilai perusahaan.

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riwayat — PlagCheck</title>
+<link rel="stylesheet" href="/static/app.css">
+<style>
+  .riwayat-page { max-width: 1000px; margin: 0 auto; padding: 32px; }
+  .riwayat-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+  .riwayat-title { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
+  .riwayat-title span { color: var(--text-3); font-weight: 400; font-size: 14px; margin-left: 8px; }
+  .riwayat-list { background: var(--bg-elev-1); border: 1px solid var(--border-soft); border-radius: 12px; overflow: hidden; }
+  .riwayat-list .recent-item { grid-template-columns: 36px 1fr 100px 110px 90px 60px; }
+  .riwayat-empty { padding: 80px 20px; text-align: center; color: var(--text-3); }
+  .riwayat-empty-icon { width: 64px; height: 64px; margin: 0 auto 16px; background: var(--bg-elev-2); color: var(--text-3); border-radius: 16px; display: grid; place-items: center; }
+  .riwayat-empty-title { font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+  .riwayat-action { display: flex; gap: 4px; justify-content: flex-end; }
+  .riwayat-action a { color: var(--text-3); padding: 4px; border-radius: 4px; }
+  .riwayat-action a:hover { background: var(--bg-elev-3); color: var(--text); }
+</style>
+</head>
+<body>
+
+<div class="riwayat-page">
+  <div class="riwayat-head">
+    <div class="riwayat-title">Riwayat Pengecekan <span>{{ recent|length }} dokumen</span></div>
+    <a href="/" class="btn-primary" style="text-decoration:none">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+      Cek Baru
+    </a>
+  </div>
+
+  {% if recent|length == 0 %}
+  <div class="riwayat-list">
+    <div class="riwayat-empty">
+      <div class="riwayat-empty-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      </div>
+      <div class="riwayat-empty-title">Belum ada pengecekan</div>
+      <div>Mulai dengan upload dokumen pertama kamu</div>
+    </div>
+  </div>
+  {% else %}
+  <div class="riwayat-list">
+    {% for r in recent %}
+    <a class="recent-item" href="/r/{{ r.id }}" style="text-decoration:none; color: inherit;">
+      <div class="file-icon {{ r.filetype }}">{{ r.filetype|upper }}</div>
+      <div>
+        <div class="recent-name">{{ r.filename }}</div>
+        <div class="recent-meta">{{ r.paragraphs }} paragraf · {{ r.elapsed }}s · {{ r.finished_at_human }}</div>
+      </div>
+      {% if r.ai_label %}
+      <div class="recent-ai {{ r.ai_class }}">AI {{ r.ai_label }}</div>
+      {% else %}
+      <div></div>
+      {% endif %}
+      <div class="recent-score {{ r.score_class }}">{{ r.score }}%</div>
+      <div class="recent-time">{{ r.ago }}</div>
+      <div class="riwayat-action">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+
+</body>
+</html>

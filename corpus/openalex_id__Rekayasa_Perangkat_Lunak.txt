@@ -1,0 +1,6 @@
+Rekayasa Perangkat Lunak
+
+Authors: Feri Hari Utami, Asnawati
+Year: 2015
+
+Buku kategori ilmu komputer yang berjudul Rekayasa Perangkat Lunak merupakan buku karya dari Feri Hari Utami Dan Asnawati. Buku ini adalah satu bidang profesi yang mendalami cara-cara pengembangan perangkat lunak termasuk pembuatan, pemeliharaan, manajemen organisasi pengembanganan perangkat lunak dan manajemen kualitas sehingga sebagai penerapan suatu pendekatan yang sistematis, disiplin dan terkuantifikasi atas pengembangan, penggunaan dan pemeliharaan perangkat lunak, serta studi atas pendekatan-pendekatan ini, yaitu penerapan pendekatan engineering atas perangkat lunak.

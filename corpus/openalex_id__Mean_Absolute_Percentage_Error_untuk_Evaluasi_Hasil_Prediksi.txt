@@ -1,0 +1,6 @@
+Mean Absolute Percentage Error untuk Evaluasi Hasil Prediksi Komoditas Laut
+
+Authors: Ida Nabillah, Indra Ranggadara
+Year: 2020
+
+Volume ekspor komoditas gurita mengalami kenaikan dan stok di suatu daerah akan tidak merata dan berlebih, serta bahwa permintaan gurita di beberapa negara tujuan di Asia, Eropa dan Amerika telah meningkat secara signifikan. Penelitian ini bertujuan untuk untuk memperkirakan pasokan gurita berdasarkan data historis dari tahun 2014 sampai 2018. Setelah dilakukan prediksi selanjutnya maka diperlukan untuk mengevaluasi model prediksi yang digunakan. Metode penelitian yang digunakan untuk memprediksi hasil komoditas yaitu dengan regresi linier, yang bertujuan untuk mengetahui pengaruh antara satu atau beberapa variabel terhadap satu buah variable. Selanjutnya evaluasi model yang digunakan menggunakan Mean Absolute Percentage Error (MAPE). MAPE memberikan petunjuk seberapa besar kesalahan peramalan dibandingkan dengan nilai sebenarnya dari series tersebut. Selanjutnya hasil produksi dapat diprediksi 70% dan hasil MAPE sebesar 30% maka dapat dikatakan bahwa hasil regresi linier memiliki kemampuan model peramalan yang layak.

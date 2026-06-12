@@ -1,0 +1,62 @@
+=== https://101internet.id/collections/kartu-perdana-tri ===
+
+Kartu Perdana Tri
+Kartu perdana Tri, pilihan terbaik untuk koneksi yang cepat dan terjangkau! Nikmati internet super cepat, panggilan jernih, dan SMS tanpa batas dengan harga yang ramah di kantong. Bergabunglah dengan Kartu Perdana Tri dan nikmati kemudahan komunikasi hanya di 101 INTERNET.
+Apakah Anda mencari informasi tentang kartu perdana Tri terbaik? 101 INTERNET adalah sumber terpercaya untuk semua kebutuhan Anda terkait produk Tri. Kami menyajikan panduan lengkap, ulasan, dan penawaran terbaru terkait PerdanaTri. Dengan beragam pilihan kartu perdana Tri yang tersedia, kami membantu Anda menemukan yang paling sesuai dengan kebutuhan komunikasi Anda.
+Kartu perdana Tri adalah solusi komunikasi yang terjangkau dan andal. Dengan jaringan Tri yang luas, Anda dapat tetap terhubung dengan teman, keluarga, dan bisnis Anda. Pilih kartu perdana Tri terbaik untuk mendapatkan manfaat maksimal dari layanan ini.
+Kami juga memahami bahwa memilih kartu perdana bisa membingungkan, itulah mengapa kami hadir untuk membantu Anda membuat keputusan yang tepat. Jadi, jika Anda ingin mengetahui lebih lanjut tentang kartu perdana Tri atau mencari kartu perdana Tri yang cocok untuk Anda, jangan ragu untuk mengandalkan 101 INTERNET sebagai panduan Anda.
+Berikut adalah FAQ seputar Tri.
+Bagaimana cara pinjam pulsa Tri?
+Cara hutang pulsa Tri dapat dilakukan sebagai berikut:
+Menggunakan Aplikasi Bima+
+- Unduh aplikasi Bima+ dari Play Store (Android) atau App Store (iOS).
+- Buka aplikasi dan login dengan nomor HP.
+- Di dalam aplikasi, cari opsi "Bima Loan" dan klik.
+- Pilih jumlah pulsa yang ingin kamu pinjam.
+- Ikuti petunjuk selanjutnya untuk mengajukan permohonan.
+- Setelah disetujui, tunggu beberapa saat hingga pulsa masuk ke nomor Tri kamu.
+Melalui USSD (805#)
+- Buka aplikasi "Panggilan/Call" di HP kamu.
+- Ketik nomor *805# pada keypad dan tekan "OK/Call".
+- Akan muncul menu pop-up di layar HP.
+- Pilih jumlah pulsa yang ingin kamu pinjam.
+- Tunggu notifikasi SMS yang akan memberitahu bahwa pulsa telah masuk ke nomor Tri kamu.
+Bagaimana cara unreg kartu Tri?
+Ada beberapa cara unregistrasi (unreg) kartu Tri, kamu bisa memilih yang paling mudah menurutmu.
+1. Melalui Situs Web Resmi:
+- Kunjungi situs https://registrasi.tri.co.id/unreg menggunakan perangkat seperti ponsel atau laptop.
+- Masukkan nomor HP yang ingin di-unreg dan Nomor Induk Kependudukan (NIK) yang digunakan saat pendaftaran.
+- Klik 'Minta Kode Rahasia' untuk menerima kode melalui SMS yang berlaku selama 5 menit.
+- Masukkan kode tersebut, centang kotak 'I'm not a robot', dan klik 'Kirim'.
+2. Menggunakan SMS:
+- Buka fitur SMS di HP-mu dan ketik pesan dengan format "UNREG#NIK#". Contoh: UNREG#987654321640642#.
+- Kirim pesan tersebut ke nomor 4444.
+- Jika SMS berhasil, kamu akan menerima balasan konfirmasi yang menyatakan bahwa nomor HP kamu telah berhasil di-unreg dengan NIK yang sesuai.
+3. Melalui Call Center Tri:
+- Hubungi call center Tri dengan melakukan panggilan telepon ke nomor 132 dari nomor Tri-mu.
+- Perlu diingat bahwa cara ini akan dikenakan biaya sebesar Rp 300 per panggilan.
+Bagaimana cara menukar poin Tri?
+Terkait cara menukarkan poin Tri, bisa dilakukan dalam dua metode ini:
+Melalui Aplikasi Bima+:
+- Pertama, pastikan kamu telah mengunduh dan menginstal aplikasi Bima+ dari toko aplikasi resmi, baik itu Play Store (untuk Android) atau App Store (untuk iOS).
+- Setelah berhasil login ke dalam aplikasi, navigasikan diri ke menu "BonsTri."
+- Di sini, kamu bisa mencari voucher yang ingin kamu tukarkan dengan poin Tri. Gunakan filter atau fitur pencarian untuk mempermudah pencarian.
+- Setelah menemukan voucher yang diinginkan, cukup ketuk jumlah poin yang diperlukan pada voucher tersebut.
+- Selanjutnya, konfirmasikan tukaran dengan mengetuk tombol "Tukar" dan "OK."
+Website Tri:
+- Pertama, buka peramban web di perangkat kamu dan kunjungi halaman resmi penukaran Tri di https://bonstri.tri.co.id/login.
+- Di halaman ini, masukkan nomor telepon kamu dan ikuti instruksi yang diberikan untuk menerima kode OTP (One-Time Password).
+- Setelah berhasil masuk ke akun pengguna, cari menu "Tukar Point" dan temukan voucher yang ingin kamu tukarkan.
+- Gunakan fitur filter atau penelusuran untuk memudahkan pencarian.
+- Ketika kamu menemukan voucher yang diinginkan, cukup ketuk jumlah poin yang dibutuhkan pada voucher tersebut.
+- Terakhir, konfirmasikan tukaran dengan mengetuk tombol "Tukar" dan "OK."
+- Kunjungi menu “Voucher-ku” untuk melihat berbagai voucher dan bisa ditukar dengan program BonsTri yang tersedia saat ini.
+Bagaimana cara stop paket Tri?
+Berikut cara berhenti paket via SMS dan Aplikasi BIMA+:
+a. Melalui SMS:
+- Buka aplikasi Pesan di ponselmu.
+- Buat pesan baru dan ketikkan "STOP" (spasi) diikuti dengan jenis paket yang ingin kamu hentikan.
+- Kirim SMS tersebut ke nomor 234.
+- Tunggu beberapa saat untuk pemrosesan.
+- Kamu akan menerima notifikasi ketika paket berhasil dihentikan.
+- Contoh: Jika kamu ingin menghentikan paket AlwaysOn Unlimited 26GB, ketik "STOP UNLIM6

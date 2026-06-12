@@ -1,0 +1,6 @@
+Pengembangan Game Edukasi Pengenalan Nama Hewan dan Habitatnya Dalam 3 Bahasa Sebagai Media Pembelajaran Berbasis Multimedia
+
+Authors: Ridwan Arif Rahman, Dewi Tresnawati, Sekolah Tinggi Teknologi Garut
+Year: 2016
+
+Game edukasi merupakan permainan yang dikemas untuk merangsang daya pikir dan termasuk salah satu cara untuk melatih meningkatkan konsentrasi penggunanya (anak-anak). Pemanfaatan teknologi Game edukasi pada proses belajar mengajar anak merupakan salah satu cara yang tepat, karena Game edukasi sebagai media visual memiliki kelebihan dibandingkan dengan media visual yang lain. Selain itu Game edukasi mengajak pemainnya untuk turut serta dan andil dalam menentukan hasil akhir dari Game tersebut. Metode pengembangan Game edukasi yang di gunakan dalam laporan ini menggunakan tahapan-tahapan Luther (1994). Pengembangan ini memiliki 6 tahapan, yaitu concept, design, material collecting, assembly, testing, dan distribution, Sutopo (2003) mengadopsi metodologi luther dengan memodifikasi (Binanto,2010. Game edukasi ini memiliki 3 menu yaitu: materi hewan, permainan, dan tentang, dimana di dalam setiap menu memiliki beberapa submenu. Game edukasi disertai desain, animasi dan variasi warna yang atraktif membuat menarik untuk digunakan bagi anak-anak di usia dini.

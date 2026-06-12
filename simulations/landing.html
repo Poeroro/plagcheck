@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlagCheck — Upload Dokumen</title>
+<style>
+  :root {
+    --bg:           #0A0A0B;
+    --bg-elev-1:    #111114;
+    --bg-elev-2:    #18181C;
+    --bg-elev-3:    #1F1F24;
+    --border:       #27272A;
+    --border-soft:  #1C1C20;
+    --border-hover: #3A3A40;
+    --text:         #FAFAFA;
+    --text-2:       #A1A1AA;
+    --text-3:       #71717A;
+    --text-4:       #52525B;
+    --green:        #10B981;
+    --green-soft:   rgba(16, 185, 129, 0.12);
+    --green-border: rgba(16, 185, 129, 0.25);
+    --violet:       #8B5CF6;
+    --violet-soft:  rgba(139, 92, 246, 0.12);
+    --amber:        #F59E0B;
+    --amber-soft:   rgba(245, 158, 11, 0.12);
+    --red:          #EF4444;
+    --red-soft:     rgba(239, 68, 68, 0.12);
+    --blue:         #3B82F6;
+    --blue-soft:    rgba(59, 130, 246, 0.12);
+    --cyan:         #06B6D4;
+    --font-sans:    -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+    --font-mono:    "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-sans);
+    background:
+      radial-gradient(ellipse at 30% 0%, rgba(16, 185, 129, 0.06), transparent 50%),
+      radial-gradient(ellipse at 70% 100%, rgba(139, 92, 246, 0.05), transparent 50%),
+      var(--bg);
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--text); text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; border: none; }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+
+  /* Nav */
+  .nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand-mark {
+    width: 30px; height: 30px;
+    background: linear-gradient(135deg, var(--green), var(--cyan));
+    border-radius: 8px;
+    display: grid; place-items: center;
+    box-shadow: 0 0 24px rgba(16, 185, 129, 0.3);
+  }
+  .brand-mark::after { content: "✓"; color: #000; font-weight: 800; font-size: 17px; }
+  .brand-text { font-weight: 600; font-size: 15px; letter-spacing: -0.01em; }
+  .brand-text span { color: var(--text-3); font-weight: 400; font-size: 11px; display: block; }
+
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-link { color: var(--text-3); font-size: 13px; transition: color 0.15s; }
+  .nav-link:hover { color: var(--text); }
+  .nav-cta {
+    background: var(--text);
+    color: var(--bg);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 13px; font-weight: 500;
+    display: flex; align-items: center; gap: 6px;
+  }
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 80px 0 48px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--green-soft);
+    color: var(--green);
+    padding: 5px 12px; border-radius: 20px;
+    font-size: 11px; font-weight: 600;
+    margin-bottom: 24px;
+    border: 1px solid var(--green-border);
+  }
+  .eyebrow::before {
+    content: ""; width: 5px; height: 5px;
+    background: var(--green); border-radius: 50%;
+    box-shadow: 0 0 8px var(--green);
+  }
+
+  .h1 {
+    font-size: 56px; font-weight: 700;
+    letter-spacing: -0.03em; line-height: 1.05;
+    margin-bottom: 20px;
+  }
+  .h1 .grad {
+    background: linear-gradient(135deg, var(--green) 0%, var(--cyan) 50%, var(--blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .h1 .strike {
+    color: var(--red); text-decoration: line-through;
+    text-decoration-color: var(--red); text-decoration-thickness: 3px;
+    margin-right: 8px;
+  }
+
+  .sub {
+    color: var(--text-2);
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 36px;
+  }
+  .sub b { color: var(--text); font-weight: 500; }
+
+  /* CTA */
+  .cta-row { display: flex; gap: 12px; justify-content: center; }
+  .btn-primary {
+    background: var(--green);
+    color: #000;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 14px; font-weight: 600;
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: all 0.15s;
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+  }
+  .btn-primary:hover {
+    background: #34D399;
+    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.25);
+    transform: translateY(-1px);
+  }
+  .btn-secondary {
+    background: var(--bg-elev-2);
+    color: var(--text);
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 14px; font-weight: 500;
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid var(--border);
+    transition: all 0.15s;
+  }
+  .btn-secondary:hover { background: var(--bg-elev-3); border-color: var(--border-hover); }
+
+  /* Trust */
+  .trust {
+    margin-top: 36px;
+    display: flex; gap: 24px; justify-content: center;
+    color: var(--text-3);
+    font-size: 12px;
+  }
+  .trust span { display: flex; align-items: center; gap: 6px; }
+  .trust svg { color: var(--green); }
+
+  /* Upload zone */
+  .upload-section { padding: 0 0 60px; }
+  .dropzone {
+    max-width: 760px; margin: 0 auto;
+    background: var(--bg-elev-1);
+    border: 2px dashed var(--border);
+    border-radius: 14px;
+    padding: 56px 32px;
+    text-align: center;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .dropzone::before {
+    content: "";
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at 50% 0%, var(--green-soft), transparent 60%);
+    pointer-events: none;
+  }
+  .dropzone:hover { border-color: var(--green); background: var(--bg-elev-2); }
+  .drop-icon {
+    width: 64px; height: 64px;
+    background: var(--green-soft);
+    border-radius: 16px;
+    display: grid; place-items: center;
+    margin: 0 auto 24px;
+    color: var(--green);
+  }
+  .drop-title { font-size: 20px; font-weight: 600; margin-bottom: 6px; }
+  .drop-sub { color: var(--text-3); font-size: 13px; margin-bottom: 24px; }
+  .drop-or {
+    color: var(--text-4); font-size: 11px; margin: 16px 0 8px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+  }
+  .drop-formats {
+    margin-top: 20px;
+    display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;
+  }
+  .drop-formats span {
+    padding: 3px 10px; background: var(--bg-elev-2);
+    border-radius: 4px;
+    font-size: 11px; color: var(--text-2);
+    font-family: var(--font-mono);
+  }
+
+  /* Config panel */
+  .config {
+    max-width: 760px;
+    margin: 28px auto 0;
+    background: var(--bg-elev-1);
+    border: 1px solid var(--border-soft);
+    border-radius: 12px;
+    padding: 6px;
+  }
+  .config-head {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .config-title { font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+  .config-title svg { color: var(--text-3); }
+  .config-mode {
+    display: flex; gap: 4px;
+    background: var(--bg-elev-3);
+    padding: 2px; border-radius: 6px;
+  }
+  .config-mode-btn {
+    padding: 5px 10px; border-radius: 4px;
+    font-size: 11px; color: var(--text-3);
+    background: transparent;
+    transition: all 0.15s;
+  }
+  .config-mode-btn.active { background: var(--bg); color: var(--text); }
+  .config-mode-btn:hover:not(.active) { color: var(--text); }
+
+  .config-body { padding: 8px 8px; }
+  .config-row {
+    display: flex; align-items: center; gap: 14px;
+    padding: 12px 12px;
+    border-radius: 8px;
+    transition: background 0.15s;
+  }
+  .config-row:hover { background: var(--bg-elev-2); }
+  .toggle {
+    appearance: none;
+    width: 36px; height: 20px;
+    background: var(--bg-elev-3);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.2s;
+  }
+  .toggle::after {
+    content: ""; width: 16px; height: 16px;
+    background: var(--text-3);
+    border-radius: 50%;
+    position: absolute; top: 2px; left: 2px;
+    transition: all 0.2s;
+  }
+  .toggle:checked { background: var(--green-soft); }
+  .toggle:checked::after { background: var(--green); left: 18px; }
+  .config-info { flex: 1; min-width: 0; }
+  .config-name {
+    font-size: 13px; font-weight: 500;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .config-badge {
+    background: var(--violet-soft);
+    color: var(--violet);
+    font-size: 9px; font-weight: 700;
+    padding: 2px 6px; border-radius: 3px;
+    letter-spacing: 0.05em;
+  }
+  .config-badge.green { background: var(--green-soft); color: var(--green); }
+  .config-badge.amber { background: var(--amber-soft); color: var(--amber); }
+  .config-desc { font-size: 11px; color: var(--text-3); margin-top: 2px; }
+  .config-time {
+    font-family: var(--font-mono);
+    font-size: 11px; color: var(--text-3);
+    background: var(--bg-elev-3);
+    padding: 3px 8px; border-radius: 4px;
+  }
+
+  /* Stats */
+  .stats {
+    margin: 48px auto 0;
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .stat {
+    text-align: center;
+    padding: 20px 16px;
+    background: var(--bg-elev-1);
+    border: 1px solid var(--border-soft);
+    border-radius: 10px;
+  }
+  .stat-val {
+    font-family: var(--font-mono);
+    font-size: 24px; font-weight: 600;
+    background: linear-gradient(135deg, var(--green), var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .stat-label { font-size: 11px; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 6px; }
+
+  /* Recent */
+  .recent {
+    max-width: 960px;
+    margin: 48px auto 0;
+  }
+  .recent-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+  .recent-title { font-size: 16px; font-weight: 600; }
+  .recent-title span { color: var(--text-3); font-weight: 400; }
+  .recent-link { color: var(--text-3); font-size: 12px; }
+  .recent-link:hover { color: var(--green); }
+  .recent-list {
+    background: var(--bg-elev-1);
+    border: 1px solid var(--border-soft);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .recent-item {
+    display: grid;
+    grid-template-columns: 36px 1fr 100px 110px 90px;
+    gap: 14px;
+    align-items: center;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border-soft);
+    transition: background 0.15s;
+  }
+  .recent-item:last-child { border-bottom: none; }
+  .recent-item:hover { background: var(--bg-elev-2); cursor: pointer; }
+  .file-icon {
+    width: 36px; height: 36px;
+    background: var(--bg-elev-3);
+    border-radius: 8px;
+    display: grid; place-items: center;
+    color: var(--text-2);
+    font-size: 10px; font-weight: 700;
+  }
+  .file-icon.pdf { background: rgba(239, 68, 68, 0.15); color: var(--red); }
+  .file-icon.docx { background: rgba(59, 130, 246, 0.15); color: var(--blue); }
+  .file-icon.txt { background: rgba(16, 185, 129, 0.15); color: var(--green); }
+  .recent-name { font-size: 13px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .recent-meta { font-size: 11px; color: var(--text-3); margin-top: 2px; }
+  .recent-ai {
+    font-size: 10px; font-weight: 600;
+    padding: 3px 8px; border-radius: 4px;
+    text-align: center;
+    width: fit-content;
+  }
+  .recent-ai.ai-high { background: var(--violet-soft); color: var(--violet); }
+  .recent-ai.ai-med { background: var(--amber-soft); color: var(--amber); }
+  .recent-ai.ai-low { background: var(--green-soft); color: var(--green); }
+  .recent-score {
+    font-family: var(--font-mono);
+    font-size: 14px; font-weight: 600;
+    text-align: right;
+  }
+  .recent-score.high { color: var(--red); }
+  .recent-score.med { color: var(--amber); }
+  .recent-score.low { color: var(--green); }
+  .recent-time { font-size: 11px; color: var(--text-3); text-align: right; }
+
+  /* Features */
+  .features {
+    max-width: 1100px;
+    margin: 80px auto 0;
+    padding: 0 0 80px;
+  }
+  .features-head { text-align: center; margin-bottom: 48px; }
+  .features-title {
+    font-size: 32px; font-weight: 700; letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .features-sub { color: var(--text-2); font-size: 15px; }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .feature {
+    background: var(--bg-elev-1);
+    border: 1px solid var(--border-soft);
+    border-radius: 12px;
+    padding: 24px;
+    transition: all 0.2s;
+  }
+  .feature:hover { border-color: var(--border); transform: translateY(-2px); }
+  .feature-icon {
+    width: 40px; height: 40px;
+    background: var(--green-soft);
+    border-radius: 10px;
+    display: grid; place-items: center;
+    color: var(--green);
+    margin-bottom: 16px;
+  }
+  .feature-icon.violet { background: var(--violet-soft); color: var(--violet); }
+  .feature-icon.amber { background: var(--amber-soft); color: var(--amber); }
+  .feature-icon.blue { background: var(--blue-soft); color: var(--blue); }
+  .feature-icon.red { background: var(--red-soft); color: var(--red); }
+  .feature-icon.cyan { background: rgba(6, 182, 212, 0.12); color: var(--cyan); }
+  .feature-title { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+  .feature-desc { font-size: 12px; color: var(--text-3); line-height: 1.6; }
+
+  /* Footer */
+  .footer {
+    border-top: 1px solid var(--border-soft);
+    padding: 24px 0;
+    text-align: center;
+    color: var(--text-4);
+    font-size: 11px;
+  }
+  .footer span { color: var(--text-2); }
+
+  @media (max-width: 768px) {
+    .h1 { font-size: 36px; }
+    .stats, .features-grid { grid-template-columns: repeat(2, 1fr); }
+    .recent-item { grid-template-columns: 32px 1fr 80px; }
+    .recent-item .recent-ai, .recent-item .recent-time { display: none; }
+    .nav-links { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="brand">
+      <div class="brand-mark"></div>
+      <div class="brand-text">PlagCheck<span>v0.4 · Open Source</span></div>
+    </div>
+    <div class="nav-links">
+      <a class="nav-link" href="#">Fitur</a>
+      <a class="nav-link" href="#">Harga</a>
+      <a class="nav-link" href="#">API</a>
+      <a class="nav-link" href="#">Dokumentasi</a>
+      <a class="nav-link" href="#">GitHub ↗</a>
+      <a class="nav-cta" href="results_dashboard.html">
+        Buka App
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="eyebrow">Deteksi plagiarisme & AI text · 100% gratis</div>
+    <h1 class="h1">
+      Cek skripsi & paper <br>
+      <span class="strike">Turnitin</span>
+      <span class="grad">tanpa bayar</span>
+    </h1>
+    <p class="sub">
+      PlagCheck pakai <b>3.452 paper Indonesia & Inggris</b> + AI paraphrase detection
+      untuk kasih kamu laporan plagiarism yang <b>setara Turnitin</b> — gratis, open source, privasi terjaga.
+    </p>
+    <div class="cta-row">
+      <a class="btn-primary" href="#upload">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        Upload Dokumen
+      </a>
+      <a class="btn-secondary" href="#">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        Lihat Demo
+      </a>
+    </div>
+    <div class="trust">
+      <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> F1 100% di benchmark</span>
+      <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Dokumen tidak diupload</span>
+      <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 19 detik per cek</span>
+    </div>
+  </section>
+
+  <!-- Upload zone -->
+  <section class="upload-section" id="upload">
+    <div class="dropzone">
+      <div class="drop-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+      </div>
+      <div class="drop-title">Drag & drop dokumen di sini</div>
+      <div class="drop-sub">atau klik tombol di bawah untuk pilih file</div>
+      <button class="btn-primary" style="margin: 0 auto;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Pilih File
+      </button>
+      <div class="drop-or">atau paste teks langsung</div>
+      <div class="drop-formats">
+        <span>.PDF</span>
+        <span>.DOCX</span>
+        <span>.TXT</span>
+        <span>10MB max</span>
+      </div>
+    </div>
+
+    <!-- Config panel -->
+    <div class="config">
+      <div class="config-head">
+        <div class="config-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          Mode Pengecekan
+        </div>
+        <div class="config-mode">
+          <button class="config-mode-btn">Cepat</button>
+          <button class="config-mode-btn active">Standar</button>
+          <button class="config-mode-btn">Akurat</button>
+        </div>
+      </div>
+
+      <div class="config-body">
+        <div class="config-row">
+          <input type="checkbox" class="toggle" checked>
+          <div class="config-info">
+            <div class="config-name">
+              Semantic Search
+              <span class="config-badge green">AKTIF</span>
+            </div>
+            <div class="config-desc">Deteksi paraphrase & terjemahan silang bahasa (ID ↔ EN)</div>
+          </div>
+          <div class="config-time">+8.4s</div>
+        </div>
+
+        <div class="config-row">
+          <input type="checkbox" class="toggle" checked>
+          <div class="config-info">
+            <div class="config-name">
+              Cross-Encoder
+              <span class="config-badge">RE-RANK</span>
+            </div>
+            <div class="config-desc">Verifikasi ulang kandidat dengan model cross-encoder</div>
+          </div>
+          <div class="config-time">+11.4s</div>
+        </div>
+
+        <div class="config-row">
+          <input type="checkbox" class="toggle">
+          <div class="config-info">
+            <div class="config-name">
+              Ensemble (2 model)
+              <span class="config-badge green">+AKURASI</span>
+            </div>
+            <div class="config-desc">Voting 2 bi-encoder untuk recall lebih tinggi (butuh ~2x RAM)</div>
+          </div>
+          <div class="config-time">+12.0s</div>
+        </div>
+
+        <div class="config-row">
+          <input type="checkbox" class="toggle" checked>
+          <div class="config-info">
+            <div class="config-name">
+              AI Text Detector
+              <span class="config-badge" style="background: var(--violet-soft); color: var(--violet);">GPT-ZERO-LIKE</span>
+            </div>
+            <div class="config-desc">RoBERTa + perplexity + stylometry. Deteksi teks AI (ChatGPT, Claude, Gemini)</div>
+          </div>
+          <div class="config-time">+3.2s</div>
+        </div>
+
+        <div class="config-row">
+          <input type="checkbox" class="toggle" checked>
+          <div class="config-info">
+            <div class="config-name">
+              Strip Citations
+              <span class="config-badge amber">ANTI-FP</span>
+            </div>
+            <div class="config-desc">Abaikan sitasi, kutipan, dan daftar pustaka (49.9% text reduction)</div>
+          </div>
+          <div class="config-time">+0.1s</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-val">3,452</div>
+        <div class="stat-label">Dokumen Corpus</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val">100%</div>
+        <div class="stat-label">F1 Score</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val">19s</div>
+        <div class="stat-label">Rata-rata / Cek</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val">$0</div>
+        <div class="stat-label">Biaya Selamanya</div>
+      </div>
+    </div>
+
+    <!-- Recent checks -->
+    <div class="recent">
+      <div class="recent-head">
+        <div class="recent-title">Riwayat Pengecekan <span>· 12 dokumen</span></div>
+        <a class="recent-link" href="#">Lihat semua →</a>
+      </div>
+      <div class="recent-list">
+        <div class="recent-item">
+          <div class="file-icon pdf">PDF</div>
+          <div>
+            <div class="recent-name">skripsi_bab3_penerapan_ai.pdf</div>
+            <div class="recent-meta">125 halaman · 24 paragraf di-flag</div>
+          </div>
+          <div class="recent-ai ai-high">AI 76%</div>
+          <div class="recent-score high">41.7%</div>
+          <div class="recent-time">2 menit lalu</div>
+        </div>
+        <div class="recent-item">
+          <div class="file-icon docx">DOCX</div>
+          <div>
+            <div class="recent-name">makalah_nlp_indonesia.docx</div>
+            <div class="recent-meta">28 halaman · 4 paragraf di-flag</div>
+          </div>
+          <div class="recent-ai ai-low">AI 8%</div>
+          <div class="recent-score med">18.2%</div>
+          <div class="recent-time">1 jam lalu</div>
+        </div>
+        <div class="recent-item">
+          <div class="file-icon pdf">PDF</div>
+          <div>
+            <div class="recent-name">thesis_chapter_4_methodology.pdf</div>
+            <div class="recent-meta">67 halaman · 0 paragraf di-flag</div>
+          </div>
+          <div class="recent-ai ai-low">AI 4%</div>
+          <div class="recent-score low">0.0%</div>
+          <div class="recent-time">3 jam lalu</div>
+        </div>
+        <div class="recent-item">
+          <div class="file-icon docx">DOCX</div>
+          <div>
+            <div class="recent-name">laporan_pkl_perpustakaan.docx</div>
+            <div class="recent-meta">42 halaman · 11 paragraf di-flag</div>
+          </div>
+          <div class="recent-ai ai-med">AI 42%</div>
+          <div class="recent-score high">52.3%</div>
+          <div class="recent-time">Kemarin</div>
+        </div>
+        <div class="recent-item">
+          <div class="file-icon txt">TXT</div>
+          <div>
+            <div class="recent-name">essay_climate_change.txt</div>
+            <div class="recent-meta">3 halaman · 1 paragraf di-flag</div>
+          </div>
+          <div class="recent-ai ai-high">AI 84%</div>
+          <div class="recent-score low">8.5%</div>
+          <div class="recent-time">2 hari lalu</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="features-head">
+      <h2 class="features-title">Kenapa PlagCheck?</h2>
+      <p class="features-sub">Setara Turnitin · Open source · Privasi terjaga · Gratis selamanya</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <div class="feature-title">3.452 Corpus</div>
+        <div class="feature-desc">Paper dari arXiv, OpenAlex, dan Crossref. Bahasa Indonesia & Inggris. Termasuk 123 halaman web ID dari Common Crawl.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon violet">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-11h-6m-6 0H1"/></svg>
+        </div>
+        <div class="feature-title">Ensemble + AI Detector</div>
+        <div class="feature-desc">2 bi-encoder voting (paraphrase + mpnet) + RoBERTa AI detector. F1 100% di benchmark sintetik.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon amber">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="feature-title">Multi-Bahasa</div>
+        <div class="feature-desc">Sastrawi stemmer untuk Indonesia. Cross-language detection (paraphrase ID dari sumber EN).</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <div class="feature-title">100% Privat</div>
+        <div class="feature-desc">Dokumen diproses lokal di VPS kamu. Tidak ada upload ke cloud. Cocok untuk paper rahasia / skripsi.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon red">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div class="feature-title">Export HTML/PDF</div>
+        <div class="feature-desc">Laporan lengkap dengan highlight match, sitasi, dan verdict AI. Bagikan ke dosen dengan link.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon cyan">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l6-6-4-4M12 19h8"/></svg>
+        </div>
+        <div class="feature-title">$0 Selamanya</div>
+        <div class="feature-desc">Self-hosted. VPS Contabo $5/bulan sudah cukup. Bandingkan Turnitin $60-200/tahun. Open source MIT.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>PlagCheck v0.4 · <span>Powered by open source</span> · FastAPI + sentence-transformers + Sastrawi + RoBERTa</p>
+  </footer>
+</div>
+
+</body>
+</html>

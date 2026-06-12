@@ -1,0 +1,13 @@
+=== https://docs.0xkyc.id/overview/what-we-do ===
+
+💡What we do
+What is 0xKYC? 0xKYC is a privacy-preserving identity verification service for Web3 Gaming, Decentralized Finance and Discord
+Overview
+0xKYC solves the problem of duplicate accounts for web3 developers, by providing each user with biometrics-based zero-knowledge ID token
+Privacy-Preserving
+Our clients receive a unique identifier number instead of their users’ biometric data or identity document data. This lowers the compliance burden for our clients and allows us to serve the data directly on the blockchain
+Reusable Verification
+The verification is reusable across different Web3 games, DeFi protocols and on social media (e.g. Discord servers). This creates network effects, by reducing the hurdle for end-users and creates increased incentives for new clients
+Simplicity for Users and Clients
+Implementation and maintenance of 0xKYC is much simpler than for a typical verification system. This allows for fast integration for clients and a smooth process for end-users to finish the verification in less than 30 seconds for the biometrics-only verification
+Last updated

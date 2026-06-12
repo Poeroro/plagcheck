@@ -1,0 +1,6 @@
+Perencanaan dan Pembangunan Sistem Informasi
+
+Authors: Budi Sutedjo Dharma Oetomo
+Year: 2002
+
+DAFTAR ISI:Bagian I Posisi Sistem Informasi dalam Manajemen Perusahaan1. Informasi: Darah Nadi Perusahaan2. Perspektif dan Prospektif Sistem Informasi3. Sistem Informasi Sebagai Strategi Perusahaan.Bagian II Ketersediaan Infrastruktur Teknologi Informasi:4. Teknologi Informasi Tumpuan Pengembangan.5. Multimedia Menciptakan Sistem Informasi Interaktif.6. Jaringan Komputer: Mempercepat Distribusi Informasi.7. Teknologi Informasi: Alternatif Pengembang Sistem.8. Software Pendukung Pengoperasian dan Pembangunan Sistem Informasi.Bagian III Dukungan Database dalam Pembangunan Sistem Informasi:9. Perspektif Database.10. Peralatan Perancangan Database.Bagian IV Pembangunan Sistem:11. Membangun Sistem Informasi Berbasis Perspektif Pemakai.12. Tahap-tahap Pembangunan Sistem Informasi.13. Metode Pembangunan Sistem Informasi.Bagian V Jenjang Implementasi Sistem:14. Kantor Elektronik.15. Sistem Informasi Manajemen.16. Sistem Pendukung Keputusan.17. Sistem Informasi e-Business.Bagian VI Faktor-faktor Strategis Penunjang Pembangunan Sistem Informasi:18. Keamanan Sistem Informasi dan Etika.19. Strategi Mempersiapkan SDM.20. Daya Kreativitas SDM dalam Lingkungan Teknologi Informasi.21. Pola Kerja dalam Perusahaan Berteknologi Informasi.22. Pertimbangan Praktis Berinvestasi.

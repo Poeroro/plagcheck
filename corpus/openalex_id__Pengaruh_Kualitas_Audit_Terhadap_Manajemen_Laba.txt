@@ -1,0 +1,6 @@
+Pengaruh Kualitas Audit Terhadap Manajemen Laba
+
+Authors: Ingrid Christiani, Yeterina Widi Nugrahanti
+Year: 2014
+
+The purpose of this study is to examine the effect of audit quality on earnings management. The audit quality is proxied by the Public Accounting Firm size (big-four and non-big four) and auditor’s industry specialisation. This study used four control variables, which are firm size, leverage, operating cash flow ratio and growth prospect. This study used secondary data derived from the financial statements of listed companies in Indonesia Stock Exchange in 2010-2011. Based on the method of purposive sampling method and was obtained 174 observations. The technique for examining the hypothesis is multiple regression analysis. The results show that accounting firm size does not significantly influence on the earnings management. Auditor’s industry specialisation has a negative effect on the earnings management. Of the four control variables used in this study, only the operating cash flow and growth that effect on earnings management, while the other two variables, namely the firm size and leverage, have no effect.

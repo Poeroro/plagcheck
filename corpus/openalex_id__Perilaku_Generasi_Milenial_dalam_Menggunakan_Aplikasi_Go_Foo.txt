@@ -1,0 +1,6 @@
+Perilaku Generasi Milenial dalam Menggunakan Aplikasi Go-Food
+
+Authors: Syarif Hidayatullah, Abdul Waris, Riezky Chris Devianti
+Year: 2018
+
+In era of industry 4.0 revolution, the development of information technology makes the lifestyle changes of modern generation (millennial generations born between 1980 to 2000). This aims of this study is to analyze how the behavior of millennial generations in using Go-food applications. The characteristics of the millennial generation in this study are: 1) user generated content (UGC); 2) take advantage of technology and information; 3) consumptive behavior; 4) tends lazy. The data analysis uses a descriptive analysis and linear regression analysis. The results of data analysis show that: 1) the millennial generation's decision to use Go-food applications is influenced by behavior of millennial generation; and 2) millennial generation's behavior which has a dominant influence in making decision to use Go-food appications is consumptive behavior. https://doi.org/10.26905/jmdk.v6i2.2560

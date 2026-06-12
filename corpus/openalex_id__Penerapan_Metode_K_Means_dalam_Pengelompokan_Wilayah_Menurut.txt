@@ -1,0 +1,6 @@
+Penerapan Metode K-Means dalam Pengelompokan Wilayah Menurut Intensitas Kejadian Bencana Alam di Indonesia Tahun 2013-2018
+
+Authors: Mira Suci Yana, Lathifah Setiawan, Elvitra Mutia Ulfa, Asep Rusyana
+Year: 2018
+
+Indonesia has experienced many natural disasters, Badan Nasional Penanggulangan Bencana notes that from 2016 to early 2018 more than 2,700 natural disasters has occurred in all regions of Indonesia. Therefore this study aims to classify regions in Indonesia according to the intensity of natural disasters, so that it is known that the area is prone to natural disasters. The analysis used is Cluster Analysis with the K-Means Method. The results obtained are the optimal number of clusters that can be formed, namely 2. The conclusion of this study is that cluster one is an area prone to natural disasters with its members are Jawa Timur, Jawa Barat, and Jawa Tengah. While the other 31 provinces are classified as cluster two, which is not in the area prone to natural disasters. This conclusion is based on the average of each cluster, where the average of each variable in cluster one is greater than the average of each variable in cluster two.

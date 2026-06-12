@@ -1,0 +1,6 @@
+Sistem Informasi Geografis (Sig) Menentukan Lokasi Pertambangan Batu Bara Di Provinsi Bengkulu Berbasis Website
+
+Authors: Koko Mukti Wibowo Mukti Wibowo, Indra Kanedi, J Jumadi
+Year: 2015
+
+The information is a matter that can not be separated from the activities of life. Human needs are increasingly complex, encourage people to develop new technologies including WebGIS. So is the need for information on mining, especially in the central area of the province of Bengkulu. The approach used in this research is a structured design approach. Through a structured approach, complex problems can be solved in the organization and results of the system will be easy to maintain, flexible, more satisfying wearer, has good documentation, on time, on budget development costs, improve productivity and quality will be better. With the application WebGIS mining center in the province of Bengkulu, the user is expected to be easier to obtain information about the location of mining in the province of Bengkulu. Keywords: Geographic Information Systems (GIS), WebGIS, Mining Centre in the province of Bengkulu

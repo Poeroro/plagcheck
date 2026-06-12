@@ -1,0 +1,11 @@
+Structural Equation Modeling dengan LISREL 8.8 : Konsep dan Tutorial
+
+Authors: Setyo Hari Wijanto
+Year: 2012
+
+Isi dalam buku ini merupakan kombinasi dari ekonometri, psikometri, dan sosiometri, sesuai untuk memecahkan berbagai permasalahan penelitian di bidang ekonomi, manajemen, akuntansi dan ilmu sosial lainnya
+
+Ada dua permasalahan dasar yang dihadapi penelitian bidang manajemen, psikologi, ilmu sosial dan perilaku pada umumnya, yaitu hubungan kausal di antara variabel-variabel penelitian dan pengukuran variabel-variabel penelitian. Hubungan kausal di antara variabel-variabel penelitian seringkali berbentuk rumit, penuh dengan mediating variables dan seringkali juga mengandung moderating variables. Pengukuran terhadap variabel-variabel penelitian tidak dapat dilakukan secara langsung melainkan melalui indikator-indikatornya, sehingga validitas dan reliabilitas pengukuran merupakan hal yang penting. Sementara perangkat statistik yang tersedia kurang dapat mengatasi kedua permasalahan sekaligus, maka Structural Equation Modeling (SEM) merupakan perangkat yang tepat untuk mengatasi kedua permasalahan dasar tersebut.
+
+Buku ini akan membahas dua hal yaitu konsep SEM dan tutorial SEM menggunakan perangkat lunak komputer LISREL 8.8. Bagian A dari buku ini ditujukan untuk memberi pemahaman kepada pembaca tentang konsep dasar SEM. Dimulai dengan sejarah perkembangan SEM, pembahasan pada bagian A mencakup konsep dasar SEM, prosedur SEM, bahasa pemrograman SIMPLIS, data input dan PRELIS 2, model pengukuran, model struktural, model multisampel dan diakhiri dengan model interaksi. Pembahasan konsep SEM ini lebih menekankan pada segi praktikal, sedangkan pembahasan segi teoritikal meskipun tidak mendalam, diharapkan cukup memberikan pemahaman dasar teoritikal dari SEM. Bagian B dari buku ini ditujukan agar pembaca bisa hands on equipment menggunakan LISREL 8.8 software untuk menerapkan konsep SEM yang telah dipelajarinya di bagian A. Bersama buku ini disertakan LISREL 8.8 student edition dan sebuah folder WORKSHOP yang berisi data yang diperlukan untuk melaksanakan tutorial SEM.
+Akhirnya, dengan memahami konsep dasar SEM dan menerapkannya menggunakan LISREL 8.8, diharapkan pembaca bisa mengaplikasikan SEM pada penelitian yang sedang dilakukannya.

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ r.document_name }} — PlagCheck</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">
+      <a href="/" class="brand-link">
+        <div class="brand-mark"></div>
+        <div class="brand-text">PlagCheck<span>v{{ version }} · $0</span></div>
+      </a>
+    </div>
+
+    <nav class="nav">
+      <a class="nav-item" href="/">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        Cek Dokumen
+      </a>
+      <a class="nav-item active" href="/riwayat">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
+        Riwayat
+        <span class="nav-badge">{{ total_reports }}</span>
+      </a>
+      <a class="nav-item" href="/">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Corpus
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-chip">
+        <div class="avatar">P</div>
+        <div>
+          <div class="user-name">Pengguna</div>
+          <div class="user-plan">Free Tier</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- Top bar -->
+    <div class="topbar">
+      <div class="crumbs"><a href="/">PlagCheck</a> <span style="margin:0 6px;color:var(--text-4)">/</span> <a href="/riwayat">Riwayat</a> <span style="margin:0 6px;color:var(--text-4)">/</span> <span>{{ r.document_name }}</span></div>
+      <div class="topbar-actions">
+        <a href="/r/{{ r.id }}/html" class="icon-btn" title="Download HTML" download>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+        <a href="/r/{{ r.id }}/json" class="icon-btn" title="Download JSON" download>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </a>
+        <button class="icon-btn" onclick="navigator.clipboard.writeText(window.location.href); this.title='Copied!'" title="Copy link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- RESULTS PAGE -->
+    <div class="results-page">
+
+      <!-- Main column -->
+      <div class="results-main">
+
+        <!-- Header -->
+        <div class="result-header">
+          <div class="gauge">
+            <svg width="120" height="120" viewBox="0 0 120 120">
+              <circle class="gauge-bg" cx="60" cy="60" r="50" fill="none" stroke-width="10"/>
+              <circle class="gauge-fg" cx="60" cy="60" r="50" fill="none" stroke-width="10"
+                stroke-dasharray="314" stroke-dashoffset="{{ 314 - (r.overall_score * 3.14) }}" stroke-linecap="round"
+                style="stroke: {{ 'var(--red)' if r.overall_score > 0.30 else 'var(--amber)' if r.overall_score > 0.10 else 'var(--green)' }};"/>
+            </svg>
+            <div class="gauge-text">
+              <div class="gauge-num" style="color: {{ 'var(--red)' if r.overall_score > 0.30 else 'var(--amber)' if r.overall_score > 0.10 else 'var(--green)' }};">{{ (r.overall_score * 100)|round(1) }}</div>
+              <div class="gauge-label">% MATCH</div>
+            </div>
+          </div>
+          <div class="result-info">
+            <div class="result-filename">
+              <span class="display-name" title="{{ r.document_name }}">{{ r.display_name }}</span>
+              <span class="pill {{ r.risk_class }}">{{ r.risk_label }}</span>
+              {% if r.citation_stats.reduction_pct %}
+              <span class="pill">{{ r.citation_stats.reduction_pct|round(0, 'floor')|int }}% sitasi di-strip</span>
+              {% endif %}
+            </div>
+            <div class="result-meta">
+              <span>📄 <b>{{ r.total_paragraphs }}</b> paragraf</span>
+              <span>🚩 <b>{{ r.flagged_paragraphs }}</b> di-flag</span>
+              <span>⏱ <b>{{ r.elapsed_seconds|round(1) }}s</b></span>
+              <span>🔍 <b>{{ r.corpus_size }}</b> corpus</span>
+              <span>📅 <b>{{ r.finished_at }}</b></span>
+            </div>
+          </div>
+          <div class="result-actions">
+            <a href="/r/{{ r.id }}/html" class="btn" download>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              HTML
+            </a>
+            <a href="/r/{{ r.id }}/json" class="btn" download>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              JSON
+            </a>
+            <button class="btn primary" onclick="navigator.clipboard.writeText(window.location.href)">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+              Bagikan
+            </button>
+          </div>
+        </div>
+
+        <!-- Summary band (only if there are critical matches) -->
+        {% if r.flagged_paragraphs > 0 and r.matches|length > 0 %}
+        {% set top_match = r.matches[0] %}
+        <div class="summary-band">
+          <div class="summary-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="summary-body">
+            <div class="summary-title">{{ r.flagged_paragraphs }} match terdeteksi</div>
+            <div class="summary-desc">Match tertinggi: <b>{{ (top_match.score * 100)|round(1) }}%</b> dari sumber <b>"{{ top_match.source_title }}"</b> ({{ top_match.source_type }}). Disarankan: parafrase atau tambahkan sitasi eksplisit.</div>
+          </div>
+          <div class="summary-actions">
+            <button class="summary-action" onclick="document.querySelector('.match-item')?.scrollIntoView({behavior:'smooth'})">Lihat Match</button>
+          </div>
+        </div>
+        {% elif r.flagged_paragraphs == 0 %}
+        <div class="summary-band summary-band-ok">
+          <div class="summary-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="summary-body">
+            <div class="summary-title">Tidak ada match yang terdeteksi</div>
+            <div class="summary-desc">Dokumen ini bersih dari plagiarisme terhadap {{ r.corpus_size }} dokumen di corpus. Tetap jaga orisinalitas!</div>
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Stat row -->
+        <div class="stat-row">
+          <div class="stat-card {{ r.risk_class }}">
+            <div class="stat-card-label">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              Kemiripan
+            </div>
+            <div class="stat-card-value">{{ (r.overall_score * 100)|round(1) }}<span class="unit">%</span></div>
+            <div class="stat-card-bar"><div style="width: {{ (r.overall_score * 100)|round(1) }}%"></div></div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-label">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Paragraf
+            </div>
+            <div class="stat-card-value">{{ r.flagged_paragraphs }}<span class="unit">/{{ r.total_paragraphs }}</span></div>
+            <div class="stat-card-bar"><div style="width: {{ ((r.flagged_paragraphs / r.total_paragraphs * 100) if r.total_paragraphs > 0 else 0)|round(1) }}%; background: var(--amber)"></div></div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-label">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="17" y1="10" x2="3" y2="10"/><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="14" x2="3" y2="14"/><line x1="17" y1="18" x2="3" y2="18"/></svg>
+              Sumber
+            </div>
+            <div class="stat-card-value">{{ r.matches|length }}<span class="unit">match</span></div>
+            <div class="stat-card-bar"><div style="width: {{ ([r.matches|length * 12, 100]|min) }}%; background: var(--amber)"></div></div>
+          </div>
+          {% if r.ai_detection %}
+          <div class="stat-card ai">
+            <div class="stat-card-label">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              AI Text
+            </div>
+            <div class="stat-card-value">{{ (r.ai_detection.ai_probability * 100)|round(0)|int }}<span class="unit">% kemungkinan</span></div>
+            <div class="stat-card-bar"><div style="width: {{ (r.ai_detection.ai_probability * 100)|round(0)|int }}%"></div></div>
+          </div>
+          {% else %}
+          <div class="stat-card" style="opacity: 0.5">
+            <div class="stat-card-label">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              AI Text
+            </div>
+            <div class="stat-card-value" style="font-size: 14px; color: var(--text-3)">Tidak di-cek</div>
+            <div class="stat-card-bar"><div style="width: 0%"></div></div>
+          </div>
+          {% endif %}
+        </div>
+
+        <!-- Document viewer -->
+        <div class="doc-viewer">
+          <div class="doc-header">
+            <div class="doc-tabs">
+              <div class="doc-tab active" data-tab="highlight">Teks + Highlight</div>
+              <div class="doc-tab" data-tab="sidebyside">Side-by-side</div>
+              <div class="doc-tab" data-tab="matchsonly">Hanya Match</div>
+            </div>
+            <div class="doc-legend">
+              <span><i class="l-high"></i> Tinggi</span>
+              <span><i class="l-med"></i> Sedang</span>
+              <span><i class="l-cite"></i> Sitasi</span>
+            </div>
+          </div>
+
+          <!-- Tab: highlight -->
+          <div class="doc-body" id="tab-highlight" data-pane="highlight">
+            {% if r.matches|length == 0 %}
+            <div class="empty-state">
+              <div class="empty-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="empty-title">Tidak ada match terdeteksi</div>
+              <div class="empty-desc">Dokumen ini bersih dari {{ r.corpus_size }} dokumen di corpus. Tidak ada paragraf yang perlu di-flag.</div>
+            </div>
+            {% else %}
+            {% for m in r.matches %}
+            <p class="match-paragraph {{ 'match-high' if m.score > 0.7 else 'match-med' if m.score > 0.4 else 'match-low' }}" data-match-idx="{{ loop.index0 }}">
+              {{ m.query_text[:600] }}{% if m.query_text|length > 600 %}...{% endif %}
+              <span class="match-tag" data-source-title="{{ m.source_title }}" data-source-url="{{ m.source_url }}" data-source-type="{{ m.source_type }}" data-score="{{ (m.score * 100)|round(1) }}">
+                {{ (m.score * 100)|round(0)|int }}% · {{ m.source_type }}
+              </span>
+            </p>
+            {% endfor %}
+            {% endif %}
+          </div>
+
+          <!-- Tab: side-by-side -->
+          <div class="doc-body" id="tab-sidebyside" data-pane="sidebyside" style="display:none">
+            {% if r.matches|length == 0 %}
+            <div class="empty-state">Tidak ada match untuk dibandingkan.</div>
+            {% else %}
+            {% for m in r.matches[:8] %}
+            <div class="pair-row">
+              <div class="pair-col">
+                <div class="pair-label">Dokumen kamu ({{ (m.score * 100)|round(1) }}% match)</div>
+                <div class="pair-text">{{ m.query_text[:500] }}{% if m.query_text|length > 500 %}...{% endif %}</div>
+              </div>
+              <div class="pair-arrow">→</div>
+              <div class="pair-col">
+                <div class="pair-label">Sumber: {{ m.source_title }}</div>
+                <div class="pair-text">{{ m.matched_text[:500] }}{% if m.matched_text|length > 500 %}...{% endif %}</div>
+                {% if m.source_url %}
+                <a href="{{ m.source_url }}" target="_blank" class="pair-link">Buka sumber ↗</a>
+                {% endif %}
+              </div>
+            </div>
+            {% endfor %}
+            {% if r.matches|length > 8 %}
+            <div class="more-matches">+{{ r.matches|length - 8 }} match lainnya. <a href="#" onclick="document.querySelector('[data-tab=matchsonly]').click(); return false">Lihat semua</a></div>
+            {% endif %}
+            {% endif %}
+          </div>
+
+          <!-- Tab: matches only -->
+          <div class="doc-body" id="tab-matchsonly" data-pane="matchsonly" style="display:none">
+            {% if r.matches|length == 0 %}
+            <div class="empty-state">Tidak ada match.</div>
+            {% else %}
+            {% for m in r.matches %}
+            <div class="match-card {{ 'high' if m.score > 0.7 else 'med' if m.score > 0.4 else 'low' }}">
+              <div class="match-card-head">
+                <span class="match-card-source">{{ m.source_title }}</span>
+                <span class="match-card-pct">{{ (m.score * 100)|round(1) }}%</span>
+              </div>
+              <div class="match-card-meta">
+                <span class="match-card-tag">{{ m.source_type }}</span>
+                {% if m.source_url %}<a href="{{ m.source_url }}" target="_blank" class="match-card-link">buka ↗</a>{% endif %}
+              </div>
+              <div class="match-card-excerpt">{{ m.query_text[:300] }}{% if m.query_text|length > 300 %}...{% endif %}</div>
+            </div>
+            {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Aside -->
+      <aside class="results-aside">
+
+        <!-- AI panel -->
+        {% if r.ai_detection %}
+        {% set ai = r.ai_detection %}
+        <div class="ai-panel">
+          <div class="ai-head">
+            <div class="ai-title">
+              <div class="ai-title-icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-11h-6m-6 0H1"/></svg>
+              </div>
+              AI Text Detector
+            </div>
+            <div class="ai-verdict {{ ai.verdict_class }}">{{ ai.verdict }}</div>
+          </div>
+
+          <div class="ai-score">
+            <div class="ai-score-num">{{ (ai.ai_probability * 100)|round(0)|int }}%</div>
+            <div class="ai-score-label">kemungkinan AI-generated<br><span style="color:var(--text-4); font-size: 10px">{{ ai.model_name }}</span></div>
+          </div>
+
+          <div class="ai-bars">
+            {% for key, val, label in [
+              ('roberta', ai.signals.get('roberta'), 'RoBERTa'),
+              ('perplexity', ai.signals.get('perplexity_score'), 'Perplexity'),
+              ('burstiness', ai.signals.get('burstiness'), 'Burstiness'),
+              ('stylometry', ai.signals.get('stylometry_score'), 'Stylometry')
+            ] %}
+              {% if val is not none %}
+              <div class="ai-bar-row">
+                <div class="ai-bar-label">{{ label }}</div>
+                <div class="ai-bar-track"><div class="ai-bar-fill" style="width: {{ (val * 100)|round(0)|int }}%"></div></div>
+                <div class="ai-bar-val">{{ (val * 100)|round(0)|int }}%</div>
+              </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+
+          {% if ai.signals.get('sentence_length_std') %}
+          <div class="ai-signal">
+            <b>Sinyal:</b> Std dev kalimat {{ ai.signals.get('sentence_length_std', 0) }},
+            hedging ratio {{ ai.signals.get('hedging_ratio', 0) }}.
+            {% if ai.ai_probability > 0.6 %}
+            Pola ini konsisten dengan teks AI.
+            {% else %}
+            Pola ini lebih mirip tulisan manusia.
+            {% endif %}
+          </div>
+          {% endif %}
+        </div>
+        {% endif %}
+
+        <!-- Match list -->
+        <div class="match-list">
+          <div class="match-list-head">
+            <div class="match-list-title">Sumber Mirip</div>
+            <div class="match-list-count">{{ r.matches|length }} dari {{ r.matches|length }}</div>
+          </div>
+
+          {% if r.matches|length == 0 %}
+          <div class="match-list-empty">Tidak ada sumber mirip yang terdeteksi.</div>
+          {% else %}
+          {% for m in r.matches[:5] %}
+          <div class="match-item" data-idx="{{ loop.index0 }}" onclick="highlightMatch({{ loop.index0 }})">
+            <div class="match-row1">
+              <div class="match-source" title="{{ m.source_title }}">{{ m.source_title[:60] }}{% if m.source_title|length > 60 %}…{% endif %}</div>
+              <div class="match-pct {{ m.pct_class }}">{{ (m.score * 100)|round(1) }}%</div>
+            </div>
+            <div class="match-row2">
+              <span class="match-source-tag">{{ m.source_type }}</span>
+              {% if m.source_url %}
+              <a href="{{ m.source_url }}" target="_blank" onclick="event.stopPropagation()" style="color:var(--text-3)">link ↗</a>
+              {% endif %}
+            </div>
+            <div class="match-excerpt">{{ (m.matched_text[:140])|replace('\n', ' ') }}{% if m.matched_text|length > 140 %}…{% endif %}</div>
+          </div>
+          {% endfor %}
+          {% if r.matches|length > 5 %}
+          <div class="match-item" style="text-align: center; color: var(--text-3); font-size: 11px;">
+            <div class="match-row1" style="justify-content: center;">
+              <span>+ {{ r.matches|length - 5 }} sumber lainnya</span>
+            </div>
+          </div>
+          {% endif %}
+          {% endif %}
+        </div>
+
+        <!-- Processing time -->
+        <div class="proc-card">
+          <div class="proc-title">Performa</div>
+          <div class="proc-row"><span class="proc-name">Total waktu</span><span class="proc-time">{{ r.elapsed_seconds|round(1) }}s</span></div>
+          <div class="proc-row"><span class="proc-name">Mulai</span><span class="proc-time">{{ r.started_at }}</span></div>
+          <div class="proc-row"><span class="proc-name">Selesai</span><span class="proc-time">{{ r.finished_at }}</span></div>
+          <div class="proc-row"><span class="proc-name">Paragraf</span><span class="proc-time">{{ r.total_paragraphs }}</span></div>
+          <div class="proc-row"><span class="proc-name">Sitasi di-strip</span><span class="proc-time">{{ r.citation_stats.inline_citations_stripped + r.citation_stats.footnote_refs_stripped }}</span></div>
+          <div class="proc-row"><span class="proc-name">Kutipan di-strip</span><span class="proc-time">{{ r.citation_stats.direct_quotes_stripped + r.citation_stats.block_quotes_stripped }}</span></div>
+        </div>
+
+      </aside>
+    </div>
+  </main>
+</div>
+
+<div id="match-popup" class="match-popup"></div>
+
+<script src="/static/app.js"></script>
+<script>
+  // Highlight on scroll when match item clicked
+  function highlightMatch(idx) {
+    document.querySelectorAll('.match-item').forEach(i => i.classList.remove('active'));
+    document.querySelector(`.match-item[data-idx="${idx}"]`)?.classList.add('active');
+    const para = document.querySelector(`.match-paragraph[data-match-idx="${idx}"]`);
+    if (para) {
+      para.scrollIntoView({behavior: 'smooth', block: 'center'});
+      para.classList.add('flash');
+      setTimeout(() => para.classList.remove('flash'), 1500);
+    }
+  }
+  document.querySelectorAll('.match-tag').forEach(tag => {
+    tag.addEventListener('click', e => {
+      e.stopPropagation();
+      const title = tag.dataset.sourceTitle;
+      const url = tag.dataset.sourceUrl;
+      const score = tag.dataset.score;
+      const type = tag.dataset.sourceType;
+      const popup = document.getElementById('match-popup');
+      popup.innerHTML = `<div style="font-weight:600; margin-bottom:6px">${title}</div>
+        <div style="color:var(--text-3); font-size:11px; margin-bottom:8px">${type} · ${score}% match</div>
+        ${url ? `<a href="${url}" target="_blank" style="color:var(--green); font-size:11px">Buka sumber ↗</a>` : ''}`;
+      const rect = tag.getBoundingClientRect();
+      popup.style.left = (rect.left) + 'px';
+      popup.style.top = (rect.bottom + 8) + 'px';
+      popup.style.display = 'block';
+      setTimeout(() => popup.style.display = 'none', 4000);
+    });
+  });
+</script>
+</body>
+</html>

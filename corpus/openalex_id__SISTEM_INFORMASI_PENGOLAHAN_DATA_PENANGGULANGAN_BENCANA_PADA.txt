@@ -1,0 +1,6 @@
+SISTEM INFORMASI PENGOLAHAN DATA PENANGGULANGAN BENCANA PADA KANTOR BADAN PENANGGULANGAN BENCANA DAERAH (BPBD) KABUPATEN PADANG PARIAMAN
+
+Authors: Rini Asmara, S. Kom, M.Kom. Faizah S.Kom
+Year: 2017
+
+Penulis telah mengadakan penelitian pada Kantor Badan Penanggulangan Bencana Daerah (BPBD) Kabupaten Padang Pariaman dengan tujuan mengetahui sistem informasi pengolahan data kebencanaan dan selanjutnya mengembangkan sistem yang sedang berjalan tersebut agar mencapai tingkat yang lebih optimal. Dalam penelitian ini penulis menggunakan metode penelitian lapangan yaitu dengan mengadakan penelitian langsung ke lapangan, selanjutnya penulis mengolah hasil data penelitian di labor komputer, kemudian dirancang suatu sistem informasi pengolahan data bencana, dimana sistem informasi tersebut menghasilkan informasi berupa laporan – laporan bencana yang terjadi dengan memanfaatkan sarana komputer sebagai alat bantu dalam pengolahan data. Diharapkan sistem baru yang penulis kembangkan ini dapat menggantikan sistem lama, agar mencapai tingkat efektifitas dan efisiensi yang lebih tinggi. Sehingga rancangan tersebut dapat bermanfaat bagi Kantor Badan Penanggulangan Bencana Daerah (BPBD) Kabupaten Padang Pariaman untuk mendapatkan laporan dalam pengolahan data kebencanaan yang sangat diperlukan dalam pengambilan keputusan Pimpinan

@@ -1,0 +1,6 @@
+Media Pembelajaran Berbasis Android Pada Mata Pelajaran Sistem Operasi Jaringan Kelas XI
+
+Authors: Joko Kuswanto, Ferri Radiansah
+Year: 2018
+
+Penggunaan media pembelajaran merupakan bagian yang tidak bisa dipisahkan dan sudah merupakan suatu integrasi terhadap metode belajar yang dipakai. Salah satu contoh media pembelajaran yang bisa dikongkritkan dengan memanfaatkan perkembangan teknologi di bidang pendidikan adalah media pembelajaran berbasis android. Penelitian ini bertujuan untuk mengembangkan media pembelajaran berbasis android pada mata pelajaran Sistem Operasi Jaringan kelas XI. Metode penelitian yang digunakan adalah penelitian pengembangan dengan tahapan perancangan, produksi, evaluasi, dan menganalisis data dengan persentase. Hasil penelitian ini menunjukkan bahwa media pembelajaran berbasis android yang dikembangkan pada mata pelajaran Sistem Operasi Jaringan kelas XI sudah layak untuk digunakan dalam pembelajaran oleh guru dan siswa. Berdasarkan beberapa tahapan uji coba, media pembelajaran dikategorikan valid dengan tingkat kelayakan sebesar 82% dengan kriteria baik. Penelitian ini diharapkan dapat menjadi media pembelajaran pada mata pelajaran Sistem Operasi Jaringan Kelas XI dan dapat bermanfaat bagi guru, siswa, dan peneliti lanjutan. Kata Kunci: Andorid, Media Pembelajaran, Pengembangan, Sistem Operasi Jaringan

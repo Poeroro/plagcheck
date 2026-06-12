@@ -1,0 +1,32 @@
+Manajemen portofolio : penerapannya dalam investasi saham
+
+Authors: Zalmi Zubir
+Year: 2013
+
+Pada hakikatnya, harga saham perusahaan ditentukan oleh prospek perusahaan tersebut di masa mendatang. Harga saham adalah cerminan dari pengelolaan perusahaan yang baik oleh manajemen untuk menciptakan dan memanfaatkan prospek usaha, sehingga memperoleh keuntungan dan mampu memenuhi tanggung jawabnya terhadap para pemangku kepentingan (stakeholders), yaitu pemilik, karyawan, masyarakat, dan pemerintah. Oleh karena itu, kemampuan dalam menganalisis kinerja operasi dan keuangan perusahaan serta perkembangan pasarnya akan sangat membantu keberhasilan investasi di pasar modal.
+
+Untuk mengurangi risiko investasi saham dan agar memberikan hasil (return) yang lebih pasti, perusahaan sekuritas dan fund manager membuat paket-paket instrumen investasi berupa portofolio yang terdiri dari saham, obligasi, dan instrumen keuangan lainnya. Namun, bagaimana mereka menentukan proporsi setiap instrumen dalam portofolio tersebut dan berapa besar risiko setiap paket investasi tersebut? Dalam memasarkan produknya, fund manager lebih menekankan pada return yang akan diberikan oleh setiap produk yang ditawarkan lebih tinggi daripada tingkat bunga deposito.
+
+Buku ini membahas tentang return dan risiko investasi dalam saham dan portofolio saham, proses pemilihan saham, pembentukan portofolio dan alokasi dana investasi, teori portofolio untuk Single-index Model, Multi-index Model, short selling, Capital Asset Pricing Model, Arbitrage Pricing Theory, strategi investasi dan analisis kinerja portofolio saham, serta teknik-teknik perhitungannya menggunakan Excel. Sebagian besar teori yang digunakan diambil dari buku Modern Portfolio Theory and Investment Analysis edisi ketiga karya Edwin J. Elton dan Martin J. Gruber, terbitan John Wiley & Sons, 1987. Buku ini melengkapi teori-teori portofolio tersebut dengan implementasi investasi dalam portofolio saham. 
+
+Daftar Isi:
+Bab 1 Return Saham dan Portofolio
+Bab 2 Risiko Saham dan Portofolio
+Bab 3 Varian Tiga Dimensi
+Bab 4 Single Index Model
+Bab 5 Short Selling
+Bab 6 Efficient Set dan Portofolio Optimal
+Bab 7 Capital Asset Pricing Model dan Arbitrage Pricing Theory
+Bab 8 Evaluasi Kinerja Portofolio
+Bab 9 Strategi Portofolio Aktif dan Pasif
+Bab 10 Implementasi Strategi Constant Expected Return dalam Portofolio Saham
+
+FITUR-FITUR BUKU
+
+ * Contoh-contoh dan langkah-langkah proses pembuatan portofolio menggunakan Excel dan visualisasi hasil perhitungan dalam bentuk tabel dan grafik yang membantu pembaca untuk mempelajari proses perhitungan secara lebih mendalam.
+ * Latihan di tiap akhir bab yang membantu pembaca mengimpelementasikan dan menyimulasikan teori yang telah dibahas ke dalam portofolio saham yang diinginkan.
+ * CD Lampiran berisi simulasi portofolio dengan Excel untuk menentukan proporsi saham-saham yang akan dimasukkan dalam portofolio, proses pembentukan portofolio yang efisien dalam kondisi short sale dibolehkan maupun dilarang, cara pembuatan grafik fungsi varians tiga dimensi, metode pengukuran kinerja, dan keuntungan atau kerugian dari portofolio saham. Juga berisi data-data harga saham dan Indeks Harga Saham Gabungan (IHSG) harian di Bursa Efek Indonesia (BEI) periode 1996�2006, sehingga pembaca dapat menggunakannya untuk membuat berbagai contoh portofolio dan analisisnya menggunakan data riil. Melalui program simulasi dan data-data harga saham tersebut pembaca dapat membuat portofolio saham dan menguji kinerja aktualnya setiap periode (seminggu, sebulan, setahun) dan membandingkan dengan return teoretisnya. 
+
+TENTANG PENULIS
+
+Zalmi Zubir merupakan lulusan Fakultas Ekonomi Universitas Indonesia tahun 1984 dan memperoleh gelar Master of Business Administration dari Strathclyde Graduate Business School (SGBS), University of Strathclyde, Glasgow, Inggris, pada 1992. Saat ini menjadi pengajar pada Departemen Manajemen FEUI dan pengajar tidak tetap pada Program Magister Manajemen Universitas Andalas. Juga berkarier dalam dunia bisnis dan pernah menjabat sebagai staf Lembaga Manajemen FEUI maupun sebagai direktur utama atau direktur keuangan pada beberapa perusahaan di bawah payung Medco Group. Selain itu, memiliki keahlian dalam membuat program simulasi bisnis menggunakan Excel dan menjadi pengasuh untuk mata kuliah simulasi bisnis di Departemen Manajemen FEUI serta merupakan pendiri LinkBiz Indonesia yang bergerak dalam bidang pelatihan pembuatan program simulasi bisnis danbusiness game.

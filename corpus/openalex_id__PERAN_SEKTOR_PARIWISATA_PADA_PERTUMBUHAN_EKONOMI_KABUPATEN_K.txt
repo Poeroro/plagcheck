@@ -1,0 +1,6 @@
+PERAN SEKTOR PARIWISATA PADA PERTUMBUHAN EKONOMI KABUPATEN/KOTA DI JAWA BARAT
+
+Authors: Helmi Aliansyah, Wawan Hermawan
+Year: 2021
+
+Sektor Pariwisata merupakan sektor yang sedang mengalami pertumbuhan pesat di Indonesia, demikian juga di Provinsi Jawa Barat. Penelitian ini bertujuan untuk melihat apakah terdapat pengaruh sektor pariwisata pada pertumbuhan ekonomi di Jawa Barat. Penelitian ini menggunakan data jumlah wisatawan, pengeluaran pemerintah sektor pariwisata, jumlah kamar hotel, dan jumlah restoran/rumah makan sebagai proyeksi sektor pariwisata, sedangkan rasio sektor pertanian pada PDRB sebagai variabel kontrol. Metode yang digunakan adalah Generalized Least Squuare (GLS) dengan data panel pada periode 2012-2017 dan 23 Kabupaten/Kota di Jawa Barat. Hasil penelitian menunjukkan bahwa jumlah kamar hotel, jumlah rumah makan/restoran, pengeluaran pemerintah sektor pariwisata, dan jumlah wisatawan berpengaruh positif terhadap pertumbuhan ekonomi.Kata kunci: pertumbuhan ekonomi; sektor pariwisata; belanja pemerintah; Generalized Least Squares (GLS); panel data; Jawa Barat

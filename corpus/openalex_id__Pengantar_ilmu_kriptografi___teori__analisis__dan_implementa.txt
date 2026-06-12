@@ -1,0 +1,11 @@
+Pengantar ilmu kriptografi : teori, analisis, dan implementasi
+
+Authors: Dony Ariyus
+Year: 2008
+
+Buku ini membahas:
+1.Sejarah Kriptografi
+2.Algoritma Kriptografi
+3.Tipe dan Model Algoritma Kriptografi
+4.Algoritma Kriptografi Modern
+5.Algoritma tanda tangan,dll.

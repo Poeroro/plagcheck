@@ -1,0 +1,6 @@
+Teknologi Keuangan (Fintech) : Konsep dan Implementasinya di Indonesia
+
+Authors: Muhammad Afdi Nizar
+Year: 2017
+
+This paper aims to examine briefly about financial technology (FinTech) in Indonesia. By using a qualitative-descriptive approach, it can be seen that FinTech development tends to increase in Indonesia, both in terms of institutional (number of companies) and in terms of the financing model. The most popular platform as a consumer financing model is peer-to-peer lending (P2PL). However, the development of FinTech also has implications and is accompanied by various potential risks.

@@ -1,0 +1,6 @@
+Identifikasi Bukti Digital pada Akuisisi Perangkat Mobile dari Aplikasi Pesan Instan “WhatsApp”
+
+Authors: Universitas Indonesia, Ayubi Wirara, Bangkit Hardiawan, Muhammad Salman
+Year: 2020
+
+Aplikasi pesan instan menjadi salah satu alasan utama untuk seorang pengguna menggunakan internet. Saat ini WhatsApp menjadi aplikasi pesan instan dengan pengguna terbesar di indonesia karena beragam fitur yang telah didukung. Hal ini tentu saja membuat WhatsApp bukan hanya digunakan untuk bertukar informasi biasa tapi juga informasi terkait kasus kejahatan. Sehingga bukti digital aplikasi pesan instan WhatsApp pada smartphone menjadi potensial dalam berbagai kasus kriminal dan proses persidangan. Pada penelitian ini dilakukan analisis terhadap bukti digital whatsapp yang dapat diperoleh dalam proses akuisisi perangkat smartphone. Target perangkat yang diakuisisi pada penelitian ini adalah smartphone berbasis android dan iOS. Hasil ekstraksi didapatkan beberapa bukti digital aplikasi WhatsApp yang berhasil didapatkan meskipun perangkat tidak dilakukan proses root/jailbreak terlebih dahulu.

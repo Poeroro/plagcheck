@@ -1,0 +1,6 @@
+PENGARUH LEVERAGE, CAPITAL INTENSITY, KOMISARIS INDEPENDEN DAN KEPEMILIKAN INSTITUSIONAL TERHADAP TAX AVOIDANCE
+
+Authors: Sevi Lestya Dewi, Rachmawati Meita Oktaviani
+Year: 2021
+
+Penelitian ini bertujuan untuk menganalisis pengaruh leverage, capital intensity, komisaris independen, dan kepemilikan institusional terhadap tax avoidance. Penelitian ini termasuk penelitian kuantitatif dengan menggunakan data sekunder yang diperoleh dari laporan tahunan perusahaan. Populasi dari penelitian ini adalah perusahaan manufaktur yang terdaftar di Bursa Efek Indonesia (BEI) tahun 2016-2020. Sebanyak 75 sampel dipilih dengan metode purposive sampling, dan dianalisis menggunakan regresi data panel. Hasil penelitian menunjukkan bahwa komisaris independen berpengaruh signifikan negatif terhadap tax avoidance, sedangkan leverage, capital intensity, dan kepemilikan institusional tidak berpengaruh signifikan terhadap tax avoidance. Hasil penelitian mengimplikasikan peran pengawasan dan monitoring dalam menerapkan perencanaan pajak perusahaan yang optimal untuk menurunkan tingkat tax avoidance.

@@ -1,0 +1,163 @@
+Teori Portofolio dan Analisis Investasi
+
+Authors: Jogiyanto Hartono
+Year: 2010
+
+DAFTAR ISI
+BAB 1. KONSUMSI, INVESTASI DAN PERANAN PASAR MODAL
+Pendahuluan
+Konsumsi
+Investasi
+Tipe-tipe investasi keuangan
+Peranan pasar modal
+
+BAB 2 PASAR MODAL
+Pendahuluan
+Penawaran perdana ke public
+Pasar modal sekunder
+
+BAB 3 PASAR MODAL INDONESIA
+Pendahuluan
+Sejarah modal di Indonesia
+Bapepam-LK
+Otoritas jasa keuangan
+Prosedur pendaftaran sekuritas di bei
+System perdagangan di bei
+Indeks pasar modal
+Penyelesaian transaksi
+
+BAB 4 SAHAM
+Pendahuluan
+Saham preferen
+Saham biasa
+Saham treasuri
+
+BAB 5 NILAI SAHAM
+Pendahuluan
+Nilai buku dan nilai-nilai lain yang berhubungan
+Nilai pasar
+Nilai intrinsic
+
+BAB 6 OBLIGASI
+Pendahuluan
+Definisi obligasi
+Kode obligasi
+Obligasi seri dan termin
+Macam-macam obligasi
+Pasar obligasi
+Nilai obligasi
+Likuiditas obligasi
+Hasil obligasi
+Hak tarik
+Rentang hasil
+Risiko obligasi
+Teorema penilaian obligasi
+Durasi penilaian obligasi
+Durasi obligasi
+Sensitivitas harga obligasi dari perubahan suku bunga
+Imunisasi
+
+BAB 7 RETURN DAN RISIKO AKTIVA TUNGGAL
+Pendahuluan
+Pengkuran return realisasian
+Return ekspektasian
+Risiko
+Koefisien variasi
+Property return ekspektasian dan varian
+Semi variance
+Mean absokute deviation
+Hubungan antara retur ekspektasian dengan risiko
+
+BAB 8 RETURN DAN RISIKO PORTOFOLIO
+Pendahuluan
+Return portofolio
+Risiko portofolio
+Risiko total
+Diversifikasi
+
+BAB 9 PEMILIHAN PORTOFOLIO
+Pendahuluan
+Menentukan attainable set dan efficient set
+Menentukan portofolio efisien
+Menetukan portofolio optimal
+Lampiran 9A- penjabaran portofolio optimal dengan aktiva bebas risiko
+
+BAB 10 MODEL INDEKS TUNGGAL
+Pendahuluan
+Model indeks tunggal dan komponen returnnya
+Asumsi-asumsi
+Varian return sekuritas model indeks tunggal
+Kovarian return antara sekuritas model indeks tunggal
+Parameter-parameter input untuk model markowits
+Analisis portofolio menggunakan model indeks tunggal
+Model pasar
+Portofolio optimal berdasarkan model indeks tunggal
+
+BAB 11 BETA
+Pendahuluan
+Pengertian beta
+Mengestimasi beta
+Beta pasar
+Beta akuntansi
+Beta fundamental
+Beta pasar dan beta fundamental
+Beta portofolio
+
+BAB 12 BETA DISESUAIKAN DAN BETA UNTUK PASAR MODAL BERKEMBANG
+Pendahuluan
+Ketetapan beta historis
+Menyesusaiakan dan memprediksi beta
+Beta untuk pasar modal berkembang 
+
+BAB 13 OPSI
+Pendahuluan
+Definisi opsi
+Tipe kontrak opsi
+Terminology dasar opsi
+Payoff dan laba dari opsi
+Penggunaan opsi untuk lindung nilai
+Penggunaan opsi untuk spekulasi
+Valuasi dari opsi
+Model black-scholes
+Penentu harga opsi
+Opsi indeks
+
+BAB 14 CAPM
+Pendahuluan
+Asumsi-asumsi
+Ekuilibrium pasar modal
+Portofolio pasar
+Garis pasar modal
+Garis pasar modal
+Garis pasar sekuritas
+Penjabaran model capm
+Pengujian empiris terhadap capm
+
+BAB 15 EFISIENSI PASAR
+Pendahuluan
+Bentuk efisiensi pasar
+Definisi efisiensi pasar
+Alasan-alasan pasar yang efisien dan tidak efisien
+
+BAB 16 PENGUJIAN EFISIENSI PASAR
+Pendahuluan
+Pengujian –pengujian pendugaan return
+Studi peristiwa
+Pengujian informasi privat
+Anomaly pasar
+
+BAB 17 MODEL PERHITUNGAN RETURN TAK NORMAL
+Pendahuluan
+Return tak normal
+Rata-rata return taknormal
+Akumulasi return taknormal
+Pengujian statistic terhadap return taknormal
+Penjelas return taknormal
+
+BAB 18 MANAGEMEN PORTOFOLIO
+Pendahuluan
+Proses managemen portofolio
+Perencanaan portofolio
+Eksekusi portofolio
+Umpan balik kinerja portofolio
+Mengukur kinerja portofolio

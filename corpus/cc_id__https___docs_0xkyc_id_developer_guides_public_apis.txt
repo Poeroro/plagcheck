@@ -1,0 +1,24 @@
+=== https://docs.0xkyc.id/developer-guides/public-apis ===
+
+🤖Public APIs
+Links
+APIs
+API endpoint to get JWT format accessToken. See below for example requests and responses.
+test1123456789123456789Successfully returns JWT format accessToken
+Invalid request parameters
+API endpoint to check whether a specified wallet address holds any SBT tokens on a given blockchain chain. The wallet address should be provided in hex code format starts with 0x. The user can specify the chain they're checking against. Returns a boolean indicating presence or absence of SBT tokens, or an error message in case of invalid parameters or unauthorized issue. See below for example requests and responses.
+Enter JWT access token
+Successfully returns true or false as a result
+Invalid request parameters
+Unauthorized error
+API endpoint to get UUID on a given wallet address and blockchain chain. The wallet address should be provided in hex code format starts with 0x. The user can specify the chain they're checking against. Returns a string format uuid or empty string, or an error message in case of invalid parameters or unauthorized issue. See below for example requests and responses.
+Enter JWT access token
+Successfully returns uuid or empty string
+Invalid request parameters
+Unauthorized error
+API endpoint to get address, chainId, chainName pairs which has the same UUID. The uuid should be provided in uuid format. Returns an array of {address, chainId, chainName}, or an error message in case of invalid parameters or unauthorized issue. See below for example requests and responses.
+Enter JWT access token
+Successfully returns an array of {address, chainId, chainName} or an empty array
+Invalid request parameters
+Unauthorized error
+Last updated

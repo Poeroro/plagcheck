@@ -1,0 +1,7 @@
+Sistem Informasi Geografis: Konsep-Konsep Dasar ( Perspektif Geodesi & Geomatika)
+
+Authors: Eddy Prahasta
+Year: 2014
+
+Karena kebutuhan yang bersifat komprehensif, adalah tidak mudah untuk memisahkan aspek spasial dengan properties-nya. Demikian pula dengan aplikasi yang mengelolanya. Kecenderungannya adalah aplikasi yang dapat mengelola basisdata spasial juga dapat menangani basisdata atribut. Sebagai contoh, perangkat SIG dapat membaca, memanggil, dan memanipulasi basisdata spasial yang disimpan di dalam DBMS. Sementara itu, basisdata spasial yang sama juga dapat di-join dengan tabel atribut dan kemudian dikenakan query oleh DBMS yang bersangkutan melalui fasilitas SQL atau bahasa script lainnya. Inilah lingkungan di mana SIG berada.
+Penggunaan aplikasi SIG tentu saja makin luas. Hal ini sangat didukung oleh hadirnya beberapa komponen perangkat lunak, extension, atau framework yang berasal dari pihak ketiga. Dengan komponen ini, tentu saja setiap pengguna yang terampil dapat membuat sendiri aplikasi yang berfungsi untuk membaca, menampilkan, meng-query, dan memanipulasi basisdata spasialnya. Meskipun demikian, SIG bukanlah pemrograman aplikasi semata. Pemrograman merupakan bagian kecil dari sejumlah aktivitas pengembangan dalam rangka membuat solusi spasial yang dibutuhkan. Bahkan dalam requirement lain, pengguna bisa saja memanfaatkan perangkat lunak SIG tanpa pemrograman sama sekali. Pemahaman mengenai konsep-konsep (spasial) yang berada di belakangnya jauh lebih bermakna, dalam kaitan inilah hadir buku ini.

@@ -1,0 +1,10 @@
+Pengantar Teknologi Informasi Edisi Revisi
+
+Authors: Abdul Kadir
+Year: 2014
+
+Teknologi informasi begitu pesat berkembang dan dampaknya telah kita rasakan. Berbagai kemudahan yang kita terima, seperti kemudahan untuk memperoleh informasi melalui telepon seluler dan Internet, kemudahan dalam bertransaksi dengan menggunakan kartu kredit atau kartu debit, dan kemudahan untuk mengambil uang melalui ATM, adalah berkat kemajuan teknologi informasi.
+
+Untuk mengenali dan menggali potensi teknologi informasi, pembaca bisa membaca buku ini. Buku ini ditulis dengan maksud dapat digunakan oleh siapa saja, dengan harapan dapat membantu mempermudah pembaca dalam memahami teknologi informasi yang memiliki lingkup sangat luas. Bermacam-macam topik tentang teknologi informasi beserta aplikasinya dibahas dengan harapan agar mudah untuk dimengerti. Selain itu, materi teknologi informasi telah diusahakan untuk dilengkapi dengan gambar pelengkap yang kiranya akan banyak menolong pembaca dalam memahami materi.
+
+Buku ini telah direvisi sesuai dengan perkembangan teknologi informasi saat ini, Oleh karena itu, beberapa materi yang tidak relevan lagi dibuang. Adapun hal-hal baru seperti komputasi awan (cloud computing) dan kode QR telah ditambahkan.

@@ -1,0 +1,6 @@
+PERTUMBUHAN EKONOMI INDONESIA
+
+Authors: Syawal Syawal
+Year: 2022
+
+Penelitian ini menganalisis pengaruh pengeluaran pemerintah dan beberapa variabel lain yang mempengaruhi pertumbuhan ekonomi jangka panjang pada tingkat provinsi di Indonesia. Penelitian ini menggunakan analisis data panel yang terdiri dari 26 provinsi selama kurun waktu 1980 sampai 2006. Data yang digunakan telah melalui uji stasioneritas dengan menggunakan uji Augmented Dickey Fuller (ADF) – Fisher untuk data panel yang dianjurkan oleh Madalla dan Wu (1999). Hasilnya, data stasioner pada tingkat first difference. Penelitian ini menunjukkan bahwa koefisien pengeluaran pemerintah riil adalah positif signifikan. Artinya pengeluaran pemerintah memiliki peranan penting dalam meningkatkan pertumbuhan ekonomi di Indonesia. Penelitian ini menganalisis pengaruh pengeluaran pemerintah secara agregat

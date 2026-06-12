@@ -1,0 +1,6 @@
+Konsep-konsep Dasar Sistem Informasi Geografis
+
+Authors: Eddy Prahasta
+Year: 2002
+
+Istilah Sistem Informasi Geografis (SIG) merupakan gabungan tiga unsur pokok, yaitu sistem, informasi, dan geografis. Dapat diketahui bahwa SIG merupakan suatu sistem yang menekankan pada unsur informasi geografis. Informasi geografis tersebut mengandung pengertian informasi tentang tempat tempat yang berada di permukaan bumi, pengetahuan tentang letak suatu objek di permukaan bumi, dan informasi tentang keterangan-keterangan (atribut) yang terdapat di permukaan bumi yang posisinya telah diketahui.

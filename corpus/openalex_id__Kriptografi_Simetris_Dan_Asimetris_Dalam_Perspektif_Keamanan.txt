@@ -1,0 +1,6 @@
+Kriptografi Simetris Dan Asimetris Dalam Perspektif Keamanan Data Dan Kompleksitas Komputasi
+
+Authors: B Basri
+Year: 2016
+
+Data security is important In an enterprise. Security and integrity of data is something that must be considered. Efforts to keep information from falling into the hands of unauthorized persons demanding the need to apply a good mechanism in security. There are many common cryptographic methods can be applied, in the classification generally consists of two, Symmetric and Asymmetric method. In this project, carried out an analysis in the perspective of data security and computational complexity using two types of cryptography methods, for its  implementation, created a system where data is transmitted (plaintext) first encrypted by the sender generate encrypted data (ciphertext) and will be sent to the receiver to do the decryption process to produce a data intact as before. Of course, in this implementation analyzed the accuracy of the data that has been encrypted, the level of difficulty, security and time required in the process. From the test results of refference article shown that both methods have the same accuracy, but more complexity on Asymmetric methods, and time used in asymmetric cryptography computing process tend to be more complex, but by the level of data security using asymmetric methods is better

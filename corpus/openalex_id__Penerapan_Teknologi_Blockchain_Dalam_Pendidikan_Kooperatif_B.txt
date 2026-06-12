@@ -1,0 +1,6 @@
+Penerapan Teknologi Blockchain Dalam Pendidikan Kooperatif Berbasis E-Portfolio
+
+Authors: Untung Rahardja
+Year: 2022
+
+Banyak perbaikan untuk membantu proses pembelajaran telah dikembangkan oleh kemajuan teknologi dalam pendidikan. Perguruan tinggi sangat perlu mengembangkan kompetensi digitalnya, yang dapat dicapai dengan menggunakan beragam perangkat pembelajaran. Namun, banyak mahasiswa dari universitas lain masih kekurangan kompetensi digital yang diperlukan. Penelitian ini menggunakan teknik survei yang akan dihitung secara kuantitatif dengan menggunakan Skala Likert. Arsitektur sistem manajemen pendidikan kooperatif ini memanfaatkan penyimpanan cloud berbasis blockchain untuk Integrasi E-Portofolio. Proses Blockchain akan berguna sebagai landasan teori bagi para peneliti yang akan memulai penelitian tentang teknologi Blockchain untuk pendidikan digital sehingga tantangan dalam penelitian ini dapat diselesaikan dan hasil kompetensi digital jelas dan tidak dapat disangkal. Student-Centered iLearning Blockchain (SCi-B) dengan E-Portfolio didukung oleh teknologi Blockchain, yang mungkin sesuai dengan kebutuhan universitas dan meningkatkan pendidikan kooperatif pada kompetensi digital, menurut temuan penelitian.

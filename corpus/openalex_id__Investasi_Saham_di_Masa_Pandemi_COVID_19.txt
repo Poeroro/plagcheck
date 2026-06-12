@@ -1,0 +1,6 @@
+Investasi Saham di Masa Pandemi COVID-19
+
+Authors: Diana Tambunan
+Year: 2020
+
+Pandemi COVID-19 telah memukul berbagai sektor, termasuk pasar saham sehingga membuat banyak orang ragu untuk berinvestasi saham. Banyak industri terkena dampak Covid-19 menyebabkan sejak Maret 2020 Indeks Harga Saham Gabungan (IHSG) Bursa Efek Indonesia mengalami penurunan, tetapi sejak minggu ketiga Mei hingga awal Juni 2020 menunjukkan kenaikan yang mengindikasikan perdagangan saham mulai menunjukkan perbaikan. Penelitian ini bertujuan menganalisis saham-saham sektor apa saja yang masih mampu mencatatkan penguatan di masa pandemi COVID-19, dengan menggunakan data sekunder volume perdagangan, Indeks Harga Saham Gabungan (IHSG), kapitalisasi pasar secara mingguan dan bulanan dengan sampel menggunakan pasar saham Indonesia periode bulan Maret 2020 – Juni 2020 yang diperoleh dari laporan mingguan Otoritas Jasa Keuangan (OJK) dan Laporan Bulanan Bursa Efek Indonesia (BEI). Hasil penelitian menunjukkan bahwa saham-saham sektor industri konsumsi, sektor telekomunikasi, dan sektor kesehatan merupakan saham-saham yang dapat menjadi pilihan investor di masa pandemi COVID-19.Kata Kunci: keputusan investasi, portofolio saham, risiko dan return

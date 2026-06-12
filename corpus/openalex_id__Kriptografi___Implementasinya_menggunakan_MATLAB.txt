@@ -1,0 +1,14 @@
+Kriptografi & Implementasinya menggunakan MATLAB
+
+Authors: Emy Setyaningsih
+Year: 2015
+
+Seiring dengan peningkatan kepentingannya, banyak metode kriptografi yang ditemukan maupun diperluas penggunaannya.
+
+Buku Kriptografi & Implementasinya Menggunakan Matlab ini beragam teknik kriptografi beserta contoh dan implementasinya menggunakan aplikasi MATLAB.
+
+Keistimewaan dari Buku Kriptografi & Implementasinya Menggunakan Matlab ini adalah adanya beberapa konsep pengembangan metode kriptografi yang dikembangkan oleh penulis sebagai upaya untuk mendapatkan algoritma yang tidak mudah untuk dipecahkan.
+
+Metode kriptografi yang dikembangkan pada Buku Kriptografi & Implementasinya Menggunakan Matlab ini juga disertai dengan analisis dan implementasinya menggunakan aplikasi MATLAB.
+
+Selain itu, contoh-contoh yang dibahas pada beberapa metode kriptografi tidak hanya terbatas pada pesan dalam bentuk teks, namun juga dalam bentuk image/gambar yang disertai dengan fungsi-fungsi yang dibangun menggunakan aplikasi MATLAB.

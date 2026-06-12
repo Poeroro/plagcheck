@@ -1,0 +1,6 @@
+Literatur Review Permasalahan Privasi Pada Rekam Medis Elektronik
+
+Authors: Annisa Maulida Ningtyas, Ismil Khairi Lubis
+Year: 2018
+
+Rekam Medis Elektronik (RME) merupakan salah satu terobosan dari pemanfaatan teknologi informasi dalam bidang kesehatan bertujuan untuk mempermudah pelayanan kesehatan. Dengan semakin banyaknya penyedia layanan kesehatan yang memanfaatkan RME ini, yang harus diperhatikan bukan hanya masalah migrasi data dari konvensional menjadi digital, namun juga mengenai cara pengamanan data pada RME yang memiliki sifat sensitif dan rahasia yang selama ini permasalahan privasi belum diatur dan ditangani secara memadai pada proses pembuatan RME ini. Untuk menyelesaikan masalah tersebut, peneliti membuat sebuah literatur review mengenai teknik pengamanan data pada 20 artikel prosiding dan jurnal. Teknik pengamanan data yang seringkali digunakan sebagai usaha pengamanan data adalah kriptografi, firewall, dan kontrol akses.

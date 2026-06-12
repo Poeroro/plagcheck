@@ -1,0 +1,6 @@
+PENGARUH KEPEMILIKAN INSTITUSIONAL, KOMISARIS INDEPENDEN DAN KOMITE AUDIT TERHADAP PENGHINDARAN PAJAK
+
+Authors: Dudi Pratomo, Risa Aulia Rana
+Year: 2021
+
+Penelitian ini bertujuan untuk mengetahui apakah ada pengaruh kepemilikan institusional, komisaris independen serta komite audit terhadap penghindaran pajak pada perusahaan barang konsumsi yang terdaftar di Bursa Efek Indonesia periode 2015-2018. Penelitian ini menggunakan deskriptif kuantitatif. Teknik pengambilan sampel yang digunakan adalah purposive sampling dengan total sampel yang didapatkan sebanyak 14 perusahaan dalam waktu 4 tahun sehingga diperoleh 56 sampel setelah dilakukan data outlier. Analisis yang digunakan adalah analisis data panel dengan menggunakan software Eviews 10. Hasil pengujian analisis menyatakan bahwa variabel kepemilikan institusional, komisaris independen, serta komite audit memiliki pengaruh terhadap penghindaran pajak secara simultan. Pengujian secara parsial menyatakan bahwa variabel kepemilikan institusional dan komisaris independen berpengaruh negatif terhadap penghindaran pajak, sedangkan komite audit tidak berpengaruh terhadap penghindaran pajak.

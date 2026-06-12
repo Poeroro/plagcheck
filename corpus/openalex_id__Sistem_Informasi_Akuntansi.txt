@@ -1,0 +1,6 @@
+Sistem Informasi Akuntansi
+
+Authors: 
+Year: 2021
+
+buku ini berisi proses bisnis pengadaan produksi, sistem pemrosesan data elektronik, pengembangan sistem survei dan lain-lain

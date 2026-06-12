@@ -1,0 +1,6 @@
+Manajemen Basis Data Menggunakan MySQL
+
+Authors: Yanto, R. (Robi)
+Year: 2018
+
+Buku kategori Sains dan Teknologi yang berjudul Manajemen Basis Data Menggunakan Mysql merupakan buku karya dari Robi Yanto. Buku ini terdiri dari 8 bab yaitu Pengenalan Dasar Basis Data, Model Data Relasional, Manajemen Basis Data, Struktur Bahasa Query (SQL), Penerapan Operator dalam Mysql, Penerapan Fungsi dalam Mysql, Relasi Tabel, dan Mysql dan PHP.

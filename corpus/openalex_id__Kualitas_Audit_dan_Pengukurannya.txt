@@ -1,0 +1,8 @@
+Kualitas Audit dan Pengukurannya
+
+Authors: Mathius Tandiontong
+Year: 2016
+
+Audit harus dilakukan oleh sesorang atau lebih yang memiliki keahlian dan pelatihan teknis yang cukup sebagai auditor. Kualitas jasa dapat ditinjau dari berbagai sudut pandang, termasuk kualitas audit. Auditor berpengalaman akan mengingat lebih banyak jenis item daripada item yang sejenis sedangkan auditor yang tidak berpengalaman lebih banyak mengingat item sejenis daripada banyak jenis item. 
+Buku ini secara ringkas menguraikan teori umum, teori penghubung, dan teori praktis, serta fenomena-fenomena yang akan terangkum dalam bagian pendahuluan. Teori umum mencakup teori pemangku kepentingan (stakeholder theory), teori entitas (entity theory), dan teori keagenan (agency theory). Teori penghubung, mencakup teori labeling, teori agency problems. Teori praktis, meliputi teori kontrak (contracting theory), teori tindakan beralasan (tra: theory of reasoned action), teori kepuasan kerja spector (spector's job satisfaction), teori kohlberg, dan teori auditing. 
+Buku ini juga akan menguraikan perilaku akuntansi, esensi audit dalam ilmu akuntansi, konsep dasar auditing, faktor-faktor yang mempengaruhi kualitas audit, yang terangkum pada bagian konsep dasar kualitas audit. Selanjutnya buku ini akan menguraikan konsep dasar kualitas, urgensi pengukuran kualitas, dan berbagai instrumen sebagai alternatif dalam mengukur kualitas, yang terangkum pada bagian pentingnya kualitas dalam evaluasi audit. Bagian selanjutnya buku ini mengungkap jenis-jenis audit, metode audit, dan indikator kualitas audit, yang terangkum dalam pengukuran kualitas audit.

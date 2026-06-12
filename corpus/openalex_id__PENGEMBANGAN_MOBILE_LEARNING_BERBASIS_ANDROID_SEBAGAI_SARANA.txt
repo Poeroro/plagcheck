@@ -1,0 +1,6 @@
+PENGEMBANGAN MOBILE LEARNING BERBASIS ANDROID SEBAGAI SARANA BERLATIH MENGERJAKAN SOAL MATEMATIKA
+
+Authors: Danang Setyadi
+Year: 2017
+
+Penelitian ini bertujuan untuk mengembangkan mobile learning berupa game quiz berbasis android pada materi barisan dan deret. Penelitian ini adalah penelitian pengembangan. Prosedur dalam penelitian ini terdiri dari analisis produk yang dikembangkan, mengembangkan produk awal, dan uji coba produk. Hasil penelitian menunjukkan bahwa game quiz berbasis android yang dikembangkan valid.

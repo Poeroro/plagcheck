@@ -1,0 +1,6 @@
+Implementasi Algoritma Kriptografi Rivest Shamir Adleman (RSA) pada Tanda Tangan Digital
+
+Authors: Yusuf Anshori, A.Y. Erwin Dodu, Dewa Made P. Wedananta
+Year: 2019
+
+Tanda tangan digital merupakan mekanisme otentikasi yang memungkinkan pembuat pesan menambahkan sebuah kode yang bertindak sebagai tanda tangannya. Tanda tangan digital dapat digunakan untuk melakukan pembuktian secara matematis bahwa data tidak mengalamai modifikasi secara illegal, sehingga bisa digunakan sebagai salah satu solusi untuk melakukan verifikasi data. Penelitian ini bertujuan untuk menerapkan algoritma kriptografi Rivest Shamir Adleman (RSA) pada tanda tangan digital. Proses pembuatan tanda tangan digital diawali dengan pembuatan message digest dari sebuah dokumen kemudian proses pembangkitan kunci publik dan kunci privat untuk mengamankan data dan untuk membuat tanda tangan digital. Kunci privat akan dikirimkan kepada penerima pesan untuk memverifikasi tanda tangan digital. Tanda tangan digital dan dokumen dikirmkan kepada penerima. Selanjutnya, pada proses verifikasi, penerima akan mengecek apakah tanda tangan tersebut cocok atau tidak dengan menggunakan kunci privat dan menghitung nilai hash (message digest) dari dokumen yang diterima.

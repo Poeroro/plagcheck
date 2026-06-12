@@ -1,0 +1,6 @@
+Analisis Sistem Kriptografi dalam Mengamankan Data Pesan Dengan Metode One Time Pad Cipher
+
+Authors: Oskah Dakhi, Mardhiah Masril, Rina Novalinda, Jufrinaldi Jufrinaldi, Ambiyar Ambiyar
+Year: 2020
+
+Dalam dunia teknologi informasi yang menggunakan komputer sebagai medianya, maka keamanan data (pesan) menjadi aspek yang sangat penting dalam sistem teknologi informasi. Salah satu metode yang digunakan untuk menjaga keamanan data tersebut adalah algoritma kriptografi One Time Pad (OTP). OTP dipilih karena merupakan algoritma sederhana dan belum dapat terpecahkan. Kunci yang digunakan pada algoritma ini haruslah kunci yang benar-benar acak sehingga kerahasiaan pesan didalamnya dapat terjamin, maka digunakanlah metode pembangkit bilangan acak Linear Congruential Generator (LCG) atau Linear Feedback Shift Register (LFSR). Sistem ini dikembangkan dengan menggunakan bahasa pemrograman Visual Basic 6.0. Hasil dari pembahasan ini adalah menghasilkan sebuah aplikasi yang dapat digunakan untuk mengenkripsi dan mendekripsi plaintext menggunakan algoritma OTP dan LCG/FLSR sebagai pembangkit kunci.

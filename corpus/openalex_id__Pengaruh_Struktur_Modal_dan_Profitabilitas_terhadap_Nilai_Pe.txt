@@ -1,0 +1,6 @@
+Pengaruh Struktur Modal dan Profitabilitas terhadap Nilai Perusahaan dengan Kepemilikan Manajerial sebagai Variabel Moderasi
+
+Authors: Rita Kusumawati, Irham Rosady
+Year: 2018
+
+This study aims to examine the influence of capital structure and profitability on firm value with a managerial ownership as a variable moderation.The population in this research is the manufacturing companies listed on the Indonesia Stock Exchange (IDX) in period 2013 up to 2016. Data collected by purposive sampling method and the sampling results obtained are 96 sampel. The analysis technique used Moderated Regression Analysis (MRA) or interaction test. The result show that the capital structure as measured by DER has a positive and significant effecton firm value, profitability as measured by ROA has a positive and significanton firm value, the capital structure which moderated by managerial ownership has a negative and significant effect on firm value and profitability which moderated by managerial ownership has a negative and significant effect on firm value.

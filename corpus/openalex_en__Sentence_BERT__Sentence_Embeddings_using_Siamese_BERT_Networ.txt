@@ -1,0 +1,6 @@
+Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks
+
+Authors: Nils Reimers, Iryna Gurevych
+Year: 2019
+
+Nils Reimers, Iryna Gurevych. Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP). 2019.

@@ -1,0 +1,6 @@
+SENTIMEN ANALISIS PUBLIK TERHADAP KEBIJAKAN LOCKDOWN PEMERINTAH JAKARTA MENGGUNAKAN ALGORITMA SVM
+
+Authors: Auliya Rahman Isnain, Adam Indra Sakti, Debby Alita, Nurman Satya Marga
+Year: 2021
+
+Media sosial menjadikan masyarakat mengalami pergeseran perilaku baik budaya, etika dan norma yang ada, sehingga mereka dapat mengeluarkan opini-opini yang mereka miliki. Opini merupakan suatu pendapat dari pemikiran masayarakat mengenai suatu permasalahan yang sedang terjadi, saat ini Indonesia sedang dihadapkan oleh masalah mengenai virus Covid-19 yang memakan begitu banyak korban jiwa sehingga masyarakat mengeluarkan opini mereka mengenai virus tersebut dan kebijakan yang dilakukan pemerintah menghadapi virus tersebut.Penelitian ini bertujuan untuk mengetahui bagaimana sentiment publik terhadap kebijakan yang akan dilakukan pemerintah mengenai kebijakan lockdown ataupun pembatasan sosial berskala besar menggunakan metode Support Vector Machine denga ekstraksi fitur tf-idf dengan pengujian yang nantinya akan dilihat bagaimana nilai accuracy, precision, Recall dan F1-Score.Penggunaan metode Support Vector Machine dan ekstraksi fitur dengan tf-idf yang membagi kelas menjadi sentiment positif 68,75% dan negative 31,25% menghasilkan nilai accuracy sebesar 74%, precision sebesar 75%, recall sebesar 92% dan F1-Score sebesar 83%.

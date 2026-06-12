@@ -1,0 +1,6 @@
+Gephi: An Open Source Software for Exploring and Manipulating Networks
+
+Authors: Mathieu Bastian, Sébastien Heymann, Mathieu Jacomy
+Year: 2009
+
+Gephi is an open source software for graph and network analysis. It uses a 3D render engine to display large networks in real-time and to speed up the exploration. A flexible and multi-task architecture brings new possibilities to work with complex data sets and produce valuable visual results. We present several key features of Gephi in the context of interactive exploration and interpretation of networks. It provides easy and broad access to network data and allows for spatializing, filtering, navigating, manipulating and clustering. Finally, by presenting dynamic features of Gephi, we highlight key aspects of dynamic network visualization.

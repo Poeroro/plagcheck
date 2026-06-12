@@ -1,0 +1,6 @@
+Wireless sensor networks for habitat monitoring
+
+Authors: Alan Mainwaring, David Culler, Joseph Polastre, Robert Szewczyk, John Anderson
+Year: 2002
+
+We provide an in-depth study of applying wireless sensor networks to real-world habitat monitoring. A set of system design requirements are developed that cover the hardware design of the nodes, the design of the sensor network, and the capabilities for remote data access and management. A system architecture is proposed to address these requirements for habitat monitoring in general, and an instance of the architecture for monitoring seabird nesting environment and behavior is presented. The currently deployed network consists of 32 nodes on a small island off the coast of Maine streaming useful live data onto the web. The application-driven design exercise serves to identify important areas of further work in data sampling, communications, network retasking, and health monitoring.

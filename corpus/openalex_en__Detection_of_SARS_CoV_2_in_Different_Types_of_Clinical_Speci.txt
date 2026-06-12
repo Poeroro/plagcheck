@@ -1,0 +1,6 @@
+Detection of SARS-CoV-2 in Different Types of Clinical Specimens
+
+Authors: Wenling Wang, Yanli Xu, Ruqin Gao, Roujian Lu, Kai Han
+Year: 2020
+
+This study describes results of PCR and viral RNA testing for SARS-CoV-2 in bronchoalveolar fluid, sputum, feces, blood, and urine specimens from patients with COVID-19 infection in China to identify possible means of non-respiratory transmission.

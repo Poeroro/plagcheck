@@ -1,0 +1,6 @@
+Microgrids: A review of technologies, key drivers, and outstanding issues
+
+Authors: A. Hirsch, Yael Parag, Josep M. Guerrero
+Year: 2018
+
+Microgrids are now emerging from lab benches and pilot demonstration sites into commercial markets, driven by technological improvements, falling costs, a proven track record, and growing recognition of their benefits. They are being used to improve reliability and resilience of electrical grids, to manage the addition of distributed clean energy resources like wind and solar photovoltaic (PV) generation to reduce fossil fuel emissions, and to provide electricity in areas not served by centralized electrical infrastructure. This review article (1) explains what a microgrid is, and (2) provides a multi-disciplinary portrait of today's microgrid drivers, real-world applications, challenges, and future prospects.

@@ -1,0 +1,6 @@
+Antenna Theory: Analysis and Design
+
+Authors: Constantine A. Balanis
+Year: 1982
+
+The discipline of antenna theory has experienced vast technological changes. In response, Constantine Balanis has updated his classic text, Antenna Theory, offering the most recent look at all the necessary topics. New material includes smart antennas and fractal antennas, along with the latest applications in wireless communications. Multimedia material on an accompanying CD presents PowerPoint viewgraphs of lecture notes, interactive review questions, Java animations and applets, and MATLAB features. Like the previous editions, Antenna Theory, Third Edition meets the needs of e

@@ -1,0 +1,6 @@
+Rational approximation of frequency domain responses by vector fitting
+
+Authors: Bjørn Gustavsen, A. Semlyen
+Year: 1999
+
+The paper describes a general methodology for the fitting of measured or calculated frequency domain responses with rational function approximations. This is achieved by replacing a set of starting poles with an improved set of poles via a scaling procedure. A previous paper (Gustavsen et al., 1997) described the application of the method to smooth functions using real starting poles. This paper extends the method to functions with a high number of resonance peaks by allowing complex starting poles. Fundamental properties of the method are discussed and details of its practical implementation are described. The method is demonstrated to be very suitable for fitting network equivalents and transformer responses. The computer code is in the public domain, available from the first author.

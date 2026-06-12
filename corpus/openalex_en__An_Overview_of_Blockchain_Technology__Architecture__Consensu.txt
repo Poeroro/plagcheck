@@ -1,0 +1,6 @@
+An Overview of Blockchain Technology: Architecture, Consensus, and Future Trends
+
+Authors: Zibin Zheng, Shaoan Xie, Hong‐Ning Dai, Xiangping Chen, Huaimin Wang
+Year: 2017
+
+Blockchain, the foundation of Bitcoin, has received extensive attentions recently. Blockchain serves as an immutable ledger which allows transactions take place in a decentralized manner. Blockchain-based applications are springing up, covering numerous fields including financial services, reputation system and Internet of Things (IoT), and so on. However, there are still many challenges of blockchain technology such as scalability and security problems waiting to be overcome. This paper presents a comprehensive overview on blockchain technology. We provide an overview of blockchain architechture firstly and compare some typical consensus algorithms used in different blockchains. Furthermore, technical challenges and recent advances are briefly listed. We also lay out possible future trends for blockchain.

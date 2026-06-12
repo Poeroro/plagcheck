@@ -1,0 +1,6 @@
+Pengaruh Citra Merek dan Harga terhadap Keputusan Pembelian pada Sekolah Tinggi Ilmu Manajemen Sukma Medan
+
+Authors: Desy Irana Dewi Lubis, Rahmat Hidayat
+Year: 2019
+
+tujuan penelitian ini adalah untuk mengetahui apakah ada pengaruh citra merek dan harga terhadap keputusan pembelian pada STIM Sukma Medan. Sampel penelitian 144 orang mahasiswa tahun 2013 sampai tahun 2015, pengambilan sampel menggunakan random sampling Analisis data menggunakan uji Regresi Berganda, pengujian hipotesis menggunakan uji koefisien determinasi (R2), uji parsial (uji t), dan uji simultan (uji F), sedangkan pengolahan data menggunakan SPSS 20. Hasil penelitian menunjukkan bahwa dari uji koefisien determinasi (R2) variabel citra merek dan harga mampu menjelaskan keberadaannya terhadap variabel keputusan pembelian, selain itu secara parsial citra merek tidak berpengaruh dan tidak signifikan terhadap keputusan pembelian sementara harga berpengaruh positif dan signifikan terhadap keputusan pembelian, secara simultan citra merek dan harga berpengaruh positif dan signifikan terhadap keputusan pembelian

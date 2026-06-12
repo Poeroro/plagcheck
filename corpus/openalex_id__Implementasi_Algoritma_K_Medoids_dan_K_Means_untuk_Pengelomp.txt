@@ -1,0 +1,6 @@
+Implementasi Algoritma K-Medoids dan K-Means untuk Pengelompokkan Wilayah Sebaran Cacat pada Anak
+
+Authors: Dini Marlina, Nure Lina, Andri Fernando, Aditya Ramadhan
+Year: 2018
+
+Usia dibawah 18 tahun merupakan usia yang baik dalam pertumbuhan dan perkembangan fisik dan mental pada seseorang. Pertumbuhan dan perkembangan yang baik akan menjadi modal bagi kelangsungan anak sebagai generasi penerus yang baik. Namun, seorang anak yang dilahirkan dalam keadaan cacat fisik yang berat beresiko untuk mengalami stress dan hambatan penyesuaian. Dinas Sosial Provinsi Riau mengaku fasilitas yang diberikan kepada penyandang cacat masih rendah. Selain itu, angka penyandang cacat di Provinsi Riau lebih dari 11 ribu tersebar di seluruh Kabupaten/ Kota di Provinsi Riau. K-Medoids mampu melakukan pengelompokan pada data sebaran anak cacat yang ada pada Provinsi Riau. Klaster yang dihasilkan pada penelitian ini adalah berjumlah tiga klaster. Validitas yang digunakan pada penelitian ini adalah validitas Silhoutte Coefficient Adapun nilai validitas yang dihasilkan pada algoritma K-Medoids adalah sebesar 0.5009. Sedangkan nilai validitas yang dihasilkan pada algoritma K-Means adalah 0.1443. Hal ini menunjukkan bahwa algoritma K-Medoids lebih baik dalam melakukan pengelompokan pada data sebaran Anak Cacat dibandingkan dengan algoritma K-Means .

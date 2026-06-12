@@ -1,0 +1,6 @@
+ANALISIS SENTIMEN REVIEW APLIKASI RUANGGURU MENGGUNAKAN ALGORITMA SUPPORT VECTOR MACHINE
+
+Authors: Faizal Fakhri Irfani
+Year: 2020
+
+Analisis sentiment review aplikasi Ruangguru merupakan proses menganalisa, memahami dan mengklasifikasikan suatu penilaian yang dikeluarkan masyarakat terhadap entitas aplikasi Ruangguru. Data penelitian ini diambil dari website google play store, data yang diambil yaitu data teks review dengan jumlah 2000 review. Data diklasifikasikan dengan menggunakan algoritma Support Vector Machine, dan dilakukan pengujian menggunakan kombinasi dari pembagian data latih dan data uji, serta menggunakan sistem K-Fold Cross-Validation. pengujian menggunakan kernel linear menghasilkan akurasi tertinggi dengan nilai 0.897. kombinasi data training 60% dan data testing 40% menghasilkan akurasi tertinggi sebesar 0.900. Pengujian dengan menggunakan sistem k-fold, akurasi tertinggi berada di nilai k-fold 6, 9, dan 10 dengan nilai akurasi sebesar 0.902. Namun pada k-fold 10, tingkat presisi nya lebih tinggi dibanding nilai k-fold lainnya dengan nilai presisi sebesar 0.903. Tingkat akurasi dalam penelitian ini tinggi berada di kisaran 90%. Hasil dari beberapa pengujian menunjukan bahwa sentimen masyarakat terhadap aplikasi Ruangguru cenderung positif.

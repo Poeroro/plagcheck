@@ -1,0 +1,6 @@
+An Introduction to the Bootstrap
+
+Authors: Bradley Efron, Robert Tibshirani
+Year: 1994
+
+An Introduction to the Bootstrap arms scientists and engineers as well as statisticians with the computational techniques they need to analyze and understand complicated data sets. The bootstrap is a computer-based method of statistical inference that answers statistical questions without formulas and gives a direct appreciation of variance, bias, coverage, and other probabilistic phenomena. This book presents an overview of the bootstrap and related methods for assessing statistical accuracy, concentrating on the ideas rather than their mathematical justification. Not just for beginners, the presentation starts off slowly, but builds in both scope and depth to ideas that are quite sophisticated.

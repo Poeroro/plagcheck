@@ -1,0 +1,6 @@
+Features and development of <i>Coot</i>
+
+Authors: Paul Emsley, Bernhard Lohkamp, W. G. Scott, Kevin Cowtan
+Year: 2010
+
+Coot is a molecular-graphics application for model building and validation of biological macromolecules. The program displays electron-density maps and atomic models and allows model manipulations such as idealization, real-space refinement, manual rotation/translation, rigid-body fitting, ligand search, solvation, mutations, rotamers and Ramachandran idealization. Furthermore, tools are provided for model validation as well as interfaces to external programs for refinement, validation and graphics. The software is designed to be easy to learn for novice users, which is achieved by ensuring that tools for common tasks are 'discoverable' through familiar user-interface elements (menus and toolbars) or by intuitive behaviour (mouse controls). Recent developments have focused on providing tools for expert users, with customisable key bindings, extensions and an extensive scripting interface. The software is under rapid development, but has already achieved very widespread use within the crystallographic community. The current state of the software is presented, with a description of the facilities available and of some of the underlying methods employed.

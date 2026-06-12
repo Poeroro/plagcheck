@@ -1,0 +1,6 @@
+Introduction to Fourier optics
+
+Authors: Joseph W. Goodman
+Year: 1968
+
+The fourth edition of this respected text considerably expands the original and reflects the tremendous advances made in the discipline since 1968. All material has been thoroughly updated and several new sections explore recent progress in important areas, such as wavelength modulation, analog information processing, and holography. Fourier analysis is a ubiquitous tool with applications in diverse areas of physics and engineering. This book explores these applications in the field of optics with a special emphasis on applications to diffraction, imaging, optical data processing, and holography. This book can be used as a textbook to satisfy the needs of several different types of courses, and it is directed toward both engineers ad physicists. By varying the emphasis on different topics and specific applications, the book can be used successfully in a wide range of basic Fourier Optics or Optical Signal Processing courses.

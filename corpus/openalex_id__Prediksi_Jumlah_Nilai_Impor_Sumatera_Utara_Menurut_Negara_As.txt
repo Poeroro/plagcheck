@@ -1,0 +1,6 @@
+Prediksi Jumlah Nilai Impor Sumatera Utara Menurut Negara Asal Menggunakan Algoritma Backpropagation
+
+Authors: Indri Sriwahyuni Purba, Anjar Wanto
+Year: 2018
+
+Dalam memenuhi kebutuhan dalam negeri, pemerintah mesti melakukan kegiatan ekonomi Internasional salah satunya impor. Impor adalah proses transportasi barang atau komoditas dari suatu Negara ke Negara lain secara legal. Terkhusus di provinsi Sumatera Utara selalu terjadi kenaikan jumlah impor tiap tahunnya terhitung pada tahun 2014-2016 di Badan Pusat Statistik ( BPS ) Sumatera Utara. Pada penelitian ini, penulis akan memprediksi jumah nilai impor untuk 5 tahun kedepan dengan menggunakan algoritma backpropagation. Backpropagation merupakan salah satu metode Jaringan Syaraf Tiruan (Artificial Neural Network), yang cukup handal dalam memecahkan masalah. Salah satunya adalah prediksi jumlah nilai impor di Sumatera Utara. Penelitian ini menggunakan 5 model arsitektur : 4-12-1, 4-15-1,4-18-1, 4-19-1, 4-20-1, dari kelima model tersebut akurasi terbaikÂ diperoleh dari model arsitekktur 4-19-1 dengan nilai akurasi 100%, epoch 2807 iterasi, dan MSE yaitu 0.00099930653.

@@ -1,0 +1,6 @@
+PENGARUH PROFITABILITAS, STRUKTUR MODAL, UKURAN PERUSAHAAN DAN KEBIJAKAN DIVIDEN TERHADAP NILAI PERUSAHAAN
+
+Authors: I Putu Hendra Sintyana, Luh Gede Sri Artini
+Year: 2018
+
+The purpose of this study is to determine the effect of profitability variables, capital structure, firm size and dividend policy on corporate value. This research is conducted at Indonesia Stock Exchange in 2014-2016. The sampling technique used purposive sampling method. The analysis technique used is multiple linear regression. Based on the results of the analysis found that the profitability and dividend policy have a significant positive effect on firm value, while the capital structure and firm size does not affect the value of the company. Company management must pay attention to the profitability and dividend policy on the company and the factors that can affect profitability and dividend policy. This is because the profitability and dividend policy proved to have a significant effect on the value of the company so as to provide a signal for investors.

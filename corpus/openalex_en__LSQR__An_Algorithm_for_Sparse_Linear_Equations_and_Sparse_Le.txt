@@ -1,0 +1,6 @@
+LSQR: An Algorithm for Sparse Linear Equations and Sparse Least Squares
+
+Authors: Christopher C. Paige, Michael A. Saunders
+Year: 1982
+
+An iterative method is given for solving Ax ~ffi b and minU Ax -b 112, where the matrix A is large and sparse. The method is based on the bidiagonalization procedure of Golub and Kahan. It is analytically equivalent to the standard method of conjugate gradients, but possesses more favorable numerical properties.

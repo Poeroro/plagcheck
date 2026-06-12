@@ -1,0 +1,6 @@
+Analisis Sentimen pada Aplikasi Grab di Google Play Store Menggunakan Support Vector Machine
+
+Authors: Rizki Wahyudi, Gilang Kusumawardana
+Year: 2021
+
+Pada Google Play Store, pengguna sering membaca review pengguna lain dan reputasi aplikasi, sebelum mengunduh sebuah aplikasi. Hal ini membuat analisis review pengguna sangat menarik bagi pemilik aplikasi untuk mengambil keputusan di masa depan. Penelitian ini bertujuan menganalisis review pengguna aplikasi Grab pada Google Play Store, menggunakan analisis sentimen. analisis review pengguna ini menggunakan metode Support Vector Machine (SVM). Evaluasi yang diusulkan dilakukan pada lebih dari 1.000 review pengguna yang dikumpulkan dari aplikasi Grab Indonesia di Google play store. Hasil dari analisis menggunakan Support Vector Machine menghasilkan akurasi 85,54% dan Hasil Review positif yang paling sering diulas adalah ”ovo”, sedangkan review negatif yang paling sering diulas adalah “driver”.

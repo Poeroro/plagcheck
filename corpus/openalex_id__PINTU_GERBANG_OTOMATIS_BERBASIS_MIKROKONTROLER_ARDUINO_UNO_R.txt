@@ -1,0 +1,6 @@
+PINTU GERBANG OTOMATIS BERBASIS MIKROKONTROLER ARDUINO UNO R3
+
+Authors: Arief Pratama Zanofa, Ristiandika Arrahman, Muhammad Bakri, Arief Budiman
+Year: 2020
+
+Pada saat sekarang dunia elektronika dan kontrol mengalami kemajuan yang sangat cepat. Teknologi elektronika juga turut memberikan kontribusi bagi kehidupan manusia. Berbagai jenis peralatan yang telah dibuat oleh manusia untuk memenuhi keinginan dan kebutuhan dalam menjalankan segala aktivitas salah satunya untuk mengontrol pintu gerbang. Permasalahan pada penelitian bahwa peoperasian pintu gerbang masih dilakukan secara manual dimana membuka dan menutup pintu masih didorong sehingga sistem gerbang belum efektif. Penelitian ini bertujuan membuat prototype pengembangan sebuah pintu bisa menjadi sebuah pintu gerbang otomatis yang dapat membuka dan menutup melalui penekanan dari remote kontrol yang dikendalika oleh manusia. Hasil pengujian yang telah dilakukan maka diperoleh hasil bahwa untuk jarak terbaik untuk mengakses remote smartphone adalah 9 meter dengan tanpa halangan, dan untuk dengan halangan jarak terbaik adalah 7 meter.

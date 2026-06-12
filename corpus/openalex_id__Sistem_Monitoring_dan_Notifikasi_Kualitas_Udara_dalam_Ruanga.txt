@@ -1,0 +1,6 @@
+Sistem Monitoring dan Notifikasi Kualitas Udara dalam Ruangan dengan Platform IoT
+
+Authors: Jacquline Waworundeng, Oktoverano Lengkong
+Year: 2018
+
+Penelitian ini membahas tentang prototipe alat pendeteksi kualitas udara di dalam ruangan dengan menggunakan mikrokontoler Wemos dan sensor MQ135 yang terhubung dengan platform IoT sebagai sistem monitoring dan notifikasi. Modul sensor MQ135 sebagai detektor kualitas udara, mengirimkan sinyal input untuk diproses oleh mikrokontroler Wemos board. Modul wifi yang terdapat pada Wemos board mengirimkan nilai yang terbaca oleh sensor ke platform IoT Thingspeak yang merekam data logging dalam bentuk grafik. Dalam hal ini, Thingspeak berfungsi sebagai bagian dari sistem monitoring. Sedangkan sebagai sistem notifikasi digunakan platform IoT Blynk apps. Blynk apps terhubung secara tidak langsung ke prototipe alat pendeteksi kualitas udara melalui internet. Nilai yang terbaca dari sensor diproses sesuai program dan jika memenuhi level sensor yang ditentukan maka sistem memberikan notifikasi kepada user melalui Blynk apps. Sistem ini berpotensi untuk digunakan sebagai sistem pemantauan kualitas udara di dalam ruangan untuk meningkatkan kesadaran tentang pentingnya kualitas udara yang sehat.Keywords : Sistem Monitoring, Notifikasi, Kualitas Udara, Sensor, Iot

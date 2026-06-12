@@ -1,0 +1,6 @@
+The Cambridge Structural Database
+
+Authors: Colin R. Groom, Ian Bruno, Matthew P. Lightfoot, Suzanna C. Ward
+Year: 2016
+
+The Cambridge Structural Database (CSD) contains a complete record of all published organic and metal-organic small-molecule crystal structures. The database has been in operation for over 50 years and continues to be the primary means of sharing structural chemistry data and knowledge across disciplines. As well as structures that are made public to support scientific articles, it includes many structures published directly as CSD Communications. All structures are processed both computationally and by expert structural chemistry editors prior to entering the database. A key component of this processing is the reliable association of the chemical identity of the structure studied with the experimental data. This important step helps ensure that data is widely discoverable and readily reusable. Content is further enriched through selective inclusion of additional experimental data. Entries are available to anyone through free CSD community web services. Linking services developed and maintained by the CCDC, combined with the use of standard identifiers, facilitate discovery from other resources. Data can also be accessed through CCDC and third party software applications and through an application programming interface.

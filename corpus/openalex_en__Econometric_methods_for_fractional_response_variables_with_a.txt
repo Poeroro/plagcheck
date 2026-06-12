@@ -1,0 +1,6 @@
+Econometric methods for fractional response variables with an application to 401(k) plan participation rates
+
+Authors: Leslie E. Papke, Jeffrey M. Wooldridge
+Year: 1996
+
+We develop attractive functional forms and simple quasi-likelihood estimation methods for regression models with a fractional dependent variable. Compared with log-odds type procedures, there is no difficulty in recovering the regression function for the fractional variable, and there is no need to use ad hoc transformations to handle data at the extreme values of zero and one. We also offer some new, robust specification tests by nesting the logit or probit function in a more general functional form. We apply these methods to a data set of employee participation rates in 401(k) pension plans.

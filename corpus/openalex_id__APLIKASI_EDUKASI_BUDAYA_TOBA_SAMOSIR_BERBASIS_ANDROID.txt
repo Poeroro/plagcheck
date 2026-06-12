@@ -1,0 +1,6 @@
+APLIKASI EDUKASI BUDAYA TOBA SAMOSIR BERBASIS ANDROID
+
+Authors: Harni Kusniyati, Nicky Saputra Pangondian Sitanggang
+Year: 2016
+
+Budaya adalah suatu cara hidup yang berkembang, dan dimiliki bersama oleh sebuah kelompok orang, dan diwariskan dari generasi ke generasi. Banyak dari lapisan masyarakat sekarang ini telah menggunakan teknologi informasi dan komunikasi sebagai salah satu sektor kompetitif yang bisa menambah nilai dari proses bisnis yang dijalankan. Perkembangan teknologi informasi dan komunikasi telah menguntungkan pihak yang menggunakan yaitu menjadi sarana yang dapat mempermudah penggunanya mengakses berbagai informasi kebudayaan toba samosir melalui aplikasi edukasi budaya toba samosir berbasis android ini. Saat ini kegiatan kunjungan wisata bagi sejumlah orang ke beberapa tujuan wisata di daerah-daerah yang mempunyai tempat wisata yang unik dan menarik dapat dimudahkan dengan adanya perangkat bergerak seperti smartphone dan tablet-PC. Aplikasi Edukasi Budaya Toba Samosir ini dibuat mengguanakan bahasa pemograman java dan mengunakan basis data SQLite, serta bantuan perangkat lunak android development tools. Kata Kunci : Budaya, Toba Samosir, Edukasi, Android

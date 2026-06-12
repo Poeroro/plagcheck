@@ -1,0 +1,6 @@
+A review of current routing protocols for ad hoc mobile wireless networks
+
+Authors: E.M. Royer, Chai-Keong Toh
+Year: 1999
+
+An ad hoc mobile network is a collection of mobile nodes that are dynamically and arbitrarily located in such a manner that the interconnections between nodes are capable of changing on a continual basis. In order to facilitate communication within the network, a routing protocol is used to discover routes between nodes. The primary goal of such an ad hoc network routing protocol is correct and efficient route establishment between a pair of nodes so that messages may be delivered in a timely manner. Route construction should be done with a minimum of overhead and bandwidth consumption. This article examines routing protocols for ad hoc networks and evaluates these protocols based on a given set of parameters. The article provides an overview of eight different protocols by presenting their characteristics and functionality, and then provides a comparison and discussion of their respective merits and drawbacks.

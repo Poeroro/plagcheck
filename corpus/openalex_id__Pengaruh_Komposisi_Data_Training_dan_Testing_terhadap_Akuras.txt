@@ -1,0 +1,6 @@
+Pengaruh Komposisi Data Training dan Testing terhadap Akurasi Algoritma C4.5
+
+Authors: Wilem Musu, Abdul Qahhar Ibrahim, Heriadi Heriadi
+Year: 2021
+
+Akurasi adalah tolak ukur yang digunakan untuk mengetahui seberapa tepat suatu pola klasifikasi memprediksi kelas data dari data yang akan datang. Dalam praktek data mining pengujian akurasi dari sebuah pola klasifikasi menggunakan data testing, sementara untuk menemukan pola itu sendiri, menggunakan data training. Pembagian presentasi jumlah data training dan data testing dari sebuah dataset menjadi salah satu faktor penentu besaran nilai akurasi. Sehingga kesalahan menentukan komposisi antara kedua jenis data tersebut akan mempengaruhi nilai akurasi yang diperoleh. Penelitian ini menguji tingkat akurasi empat dataset menggunakan algoritma C4.5 dengan sembilan komposisi jumlah data training dan testing. Hasil yang diperoleh menunjukan bahwa untuk dataset dengan tingkat sebaran data yang baik, maka komposisi jumlah data training dan testing tidak akan memberikan nilai akurasi yang fluktuatif. Tetapi kondisi sebaliknya memperlihatkan nilai akurasi yang fluktuatif sehingga diperlukan pengujian untuk semua komposisi untuk menemukan akurasi yang maksimum.

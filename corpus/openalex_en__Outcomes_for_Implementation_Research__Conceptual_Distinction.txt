@@ -1,0 +1,6 @@
+Outcomes for Implementation Research: Conceptual Distinctions, Measurement Challenges, and Research Agenda
+
+Authors: Enola K. Proctor, Hiie Silmere, Ramesh Raghavan, Peter S. Hovmand, Greg Aarons
+Year: 2010
+
+An unresolved issue in the field of implementation research is how to conceptualize and evaluate successful implementation. This paper advances the concept of "implementation outcomes" distinct from service system and clinical treatment outcomes. This paper proposes a heuristic, working "taxonomy" of eight conceptually distinct implementation outcomes-acceptability, adoption, appropriateness, feasibility, fidelity, implementation cost, penetration, and sustainability-along with their nominal definitions. We propose a two-pronged agenda for research on implementation outcomes. Conceptualizing and measuring implementation outcomes will advance understanding of implementation processes, enhance efficiency in implementation research, and pave the way for studies of the comparative effectiveness of implementation strategies.

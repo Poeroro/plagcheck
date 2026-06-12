@@ -1,0 +1,6 @@
+Mencari Kelompok Berisiko Tinggi Terinfeksi Virus Corona Dengan Discourse Network Analysis
+
+Authors: Tiodora Hadumaon Siagian
+Year: 2020
+
+Coronavirus outbreaks that cause COVID-19 which originated in Wuhan, Hubei Province, China continue to spread to many countries including Indonesia.The number of positive cases of COVID-19 continues to increase significantly and spread rapidly in all provinces in Indonesia.Although Coronavirus can infect anyone, some groups of people have a higher level of risk to Coronavirus that can lead to death.Therefore, this study aims to find vulnerable groups to Coronavirus using the Discourse Network Analysis method based on various health articles from online media.The results of the study found that elderly groups, sufferers of chronic diseases, smokers, vapers, men and those with type A blood are vulnerable groups to Coronavirus.This finding is expected can be used as scientific records for the government, medical personnel and the community for consideration of their different vulnerabilities in the efforts to mitigate and treat patients infected with the Coronavirus or other virus outbreaks that are related to the Coronavirus.

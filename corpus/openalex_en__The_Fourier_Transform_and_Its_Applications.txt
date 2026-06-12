@@ -1,0 +1,6 @@
+The Fourier Transform and Its Applications
+
+Authors: R. N. Bracewell, Peter B. Kahn
+Year: 1966
+
+1 Introduction 2 Groundwork 3 Convolution 4 Notation for Some Useful Functions 5 The Impulse Symbol 6 The Basic Theorems 7 Obtaining Transforms 8 The Two Domains 9 Waveforms, Spectra, Filters and Linearity 10 Sampling and Series 11 The Discrete Fourier Transform and the FFT 12 The Discrete Hartley Transform 13 Relatives of the Fourier Transform 14 The Laplace Transform 15 Antennas and Optics 16 Applications in Statistics 17 Random Waveforms and Noise 18 Heat Conduction and Diffusion 19 Dynamic Power Spectra 20 Tables of sinc x, sinc2x, and exp(-71x2) 21 Solutions to Selected Problems 22 Pictorial Dictionary of Fourier Transforms 23 The Life of Joseph Fourier

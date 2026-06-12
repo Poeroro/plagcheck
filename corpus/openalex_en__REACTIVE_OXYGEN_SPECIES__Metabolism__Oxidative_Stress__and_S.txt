@@ -1,0 +1,6 @@
+REACTIVE OXYGEN SPECIES: Metabolism, Oxidative Stress, and Signal Transduction
+
+Authors: Klaus Apel, Heribert Hirt
+Year: 2004
+
+Several reactive oxygen species (ROS) are continuously produced in plants as byproducts of aerobic metabolism. Depending on the nature of the ROS species, some are highly toxic and rapidly detoxified by various cellular enzymatic and nonenzymatic mechanisms. Whereas plants are surfeited with mechanisms to combat increased ROS levels during abiotic stress conditions, in other circumstances plants appear to purposefully generate ROS as signaling molecules to control various processes including pathogen defense, programmed cell death, and stomatal behavior. This review describes the mechanisms of ROS generation and removal in plants during development and under biotic and abiotic stress conditions. New insights into the complexity and roles that ROS play in plants have come from genetic analyses of ROS detoxifying and signaling mutants. Considering recent ROS-induced genome-wide expression analyses, the possible functions and mechanisms for ROS sensing and signaling in plants are compared with those in animals and yeast.

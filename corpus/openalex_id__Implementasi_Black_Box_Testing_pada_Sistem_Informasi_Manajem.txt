@@ -1,0 +1,6 @@
+Implementasi Black Box Testing pada Sistem Informasi Manajemen Dosen
+
+Authors: Ni Made Dwi Febriyanti, Oka Sudana, I Nyoman Piarsa
+Year: 2021
+
+Abstrak Sistem Informasi Manajen Dosen (SIMDOS) merupakan sistem yang memberikan informasi mengenai data dosen di Universitas Hindu Indonesia (UNHI). Implementasi SIMDOS di Universitas Hindu Indonesia secara menyeluruh belum optimal dengan demikian perlu adanya pengujian perangkat lunak. Pengujian perangkan lunak merupakan salah satu tahapan yang paling penting dalam pengembangan sebuah sistem informasi. Untuk mendapatkan hasil yang optimal maka perlu dilakukan pengujian dengan menggunakan black box testing dengan bantuan automation tools TestProject memiliki tujuan untuk meminimalisir adanya kesalahan dan memastikan apakah fungsi-fungsi pada sistem berjalan sesuai yang diharapkan. Hasil dari pengujian sistem yang diujikan sebanyak 53 butir uji terdapat 2 butir uji yang tidak sesuai.

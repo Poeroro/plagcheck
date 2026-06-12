@@ -1,0 +1,6 @@
+Analisis Klasifikasi Sentimen Pengguna Media Sosial Twitter Terhadap Pengadaan Vaksin COVID-19
+
+Authors: Nur Aini Rakhmawati, Muhammad Iqbal Aditama, Rizqeya Irfan Pratama, Kevin Hafizzana Untoro Wiwaha
+Year: 2020
+
+Media sosial seperti Twitter, Facebook, dan Instagram merupakan media komunikasi terpopuler di masyarakat saat ini. Twitter seringkali digunakan untuk mengungkapkan emosi mengenai suatu hal, baik memuji ataupun mencela.Emosi tweet para pengguna twitter dapat dikenali dengan analisis opini atau sentimen. Indonesia juga menjadi salah satu Negara yang pengguna aktif harian twitter nya cukup tinggi, sehingga twitter dapat dijadikan sebagai media untuk melakukan analisis sentimen terhadap topik vaksin corona. Analisis sentimen dilakukan untuk melihat pendapat atau opini terhadap sebuah masalah atau objek, apakah cenderung beropini negatif atau positif. Pengumpulan data dilakukan dengan teknik web scraper yang menghasilkan 1000 record sejak tanggal 20 Oktober sampai 1 November 2020, data yang telah scraping kemudian dianalisis mengikuti tahapan text mining yaitu case folding, tokenizing, dan stopword removal. Hasil dari penelitian ini menunjukkan persentase opini masyarakat terhadap vaksin corona yaitu 48% positif, 29% netral, dan 23% negatif.

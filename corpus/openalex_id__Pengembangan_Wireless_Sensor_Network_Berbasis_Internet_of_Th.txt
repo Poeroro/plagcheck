@@ -1,0 +1,6 @@
+Pengembangan Wireless Sensor Network Berbasis Internet of Things untuk Sistem Pemantauan Kualitas Air dan Tanah Pertanian
+
+Authors: Ummi Syafiqoh, Sunardi Sunardi, Anton Yudhana
+Year: 2018
+
+Water and soil quality is very important in agriculture. The level of acidity (pH) and soil temperature is one of the things that affect the fertility of plants. Therefore the quality of water and soil on agricultural land is one of the important things that need special attention in its management. One solution to water and soil quality can be monitored and managed efficiently is by utilizing the Wireless Sensor Network based on the Internet of Things (IoT). Use of ESP8266 Module as a WIFI module, widely used by Internet-based applications of Things because the price is cheap, thus reducing many costs and have a pretty good speed of 80 MHz. This research aims to develop the concept of Wireless Sensor Network by utilizing ESP8266 module to monitor pH value using pH Meter Analog Kit sensor and temperature of agricultural land using DS18B20 Waterproof sensor. The result of temperature measurement accuracy using DS18B20 Waterproof sensor of the designed system is 99.09% while the pH measurement using pH Meter Analog Kit sensor is 91.33%.

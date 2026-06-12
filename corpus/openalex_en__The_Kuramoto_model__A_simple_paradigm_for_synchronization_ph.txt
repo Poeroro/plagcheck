@@ -1,0 +1,6 @@
+The Kuramoto model: A simple paradigm for synchronization phenomena
+
+Authors: Juan A. Acebrón, L. L. Bonilla, C. J. Pérez Vicente, Félix Ritort, Renato Spigler
+Year: 2005
+
+Synchronization phenomena in large populations of interacting elements are the subject of intense research efforts in physical, biological, chemical, and social systems. A successful approach to the problem of synchronization consists of modeling each member of the population as a phase oscillator. In this review, synchronization is analyzed in one of the most representative models of coupled phase oscillators, the Kuramoto model. A rigorous mathematical treatment, specific numerical methods, and many variations and extensions of the original model that have appeared in the last few years are presented. Relevant applications of the model in different contexts are also included.

@@ -1,0 +1,6 @@
+Some methods for classification and analysis of multivariate observations
+
+Authors: James B. MacQueen
+Year: 1967
+
+The main purpose of this paper is to describe a process for partitioning an N-dimensional population into k sets on the basis of a sample. The process, which is called &amp;apos;k-means, &amp;apos; appears to give partitions which are reasonably

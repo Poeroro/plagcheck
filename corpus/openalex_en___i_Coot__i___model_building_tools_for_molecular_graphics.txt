@@ -1,0 +1,6 @@
+<i>Coot</i>: model-building tools for molecular graphics
+
+Authors: Paul Emsley, Kevin Cowtan
+Year: 2004
+
+CCP4mg is a project that aims to provide a general-purpose tool for structural biologists, providing tools for X-ray structure solution, structure comparison and analysis, and publication-quality graphics. The map-fitting tools are available as a stand-alone package, distributed as `Coot'.

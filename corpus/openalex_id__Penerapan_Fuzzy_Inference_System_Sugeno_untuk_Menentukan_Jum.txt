@@ -1,0 +1,6 @@
+Penerapan Fuzzy Inference System Sugeno untuk Menentukan Jumlah Pembelian Obat (Studi Kasus: Garuda Sentra Medika)
+
+Authors: Sartika Lina Mulani Sitio
+Year: 2018
+
+Tujuan dari penelitian ini adalah untuk mengetahui jumlah pembelian obat di garuda sentra medika dengan sistem inferensi fuzzy metode sugeno berdasarkan data persediaan dan data penjualan. Penelitian ini menggunakan tiga variabel yaitu persediaan, penjualan dan pembelian dengan memiliki dua input yaitu persediaan dan penjualan dan satu output yaitu pembelian. Hasil dari penerapan fuzzy metode sugeno ini dapat membantu pihak perusahaan untuk menentukan jumlah pembelian obat dengan tingkat keberhasilan 88,88 %.

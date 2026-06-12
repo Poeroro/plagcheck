@@ -1,0 +1,6 @@
+Computational Electrodynamics: The Finite-Difference Time-Domain Method
+
+Authors: Allen Taflove
+Year: 1995
+
+This extensively revised and expanded third edition of the Artech House bestseller, Computational Electrodynamics: The Finite-Difference Time-Domain Method, offers engineers the most up-to-date and definitive resource on this critical method for solving Maxwell's equations. The method helps practitioners design antennas, wireless communications devices, high-speed digital and microwave circuits, and integrated optical devices with unsurpassed efficiency. There has been considerable advancement in FDTD computational technology over the past few years, and the third edition brings professionals the very latest details with entirely new chapters on important techniques, major updates on key topics, and new discussions on emerging areas such as nanophotonics. What's more, to supplement the third edition, the authors have created a Web site with solutions to problems, downloadable graphics and videos, and updates, making this new edition the ideal textbook on the subject as well.

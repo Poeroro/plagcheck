@@ -1,0 +1,6 @@
+Bioconductor: open software development for computational biology and bioinformatics
+
+Authors: Robert Gentleman, Vincent J. Carey, Douglas M. Bates, Ben Bolstad, Marcel Dettling
+Year: 2004
+
+The Bioconductor project is an initiative for the collaborative creation of extensible software for computational biology and bioinformatics. The goals of the project include: fostering collaborative development and widespread use of innovative software, reducing barriers to entry into interdisciplinary scientific research, and promoting the achievement of remote reproducibility of research results. We describe details of our aims and methods, identify current challenges, compare Bioconductor to other open bioinformatics projects, and provide working examples.

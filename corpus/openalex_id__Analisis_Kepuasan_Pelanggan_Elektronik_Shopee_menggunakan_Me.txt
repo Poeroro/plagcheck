@@ -1,0 +1,6 @@
+Analisis Kepuasan Pelanggan Elektronik Shopee menggunakan Metode E-Service Quality dan Kartesius
+
+Authors: Diah Pranitasari, Ahmad Nurafif Sidqi
+Year: 2021
+
+Penelitian ini untuk mengetahui tingkat kepuasan pelanggan pada kualitas layanan elektronik yang diberikan Shopee dengan menggunakan E-Service Quality dan metode Diagram Kartesius atau Importance Performance Analysis (IPA). Pengukuran penilaian pelanggan menggunakan perhitungan kesenjangan dengan menguhitung selisih antara tingkat persepsi pelayanan yang diberikan dengan tingkat harapan pelanggan. Penelitian dilakukan pada mahasiswa/i Sekolah Tinggi Ilmu Ekonomi Indonesia dan mahasiswa/i Universitas Negeri Jakarta, dengan jumlah sampel sebanyak 200 mahasiswa/i. Hasil penelitian menunjukkan bahwa dimensi yang telah memenuhi kepuasannya yaitu Efficiency, Reliability, dan Responsiveness. Sedangkan dimensi e-servqual yang belum memenuhi kepuasan pelanggan adalah dimensi Fulfillment, Privacy, Compensation, dan Contact.&#x0D; &#x0D; Kata Kunci: E-Service Quality, Diagram Kartesius, Importance Performance Analysis

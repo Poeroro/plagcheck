@@ -1,0 +1,6 @@
+The gravity recovery and climate experiment: Mission overview and early results
+
+Authors: B. D. Tapley, Srinivas Bettadpur, M. M. Watkins, Ch. Reigber
+Year: 2004
+
+The GRACE mission is designed to track changes in the Earth's gravity field for a period of five years. Launched in March 2002, the two GRACE satellites have collected nearly two years of data. A span of data available during the Commissioning Phase was used to obtain initial gravity models. The gravity models developed with this data are more than an order of magnitude better at the long and mid wavelengths than previous models. The error estimates indicate a 2‐cm accuracy uniformly over the land and ocean regions, a consequence of the highly accurate, global and homogenous nature of the GRACE data. These early results are a strong affirmation of the GRACE mission concept.

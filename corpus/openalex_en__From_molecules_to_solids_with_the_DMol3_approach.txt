@@ -1,0 +1,6 @@
+From molecules to solids with the DMol3 approach
+
+Authors: B. Delley
+Year: 2000
+
+Recent extensions of the DMol3 local orbital density functional method for band structure calculations of insulating and metallic solids are described. Furthermore the method for calculating semilocal pseudopotential matrix elements and basis functions are detailed together with other unpublished parts of the methodology pertaining to gradient functionals and local orbital basis sets. The method is applied to calculations of the enthalpy of formation of a set of molecules and solids. We find that the present numerical localized basis sets yield improved results as compared to previous results for the same functionals. Enthalpies for the formation of H, N, O, F, Cl, and C, Si, S atoms from the thermodynamic reference states are calculated at the same level of theory. It is found that the performance in predicting molecular enthalpies of formation is markedly improved for the Perdew–Burke–Ernzerhof [Phys. Rev. Lett. 77, 3865 (1996)] functional.

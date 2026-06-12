@@ -1,0 +1,6 @@
+Data Mining: Practical Machine Learning Tools and Techniques
+
+Authors: Ian H. Witten, Eibe Frank
+Year: 2011
+
+As with any burgeoning technology that enjoys commercial attention, the use of data mining is surrounded by a great deal of hype. Exaggerated reports tell of secrets that can be uncovered by setting algorithms loose on oceans of data. But there is no magic in machine learning, no hidden power, no alchemy. Instead there is an identifiable body of practical techniques that can extract useful information from raw data. This book describes these techniques and shows how they work. The book is a major revision of the first edition that appeared in 1999. While the basic core remains the same, it has been updated to reflect the changes that have taken place over five years, and now has nearly double the references. The highlights for the new edition include thirty new technique sections; an enhanced Weka machine learning workbench, which now features an interactive interface; comprehensive information on neural networks; a new section on Bayesian networks; plus much more.

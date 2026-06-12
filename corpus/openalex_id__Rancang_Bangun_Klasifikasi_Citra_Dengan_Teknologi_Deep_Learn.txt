@@ -1,0 +1,6 @@
+Rancang Bangun Klasifikasi Citra Dengan Teknologi Deep Learning Berbasis Metode Convolutional Neural Network
+
+Authors: Ari Peryanto, Anton Yudhana, Rusydi Umar
+Year: 2020
+
+Dengan berkembang pesatnya teknologi saat ini, mengakibatkan Deep Learning menjadi salah satu metode machine learning yang sangat diminati. Teknologi GPU Acceleration menjadi salah satu sebab dari pesatnya perkembangan Deep Learning. Deep learning sangat cocok digunakan untuk memecahkan permasalahan klasik dalam Computer Vision, yaitu dalam pengklasifikasian citra. Salah satu metode dalam deep learning yang sering digunakan dalam pengolah citra adalah Convolutional Neural Network dan merupakan pengembangan dari Multi Layer Perceptron. Pada penelitian ini pengimplementasian metode ini dilakukan menggunakan library keras dengan bahasa pemrograman phyton. Pada proses training menggunakan Convolutional Neural Network, dilakukan setting jumlah epoch dan memperbesar ukuran data training untuk meningkatkan akurasi dalam pengklasifikasian citra. Ukuran yang digunakan adalah 32x32, 64x64 dan 128x128. Proses training dengan jumlah epoch 40 dan ukuran 32x32 didapat nilai akurasi tertinggi yang mencapai 98,02% dan rata-rata akurasi tertinggi yaitu 97,56 %, serta akurasi sistem sebesar 96,64%.

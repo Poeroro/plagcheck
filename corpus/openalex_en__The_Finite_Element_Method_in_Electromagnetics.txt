@@ -1,0 +1,6 @@
+The Finite Element Method in Electromagnetics
+
+Authors: Jian‐Ming Jin
+Year: 1993
+
+A new edition of the leading textbook on the finite element method, incorporating major advancements and further applications in the field of electromagnetics The finite element method (FEM) is a powerful simulation technique used to solve boundary-value problems in a variety of engineering circumstances. It has been widely used for analysis of electromagnetic fields in antennas, radar scattering, RF and microwave engineering, high-speed/high-frequency circuits, wireless communication, electromagnetic compatibility, photonics, remote sensing, biomedical engineering, and space exploration. The

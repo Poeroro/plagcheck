@@ -1,0 +1,6 @@
+<scp>UCSF ChimeraX</scp>: Structure visualization for researchers, educators, and developers
+
+Authors: Eric F. Pettersen, Thomas D. Goddard, Conrad C. Huang, Elaine C. Meng, Gregory S. Couch
+Year: 2020
+
+UCSF ChimeraX is the next-generation interactive visualization program from the Resource for Biocomputing, Visualization, and Informatics (RBVI), following UCSF Chimera. ChimeraX brings (a) significant performance and graphics enhancements; (b) new implementations of Chimera's most highly used tools, many with further improvements; (c) several entirely new analysis features; (d) support for new areas such as virtual reality, light-sheet microscopy, and medical imaging data; (e) major ease-of-use advances, including toolbars with icons to perform actions with a single click, basic "undo" capabilities, and more logical and consistent commands; and (f) an app store for researchers to contribute new tools. ChimeraX includes full user documentation and is free for noncommercial use, with downloads available for Windows, Linux, and macOS from https://www.rbvi.ucsf.edu/chimerax.

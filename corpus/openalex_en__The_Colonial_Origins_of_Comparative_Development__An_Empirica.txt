@@ -1,0 +1,6 @@
+The Colonial Origins of Comparative Development: An Empirical Investigation: Reply
+
+Authors: Daron Acemoğlu, Simon Johnson, James A. Robinson
+Year: 2012
+
+Acemoglu, Johnson, and Robinson (2001) established that economic institutions today are correlated with expected mortality of European colonialists. David Albouy argues this relationship is not robust. He drops all data from Latin America and much of the data from Africa, making up almost 60 percent of our sample, despite much information on the mortality of Europeans in those places during the colonial period. He also includes a “campaign” dummy that is coded inconsistently; even modest corrections undermine his claims. We also show that limiting the effect of outliers strengthens our results, making them robust to even extreme versions of Albouy's critiques. (JEL D02, E23, F54, I12, N40, O43, P14)

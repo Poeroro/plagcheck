@@ -1,0 +1,6 @@
+Analysis of Incomplete Multivariate Data
+
+Authors: David E. Booth, Joseph L. Schafer
+Year: 2000
+
+Introduction Assumptions EM and Inference by Data Augmentation Methods for Normal Data More on the Normal Model Methods for Categorical Data Loglinear Models Methods for Mixed Data Further Topics Appendices References Index

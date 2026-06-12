@@ -1,0 +1,6 @@
+From Efficient Markets Theory to Behavioral Finance
+
+Authors: Robert J. Shiller
+Year: 2003
+
+The efficient markets theory reached the height of its dominance in academic circles around the 1970s. Faith in this theory was eroded by a succession of discoveries of anomalies, many in the 1980s, and of evidence of excess volatility of returns. Finance literature in this decade and after suggests a more nuanced view of the value of the efficient markets theory, and, starting in the 1990s, a blossoming of research on behavioral finance. Some important developments since 1990 include feedback theories, models of the interaction of smart money with ordinary investors, and evidence on obstacles to smart money.

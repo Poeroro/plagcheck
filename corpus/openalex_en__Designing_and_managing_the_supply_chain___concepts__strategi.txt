@@ -1,0 +1,6 @@
+Designing and managing the supply chain : concepts, strategies, and case studies
+
+Authors: David Simchi‐Levi, Philip Kaminsky, Edith Simchi‐Levi
+Year: 2000
+
+Chapter 1: Introduction Chapter 2: Inventory Management and Risk Pooling Chapter 3: Network planning Chapter 4: Supply contracts Chapter 5: The Value of information Chapter 6: Supply Chain integration Chapter 7: Distribution strategies Chapter 8: Strategic alliances Chapter 9: Procurement and Outsourcing Strategies Chapter 10: Global Logistics and Risk Management Chapter 11: Coordinated product and supply chain design Chapter 12: Customer Value Chapter 13: Smart Pricing Chapter 14: Information Technology and Business Processes Chapter 15: Technology standards Appendix A: Computerized Beer Game Appendix B: Risk Pool Game Appendix C: Supply Contract Spreadsheet Appendix D: Bidding Game

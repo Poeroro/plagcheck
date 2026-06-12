@@ -1,0 +1,6 @@
+Prior distributions for variance parameters in hierarchical models (comment on article by Browne and Draper)
+
+Authors: Andrew Gelman
+Year: 2006
+
+Various noninformative prior distributions have been suggested for scale parameters in hierarchical models. We construct a new folded-noncentral-$t$ family of conditionally conjugate priors for hierarchical standard deviation parameters, and then consider noninformative and weakly informative priors in this family. We use an example to illustrate serious problems with the inverse-gamma family of "noninformative" prior distributions. We suggest instead to use a uniform prior on the hierarchical standard deviation, using the half-$t$ family when the number of groups is small and in other settings where a weakly informative prior is desired. We also illustrate the use of the half-$t$ family for hierarchical modeling of multiple variance parameters such as arise in the analysis of variance.

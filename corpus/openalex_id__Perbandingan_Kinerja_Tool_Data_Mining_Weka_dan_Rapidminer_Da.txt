@@ -1,0 +1,6 @@
+Perbandingan Kinerja Tool Data Mining Weka dan Rapidminer Dalam Algoritma Klasifikasi
+
+Authors: Mochammad Faid, Moh Jasri, Titasari Rahmawati
+Year: 2019
+
+Data mining merupakan ilmu yang membahas tentang bagaimana menambang pengetahuan dari sebuah data. Klasifikasi merupakan salah satu bagian dari data mining. Algoritma klasifikasi dalam data mining bermacam-macam model. Karena setiap model yang ada di algoritma klasifikasi tidak sama, maka akurasinya tentu akan berubah. Untuk mengetahui baik tidaknya sebuah algoritma klasifikasi, indikatornya adalah tingkat akurasi. Dengan perhitungan-perhitungan yang rumit dan membutuhkan waktu yang sangat lama, diciptakan sebuah tools data mining sehingga proses dan pengolahan data mining lebih mudah. Tools data mining dalam penelitian ini menggunakan Weka dan Rapidminer. Adapun tujuan dari penelitian ini adalah untuk mengetahui kinerja dari tools data mining Weka dan Rapidminer.

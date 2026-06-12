@@ -1,0 +1,6 @@
+Convolutional Neural Network untuk Metode Klasifikasi Multi-Label pada Motif Batik
+
+Authors: Taufiqotul Bariyah, Mohammad Arif Rasyidi, Ngatini Ngatini
+Year: 2021
+
+Salah satu warisan budaya Indonesia yang diakui dunia adalah kain batik. Beragamnya motif batik di Indonesia membuat masyarakat awam sulit membedakan motif-motif yang ada. Penelitian ini menggunakan convolutional neural network (CNN) dalam melakukan klasifikasi multi-label citra motif batik. CNN merupakan salah satu algoritma deep learning pengembangan multi-layer perceptron (MLP) yang telah banyak digunakan dalam klasifikasi data, khususnya klasifikasi citra. Hasil penelitian menunjukkan akurasi penggunaan arsitektur CNN dalam melakukan klasifikasi multi-label pada 15 motif batik mencapai 91.41% dengan penggunaan epoch 100.

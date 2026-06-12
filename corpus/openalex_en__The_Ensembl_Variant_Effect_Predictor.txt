@@ -1,0 +1,6 @@
+The Ensembl Variant Effect Predictor
+
+Authors: William McLaren, Laurent Gil, Sarah Hunt, Harpreet Singh Riat, Graham R. S. Ritchie
+Year: 2016
+
+The Ensembl Variant Effect Predictor is a powerful toolset for the analysis, annotation, and prioritization of genomic variants in coding and non-coding regions. It provides access to an extensive collection of genomic annotation, with a variety of interfaces to suit different requirements, and simple options for configuring and extending analysis. It is open source, free to use, and supports full reproducibility of results. The Ensembl Variant Effect Predictor can simplify and accelerate variant interpretation in a wide range of study designs.

@@ -1,0 +1,6 @@
+Sistem pakar dan pengembangannya
+
+Authors: Sri Hartati, Sari Iswanti
+Year: 2008
+
+Sistem pakar adalah sistem komputer yang mengemulasi kemampuan kepakaran manusia. Kata mengemulasi diartikan lebih kuat dari simulasi yang berarti bahwa sistem pakar diharapkan mampu bertindak sebagaimana yang dilakukan pakar manusia dalam melakukan penalaran untuk memberikan suatu justifikasi/kesimpulan. Dalam melakukan penalaran, sistem pakar banyak memanfaatkan pengetahuan yang disimapan oleh sistem sebagai basis pengetahuan untuk menyelesaikan masalah pada tingkatan sebanding dengan pakar manusia.

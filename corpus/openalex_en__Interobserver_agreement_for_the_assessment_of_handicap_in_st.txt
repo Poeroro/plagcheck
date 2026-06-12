@@ -1,0 +1,6 @@
+Interobserver agreement for the assessment of handicap in stroke patients.
+
+Authors: John C. van Swieten, Peter J. Koudstaal, Marieke C. Visser, H J Schouten, J. van Gijn
+Year: 1988
+
+Interobserver agreement for the assessment of handicap in stroke patients was investigated in a group of 10 senior neurologists and 24 residents from two centers. One hundred patients were separately interviewed by two physicians in different combinations. The degree of handicap was recorded by each observer on the modified Rankin scale, which has six grades (0-5). The agreement rates were corrected for chance (kappa statistics). Both physicians agreed on the degree of handicap in 65 patients; they differed by one grade in 32 patients and by two grades in 3 patients. Kappa for all pairwise observations was 0.56; the value for weighted kappa (with quadratic disagreement weights) was 0.91. Our results confirm the value of the modified Rankin scale in the assessment of handicap in stroke patients; nevertheless, further improvements are possible.

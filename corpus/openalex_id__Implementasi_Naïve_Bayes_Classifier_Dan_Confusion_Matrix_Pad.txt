@@ -1,0 +1,6 @@
+Implementasi Naïve Bayes Classifier Dan Confusion Matrix Pada Analisis Sentimen Berbasis Teks Pada Twitter
+
+Authors: Dwi Normawati, Surya Allit Prayogi
+Year: 2021
+
+Twitter is one of the social media that is currently in great demand by internet users. The number of tweets circulating on Twitter is not yet known whether these tweets contain more positive, negative, and neutral opinions. For that we need a system that can process data by applying sentiment analysis. This study uses the Naive Bayes Classifier (NBC) method to analyze the level of sentiment towards data carried out by crawling on Twitter. The data studied as a simple case study uses only 8 tweet data which is divided into 5 training data and 3 test data. The data is processed using the preprocessing stage, then classified using the NBC method, the calculation of performance uses confusion matrix techniques. This study resulted in a structured exposure to the process and results of NBC implementation and performance testing using the confusion matrix which obtained 82% accuracy, 93% precision, and 52% recall. However, these results are more focused on ease explaining for each stage and process in more detail, not on the numbers obtained. Research with larger data will be carried out later by developing a computer-based application system.

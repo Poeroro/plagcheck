@@ -1,0 +1,6 @@
+Biomedical applications of biodegradable polymers
+
+Authors: Bret D. Ulery, Lakshmi S. Nair, Cato T. Laurencin
+Year: 2011
+
+Utilization of polymers as biomaterials has greatly impacted the advancement of modern medicine. Specifically, polymeric biomaterials that are biodegradable provide the significant advantage of being able to be broken down and removed after they have served their function. Applications are wide ranging with degradable polymers being used clinically as surgical sutures and implants. In order to fit functional demand, materials with desired physical, chemical, biological, biomechanical and degradation properties must be selected. Fortunately, a wide range of natural and synthetic degradable polymers has been investigated for biomedical applications with novel materials constantly being developed to meet new challenges. This review summarizes the most recent advances in the field over the past 4 years, specifically highlighting new and interesting discoveries in tissue engineering and drug delivery applications.

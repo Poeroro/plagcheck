@@ -1,0 +1,6 @@
+Electrical power systems quality
+
+Authors: Santoso, Surya, M. McGranaghan, R.C. Dugan, H. Wayne Beaty
+Year: 1996
+
+Electrical Power Systems Quality, Third Edition, is a complete, accessible, and up-to-date guide to identifying and preventing the causes of power quality problems. The information is presented without heavy-duty equations, making it practical and easily readable for utility engineers, industrial engineers, technicians, and equipment designers. This in-depth resource addresses the essentials of power quality and tested methods to improve compatibility among the power system, customer equipment, and processes.Coverage includes:• Standard terms and definitions for power quality phenomena• Protecting against voltage sags and interruptions• Harmonic phenomena and dealing with harmonic distortion• Transient overvoltages• Long-duration voltage variations• Benchmarking power quality• International Electrotechnical Commission (IEC) and Institute of Electrical and Electronics Engineers (IEEE) standards• Maintaining power quality in distributed generation systems• Common wiring and grounding problems, along with solutions• Site surveys and power quality monitoring

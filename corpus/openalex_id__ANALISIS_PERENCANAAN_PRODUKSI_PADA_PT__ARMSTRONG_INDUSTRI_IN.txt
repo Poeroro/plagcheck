@@ -1,0 +1,6 @@
+ANALISIS PERENCANAAN PRODUKSI PADA PT. ARMSTRONG INDUSTRI INDONESIA DENGAN METODE FORECASTING DAN AGREGAT PLANNING
+
+Authors: Fristha Ayu Reicita
+Year: 2020
+
+Pada umumnya masalah yang sering muncul tiap perusahaan termasuk PT. Armstrong Industri Indonesia adalah mengalami kendala dalam merencanakan jumlah produksi sesuai kapasitas produksi sehingga penelitian ini bertujuan untuk menentukan metode peramalan yang tepat dan strategi agregat yang sesuai untuk digunakan dalam perencanaan produksi pada produk Insulation Sheet A, Foot, dan Wire Harness Tie L-80 yang memiliki permintaan berfluktuasi. Metode yang digunakan untuk melakukan peramalan pada ketiga produk tersebut adalah Single Moving Average dan Single Exponential Smoothing, sedangkan untuk perencanaan agregat strategi yang digunakan antara lain Chase Strategy, Level Strategy dan Mixed Strategy yang kemudian dipilih strategi terbaik yang memberikan biaya produksi paling minimum. Hasil dari penelitian yang telah dilakukan dapat disimpulkan bahwa peramalan yang terbaik adalah dengan menggunakan Metode Single Exponential Smoothing menggunakan alpha 0,4 dengan total nilai MAPE sebesar 14% dan strategi agregat terpilih adalah Chase dan Level Strategy dengan total biaya produksi paling minimum yaitu sebesar Rp 17.940.300.

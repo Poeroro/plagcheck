@@ -1,0 +1,6 @@
+Search and clustering orders of magnitude faster than BLAST
+
+Authors: R. C. Edgar
+Year: 2010
+
+MOTIVATION: Biological sequence data is accumulating rapidly, motivating the development of improved high-throughput methods for sequence classification. RESULTS: UBLAST and USEARCH are new algorithms enabling sensitive local and global search of large sequence databases at exceptionally high speeds. They are often orders of magnitude faster than BLAST in practical applications, though sensitivity to distant protein relationships is lower. UCLUST is a new clustering method that exploits USEARCH to assign sequences to clusters. UCLUST offers several advantages over the widely used program CD-HIT, including higher speed, lower memory use, improved sensitivity, clustering at lower identities and classification of much larger datasets. AVAILABILITY: Binaries are available at no charge for non-commercial use at http://www.drive5.com/usearch.

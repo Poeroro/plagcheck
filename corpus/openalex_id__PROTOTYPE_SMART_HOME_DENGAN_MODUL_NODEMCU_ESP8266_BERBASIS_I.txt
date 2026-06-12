@@ -1,0 +1,39 @@
+PROTOTYPE SMART HOME DENGAN MODUL NODEMCU ESP8266 BERBASIS INTERNET OF THINGS (IOT)
+
+Authors: Nurul Hidayati Lusita Dewi
+Year: 2019
+
+ABSTRAK
+ 
+
+Dewi, Nurul, Hidayati, Lusita. 2018. Prototype Smart Home dengan Modul
+NodeMCU ESP8266 Berbasis Internet of Things (IoT). Tugas akhir,
+Program Studi Teknik Informatika, Fakultas Teknik, Universitas
+Islam Majapahit (UNIM).
+Pembimbing I: Mimin Fatchiyatur Rohmah, S.T., M.Si.
+Pembimbing II: Soffa Zahara, S.T., M.T.
+
+
+ 
+IoT (Internet of Things) merupakan suatu konsep yang bertujuan untuk 
+memperluas manfaat dari konektivitas internet yang tersambung secara terus
+menerus. IoT (Internet of Things) dapat dimanfaatkan pada rumah sebagai smart
+home untuk mengendalikan peralatan elektronik yang dapat dioperasikan
+dengan aplikasi smart phone melalui koneksi internet (WiFi).
+ Aplikasi dari sistem smart home berbasis (IoT) Internet of Things ini
+menggunakan modul NodeMCU ESP8266 sebagai microcontroller dan aplikasi
+android Blynk sebagai alat pengendali ataupun monitoring. Sistem ini terdiri dari
+pengendali lampu, pengendali kipas angin, monitoring suhu ruangan, pendeteksi
+pergerakan di suatu ruangan, dan pendeteksi kebocoran gas. Terdapat tiga
+sensor yang digunakan yaitu sensor PIR untuk mendeteksi adanya pergerakan,
+sensor MQ2 untuk mendeteksi adanya kebocoran gas LPG, dan sensor LM35
+untuk monitoring suhu. Selain itu dalam rancangan sistem ini juga memakai relay
+yang digunakan sebagai penghubung lampu dan kipas angin dengan sistem.
+ Dari hasil pengujian dan analisa, pengendalian peralatan elektronik pada
+smart home ini beroperasi sesuai perintah yang diberikan, suhu di dalam
+ruangan terbaca dari 32o C hingga 34o C, sensor MQ2 dapat mendeteksi
+kebocoran gas LPG minimal dimulai dari 200 ppm. Selama sistem terkoneksi
+dengan jaringan internet (WiFi) secara stabil dan continue, tidak akan terjadi
+kendala pada sistem smart home berbasis IoT (Internet of Things) ini.
+
+Kata kunci: IoT (Internet of Things), Smart Home, NodeMCU ESP6288

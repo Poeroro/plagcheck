@@ -1,0 +1,6 @@
+Klasifikasi Masyarakat Miskin Menggunakan Metode Naive Bayes
+
+Authors: Haditsah Annur
+Year: 2018
+
+The main problem in the current poverty reduction effort is related to the fact that economic growth is not evenly distributed. The research will classify based on the data of poor people obtained from Tibawa District by using data mining technique. Attributes to be used in classifying the population are Age, Education, Work, Income, Dependent, Status (Married / Unmarried). The method to be used is the Naïve Bayes Classifier method, which is one of the classification techniques in data mining. Based on the research, it is concluded that, the classification system of the poor in the administrative area of Tibawa sub-district, Gorontalo regency can be engineered and Based on the result of confusion matrix testing with split validation technique, the use of naïve Bayes classification method to the dataset which has been taken on the research object obtained the level of accuracy 73% or included in the Good category. While the Precision value of 92% and Recall of 86%.

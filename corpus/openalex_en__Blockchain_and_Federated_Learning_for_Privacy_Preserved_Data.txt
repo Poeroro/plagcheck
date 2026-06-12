@@ -1,0 +1,6 @@
+Blockchain and Federated Learning for Privacy-Preserved Data Sharing in Industrial IoT
+
+Authors: Yunlong Lu, Xiaohong Huang, Yueyue Dai, Sabita Maharjan, Yan Zhang
+Year: 2019
+
+The rapid increase in the volume of data generated from connected devices in industrial Internet of Things paradigm, opens up new possibilities for enhancing the quality of service for the emerging applications through data sharing. However, security and privacy concerns (e.g., data leakage) are major obstacles for data providers to share their data in wireless networks. The leakage of private data can lead to serious issues beyond financial loss for the providers. In this article, we first design a blockchain empowered secure data sharing architecture for distributed multiple parties. Then, we formulate the data sharing problem into a machine-learning problem by incorporating privacy-preserved federated learning. The privacy of data is well-maintained by sharing the data model instead of revealing the actual data. Finally, we integrate federated learning in the consensus process of permissioned blockchain, so that the computing work for consensus can also be used for federated training. Numerical results derived from real-world datasets show that the proposed data sharing scheme achieves good accuracy, high efficiency, and enhanced security.

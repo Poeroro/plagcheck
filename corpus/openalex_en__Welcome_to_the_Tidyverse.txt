@@ -1,0 +1,6 @@
+Welcome to the Tidyverse
+
+Authors: Hadley Wickham, Mara Averick, Jennifer Bryan, Winston Chang, Lucy D’Agostino McGowan
+Year: 2019
+
+RESUMENEvaluación del efecto de un curso nivelatorio de matemáticas en educación superior: el caso de Matemáticas Básicas La investigación evalúa los efectos de tomar un curso de nivelación obligatorio, que se ofrece una única vez (i.e.no puede repetirse) para estudiantes de pregrado, sobre la probabilidad de matricularse, el desempeño en las asignaturas universitarias de matemáticas, avance en la carrera y probabilidad de graduarse.La investigación emplea un diseño de regresión discontinua que aprovecha el hecho de que los estudiantes admitidos a la universidad que tengan en la prueba de ingreso un puntaje en matemáticas inferior a un umbral están obligados a tomar el curso de nivelación de matemáticas básicas.Se encuentra que el curso de nivelación no tiene un efecto en la probabilidad de matricularse, de desvincularse del programa ni de graduarse seis años después de haber sido admitido.Hay un efecto

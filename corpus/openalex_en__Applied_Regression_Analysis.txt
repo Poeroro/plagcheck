@@ -1,0 +1,6 @@
+Applied Regression Analysis
+
+Authors: Draper, Norman Richard, Smith, Harry
+Year: 2005
+
+Basic Prerequisite Knowledge. Fitting a Straight Line by Least Squares. Checking the Straight Line Fit. Fitting Straight Lines: Special Topics. Regression in Matrix Terms: Straight Line Case. The General Regression Situation. Extra Sums of Squares and Tests for Several Parameters Being Zero. Serial Correlation in the Residuals and the Durbin--Watson Test. More of Checking Fitted Models. Multiple Regression: Special Topics. Bias in Regression Estimates, and Expected Values of Mean Squares and Sums of Squares. On Worthwhile Regressions, Big F's, and R 2 . Models Containing Functions of the Predictors, Including Polynomial Models. Transformation of the Response Variable. Dummy Variables. Selecting the Best Regression Equation. Ill--Conditioning in Regression Data. Ridge Regression. Generalized Linear Models (GLIM). Mixture Ingredients as Predictor Variables. The Geometry of Least Squares. More Geometry of Least Squares. Orthogonal Polynomials and Summary Data. Multiple Regression Applied to Analysis of Variance Problems. An Introduction to Nonlinear Estimation. Robust Regression. Resampling Procedures (Bootstrapping). Bibliography. True/False Questions. Answers to Exercises. Tables. Indexes.

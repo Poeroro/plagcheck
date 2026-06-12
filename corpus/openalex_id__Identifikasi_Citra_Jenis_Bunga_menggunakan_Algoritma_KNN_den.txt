@@ -1,0 +1,6 @@
+Identifikasi Citra Jenis Bunga menggunakan Algoritma KNN dengan Ekstrasi Warna HSV dan Tekstur GLCM
+
+Authors: Alifa Salsabila, Rika Yunita, Chaerur Rozikin
+Year: 2021
+
+Beragamnya jenis bunga yang ada serta memiliki spesies dan kemiripan pada setiap ragamnya, membuat para pecinta tanaman dan pembudi daya sulit untuk membedakan dalam penentuan jenis bunga, diperlukannya waktu yang sangat lama untuk mengetahui jenis bunga jika hanya mengandalkan panca indera saja. Penerapan algoritma K-Nearest Neighbor serta ekstrasi ciri terhadap warna dan tekstur sangat membantu dalam pengolahan citra untuk mengidentifikasi bunga menjadi lebih mudah dan mempersingkat waktu, dengan akurasi terbesar 71% menggunakan nilai K-7, identifikasi bunga berhasil dilakukan.

@@ -1,0 +1,6 @@
+In Search of Attention
+
+Authors: Zhi Da, Joseph Engelberg, Pengjie Gao
+Year: 2011
+
+ABSTRACT We propose a new and direct measure of investor attention using search frequency in Google (Search Volume Index (SVI)). In a sample of Russell 3000 stocks from 2004 to 2008, we find that SVI (1) is correlated with but different from existing proxies of investor attention; (2) captures investor attention in a more timely fashion and (3) likely measures the attention of retail investors. An increase in SVI predicts higher stock prices in the next 2 weeks and an eventual price reversal within the year. It also contributes to the large first‐day return and long‐run underperformance of IPO stocks.

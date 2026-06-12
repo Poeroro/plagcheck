@@ -1,0 +1,6 @@
+Predicting Elections with Twitter: What 140 Characters Reveal about Political Sentiment
+
+Authors: Andranik Tumasjan, Timm O. Sprenger, Philipp Sandner, Isabell M. Welpe
+Year: 2010
+
+Twitter is a microblogging website where users read and write millions of short messages on a variety of topics every day. This study uses the context of the German federal election to investigate whether Twitter is used as a forum for political deliberation and whether online messages on Twitter validly mirror offline political sentiment. Using LIWC text analysis software, we conducted a content-analysis of over 100,000 messages containing a reference to either a political party or a politician. Our results show that Twitter is indeed used extensively for political deliberation. We find that the mere number of messages mentioning a party reflects the election result. Moreover, joint mentions of two parties are in line with real world political ties and coalitions. An analysis of the tweets’ political sentiment demonstrates close correspondence to the parties' and politicians’ political positions indicating that the content of Twitter messages plausibly reflects the offline political landscape. We discuss the use of microblogging message content as a valid indicator of political sentiment and derive suggestions for further research.

@@ -1,0 +1,6 @@
+SISTEM PENGAMANAN PINTU RUMAH BERBASIS Internet Of Things (IoT) Dengan ESP8266
+
+Authors: Arafat Arafat
+Year: 2016
+
+Berbagai permasalahan selalu mengancam keamanan pemilik rumah seperti pencurian. Hal ini menyebabkan diperlukannya sistem keamanan rumah. Sistem keamanan berfungsi memberikan informasi yang terjadi di dalam rumah. Internet of Things (IoT) membuat perangkat dapat berkomunikasi seperti mengirim dan menerima data. Penelitian ini merancang sistem pengamanan pintu yang terdiri dari esp8266, selenoid dan reed sensor. Aplikasi blynk mampu memberikan informasi secara realtime kepada pengguna, sehingga dapat memantau keadaan pintu serta dapat menginformasikan jika ada yang membuka pintu secara paksa. Ketika pintu terbuka reed sensor akan berlogika 0 dan esp8266 memberikan informasi data sensor yang dikirim ke blynk, kemudian data tersebut diakses dengan aplikasi blynk sebagai tampilan user interface. Untuk membuka pintu dibuatkan sebuah push button pada aplikasi blynk yang berfungsi untuk membuka dan menutup kunci menggunkan selenoid lock.

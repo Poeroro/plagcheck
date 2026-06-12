@@ -1,0 +1,6 @@
+Food-Related Illness and Death in the United States
+
+Authors: Paul S. Mead, Laurence Slutsker, Vance Dietz, Linda F. McCaig, Joseph Bresee
+Year: 1999
+
+To better quantify the impact of foodborne diseases on health in the United States, we compiled and analyzed information from multiple surveillance systems and other sources. We estimate that foodborne diseases cause approximately 76 million illnesses, 325,000 hospitalizations, and 5,000 deaths in the United States each year. Known pathogens account for an estimated 14 million illnesses, 60, 000 hospitalizations, and 1,800 deaths. Three pathogens, Salmonella, Listeria, and Toxoplasma, are responsible for 1,500 deaths each year, more than 75% of those caused by known pathogens, while unknown agents account for the remaining 62 million illnesses, 265,000 hospitalizations, and 3,200 deaths. Overall, foodborne diseases appear to cause more illnesses but fewer deaths than previously estimated.

@@ -1,0 +1,6 @@
+A Secure Sharding Protocol For Open Blockchains
+
+Authors: Loi Luu, Viswesh Narayanan, Chaodong Zheng, Kunal Baweja, Seth Gilbert
+Year: 2016
+
+Cryptocurrencies, such as Bitcoin and 250 similar alt-coins, embody at their core a blockchain protocol --- a mechanism for a distributed network of computational nodes to periodically agree on a set of new transactions. Designing a secure blockchain protocol relies on an open challenge in security, that of designing a highly-scalable agreement protocol open to manipulation by byzantine or arbitrarily malicious nodes. Bitcoin's blockchain agreement protocol exhibits security, but does not scale: it processes 3--7 transactions per second at present, irrespective of the available computation capacity at hand.

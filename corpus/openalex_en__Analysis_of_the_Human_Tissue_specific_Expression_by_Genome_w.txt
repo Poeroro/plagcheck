@@ -1,0 +1,6 @@
+Analysis of the Human Tissue-specific Expression by Genome-wide Integration of Transcriptomics and Antibody-based Proteomics
+
+Authors: Linn Fagerberg, Björn M. Hallström, Per Oksvold, Caroline Kampf, Dijana Djureinovic
+Year: 2013
+
+Global classification of the human proteins with regards to spatial expression patterns across organs and tissues is important for studies of human biology and disease. Here, we used a quantitative transcriptomics analysis (RNA-Seq) to classify the tissue-specific expression of genes across a representative set of all major human organs and tissues and combined this analysis with antibody-based profiling of the same tissues. To present the data, we launch a new version of the Human Protein Atlas that integrates RNA and protein expression data corresponding to ∼80% of the human protein-coding genes with access to the primary data for both the RNA and the protein analysis on an individual gene level. We present a classification of all human protein-coding genes with regards to tissue-specificity and spatial expression pattern. The integrative human expression map can be used as a starting point to explore the molecular constituents of the human body.

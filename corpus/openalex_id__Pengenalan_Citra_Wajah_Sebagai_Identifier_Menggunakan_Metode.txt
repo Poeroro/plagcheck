@@ -1,0 +1,6 @@
+Pengenalan Citra Wajah Sebagai Identifier Menggunakan Metode Principal Component Analysis (PCA)
+
+Authors: Aris Budi, Suma’inna Suma’inna, Hata Maulana
+Year: 2018
+
+ABSTRAK Pengenalan wajah merupakan sebuah sistem identifikasi pribadi yang menggunakan karakteristik wajah seseorang. Pengenalan wajah sendiri merupakan suatu cabang ilmu biometrik, yaitu suatu bidang keilmuan yang menggunakan karakteristik fisik dari seseorang untuk menentukan atau mengungkapkan identitasnya. Sistem yang dikembangkan dalam tugas akhir ini adalah sebuah sistem pengenalan wajah yang menggunakan ekstraksi fitur berbasis Principal Component Analysis (PCA). Teknik ini melibatkan pengambilan komponen utama dari database wajah. Untuk mengetahui keakuratan sistem pengenalan wajah manusia yang dirancang pada tugas akhir ini, telah dilakukan uji coba sistem dengan menggunakan input sebanyak 60 citra wajah dari database. Dari hasil pengujian sistem ini, didapatkan hasil performansi sistem adalah 80% dalam mengenali citra input dengan benar. Kata kunci : pengenalan wajah, biometrik, PCA.

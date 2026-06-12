@@ -1,0 +1,6 @@
+PENERAPAN DATA MINING UNTUK PENGELOMPOKAN DATA REKAM MEDIS PASIEN BERDASARKAN JENIS PENYAKIT DENGAN ALGORITMA CLUSTERING (Studi Kasus : Poli Klinik PT.Inecda)
+
+Authors: Rian Ordila, Refni Wahyuni, Yuda Irawan, Maulita Yulia Sari
+Year: 2020
+
+Data Mining adalah suatu metode pengolahan data untuk menemukan pola yang tersembunyi dari data tersebut. Rekam Medis adalah berkas yang berisikan catatan dan dokumen tentang identitas pasien, pemeriksaan, pengobatan, tindakan, pelayanan lain yang telah diberikan kepada pasien. Poli klinik PT.Inecda menerima pasien sebanyak 20 pasien s/d 40 pasien dalam satu hari, dalam satu bulan bisa mencapai 600 pasien s/d 750 pasien, sedangkan dalam satu tahun Poli klinik PT.Inecda bisa menerima pasien kurang lebih sekitar 8.400 pasien dalam satu tahun. K-Means Clustering adalah suatu metode penganalisaan data atau metode Data Mining yang melakukan proses pemodelan tanpa supervisi (unsupervised) dan merupakan salah satu metode yang melakukan pengelompokan data dengan sistem partisi. Hasilnya adalah melakukan pengelompokan dengan menggunakan K-Means Clustering dan RapidMiner yang dapat membantu melakukan pengelompokan berdasarkan wilayah, jenis penyakit dan Umur.

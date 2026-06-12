@@ -1,0 +1,6 @@
+Penggunaan Jaringan Syaraf Tiruan Backpropagation Untuk Seleksi Penerimaan Mahasiswa Baru Pada Jurusan Teknik Komputer Di Politeknik Negeri Sriwijaya
+
+Authors: Maria Agustin, Toni Prahasto
+Year: 2012
+
+Data availability of new studentsat the Polytechnic State Srivijaya high enough, so the need fora method to analyze the data. Artificial neuralnetwork is an information processing system that has characteristics similar to biological neural networks, neural network sare used topredict because ofthe ability of a good approach to ketidak linearan. This study will design the software selection admission of new studentswith a backpropagation neural network methods. From the analysis of backpropagation neural networks with one hidden layer with the number of neurons 50, 1000 iteration sand the activation functiont an sigproduce regression of 0.4822. Backpropagation neural network withtwo hidden layers with the number of neurons 50, 4000 iterations with tansig activation function, resulting in regression of 0.7944. Backpropagation neural networks with 3 hidden layer with the number of neurons 35, 5000 iterations, resulting in regression of 0.8563. Based on the results of this analysis, backpropagation neural networks quite effectively used for selection of candidates for student admission. Keywords: Selection, Backpropagation, Regression

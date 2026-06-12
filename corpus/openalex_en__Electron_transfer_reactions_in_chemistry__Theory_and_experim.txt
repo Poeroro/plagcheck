@@ -1,0 +1,6 @@
+Electron transfer reactions in chemistry. Theory and experiment
+
+Authors: R. A. Marcus
+Year: 1993
+
+Since the late 1940s, the field of electron transfer pro- cesses has grown enormously, both in chemistry and biol- ogy. The development of the field, experimentally and theoretically, as well as its relation to the study of other kinds of chemical reactions, represents to us an intrigu- ing history, one in which many threads have been brought together. In this lecture, some history, recent trends, and my own involvement in this research are de- scribed. The early experiments in the electron transfer field were on "isotopic exchange reactions" (self-exchange reactions) and, later, "cross reactions. " These experiments rejected two principal inAuences. One of these was the availability after the Second World War of many radioac- tive isotopes, which permitted the study of a large num- ber of isotopic exchange electron transfer reactions, such as Fe +Fe' ~Fe ++Pe* + Ce ++Ce*"+-+Ce ++Ce* +

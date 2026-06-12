@@ -1,0 +1,6 @@
+PENGUNGKAPAN EMISI GAS RUMAH KACA, KINERJA LINGKUNGAN, DAN NILAI PERUSAHAAN
+
+Authors: Dian Anggraeni
+Year: 2015
+
+The objective of this study is to investigate the impact of greenhouse gas (GHG) emissions disclosure and environmental performance on firm value, and then it examines the role of environmental performance in moderating the relationship between them. The analysis of this study uses moderated regression analysis with panel data. The sample consists of firms that listed in PROPER’s rank and BEI for 2010-2013. Consistent with legitimacy and signaling theory, the results show that GHG emissions disclosure has a positive impact on firm value, while environmental performance does not, except for the gold rank. Then, the PROPER’s rank that is a proxy for the environmental performance cannot be moderating that relationship. It is probably that the ranks cannot represent the environmental performance of firm as a whole, so there is no evidence that the rank will be moderating the relationship between GHG emissions disclosure and firm value.

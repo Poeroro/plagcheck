@@ -1,0 +1,6 @@
+Pengaruh Ukuran Perusahaan dan Profitabilitas terhadap Agresivitas Pajak pada Perusahaan Manufaktur yang Listing di BEI Periode Tahun 2013–2017
+
+Authors: Ari Wahyu Leksono, Setya Stanto Albertus, Rendika Vhalery
+Year: 2019
+
+Tax is a sector that plays an important role in the economy. This largest state revenue must continue to be increased optimally so that the pace of the country's growth and implementation of development can run well. But for business, people tax is considered as an investment burden. Therefore, it has become a natural thing if the company tries to avoid the tax burden. Management actions planned to reduce corporate tax payments through tax aggressiveness are common among companies around the world. This study aims to determine the effect of firm size and profitability on tax aggressiveness. The population and sample in this study were food and beverage sub-sector manufacturing companies listed on the Indonesia Stock Exchange (IDX) for the period 2013-2017. The sampling method used was purposive sampling. The analytical tool used is multiple linear regression. The results showed that partially the firm size and profitability (ROA) had a negative effect on tax aggressiveness. While the simultaneously firm size and profitability (ROA) have a positive effect on tax aggressiveness.

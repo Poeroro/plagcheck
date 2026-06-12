@@ -1,0 +1,6 @@
+ELIZA—a computer program for the study of natural language communication between man and machine
+
+Authors: Joseph Weizenbaum
+Year: 1966
+
+article Free Access Share on ELIZA—a computer program for the study of natural language communication between man and machine Author: Joseph Weizenbaum Massachusetts Institute of Technology, Cambridge Massachusetts Institute of Technology, CambridgeView Profile Authors Info & Claims Communications of the ACMVolume 9Issue 1Jan. 1966 pp 36–45https://doi.org/10.1145/365153.365168Published:01 January 1966Publication History 2,074citation19,466DownloadsMetricsTotal Citations2,074Total Downloads19,466Last 12 Months5,621Last 6 weeks843 Get Citation AlertsNew Citation Alert added!This alert has been successfully added and will be sent to:You will be notified whenever a record that you have chosen has been cited.To manage your alert preferences, click on the button below.Manage my AlertsNew Citation Alert!Please log in to your account Save to BinderSave to BinderCreate a New BinderNameCancelCreateExport CitationPublisher SiteeReaderPDF

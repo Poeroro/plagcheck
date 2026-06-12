@@ -1,0 +1,6 @@
+PENERAPAN METODE SUPPORT VECTOR MACHINE UNTUK ANALISIS SENTIMEN PENGGUNA TWITTER
+
+Authors: Zidna Alhaq, Ali Mustopa, Sri Mulyatun, Joko Dwi Santoso
+Year: 2021
+
+Twitter merupakan salah satu media sosial yang digunakan untuk menyampaikan pendapat dan mendiskusikan berbagai topik seputar. Salah satu topik yang sering dibahas adalah marketplace. Bukalapak merupakan salah satu marketplace terpopuler di Indonesia. Bukalapak memberikan penggunanya kemampuan untuk melakukan transaksi dengan cepat dan aman. Tanggapan yang diberikan oleh pengguna tersebut dapat berupa tanggapan positif, negatif dan netral. Oleh karena itu diperlukan suatu metode yang dapat digunakan untuk mengetahui pendapat pengguna Bukalapak di media sosial Twitter. Untuk mengatasi masalah ini, diperlukan suatu metode yang dapat mengkategorikan pendapat-pendapat tersebut. Support Vector Machines merupakan salah satu metode penggalian teks yang dapat mengkategorikan opini tersebut. Data yang diperoleh dari Twiiter akan diberi label dan dianalisis menggunakan metode SVM untuk mengklasifikasikan opini-opini tersebut. Hasil klasifikasi menggunakan metode SVM diperoleh tingkat akurasi sebesar 93%.

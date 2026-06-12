@@ -1,0 +1,6 @@
+SciBERT: A Pretrained Language Model for Scientific Text
+
+Authors: Iz Beltagy, Kyle Lo, Arman Cohan
+Year: 2019
+
+Iz Beltagy, Kyle Lo, Arman Cohan. Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP). 2019.

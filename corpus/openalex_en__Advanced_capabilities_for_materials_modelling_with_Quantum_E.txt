@@ -1,0 +1,6 @@
+Advanced capabilities for materials modelling with Quantum ESPRESSO
+
+Authors: P Giannozzi, O Andreussi, T Brumme, O Bunau, M Buongiorno Nardelli
+Year: 2017
+
+Quantum EXPRESSO is an integrated suite of open-source computer codes for quantum simulations of materials using state-of-the-art electronic-structure techniques, based on density-functional theory, density-functional perturbation theory, and many-body perturbation theory, within the plane-wave pseudopotential and projector-augmented-wave approaches. Quantum EXPRESSO owes its popularity to the wide variety of properties and processes it allows to simulate, to its performance on an increasingly broad array of hardware architectures, and to a community of researchers that rely on its capabilities as a core open-source development platform to implement their ideas. In this paper we describe recent extensions and improvements, covering new methodologies and property calculators, improved parallelization, code modularization, and extended interoperability both within the distribution and with external software.

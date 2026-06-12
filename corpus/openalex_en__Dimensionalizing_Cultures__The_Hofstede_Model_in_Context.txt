@@ -1,0 +1,6 @@
+Dimensionalizing Cultures: The Hofstede Model in Context
+
+Authors: Geert Hofstede
+Year: 2011
+
+This article describes briefly the Hofstede model of six dimensions of national cultures: Power Distance, Uncertainty Avoidance, Individualism/Collectivism, Masculinity/Femininity, Long/Short Term Orientation, and Indulgence/Restraint. It shows the conceptual and research efforts that preceded it and led up to it, and once it had become a paradigm for comparing cultures, research efforts that followed and built on it. The article stresses that dimensions depend on the level of aggregation; it describes the six entirely different dimensions found in the Hofstede et al. (2010) research into organizational cultures. It warns against confusion with value differences at the individual level. It concludes with a look ahead in what the study of dimensions of national cultures and the position of countries on them may still bring.

@@ -1,0 +1,6 @@
+Estimating the global cancer incidence and mortality in 2018: GLOBOCAN sources and methods
+
+Authors: Jacques Ferlay, Murielle Colombet, Isabelle Soerjomataram, Colin Mathers, Donald Maxwell Parkin
+Year: 2018
+
+Estimates of the worldwide incidence and mortality from 36 cancers and for all cancers combined for the year 2018 are now available in the GLOBOCAN 2018 database, compiled and disseminated by the International Agency for Research on Cancer (IARC). This paper reviews the sources and methods used in compiling the cancer statistics in 185 countries. The validity of the national estimates depends upon the representativeness of the source information, and to take into account possible sources of bias, uncertainty intervals are now provided for the estimated sex- and site-specific all-ages number of new cancer cases and cancer deaths. We briefly describe the key results globally and by world region. There were an estimated 18.1 million (95% UI: 17.5-18.7 million) new cases of cancer (17 million excluding non-melanoma skin cancer) and 9.6 million (95% UI: 9.3-9.8 million) deaths from cancer (9.5 million excluding non-melanoma skin cancer) worldwide in 2018.

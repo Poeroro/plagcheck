@@ -1,0 +1,6 @@
+Reactive Oxygen Species, Oxidative Damage, and Antioxidative Defense Mechanism in Plants under Stressful Conditions
+
+Authors: Pallavi Sharma, Ambuj Bhushan Jha, R. S. Dubey, Mohammad Pessarakli
+Year: 2012
+
+Reactive oxygen species (ROS) are produced as a normal product of plant cellular metabolism. Various environmental stresses lead to excessive production of ROS causing progressive oxidative damage and ultimately cell death. Despite their destructive activity, they are well-described second messengers in a variety of cellular processes, including conferment of tolerance to various environmental stresses. Whether ROS would serve as signaling molecules or could cause oxidative damage to the tissues depends on the delicate equilibrium between ROS production, and their scavenging. Efficient scavenging of ROS produced during various environmental stresses requires the action of several nonenzymatic as well as enzymatic antioxidants present in the tissues. In this paper, we describe the generation, sites of production and role of ROS as messenger molecules as well as inducers of oxidative damage. Further, the antioxidative defense mechanisms operating in the cells for scavenging of ROS overproduced under various stressful conditions of the environment have been discussed in detail.

@@ -1,0 +1,6 @@
+Implementasi Metode Pengembangan Sistem Extreme Programming (XP) pada Aplikasi Investasi Peternakan
+
+Authors: Rohmat Indra Borman, Adhie Thyo Priandika, Arif Rahman Edison
+Year: 2020
+
+Sektor peternakan merupakan motor penggerak pembangunan khususnya di wilayah pedesaan. Salah satu permasalahan yang dihadapi oleh peternak di Indonesia terutama pada peternak skala ekonomi kecil adalah permodalan yang terbatas. Untuk mengatasi hal tersebut maka dibutuhkan cara untuk mendapatkan modal. Pada penelitian ini akan dikembangkan aplikasi investasi peternakan online dengan menerapkan metode pengembangan sistem extreme programming (XP) yang mempermudah peternak menemukan investor dan mempermudah investor dalam mencari tempat investasi khususnya dibidang peternakan. Metode extreme programming (XP) menawarkan tahapan dalam waktu relatif singkat sesuai dengan fokus yang akan dicapai pengembang. Berdasarkan pengujian usability, aplikasi investasi peternakan menunjukan nilai rata-rata 88% dalam kategori baik, sehingga aplikasi layak untuk digunakan.

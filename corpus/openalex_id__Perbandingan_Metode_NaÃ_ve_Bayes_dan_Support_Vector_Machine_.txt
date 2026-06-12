@@ -1,0 +1,6 @@
+Perbandingan Metode NaÃ¯ve Bayes dan Support Vector Machine pada Analisis Sentimen Twitter
+
+Authors: Mujaddid Izzul Fikri, Trifebi Shina Sabrila, Yufis Azhar
+Year: 2020
+
+Twitter is one of the social media that is widely used by the public as a communication media and obtain information. Through this social media, users can submit various opinions or comments on an issue. The opinions and comments that users submit through the tweets they send can be used for sentiment analysis. Therefore, in this study sentiment analysis of tweets related to the University of Muhammadiyah Malang (UMM) was carried out to determine public opinion about this campus. The analysis was carried out by classifying tweets that contain peopleâ€™s sentiments regarding UMM. The classification method used in this study is NaÃ¯ve Bayes and Support Vector Machine (SVM) by weighting the term using TF-IDF. The result of the two methods shows that NaÃ¯ve Bayes gets better accuracy than SVM with an accuracy of 73,65%

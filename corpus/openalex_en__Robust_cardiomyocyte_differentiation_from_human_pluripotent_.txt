@@ -1,0 +1,6 @@
+Robust cardiomyocyte differentiation from human pluripotent stem cells via temporal modulation of canonical Wnt signaling
+
+Authors: Xiaojun Lian, Cheston Hsiao, Gisela F. Wilson, Kexian Zhu, Laurie B. Hazeltine
+Year: 2012
+
+Human pluripotent stem cells (hPSCs) offer the potential to generate large numbers of functional cardiomyocytes from clonal and patient-specific cell sources. Here we show that temporal modulation of Wnt signaling is both essential and sufficient for efficient cardiac induction in hPSCs under defined, growth factor-free conditions. shRNA knockdown of β-catenin during the initial stage of hPSC differentiation fully blocked cardiomyocyte specification, whereas glycogen synthase kinase 3 inhibition at this point enhanced cardiomyocyte generation. Furthermore, sequential treatment of hPSCs with glycogen synthase kinase 3 inhibitors followed by inducible expression of β-catenin shRNA or chemical inhibitors of Wnt signaling produced a high yield of virtually (up to 98%) pure functional human cardiomyocytes from multiple hPSC lines. The robust ability to generate functional cardiomyocytes under defined, growth factor-free conditions solely by genetic or chemically mediated manipulation of a single developmental pathway should facilitate scalable production of cardiac cells suitable for research and regenerative applications.

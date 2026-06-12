@@ -1,0 +1,6 @@
+Structure validation in chemical crystallography
+
+Authors: Anthony L. Spek
+Year: 2009
+
+Automated structure validation was introduced in chemical crystallography about 12 years ago as a tool to assist practitioners with the exponential growth in crystal structure analyses. Validation has since evolved into an easy-to-use checkCIF/PLATON web-based IUCr service. The result of a crystal structure determination has to be supplied as a CIF-formatted computer-readable file. The checking software tests the data in the CIF for completeness, quality and consistency. In addition, the reported structure is checked for incomplete analysis, errors in the analysis and relevant issues to be verified. A validation report is generated in the form of a list of ALERTS on the issues to be corrected, checked or commented on. Structure validation has largely eliminated obvious problems with structure reports published in IUCr journals, such as refinement in a space group of too low symmetry. This paper reports on the current status of structure validation and possible future extensions.

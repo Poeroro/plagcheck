@@ -1,0 +1,6 @@
+Analisis Sentimen Pariwisata di Kota Malang Menggunakan Metode Naive Bayes dan Seleksi Fitur Query Expansion Ranking
+
+Authors: Shima Fanissa
+Year: 2017
+
+Pariwisata merupakan salah satu sektor usaha untuk memajukan suatu daerah. Kota Malang pada saat ini memiliki sebuah branding city yang bernama Beautiful Malang. Masyarakat Indonesia memilih pariwisata Kota Malang sebagai destinasi dan mengulasnya pada website salah satunya adalah TripAdvisor. Dengan demikian penelitian ini mencoba menganalisis ulasan dari masyarakat tentang pariwisata Kota Malang melalui analisis sentimen dan dikiasifikasikan menjadi dua kelas yaitu positif dan negatif. Pada penelitian ini metode yang digunakan adalah Naive Bayes dan seleksi fitur Query Expansion Ranking untuk mengurangi jumlah fitur pada proses kiasifikasi. Proses dari analisis sentimen terdiri dari preprocessing, seleksi fitur dengan metode Query Expansion Ranking, dan kiasifikasi dengan Naive Bayes. Pengujian pada penelitian ini adalah uji akurasi dengan menggunakan variasi rasio seleksi fitur, hasilnya seleksi fitur 75% memiliki akurasi terbaik sebesar 86.6%.

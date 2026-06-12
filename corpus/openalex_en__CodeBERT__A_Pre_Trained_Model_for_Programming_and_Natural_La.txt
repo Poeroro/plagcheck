@@ -1,0 +1,6 @@
+CodeBERT: A Pre-Trained Model for Programming and Natural Languages
+
+Authors: Zhangyin Feng, Daya Guo, Duyu Tang, Nan Duan, Xiaocheng Feng
+Year: 2020
+
+Zhangyin Feng, Daya Guo, Duyu Tang, Nan Duan, Xiaocheng Feng, Ming Gong, Linjun Shou, Bing Qin, Ting Liu, Daxin Jiang, Ming Zhou. Findings of the Association for Computational Linguistics: EMNLP 2020. 2020.

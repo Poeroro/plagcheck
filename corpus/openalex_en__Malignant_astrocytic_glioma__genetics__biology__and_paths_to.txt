@@ -1,0 +1,6 @@
+Malignant astrocytic glioma: genetics, biology, and paths to treatment
+
+Authors: Frank B. Furnari, Tim R. Fenton, Robert Bachoo, Akitake Mukasa, Jayne M. Stommel
+Year: 2007
+
+Malignant astrocytic gliomas such as glioblastoma are the most common and lethal intracranial tumors. These cancers exhibit a relentless malignant progression characterized by widespread invasion throughout the brain, resistance to traditional and newer targeted therapeutic approaches, destruction of normal brain tissue, and certain death. The recent confluence of advances in stem cell biology, cell signaling, genome and computational science and genetic model systems have revolutionized our understanding of the mechanisms underlying the genetics, biology and clinical behavior of glioblastoma. This progress is fueling new opportunities for understanding the fundamental basis for development of this devastating disease and also novel therapies that, for the first time, portend meaningful clinical responses.

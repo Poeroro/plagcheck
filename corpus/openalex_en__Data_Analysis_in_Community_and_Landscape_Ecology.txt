@@ -1,0 +1,6 @@
+Data Analysis in Community and Landscape Ecology
+
+Authors: R.H.G. Jongman, Cajo J. F. ter Braak, O. F. R. van Tongeren
+Year: 1995
+
+Ecological data has several special properties: the presence or absence of species on a semi-quantitative abundance scale; non-linear relationships between species and environmental factors; and high inter-correlations among species and among environmental variables. The analysis of such data is important to the interpretation of relationships within plant and animal communities and with their environments. In this corrected version of Data Analysis in Community and Landscape Ecology, without using complex mathematics, the contributors demonstrate the methods that have proven most useful, with examples, exercises and case-studies. Chapters explain in an elementary way powerful data analysis techniques such as logic regression, canonical correspondence analysis, and kriging.

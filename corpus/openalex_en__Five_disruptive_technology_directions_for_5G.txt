@@ -1,0 +1,6 @@
+Five disruptive technology directions for 5G
+
+Authors: Federico Boccardi, Robert W. Heath, Angel Lozano, Thomas L. Marzetta, Petar Popovski
+Year: 2014
+
+New research directions will lead to fundamental changes in the design of future fifth generation (5G) cellular networks. This article describes five technologies that could lead to both architectural and component disruptive design changes: device-centric architectures, millimeter wave, massive MIMO, smarter devices, and native support for machine-to-machine communications. The key ideas for each technology are described, along with their potential impact on 5G and the research challenges that remain.

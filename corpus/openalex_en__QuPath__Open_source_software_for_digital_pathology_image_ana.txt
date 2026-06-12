@@ -1,0 +1,6 @@
+QuPath: Open source software for digital pathology image analysis
+
+Authors: Peter Bankhead, Maurice B. Loughrey, José A. Fernández, Yvonne Dombrowski, Darragh G. McArt
+Year: 2017
+
+QuPath is new bioimage analysis software designed to meet the growing need for a user-friendly, extensible, open-source solution for digital pathology and whole slide image analysis. In addition to offering a comprehensive panel of tumor identification and high-throughput biomarker evaluation tools, QuPath provides researchers with powerful batch-processing and scripting functionality, and an extensible platform with which to develop and share new algorithms to analyze complex tissue images. Furthermore, QuPath's flexible design makes it suitable for a wide range of additional image analysis applications across biomedical research.

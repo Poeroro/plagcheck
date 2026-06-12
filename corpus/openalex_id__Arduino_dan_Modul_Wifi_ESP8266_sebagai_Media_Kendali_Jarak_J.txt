@@ -1,0 +1,6 @@
+Arduino dan Modul Wifi ESP8266 sebagai Media Kendali Jarak Jauh dengan antarmuka Berbasis Android
+
+Authors: Selamet Samsugi, Ardiansyah Ardiansyah, Dyan Kastutara
+Year: 2018
+
+Energi listrik merupakan salah satu kebutuhan pokok yang sangat penting bagi kehidupan manusia saat ini, hampir setiap kegiatan yang dilakukan manusia berhubungan dengan energi listrik. Perkembangan teknologi dibidang elektronika saat ini membuat pola pikir manusia semakin kedepan dalam penerapan peralatan elektronika.Teknologi elektronika yang dapat mengendalikan peralatan elektronik rumah tangga dari jarak jauh salah satunya teknologi internet of things. Teknologi lain yang dikembangkan adalah teknologi yang bertujuan untuk menghemat energi listrik yang digunakan pada rumah tangga. Internet of Things didefinisikan sebagai interkoneksi dari perangkat komputasi tertanam (embedded computing devices) yang teridentifikasi secara unik dalam keberadaan infrastruktur internet. Sistem kendali pada penelitian ini dirancang menggunakan Arduino UNO dengan mikrokontroler ATmega328 sebagai pusat kendali dari sistem, serta modul wifi ESP8266 guna untuk komunikasi kontroler ke internet melalui media wifi. Interface dibuat dengan berbasis Android.Kata kunci: energi listrik, internet of things, Arduino, modul wifi esp8266

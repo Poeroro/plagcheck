@@ -1,0 +1,6 @@
+Evaluasi Aspek Usability pada Aplikasi Simalu Menggunakan Metode Usability Testing
+
+Authors: Ni Luh Putri Ari Wedayanti, Ni Kadek Ayu Wirdiani, I Ketut Adi Purnawan
+Year: 2019
+
+Tingkat usability dapat mempengaruhi kemudahan penggunaan suatu aplikasi termasuk aplikasi mobile, sehingga penting untuk dilakukanya evaluasi. Aplikasi Simalu merupakan sebuah aplikasi lokal Bali yang bergerak dalam bidang kebersihan lingkungan. Simalu tergolong aplikasi baru karena dirilis pada awal bulan Januari tahun 2018 dan belum pernah dilakukan evaluasi usability sebelumnya. Evaluasi usability dilakukan untuk meningkatkan User Experience pengguna, sehingga aplikasi dapat diterima dan digunakan lebih mudah oleh pengguna. Metode yang digunakan untuk melakukan evaluasi yaitu usability testing dengan teknik Retrospective Think Aloud dan Performance Measurement. Hasil yang didapatkan adalah aplikasi Simalu memiliki kualitas yang belum dapat dikatakan efektif, efisien dan memenuhi kepuasan pengguna, sehingga perbaikan desain juga dilakukan agar aplikasi lebih baik lagi untuk memenuhi harapan pengguna.&#x0D; Kata kunci: Aplikasi Simalu, Evaluasi Usability, User Experience, Usability Testing, Retrospective Think Aloud, Performance Measurement.

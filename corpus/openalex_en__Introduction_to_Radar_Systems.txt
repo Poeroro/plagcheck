@@ -1,0 +1,6 @@
+Introduction to Radar Systems
+
+Authors: Skolnik, Merrill I.    (Merrill Ivan),    1927-    author    202966
+Year: 1999
+
+1 An Introduction to Radar 2 The Radar Equation 3 MTI and Pulse Doppler Radar 4 Tracking Radar 5 Detection of Signals in Noise 6 Information from Radar Signals 7 Radar Clutter 8 Propogation of Radar Waves 9 The Radar Antenna 10 Radar Transmitters 11 Radar Receiver

@@ -1,0 +1,6 @@
+SEER Cancer Statistics Review, 1975-2003
+
+Authors: Lynn A. G. Ries, D. Harkins, Martin Krapcho, Angela B. Mariotto, B. Miller
+Year: 2006
+
+The annual SEER Cancer Statistics Review (CSR), containing the most recent incidence, mortality, prevalence, and survival statistics, is published by the Cancer Statistics Branch of the NCI. The scope and purpose of the CSR follow a report to the Senate Appropriations Committee (Breslow, 1988), which recommended that a broad profile of cancer be presented regularly to the American public. This CSR includes incidence, mortality, prevalence, and survival data from 1975 through 2003, the most recent year for which data are available.

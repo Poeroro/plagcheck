@@ -1,0 +1,6 @@
+SISTEM INFORMASI ADMINISTRASI SURAT MENYURAT KANTOR WILAYAH KEMENTERIAN AGAMA PROVINSI RIAU
+
+Authors: Nurul Ikhsan, Siti Ramadhani
+Year: 2020
+
+Kantor Wilayah Kementerian Agama Provinsi Riau adalah Kementerian yang membidangi urusan keagamaan. Kantor Wilayah Kementerian Agama Provinsi Riau memiliki sebuah bagian penting dalam Informasi pelayanan publik yaitu bagian Pusat Pelayanan Terpadu Satu Pintu yaitu sebuah bagian yang mengumpulkan segala bentuk Informasi yang berhubungan dengan kegiatan dalam bidang Informasi surat di Kantor Wilayah Kementerian Agama Provinsi Riau. Pegawai PTSP akan mengumpulkan dan mengolah data surat masuk dan surat keluardalam pembuatan surat menyurat masih menggunakan cara yang konvensional. Berdasarkan permasalahan yang ada, maka akan dibangun sebuah sistem Informasi yang dapat membantu para pegawai bagian PTSP di Kantor Wilayah Kementerian Agama Provinsi Riau. Berdasarkan hasil uji blackbox sistem ini berjalan dengan baik dan sesuai dengan yang diharapkan. Berdasarkan pengujian User Acceptance Test (UAT) yang telah dilakukan oleh pengguna sistem di Kantor Wilayah Kementerian Agama Provinsi Riau mengatakan secara keseluruhan sistem ini mudah dipahami dan sesuai dengan apa yang diharapkan.

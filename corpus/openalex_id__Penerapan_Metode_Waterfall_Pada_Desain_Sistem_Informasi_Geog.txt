@@ -1,0 +1,6 @@
+Penerapan Metode Waterfall Pada Desain Sistem Informasi Geografis Industri Kabupaten Tegal
+
+Authors: Ginanjar Wiro Sasmito
+Year: 2017
+
+Kabupaten Tegal memiliki berbagai industri yang tersebar di 18 Kecamatan, industri-industri tersebutlah yang dapat menopang laju perekonomian pada Kabupaten Tegal. Pemerintah Kabupaten Tegal dalam melakukan pendataan industri tersebut masih mengandalkan sensus yang dilakukan secara manual. Data yang ditampilkan dari hasil sensus tersebutpun masih tersentral dipublikasikan oleh Badan Pusat Statistik (BPS) dan informasinya hanya berupa tabel-tabel tanpa visualisasi yang menarik. Kurangnya informasi industri yang disampaikan kepada masyarakat, menyebabkan industri-industri yang ada di Kabupaten Tegal kurang dikenal oleh masyarakat luas sehingga pangsa pasar industri Kabupaten Tegalpun tidak maksimal, disamping itu juga peluang untuk mendapatkan investor guna pengembangan usahapun menjadi terbatas. Sistem Informasi Geografis merupakan sistem komputer yang dapat merekam, menyimpan, menulis, menganalisis dan menampilkan data geografis. Dengan menggunakan metode Waterfall maka rancangan sistem informasi geografis dapat memberikan informasi mengenai profil industri, jenis produksi, nilai investasi, peta industri dan lokasi industri disetiap desa maupun kecamatan yang ada di kabupaten Tegal.

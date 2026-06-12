@@ -1,0 +1,6 @@
+A fast quantum mechanical algorithm for database search
+
+Authors: Lov K. Grover
+Year: 1996
+
+An unsorted database contains N records, of which just one satisfies a particular property. The problem is to identify that one record. Any classical algorithm, deterministic or probabilistic, will clearly take O (N) steps since on the average it will have to examine a large fraction of the N records. Quantum mechanical systems can do several operations simultaneously due to their wave like properties. This paper gives an O ( JN) step quantum mechanical algorithm for identifying that record. It is within a constant factor of the fastest possible quantum mechanical algorithm.

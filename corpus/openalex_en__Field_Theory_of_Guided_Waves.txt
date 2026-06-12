@@ -1,0 +1,6 @@
+Field Theory of Guided Waves
+
+Authors: R.E. Collin
+Year: 1990
+
+"Co-published with Oxford University Press Long considered the most comprehensive account of electromagnetic theory and analytical methods for solving waveguide and cavity problems, this new Second Edition has been completely revised and thoroughly updated -- approximately 40% new material!Packed with examples and applications FIELD THEORY OF GUIDED WAVES provides solutions to a large number of practical structures of current interest. The book includes an exceptionally complete discussion of scalar and Dyadic Green functions. Both a valuable review and source of basic information on applied mathematical topics and a hands-on source for solution methods and techniques, this book belongs on the desk of all engineers working in microwave and antenna systems!" Sponsored by: IEEE Antennas and Propagation Society

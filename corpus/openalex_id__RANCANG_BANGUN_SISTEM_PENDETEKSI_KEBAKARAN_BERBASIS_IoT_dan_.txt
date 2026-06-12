@@ -1,0 +1,6 @@
+RANCANG BANGUN SISTEM PENDETEKSI KEBAKARAN BERBASIS IoT dan SMS GATEWAY MENGGUNAKAN ARDUINO
+
+Authors: Dani Sasmoko, Arie Mahendra
+Year: 2017
+
+Keadaan alam di daerah PTPN IX memang berada di dataran tinggi sehingga memiliki kontur permukaan tanah yang berbukit beberapa kali terjadi kebakaran hutan yang tidak dapat di tanggulangi karena kurang nya informasi oleh karena itu di perlukan sistem yang dapat menginformasika secara langsung melalui internet dengan menggunakan teknologi IoT yang akan mengirim data melaui web dan media komunikasi sms serta telpon sehingga informasi kebakaran tidak lagi terlambat karena akan di ketahui petugas di lapangan.Dengan memakai Arduino yang terhubung sensor suhu, asap ,api dan temperature yang akan mengirim data dengan SIM 900 memalui IoT akan dapat menekan kerugian akibat kebakaran karena informasi kebakaran dapat di ketahui secara cepat

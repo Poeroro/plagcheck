@@ -1,0 +1,6 @@
+On the Use, the Misuse, and the Very Limited Usefulness of Cronbach’s Alpha
+
+Authors: Klaas Sijtsma
+Year: 2008
+
+This discussion paper argues that both the use of Cronbach's alpha as a reliability estimate and as a measure of internal consistency suffer from major problems. First, alpha always has a value, which cannot be equal to the test score's reliability given the interitem covariance matrix and the usual assumptions about measurement error. Second, in practice, alpha is used more often as a measure of the test's internal consistency than as an estimate of reliability. However, it can be shown easily that alpha is unrelated to the internal structure of the test. It is further discussed that statistics based on a single test administration do not convey much information about the accuracy of individuals' test performance. The paper ends with a list of conclusions about the usefulness of alpha.

@@ -1,0 +1,6 @@
+Pengaruh Profitabilitas, Free Cash Flow, dan Ukuran Perusahaan Pada Nilai Perusahaan
+
+Authors: Putu Ayu Widiastari, Gerianta Wirawan Yasa
+Year: 2018
+
+Tujuan perusahaan bukan hanya untuk memperoleh keuntungan, namun juga berorientasi pada kemakmuran pemegang saham melalui peningkatan nilai perusahaan. Nilai perusahaan dicerminkan dari harga sahamnya. Penelitian ini bertujuan untuk mengetahui pengaruh profitabilitas, free cash flow, dan ukuran perusahaan pada nilai perusahaan. Penelitian ini dilakukan pada perusahaan consumer goods yang terdaftar di Bursa Efek Indonesia selama periode 2011-2015. Jumlah sampel yang digunakan sebanyak 24 perusahaan dengan metode pengambilan sampel menggunakan metode non probability sampling. Metode pengumpulan data yang digunakan adalah observasi non partisipan. Teknik analisis yang digunakan adalah analisis regresi linear berganda. Berdasarkan hasil analisis ditemukan bahwa profitabilitas dan ukuran perusahaan mempunyai pengaruh positif pada nilai perusahaan. Sementara free cash flow tidak berpengaruh pada nilai perusahaan.

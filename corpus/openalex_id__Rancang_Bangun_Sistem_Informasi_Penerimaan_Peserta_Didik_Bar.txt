@@ -1,0 +1,6 @@
+Rancang Bangun Sistem Informasi Penerimaan Peserta Didik Baru Berbasis Website Dengan Metode Spiral
+
+Authors: Kartika Puspita, Yuris Alkhalifi, Hasan Basri
+Year: 2021
+
+Penerimaan Peserta Didik Baru (PPDB) is an annual agenda for every institution or educational institution in order to accept new students in its environment. Often these agencies or institutions often experience problems in managing the administration of new students, one of which is Raudhatul Athfal Sirojul Falah. The problems that occur in administrative matters include the frequent problems of inputting new student data and it is not organized so that the data becomes difficult to find. So that in this study a PPDB information system will be created to solve this problem. The information system that will be created is in the form of a UML (Unified Modeling Language) design, ERD (Entity Relationship Diagram), and LRS (Logical Record Structure) as well as a website with the PHP programming language, CodeIgniter framework, and bootstrap library. The result of this research is the construction of a PPDB information system at RA Sirojul Falah in the form of a website using the spiral method with the hope of helping the PPDB RA Sirojul Falah committee in managing new student data effectively and efficiently.

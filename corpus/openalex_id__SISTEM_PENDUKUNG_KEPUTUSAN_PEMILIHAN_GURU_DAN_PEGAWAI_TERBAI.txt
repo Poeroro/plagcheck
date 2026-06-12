@@ -1,0 +1,6 @@
+SISTEM PENDUKUNG KEPUTUSAN PEMILIHAN GURU DAN PEGAWAI TERBAIK MENGGUNAKAN METODE MOORA
+
+Authors: Samuel Manurung
+Year: 2018
+
+Sistem pendukung keputusan adalah suatu sistem yang dapat menyelesaikan masalah yang terjadi di dalam penentuan peringkat dengan cepat serta dapat mengetahui nilai tertinggi sampai terendah di dalam sebuah seleksi. Di penulisan ini adalah salah satu merupakan studi kasus yang dapat diselesaikan dengan menggunakan sistem pendukung keputusan, dimana yang menjadi persoalan yang dihadapi di dalam SMP negeri 1 Palipi adalah bagaimana memilih guru dan pegawai yang terbaik di dalam sekolah dan untuk melakukan sebuah seleksi harus menggunakan dengan cara manual dan proses penilaian menjadi lama untuk mendapatkan hasil. Oleh karena itu dibuat sebuah Sistem yang mendukung keputusan yang dapat membantu proses penilaian dan dimana Sistem pendukung keputusan yang dilakukan ini menggunakan metode moora dan dimana metode moora digunakan untuk untk menguji coba di dalam correctness yang bertujuan untuk mengetahui akurasi nilai yang diperoleh oleh system, uji coba sensitivitas diberika pada nialai bobot kritera dan uji coba modifikasi yang bertujuan untuk mengetahui seberapa banyak kriteria yang dapat ditambahkan.Kata kunci: metode moora, SPK, kriteria, penyeleksian, correctness, DSS.

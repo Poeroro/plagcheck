@@ -1,0 +1,6 @@
+CLINICAL DECISION SUPPORT SYSTEMS THEORY AND PRACTICE
+
+Authors: Wiharto Wiharto
+Year: 2018
+
+Clinical Decision Support Systems Theory and Practice, adalah buku teks dalam seri Health Informatics yang membahas tentang sistem pendukung keputusan klinis. Pada buku ini terbagi menjadi dua kelompok bahasan, Pertama membahas tentang dasar dalam mengembangkan sistem Clinical Decision Supprot System (CDSS) dan evaluasinya. Kedua, Aplikasi CDSS dalam praktik klinis. Bahasan tersebut menjadikan pembaca dapat memperoleh gambaran tentang dasar-dasar yang diperlukan dalam membangun dan mengaplikasikan CDSS dalam praktik klinis. Secara rinci buku tersebut terbagi menjadi 11 Bab, yang dapat dikelompokkan menjadi 7 Bab tentang konsep dalam pengembangan CDSS, dan 4 Bab tentang aplikasi CDSS dalam praktik klinis.

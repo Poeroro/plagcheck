@@ -1,0 +1,6 @@
+PENERAPAN ALGORITMA SVM UNTUK ANALISIS SENTIMEN PADA DATA TWITTER KOMISI PEMBERANTASAN KORUPSI REPUBLIK INDONESIA
+
+Authors: Dedi Darwis, Eka Shintya Pratiwi, A. Ferico Octaviansyah Pasaribu
+Year: 2020
+
+KPK RI merupakan lembaga terdepan yang memiliki kuasa penuh dan diharuskan untuk memberikan kinerja yang baik dalam memberantas tindak pidana korupsi. Namun dengan berkembangnya zaman, menjadikan masyarakat semakin mudah berselancar di media sosial untuk mengetahui informasi, dan bertukar informasi atau opini ke publik tanpa dibatasi ruang dan waktu. Media sosial twitter merupakan sala satu sosial media yang dijadikan sebagai wadah menampung opini tersebut. Metode klasifikasi yang digunakan pada penelitian ini adalah Support Vector Machine (SVM) dan ekstraksi fitur menggunakan TF-IDF. Dari 2000 data hasil twitter crawling, penelitian ini menghasilkan 1890 data dan 3846 term/kata dari hasil preprocessing lalu dihitung nilai dari kemunculan kata untuk labeling yang menghasilkan sentimen positif, negatif dan netral. Berdasarkan hasil pengujian yang dihasilkan, penerapan metode SVM menghasilkan nilai Akurasi sebesar 82% dan menghasilkan sentimen dengan label negatif lebih besar dengan jumlah 77%, label positif 8% dan label netral 25%.

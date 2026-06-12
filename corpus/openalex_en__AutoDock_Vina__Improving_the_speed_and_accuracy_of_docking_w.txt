@@ -1,0 +1,6 @@
+AutoDock Vina: Improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading
+
+Authors: Oleg Trott, Arthur J. Olson
+Year: 2009
+
+AutoDock Vina, a new program for molecular docking and virtual screening, is presented. AutoDock Vina achieves an approximately two orders of magnitude speed-up compared with the molecular docking software previously developed in our lab (AutoDock 4), while also significantly improving the accuracy of the binding mode predictions, judging by our tests on the training set used in AutoDock 4 development. Further speed-up is achieved from parallelism, by using multithreading on multicore machines. AutoDock Vina automatically calculates the grid maps and clusters the results in a way transparent to the user.

@@ -1,0 +1,6 @@
+The Design of CMOS Radio-Frequency Integrated Circuits
+
+Authors: Thomas H. Lee
+Year: 2003
+
+This book, first published in 2004, is an expanded and thoroughly revised edition of Tom Lee's acclaimed guide to the design of gigahertz RF integrated circuits. A new chapter on the principles of wireless systems provides a bridge between system and circuit issues. The chapters on low-noise amplifiers, oscillators and phase noise have been significantly expanded. The chapter on architectures now contains several examples of complete chip designs, including a GPS receiver and a wireless LAN transceiver, that bring together the theoretical and practical elements involved in producing a prototype chip. Every section has been revised and updated with findings in the field and the book is packed with physical insights and design tips, and includes a historical overview that sets the whole field in context. With hundreds of circuit diagrams and homework problems this is an ideal textbook for students taking courses on RF design and a valuable reference for practising engineers.

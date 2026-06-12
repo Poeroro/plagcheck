@@ -1,0 +1,6 @@
+MCScanX: a toolkit for detection and evolutionary analysis of gene synteny and collinearity
+
+Authors: Yupeng Wang, Haibao Tang, Jeremy D. DeBarry, Xu Tan, Jun Li
+Year: 2012
+
+MCScan is an algorithm able to scan multiple genomes or subgenomes in order to identify putative homologous chromosomal regions, and align these regions using genes as anchors. The MCScanX toolkit implements an adjusted MCScan algorithm for detection of synteny and collinearity that extends the original software by incorporating 14 utility programs for visualization of results and additional downstream analyses. Applications of MCScanX to several sequenced plant genomes and gene families are shown as examples. MCScanX can be used to effectively analyze chromosome structural changes, and reveal the history of gene family expansions that might contribute to the adaptation of lineages and taxa. An integrated view of various modes of gene duplication can supplement the traditional gene tree analysis in specific families. The source code and documentation of MCScanX are freely available at http://chibba.pgml.uga.edu/mcscan2/.

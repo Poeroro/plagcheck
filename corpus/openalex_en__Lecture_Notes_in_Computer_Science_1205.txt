@@ -1,0 +1,6 @@
+Lecture Notes in Computer Science 1205
+
+Authors: 
+Year: 1999
+
+Multiscale feature extraction from the visual environment in an active vision system Y.Machrouh 1, J.-S.Liénard 1, P.Tarroux 1, 2 Abstract. This paper presents a visual architecture able to identify salient regions in a visual scene and to use them to focus on interesting locations. It is inspired by the ability of natural vision systems to perform a differential processing of spatial frequencies both in time and space and to focus their attention on a very local part of the visual scene. The present paper analyzes how this differential processing of spatial frequencies is able to provide an artificial system with the information required to perform an exploration of its visual world based on a center-surround distinction of the external scene. It shows how the salient locations can be gathered on the basis of their similarities to form a high level representation of the visual scene.

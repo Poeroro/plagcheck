@@ -1,0 +1,6 @@
+An iteration method for the solution of the eigenvalue problem of linear differential and integral operators
+
+Authors: Cornelius Lanczos
+Year: 1950
+
+The p rese nt in vestigation designs a syste mat ic method for findin g the late nt I'oots and t he prin cipa l axes of a matrix, with ou t redu cin g t he o rd er of t he matri x. It is ch aracteri zed by a wide fi eld of appli ca b ili ty a nd great acc uracy, s ince t he a cc um ulat io n of ro undi ng errors is a vo id ed, t hrough t he p rocess of " minimi zed ite ratio ns". Mor eover, t he mcth od leads to a we ll co n ve rge nt s uccessiv e a pp rox im at io n p r occd ure by whi ch t he solu t io n of in tegr a l eq uatio ns of th e Fred holm t . v pe a nd t he so lu tion of t he eige n value prob lem of lin ear dilleren tia l a nd integ ra l o perators rn ay be acco m plished .

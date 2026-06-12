@@ -1,0 +1,6 @@
+The broadcast storm problem in a mobile ad hoc network
+
+Authors: Sze-Yao Ni, Yu‐Chee Tseng, Yuh‐Shyan Chen, Jang‐Ping Sheu
+Year: 1999
+
+Broadcasting is a common operation in a network to resolve many issues. In a mobile ad hoc network (MANET) in particular, due to host mobility, such operations are expected to be executed more frequently (such as finding a route to a particular host, paging a particular host, and sending an alarm signal). Because radio signals are likely to overlap with others in a geographical area, a straightforward broadcasting by flooding is usually very costly and will result in serious redundancy, contention, and collision, to which we refer as the broadcast storm problem. In this paper, we identify this problem by showing how serious it is through analyses and simulations. We propose several schemes to reduce redundant rebroadcasts and differentiate timing of rebroadcasts to alleviate this problem. Simulation results are presented, which show different levels of improvement over the basic flooding approach.

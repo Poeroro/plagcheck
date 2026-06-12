@@ -1,0 +1,6 @@
+Advances in Neural Information Processing Systems 14
+
+Authors: 
+Year: 2002
+
+The proceedings of the 2001 Neural Information Processing Systems (NIPS) Conference. The annual conference on Neural Information Processing Systems (NIPS) is the flagship conference on neural computation. The conference is interdisciplinary, with contributions in algorithms, learning theory, cognitive science, neuroscience, vision, speech and signal processing, reinforcement learning and control, implementations, and diverse applications. Only about 30 percent of the papers submitted are accepted for presentation at NIPS, so the quality is exceptionally high. These proceedings contain all of the papers that were presented at the 2001 conference. Bradford Books imprint

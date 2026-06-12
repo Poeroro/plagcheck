@@ -1,0 +1,6 @@
+Urgensi Regulasi Khusus dan Pemanfaatan Artificial Intelligence dalam Mewujudkan Perlindungan Data Pribadi di Indonesia
+
+Authors: Hari Sutra Disemadi
+Year: 2021
+
+Indonesia memiliki beberapa instrumen hukum perlindungan data pribadi yang tersebar dan hanya menyesuaikan dengan muatan utama dari masing-masing undang-undang, sehingga perlindungan hukum yang diberikan masih belum maksimal. Penelitian ini bertujuan untuk mengkaji penggunaan artificial intelligence ( AI ) sebagai alat bantu dalam melindungi data pribadi dan mengkaji urgensi sebuah regulasi khusus di Indonesia dalam menciptakan perlindungan terhadap data pribadi. Metode penelitian ini menggunakan pendekatan perundang-undangan dan pendekatan perbandingan hukum. Penelitian menunjukkan bahwa Pemerintah Indonesia perlu untuk segera membentuk dan mengesahkan instrumen hukum khusus dalam mengatur mengenai perlindungan data pribadi. Selain itu, upaya yang dapat dimaksimalkan dalam melindungi data pribadi adalah dengan memanfatkan potensi dari AI . Pemanfaatan AI dalam perlindungan data pribadi akan meminimalisir terjadinya human error sehingga perlindungan data pribadi dapat lebih terjamin.

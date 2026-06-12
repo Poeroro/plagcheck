@@ -1,0 +1,6 @@
+Observational Evidence from Supernovae for an Accelerating Universe and a Cosmological Constant
+
+Authors: Adam G. Riess, A. V. Filippenko, P. Challis, A. Clocchiatti, Alan H. Diercks
+Year: 1998
+
+We present spectral and photometric observations of 10 Type Ia supernovae (SNe Ia) in the redshift range 0.16 z 0.62. The luminosity distances of these objects are determined by methods that employ relations between SN Ia luminosity and light curve shape. Combined with previous data from our High-z Supernova Search Team and recent results by Riess et al., this expanded set of 16 high-redshift M \ 1) methods. We estimate the dynamical age of the universe to be 14.2 ^1.7 Gyr including systematic uncertainties in the current Cepheid distance scale. We estimate the likely e ect of several sources of systematic error, including progenitor and metallicity evolution, extinction, sample selection bias, local perturbations in the expansion rate, gravitational lensing, and sample contamination. Presently, none of these e ects appear to reconcile the data with and ) " \ 0 q 0 0.

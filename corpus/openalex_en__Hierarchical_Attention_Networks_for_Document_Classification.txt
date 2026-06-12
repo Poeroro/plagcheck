@@ -1,0 +1,6 @@
+Hierarchical Attention Networks for Document Classification
+
+Authors: Zichao Yang, Diyi Yang, Chris Dyer, Xiaodong He, Alex Smola
+Year: 2016
+
+Zichao Yang, Diyi Yang, Chris Dyer, Xiaodong He, Alex Smola, Eduard Hovy. Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. 2016.

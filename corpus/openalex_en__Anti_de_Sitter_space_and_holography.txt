@@ -1,0 +1,6 @@
+Anti de Sitter space and holography
+
+Authors: Edward Witten
+Year: 1998
+
+Recently, it has been proposed by Maldacena that large N limits of certain conformal field theories in d dimensions can be described in terms of supergravity (and string theory) on the product of d 4-1dimensional AdS space with a compact manifold. Here we elaborate on this idea and propose a precise correspondence between conformal field theory observables and those of supergravity: correlation functions in conformal field theory are given by the dependence of the supergravity action on the asymptotic behavior at infinity. In particular, dimensions of operators in conformal field theory are given by masses of particles in supergravity. As quantitative confirmation of this correspondence, we note that the Kaluza-Klein modes of Type IIB supergravity on AdS^ x S 5 match with the chiral operators of Af = 4 super Yang-Mills theory in four dimensions. With some further assumptions, one can deduce a H'amiltonian version of the correspondence and show that the Af = 4 theory has a large N phase transition related to the thermodynamics of AdS black holes.

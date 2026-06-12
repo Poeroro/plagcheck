@@ -1,0 +1,48 @@
+Multivariate Data Analysis.
+
+Authors: H. Herne, William W. Cooley, Paul R. Lohnes
+Year: 1973
+
+Offers an applications-oriented approach to multivariate data analysis, focusing on the use of each technique, rather than its mathematical derivation. The text introduces a six-step framework for organizing and discussing techniques with flowcharts for each.
+
+Well-suited for the non-statistician, this applications-oriented introduction to multivariate analysis focuses on the fundamental concepts that affect the use of specific techniques rather than the mathematical derivation of the technique. Provides an overview of several techniques and approaches that are available to analysts today - e.g., data warehousing and data mining, neural networks and resampling/bootstrapping. Chapters are organized to provide a practical, logical progression of the phases of analysis and to group similar types of techniques applicable to most situations.
+
+
+
+Table of Contents 
+
+1. Introduction. 
+
+I. PREPARING FOR A MULTIVARIATE ANALYSIS. 
+
+2. Examining Your Data. 
+
+3. Factor Analysis. 
+
+II. DEPENDENCE TECHNIQUES. 
+
+4. Multiple Regression. 
+
+5. Multiple Discriminant Analysis and Logistic Regression. 
+
+6. Multivariate Analysis of Variance. 
+
+7. Conjoint Analysis. 
+
+8. Canonical Correlation Analysis. 
+
+III. INTERDEPENDENCE TECHNIQUES. 
+
+9. Cluster Analysis. 
+
+10. Multidimensional Scaling. 
+
+IV. ADVANCED AND EMERGING TECHNIQUES. 
+
+11. Structural Equation Modeling. 
+
+12. Emerging Techniques in Multivariate Analysis. 
+
+Appendix A: Applications of Multivariate Data Analysis. 
+
+Index.

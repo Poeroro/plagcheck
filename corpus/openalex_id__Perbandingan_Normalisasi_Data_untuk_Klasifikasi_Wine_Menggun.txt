@@ -1,0 +1,6 @@
+Perbandingan Normalisasi Data untuk Klasifikasi Wine Menggunakan Algoritma K-NN
+
+Authors: Darnisa Azzahra Nasution, Hidayah Husnul Khotimah, Nurul Chamidah
+Year: 2019
+
+Abstrak— Rentang nilai yang tidak seimbang pada setiap atribut dapat mempengaruhi kualitas hasil data mining. Untuk itu diperlukan adanya praproses data. Praproses ini diharapkan dapat meningkatkatkan keakuratan hasil dari pengklasifikasian dataset wine. Metode praproses yang digunakan adalah transformasi data dengan normalisasi. Ada tiga cara yang dilakukan dalam transformasi data dengan normalisasi, yaitu min-max normalization, z-score normalization, dan decimal scaling. Data yang telah diproses dari setiap metode normalisasi akan dibandingan untuk melihat hasil akurasi terbaik klasifikasi dengan menggunakan algoritama K-NN. K yang digunakan dalam perbandingan adalah 1, 3, 5, 7, 9, 11. Sebelum dilakukan pengklasifikasian dataset wine yang telah dinormalisasi dibagi menjadi data uji dan data latih dengan k-fold cross validation. Pembagian data menggunakan k sama dengan 10. Hasil pengujian klasifikasi dengan algoritma K-NN menunjukkan, bahwa akurasi terbaik terletak pada dataset wine yang telah dinormalisasi menggunakan metode min-max normalization dengan K = 1 sebesar 65,92%. Rata-rata yang diperoleh, yaitu 59,68%. Keywords— Normalisasi, K-fold cross validation, K-NN

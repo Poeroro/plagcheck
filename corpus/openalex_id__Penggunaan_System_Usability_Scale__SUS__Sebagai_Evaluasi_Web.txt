@@ -1,0 +1,6 @@
+Penggunaan System Usability Scale (SUS) Sebagai Evaluasi Website Berita Mobile
+
+Authors: Abdurrahman Sidik
+Year: 2018
+
+Seiring perkembangan zaman, teknologi mengubah pola interaksi manusia, salah satunya adalah website berita mobile. Ada banyak sekali website berita mobile yang berkembang di Indonesia. Semua website berita tersebut berusaha mencapai dan memberikan yang terbaik kepada masyarakat agar tetap diminati. Sejalan dengan konsep tersebut, Brooke mengembangkan System Usability Scale (SUS) untuk mengetahui kegunaan dan fungsi dari sebuah produk dan juga jasa. Brooke berpendapat bahwa SUS berguna untuk menilai kegunaan dan fungsi dari berbagai macam produk termasuk salah satunya adalah Website. Penelitian ini bertujuan untuk mengadaptasi System Usability Scale (SUS) dan menguji validitas dan juga reliabilitas dari SUS ini sehingga dapat diterapkan untuk menilai fungsi dan kegunaan dari website berita mobile. Menimbang kepopuleran dari DetikCom sebagai salah satu website berita mobile di Indonesia, peneliti memilih DetikCom sebagai sample objek dari SUS ini. Subjek penelitian ini berjumlah 55 orang (N=55) dengan usia responden minimum 18 tahun, dan maksimal 35 tahun. Hasil reliabilitas dan validitas pada SUS menunjukkan bahwa kuesioner SUS memiliki tingkat reliabilitas yang cukup baik.Kata Kunci: Smartphone, System Usability Scale, Usability, Website

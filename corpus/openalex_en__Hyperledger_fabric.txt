@@ -1,0 +1,6 @@
+Hyperledger fabric
+
+Authors: Elli Androulaki, Artem Barger, Vita Bortnikov, Christian Cachin, Konstantinos Christidis
+Year: 2018
+
+Fabric is a modular and extensible open-source system for deploying and operating permissioned blockchains and one of the Hyperledger projects hosted by the Linux Foundation (www.hyperledger.org).

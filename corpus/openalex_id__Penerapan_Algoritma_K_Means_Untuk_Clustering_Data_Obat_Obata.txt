@@ -1,0 +1,6 @@
+Penerapan Algoritma K-Means Untuk Clustering Data Obat-Obatan
+
+Authors: Gustientiedina Gustientiedina, M. Hasmil Adiya, Yenny Desnelita
+Year: 2019
+
+Perencanaan dari kebutuhan obat-obatan yang tepat dapat membuat pengadaan obat-obatan menjadi efektif dan efisien sehinggaobat-obatan dapat tersedia dengan cukup sesuai dengan kebutuhan serta dapat diperoleh pada saat yang diperlukan. Menganalisa pemakaian obat, perencanaan dan pengendalian obat-obatan dapat dilakukan pada data miningyaitu dengan clusterisasi.Metode yang akan di pakai untuk clustering data obat-obatan adalah algoritma K-Means yang mana merupakan metode clustering dengan non hirarki yang mempartisi data – data kedalam cluster dimana data – datadengan karakteristik sama akan dikelompokkan padasatu cluster dan data – data dengan karakteristik yang berbeda akan dikelompokkan padacluster lainnya.Tujuan penelitian ini yaitumengelompokkan data obat-obatan pada rumah sakitsehingga dapat digunakan dalam acuan pengambilan keputusan perencanaan dan pengendaliaan persediaan obat-obatan di rumah sakit.

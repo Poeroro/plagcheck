@@ -1,0 +1,6 @@
+6G Internet of Things: A Comprehensive Survey
+
+Authors: Dinh C. Nguyen, Ming Ding, Pubudu N. Pathirana, Aruna Seneviratne, Jun Li
+Year: 2021
+
+The sixth-generation (6G) wireless communication networks are envisioned to revolutionize customer services and applications via the Internet of Things (IoT) toward a future of fully intelligent and autonomous systems. In this article, we explore the emerging opportunities brought by 6G technologies in IoT networks and applications, by conducting a holistic survey on the convergence of 6G and IoT. We first shed light on some of the most fundamental 6G technologies that are expected to empower future IoT networks, including edge intelligence, reconfigurable intelligent surfaces, space–air–ground–underwater communications, Terahertz communications, massive ultrareliable and low-latency communications, and blockchain. Particularly, compared to the other related survey papers, we provide an in-depth discussion of the roles of 6G in a wide range of prospective IoT applications via five key domains, namely, healthcare IoTs, Vehicular IoTs and Autonomous Driving, Unmanned Aerial Vehicles, Satellite IoTs, and Industrial IoTs. Finally, we highlight interesting research challenges and point out potential directions to spur further research in this promising area.

@@ -1,0 +1,6 @@
+Analisis Sentimen Tentang Opini Film Pada Dokumen Twitter Berbahasa Indonesia Menggunakan Naive Bayes Dengan Perbaikan Kata Tidak Baku
+
+Authors: Prananda Antinasari
+Year: 2017
+
+Pertumbuhan media sosial yang sangat pesat tidak membuat Twitter ditinggalkan oleh penggunanya. Twitter merupakan salah satu media sosial yang memungkinkan penggunanya untuk melakukan interaksi, berbagi informasi, atau bahkan untuk mengutarakan perasaan dan opini, termasuk juga dalam mengutarakan opini film. Komentar atau Tweet mengenai film yang ada pada Twitter dapat dijadikan sebagai evaluasi dalam menonton film dan meningkatkan produksi film. Untuk mengetahui hal tersebut, analisis sentimen dapat digunakan untuk mengklasifikasikan kedalam sentimen negatif atau positif. Didalam Tweet terkandung banyak ragam bahasa yang digunakan, yaitu diantaranya bahasa dalam bentuk tidak baku seperti bahasa slang, penyingkatan kata, dan salah eja. Oleh sebab itu dibutuhkan penanganan khusus pada Tweet. Pada penelitian ini digunakan kamus kata tidak baku dan normalisasi Levenshtein Distance untuk memperbaiki kata yang tidak baku menjadi kata baku dengan pengklasifikasian Naive Bayes. Berdasarkan hasil pengujian yang telah dilakukan didapatkan akurasi tertinggi dengan nilai accuracy, precision, recall, dan f-measure sebesar 98.33%, 96.77%, 100%, dan 98.36%.

@@ -1,0 +1,6 @@
+LXMERT: Learning Cross-Modality Encoder Representations from Transformers
+
+Authors: Hao Tan, Mohit Bansal
+Year: 2019
+
+Hao Tan, Mohit Bansal. Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP). 2019.

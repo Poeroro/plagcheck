@@ -1,0 +1,6 @@
+The Cochrane Collaboration's tool for assessing risk of bias in randomised trials
+
+Authors: Julian P. T. Higgins, Doug Altman, Peter C Gøtzsche, Peter Jüni, David Moher
+Year: 2011
+
+Flaws in the design, conduct, analysis, and reporting of randomised trials can cause the effect of an intervention to be underestimated or overestimated. The Cochrane Collaboration’s tool for assessing risk of bias aims to make the process clearer and more accurate

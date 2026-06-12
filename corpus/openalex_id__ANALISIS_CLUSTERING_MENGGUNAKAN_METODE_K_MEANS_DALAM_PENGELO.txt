@@ -1,0 +1,6 @@
+ANALISIS CLUSTERING MENGGUNAKAN METODE K-MEANS DALAM PENGELOMPOKKAN PENJUALAN PRODUK PADA SWALAYAN FADHILA
+
+Authors: Benri Melpa Metisen, Herlina Latipa Sari
+Year: 2015
+
+This report describes the software application Tanagra in data mining. Tanagra is a data mining software that can be used to access some of the existing methods of data mining. This application uses the input dataset. In implementing this algorithm testing data used is the data item in the supermarket Fadhilla Bengkulu. In this application, use the application clustering using K -means algorithm. Of data processed by the data sample taken in Supermarkets Fadhilla Bengkulu, it produces two types of data sets. Ie low sales data and high sales data. So with the grouping of data is the self- Fadhilla can determine the type of goods sold and selling. So that goods in the warehouse does not accumulate. Keyword : K-Means, Clustering, Data Mining.

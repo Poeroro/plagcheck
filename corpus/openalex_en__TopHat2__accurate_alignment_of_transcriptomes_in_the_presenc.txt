@@ -1,0 +1,6 @@
+TopHat2: accurate alignment of transcriptomes in the presence of insertions, deletions and gene fusions
+
+Authors: Daehwan Kim, Geo Pertea, Cole Trapnell, Harold Pimentel, Ryan Kelley
+Year: 2013
+
+TopHat is a popular spliced aligner for RNA-sequence (RNA-seq) experiments. In this paper, we describe TopHat2, which incorporates many significant enhancements to TopHat. TopHat2 can align reads of various lengths produced by the latest sequencing technologies, while allowing for variable-length indels with respect to the reference genome. In addition to de novo spliced alignment, TopHat2 can align reads across fusion breaks, which can occur after genomic translocations. TopHat2 combines the ability to identify novel splice sites with direct mapping to known transcripts, producing sensitive and accurate alignments, even for highly repetitive genomes or in the presence of pseudogenes. TopHat2 is available at http://ccb.jhu.edu/software/tophat.

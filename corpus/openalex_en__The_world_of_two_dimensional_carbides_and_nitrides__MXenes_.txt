@@ -1,0 +1,6 @@
+The world of two-dimensional carbides and nitrides (MXenes)
+
+Authors: Armin VahidMohammadi, Johanna Rosén, Yury Gogotsi
+Year: 2021
+
+A decade after the first report, the family of two-dimensional (2D) carbides and nitrides (MXenes) includes structures with three, five, seven, or nine layers of atoms in an ordered or solid solution form. Dozens of MXene compositions have been produced, resulting in MXenes with mixed surface terminations. MXenes have shown useful and tunable electronic, optical, mechanical, and electrochemical properties, leading to applications ranging from optoelectronics, electromagnetic interference shielding, and wireless antennas to energy storage, catalysis, sensing, and medicine. Here we present a forward-looking review of the field of MXenes. We discuss the challenges to be addressed and outline research directions that will deepen the fundamental understanding of the properties of MXenes and enable their hybridization with other 2D materials in various emerging technologies.

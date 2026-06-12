@@ -1,0 +1,6 @@
+Power-Electronic Systems for the Grid Integration of Renewable Energy Sources: A Survey
+
+Authors: J.M. Carrasco, Leopoldo G. Franquelo, Jan T. Białasiewicz, E. Galván, Ramón Portillo
+Year: 2006
+
+The use of distributed energy resources is increasingly being pursued as a supplement and an alternative to large conventional central power stations. The specification of a power-electronic interface is subject to requirements related not only to the renewable energy source itself but also to its effects on the power-system operation, especially where the intermittent energy source constitutes a significant part of the total system capacity. In this paper, new trends in power electronics for the integration of wind and photovoltaic (PV) power generators are presented. A review of the appropriate storage-system technology used for the integration of intermittent renewable energy sources is also introduced. Discussions about common and future trends in renewable energy systems based on reliability and maturity of each technology are presented

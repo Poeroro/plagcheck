@@ -1,0 +1,6 @@
+Metal nanoparticles: understanding the mechanisms behind antibacterial activity
+
+Authors: Yael N. Slavin, Jason Asnis, Urs O. Häfeli, Horacio Bach
+Year: 2017
+
+As the field of nanomedicine emerges, there is a lag in research surrounding the topic of nanoparticle (NP) toxicity, particularly concerned with mechanisms of action. The continuous emergence of bacterial resistance has challenged the research community to develop novel antibiotic agents. Metal NPs are among the most promising of these because show strong antibacterial activity. This review summarizes and discusses proposed mechanisms of antibacterial action of different metal NPs. These mechanisms of bacterial killing include the production of reactive oxygen species, cation release, biomolecule damages, ATP depletion, and membrane interaction. Finally, a comprehensive analysis of the effects of NPs on the regulation of genes and proteins (transcriptomic and proteomic) profiles is discussed.

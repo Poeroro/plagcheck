@@ -1,0 +1,6 @@
+PENERAPAN METODE ANALYTICAL HIERARCHY PROCESS DALAM SISTEM PENDUKUNG KEPUTUSAN PENENTUAN MAHASISWA BERPRESTASI
+
+Authors: Agnia Eva Munthafa, Husni Mubarok
+Year: 2017
+
+Setiap mahasiswa memiliki hak yang sama untuk mengikuti program pemilihan mahasiswa berprestasi. Oleh karena itu, sebaiknya pemilihan mahasiswa berprestasi dilakukan secara terbuka dan transparan pada tingkat perguruan tinggi. Namun pelaksanaan ini dapat menimbulkan banyaknya pendaftar yang dapat menyebabkan sulitnya mengelola data dan nilai dalam menentukan mahasiswa berprestasi. Konsep sistem pendukung keputusan dapat diterapkan sebagai alat bantu dalam menentukan mahasiswa berprestasi. Salah satu metode yang relevan serta memiliki penghitungan nilai konsistensi dalam menentukan tingkat prioritas kriteria adalah metode Analytical Hierarchy Process . Output dari penelitian ini merupakan sistem yang dapat memberikan rekomendasi alternatif penerima mahasiswa berprestasi dengan nilai indeks konsisten sebesar 0,06, sehingga hierarki yang dibentuk dapat diterima.

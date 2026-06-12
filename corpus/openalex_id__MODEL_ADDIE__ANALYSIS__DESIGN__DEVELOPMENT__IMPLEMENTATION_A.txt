@@ -1,0 +1,6 @@
+MODEL ADDIE (ANALYSIS, DESIGN, DEVELOPMENT, IMPLEMENTATION AND EVALUATION) DALAM PEMBELAJARAN PENDIDIKAN AGAMA ISLAM
+
+Authors: Fitria Hidayat, Muhamad Nizar
+Year: 2021
+
+Seorang guru atau learning designer perlu menguasai 2-5 model desain pembelajaran. Oleh karena itu, dikenal beberapa desain pembelajaran yang salah-satunya bersifat instruksional. Dalam hal ini perlu diketahui tentang model generik dari suatu sistem desain pembelajaran, salah satunya model generik ADDIE. Model tersebut akan dikaitkan dengan pembelajaran PAI. Penulis melakukan pendekatan kualitatif dengan penelitian library research. Pada tulisan ini penuis menemukan bahwa ADDIE ini merupakan model generik yang dapat diterapkan dalam pendidikan. ADDIE sendiri merupakan akronim dari Analisys, Design, Development, Implementation dan Evaluation yang dapat diterapkan secara prosedural, siklikal dan integratif. Pendekatan yang dilakukan penulis menggunakan ADDIE procedural yang menuntut guru untuk melakukan langkah-langkah sesuai dengan urutan. Pembelajaran PAI dapat diketahui progres dan pembelajaran dapat tervalidasi dengan baik karena adanya langkah-langkah yang tersusun.

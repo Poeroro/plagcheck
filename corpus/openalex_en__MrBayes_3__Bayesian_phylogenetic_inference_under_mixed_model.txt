@@ -1,0 +1,6 @@
+MrBayes 3: Bayesian phylogenetic inference under mixed models
+
+Authors: Fredrik Ronquist, John P. Huelsenbeck
+Year: 2003
+
+Abstract Summary: MrBayes 3 performs Bayesian phylogenetic analysis combining information from different data partitions or subsets evolving under different stochastic evolutionary models. This allows the user to analyze heterogeneous data sets consisting of different data types—e.g. morphological, nucleotide, and protein—and to explore a wide variety of structured models mixing partition-unique and shared parameters. The program employs MPI to parallelize Metropolis coupling on Macintosh or UNIX clusters. Availability: http://morphbank.ebc.uu.se/mrbayes Contact: fredrik.ronquist@ebc.uu.se * To whom correspondence should be addressed.

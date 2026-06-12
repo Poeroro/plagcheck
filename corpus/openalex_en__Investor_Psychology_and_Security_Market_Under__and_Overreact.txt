@@ -1,0 +1,6 @@
+Investor Psychology and Security Market Under‐ and Overreactions
+
+Authors: Kent Daniel, David Hirshleifer, Avanidhar Subrahmanyam
+Year: 1998
+
+ABSTRACT We propose a theory of securities market under‐ and overreactions based on two well‐known psychological biases: investor overconfidence about the precision of private information; and biased self‐attribution, which causes asymmetric shifts in investors' confidence as a function of their investment outcomes. We show that overconfidence implies negative long‐lag autocorrelations, excess volatility, and, when managerial actions are correlated with stock mispricing, public‐event‐based return predictability. Biased self‐attribution adds positive short‐lag autocorrelations (“momentum”), short‐run earnings “drift,” but negative correlation between future returns and long‐term past stock market and accounting performance. The theory also offers several untested implications and implications for corporate financial policy.

@@ -1,0 +1,6 @@
+Pengendalian Kualitas Pada Produksi Air Minum Dalam Kemasan Botol 330 ml Menggunakan Metode Failure Mode Effect Analysis (FMEA) di PDAM Tirta Sembada
+
+Authors: Ayuni Anastasya, Ferida Yuamita
+Year: 2022
+
+PDAM Tirta Sembada merupakan anak perusahaan yang dibangun oleh PDAM Sleman yang memproduksi produk air minum dalam kemasan yaitu “DAXU”. Tujuan penelitian ini adalah untuk mengetahui jenis cacat pada produk kemasan botol 330 ml, menentukan faktor penyebab cacat produk dan mencari solusi perbaikan untuk meminimalisir terjadinya cacat produk. Penelitian ini dilakukan dengan menggunakan: check sheet, histogram, diagram fish bone dan FMEA. Hasil penelitian menunjukan jenis cacat yang terjadi yaitu cacat botol penyok, cacat tutup botol melipat, cacat seal keriput dan cacat label miring. Diketahui jumlah rata rata cacat produk sebesar 1,5% pada bulan Febuari-September 2021, yang mana rata-rata ini cukup besar untuk perusahaan baru. Faktor-faktor penyebab cacat produk adalah manusia, mesin, metode, bahan baku dan lingkungan. Solusi yang direkomendasikan untuk memimalisir cacat produk yang terjadi yaitu dengan mengendaliakan semua faktor penyebab cacat produk terutama faktor penyebab cacat manusia yang mempunyai RPN tertinggi 512.

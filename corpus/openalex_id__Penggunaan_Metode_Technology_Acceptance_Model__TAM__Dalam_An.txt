@@ -1,0 +1,6 @@
+Penggunaan Metode Technology Acceptance Model (TAM) Dalam Analisis Sistem Informasi Alista (Application Of Logistic And Supply Telkom Akses)
+
+Authors: Tri Novita Irawati, Elistya Rimawati, Nayu Ariloka Pramesti
+Year: 2020
+
+Karyawan PT Telkom Access Surakarta ditugaskan menyediakan dan menyiapkan bahan dengan jumlah dan waktu terbatas. Agar dapat dipenuhi, karyawan melakukan pekerjaan dengan cepat termasuk koordinasi, pengadaan, produksi, pasokan produk, termasuk administrasi harian dan memproses informasi dari teknisi kepada pelanggan untuk membuatnya lebih mudah untuk menggunakan aplikasi Alista. Apakah persepsi Desain Sistem, Kemudahan Sistem, Sikap penerimaan sistem, Perilaku menggunakan sistem diukur seberapa besar pengaruhnya terhadap kondisi nyata penggunaan sistem yang dipercaya oleh karyawan. Metode yang digunakan untuk pengukuran hasil penelitian dengan menggunakan TAM. Sampel penelitian 78 karyawan. Berdasarkan hasil analisis diketahui bahwa 35,2% dari empat variabel bebas yaitu Desain Antarmuka, Kemudahan Sistem, Sikap Penerimaan Sistem, Perilaku Penggunaan Sistem mempengaruhi kondisi nyata penggunaan sistem informasi. Berdasarkan hasil kuesioner dari semua responden terhadap variabel pertanyaan yang diteliti, hasil TAM dalam persentase 44% jawaban responden rata-rata sangat setuju dan 55% jawaban responden setuju.

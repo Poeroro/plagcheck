@@ -1,0 +1,6 @@
+Klasifikasi Citra Menggunakan Convolutional Neural Network (CNN) pada Caltech 101
+
+Authors: Wayan Suartika Eka Putra
+Year: 2016
+
+Deep Learning adalah sebuah bidang keilmuan baru dalam bidang Machine Learning yang akhir-akhir ini berkembang karena perkembangan teknologi GPU accelaration. Deep Learning memiliki kemampuan yang sangat baik dalam visi komputer. Salah satunya adalah pada kasus klasifikasi objek pada citra. Dengan mengimplementasikan salah satu metode machine learning yang dapat digunakan untuk klasifikasi citra objek yaitu CNN. Metode CNN terdiri dari dua tahap. Tahap pertama adalah klasifikasi citra menggunakan feedforward. Tahap kedua merupakan tahap pembelajaran dengan metode backpropagation. Sebelum dilakukan klasifikasi, terlebih dahulu dilakukan praproses dengan metode wrapping dan cropping untuk memfokuskan objek yang akan diklasifikasi. Selanjutnya dilakukan training menggunakan metode feedforward dan backpropagation. Terakhir adalah tahap klasifikasi menggunakan metode feedforward dengan bobot dan bias yang diperbarui. Hasil uji coba dari klasifikasi citra objek dengan tingkat confusion yang berbeda pada basis data Caltech 101 menghasilkan rata-rata nilai akurasi mencapai. Sehingga dapat disimpulkan bahwa metode CNN yang digunakan pada Tugas Akhir ini mampu melakukan klasifikasi dengan baik.

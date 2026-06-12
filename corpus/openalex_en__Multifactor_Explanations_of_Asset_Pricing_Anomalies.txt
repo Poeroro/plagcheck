@@ -1,0 +1,6 @@
+Multifactor Explanations of Asset Pricing Anomalies
+
+Authors: Eugene F. Fama, Kenneth R. French
+Year: 1996
+
+ABSTRACT Previous work shows that average returns on common stocks are related to firm characteristics like size, earnings/price, cash flow/price, book‐to‐market equity, past sales growth, long‐term past return, and short‐term past return. Because these patterns in average returns apparently are not explained by the CAPM, they are called anomalies. We find that, except for the continuation of short‐term returns, the anomalies largely disappear in a three‐factor model. Our results are consistent with rational ICAPM or APT asset pricing, but we also consider irrational pricing and data problems as possible explanations.

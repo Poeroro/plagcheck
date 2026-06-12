@@ -1,0 +1,6 @@
+Ekstraksi Ciri Metode Gray Level Co-Occurrence Matrix (GLCM) dan Filter Gabor untuk Klasifikasi citra Batik Pekalongan
+
+Authors: Rizky Andhika Surya, Abdul Fadlil, Anton Yudhana
+Year: 2017
+
+Batik merupakan warisan budaya Indonesia yang harus kita jaga dan lestarikan. Proses melestarikannya yaitu dengan pendataan identitas batik tersebut secara komputerisasi. Proses tersebut diawali dengan pengenalan pola untuk mencari informasi dari citra batik tersebut menggunakan proses ekstraksi ciri dengan metode GLCM (Gray Level Co-Occurrence Matrix) dan Filter Gabor, kemudian proses klasifikasi menggunakan Jaringan Syaraf Tiruan. Penelitian ini membuat sistem ekstraksi ciri citra batik yang akan digunakan untuk proses selanjutnya yaitu klasifikasi yang dapat digunakan untuk pendataan citra batik, khususnya batik Pekalongan. Pada penelitian ini proses pengumpulan data melalui tiga cara, yaitu observasi, wawancara dan studi pustaka. Dalam pengimplementasiannya menggunakan Matlab 2010a. Pengujian menggunakan empat sampel citra batik tradisional Pekalongan, setiap citra dibagi menjadi beberpa bagian dan selanjutnya diuji dengan metode tersebut. Hasil penelitian ini telah menghasilkan beberapa niai metode GLCM dan hasil citra proses ekstraksi ciri metode Filter Gabor yang dapat digunakan untuk proses klasifikasi citra batik.

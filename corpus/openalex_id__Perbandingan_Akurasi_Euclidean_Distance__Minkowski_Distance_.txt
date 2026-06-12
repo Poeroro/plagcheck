@@ -1,0 +1,6 @@
+Perbandingan Akurasi Euclidean Distance, Minkowski Distance, dan Manhattan Distance pada Algoritma K-Means Clustering berbasis Chi-Square
+
+Authors: M. Nishom
+Year: 2019
+
+In data mining, there are several algorithms that are often used in grouping data, including K-Means. However, this method still has several disadvantages, including the problem of the level of accuracy of the methods used to measure the similarities between the objects being compared. To overcome this problem, in this study a comparison was made between three methods (euclidean distance, manhattan distance, and minkowski distance) to determine the status of disparity in Teacher's needs in Tegal City. The results showed that of the three methods compared had a good level of accuracy, which is 84.47% (for euclidean distance), 83.85% (for manhattan distance), and 83.85% (for minkowski distance). In addition, this study also informs that there are still 6 (six) schools with conditions that are very poorly available for teachers (in the category of HIGH disparity labels) and need to get more attention, which is SMP Atmaja Wacana, SMKN 3 Tegal, SMAS Muhammadiyah, SMAS Pancasakti Tegal, SMKS Muhammadiyah 1 Kota Tegal, and SMP IC Bias Assalam.

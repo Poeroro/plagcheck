@@ -1,0 +1,6 @@
+Introduction to Electrodynamics
+
+Authors: David J. Griffiths
+Year: 2017
+
+This well-known undergraduate electrodynamics textbook is now available in a more affordable printing from Cambridge University Press. The Fourth Edition provides a rigorous, yet clear and accessible treatment of the fundamentals of electromagnetic theory and offers a sound platform for explorations of related applications (AC circuits, antennas, transmission lines, plasmas, optics and more). Written keeping in mind the conceptual hurdles typically faced by undergraduate students, this textbook illustrates the theoretical steps with well-chosen examples and careful illustrations. It balances text and equations, allowing the physics to shine through without compromising the rigour of the math, and includes numerous problems, varying from straightforward to elaborate, so that students can be assigned some problems to build their confidence and others to stretch their minds. A Solutions Manual is available to instructors teaching from the book; access can be requested from the resources section at www.cambridge.org/electrodynamics.

@@ -1,0 +1,6 @@
+A simple transmit diversity technique for wireless communications
+
+Authors: S.M. Alamouti
+Year: 1998
+
+This paper presents a simple two-branch transmit diversity scheme. Using two transmit antennas and one receive antenna the scheme provides the same diversity order as maximal-ratio receiver combining (MRRC) with one transmit antenna, and two receive antennas. It is also shown that the scheme may easily be generalized to two transmit antennas and M receive antennas to provide a diversity order of 2M. The new scheme does not require any bandwidth expansion or any feedback from the receiver to the transmitter and its computation complexity is similar to MRRC.

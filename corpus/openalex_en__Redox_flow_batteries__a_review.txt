@@ -1,0 +1,6 @@
+Redox flow batteries: a review
+
+Authors: Adam Z. Weber, Matthew M. Mench, Jeremy P. Meyers, Philip N. Ross, Jeff T. Gostick
+Year: 2011
+
+Redox flow batteries (RFBs) are enjoying a renaissance due to their ability to store large amounts of electrical energy relatively cheaply and efficiently. In this review, we examine the components of RFBs with a focus on understanding the underlying physical processes. The various transport and kinetic phenomena are discussed along with the most common redox couples.

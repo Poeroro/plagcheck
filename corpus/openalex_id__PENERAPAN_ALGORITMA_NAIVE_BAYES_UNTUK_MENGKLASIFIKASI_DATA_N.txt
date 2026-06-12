@@ -1,0 +1,6 @@
+PENERAPAN ALGORITMA NAIVE BAYES UNTUK MENGKLASIFIKASI DATA NASABAH ASURANSI
+
+Authors: Bustami Bustami
+Year: 2014
+
+<em>Data mining adalah teknik yang memanfaatkan data dalam jumlah yang besar untuk memperoleh informasi berharga yang sebelumnya tidak diketahui dan dapat dimanfaatkan untuk pengambilan keputusan penting. Pada penelitian ini, penulis berusaha menambang data (data mining) nasabah sebuah perusahaan asuransi untuk mengetahui lancar, kurang lancar atau tidak lancarnya nasabah tersebut. Data yang ada dianalisis menggunakan algoritma Naive Bayes. Naive Bayes merupakan salah satu meode pada probabilistic reasoning. Algoritma Naive Bayes bertujuan untuk melakukan klasifikasi data pada kelas tertentu, kemudian pola tersebut dapat digunakan untuk memperkirakan nasabah yang bergabung, sehingga perusahaan bisa mengambil keputusan menerima atau menolak calon nasabah tersebut.</em> <em> </em> <em>Kata Kunci : </em><em>data </em>mining, asuransi, klasifikasi, algoritma <em>Naive Bayes</em><em></em>

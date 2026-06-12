@@ -1,0 +1,6 @@
+Wireless infrared communications
+
+Authors: Joseph M. Kahn, John R. Barry
+Year: 1997
+
+The use of infrared radiation as a medium for high-speed short-range wireless digital communication is discussed. Available infrared links and local-area networks are described. Advantages and drawbacks of the infrared medium are compared to those of radio and microwave media. The physical characteristics of infrared channels using intensity modulation with direct detection (IM/DD) are presented including path losses and multipath responses. Natural and artificial ambient infrared noise sources are characterized. Strategies for designs of transmitter and receivers that maximize link signal-to-noise ratio (SNR) are described. Several modification formats are discussed in detail, including on-off keying (OOK) pulse-position modulation (PPM), and subcarrier modulation. The performance of these techniques in the presence of multipath distortion is quantified. Techniques for multiplexing the transmissions of different users are reviewed. The performance of an experimental 50-Mb/s on-off-keyed diffuse infrared link is described.

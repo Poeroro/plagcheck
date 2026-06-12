@@ -1,0 +1,6 @@
+PERANCANGAN SISTEM INFORMASI GEOGRAFIS KEBUDAYAAN LAMPUNG BERBASIS MOBILE
+
+Authors: Yuri Rahmanto, Siti Hotijah, Damayanti Damayanti
+Year: 2020
+
+Provinsi Lampung adalah sebuah Provinsi paling selatan di Pulau Sumatra, dengan ibu kota Bandarlampung. Pada Kantor Kebudayaan belum ada aplikasi untuk mencari informasi lokasi wisata, dan tidak adanya informasi tentang budaya, serta wisata di Kabupaten Lampung Selatan dan Kabupaten Tulang Bawang. Informasi disebarkan melalui blog dan website yang tidak resmi dari pemerintah,Tujuan penelitian ini adalah untuk membuat aplikasi mobile Sistem Informasi Geografis sebagai media pencarian lokasi dan untuk mendapatkan informasi mengenai rumah adat, tari adat, pakaian adat, makanan khas, wisata, dan transportasi di Kabupaten Lampung Selatan dan Kabupaten Tulang Bawang. Metode pengembangan sistem menggunakan metode extreme programming dan perancangan sistem menggunakan UML.Hasil yang dicapai adalah sebuah aplikasi berbasis mobile sistem informasi geografis yang dapat dijadikan sebagai media informasi pariwisata di Kabupaten Lampung Selatan dan Kabupaten Tulang Bawang. Hasil pengujian ISO 9126 yang telah dilakukan dengan melibatkan 50 Responden dapat disimpulkan bahwa kualitas kelayakan perangkat lunak yang dihasilkan secara keseluruhan mempunyai nilai 87,63% maka dinyatakan sistem “Baik” dan layak digunakan.

@@ -1,0 +1,6 @@
+Reinforcement Learning: An Introduction
+
+Authors: Sutton, Richard S, Barto, Andrew G
+Year: 2005
+
+An account of key ideas and algorithms in reinforcement learning. The discussion ranges from the history of the field's intellectual foundations to recent developments and applications. Areas studied include reinforcement learning problems in terms of Markov decision problems and solution methods.

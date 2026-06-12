@@ -1,0 +1,6 @@
+IntCal13 and Marine13 Radiocarbon Age Calibration Curves 0–50,000 Years cal BP
+
+Authors: Paula J Reimer, Edouard Bard, Alex Bayliss, J Warren Beck, Paul G Blackwell
+Year: 2010
+
+The IntCal09 and Marine09 radiocarbon calibration curves have been revised utilizing newly available and updated data sets from 14 C measurements on tree rings, plant macrofossils, speleothems, corals, and foraminifera. The calibration curves were derived from the data using the random walk model (RWM) used to generate IntCal09 and Marine09, which has been revised to account for additional uncertainties and error structures. The new curves were ratified at the 21st International Radiocarbon conference in July 2012 and are available as Supplemental Material at www.radiocarbon.org. The database can be accessed at http://intcal.qub.ac.uk/intcal13/.

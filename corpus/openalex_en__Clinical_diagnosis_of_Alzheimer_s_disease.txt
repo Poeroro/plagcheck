@@ -1,0 +1,6 @@
+Clinical diagnosis of Alzheimer's disease
+
+Authors: Guy M. McKhann, David A. Drachman, Marshall Folstein, Robert Katzman, Donald D. Price
+Year: 1984
+
+Clinical criteria for the diagnosis of Alzheimer's disease include insidious onset and progressive impairment of memory and other cognitive functions. There are no motor, sensory, or coordination deficits early in the disease. The diagnosis cannot be determined by laboratory tests. These tests are important primarily in identifying other possible causes of dementia that must be excluded before the diagnosis of Alzheimer's disease may be made with confidence. Neuropsychological tests provide confirmatory evidence of the diagnosis of dementia and help to assess the course and response to therapy. The criteria proposed are intended to serve as a guide for the diagnosis of probable, possible, and definite Alzheimer's disease; these criteria will be revised as more definitive information become available.

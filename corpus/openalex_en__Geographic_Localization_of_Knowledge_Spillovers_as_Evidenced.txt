@@ -1,0 +1,6 @@
+Geographic Localization of Knowledge Spillovers as Evidenced by Patent Citations
+
+Authors: Adam B. Jaffe, Manuel Trajtenberg, Rebecca Henderson
+Year: 1993
+
+We compare the geographic location of patent citations to those of the cited patents, as evidence of the extent to which knowledge spillovers are geographically localized. We find that citations to U.S. patents are more likely to come from the U.S., and more likely to come from the same state and SMSA as the cited patents than one would expect based only on the preexisting concentration of related research activity. These effects are particularly significant at the local (SMSA) level, and are particularly apparent in early citations.

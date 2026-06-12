@@ -1,0 +1,6 @@
+KECURANGAN PEMBELAJARAN DARING PADA AWAL PANDEMI: DIMENSI FRAUD PENTAGON
+
+Authors: Angela Christiana, Alvina Kristiani, Stevanus Pangestu
+Year: 2021
+
+Penelitian ini bertujuan untuk mengetahui pengaruh determinan kecurangan pembelajaran daring selama pandemi COVID-19 menggunakan dimensi fraud pentagon. Variabel independen dalam penelitian ini yaitu, tekanan, peluang, rasionalisasi, kemampuan, dan arogansi. Penelitian ini menggunakan data primer yang diperoleh dengan teknik survei daring dan instrumen kuesioner. Proses analisis dan pengolahan data penelitian dilakukan dengan analisis regresi berganda pada perangkat lunak IBM SPSS Statistics versi 25 dengan jumlah sampel sebanyak 387 mahasiswa akuntansi. Hasil pengujian yang telah dilakukan menunjukkan bahwa variabel tekanan, rasionalisasi, dan kemampuan berpengaruh signifikan terhadap perilaku kecurangan pembelajaran daring. Sedangkan variabel peluang dan arogansi tidak berpengaruh signifikan terhadap perilaku kecurangan pembelajaran daring

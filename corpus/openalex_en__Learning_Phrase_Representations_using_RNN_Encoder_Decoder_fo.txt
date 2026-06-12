@@ -1,0 +1,6 @@
+Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation
+
+Authors: Kyunghyun Cho, Bart van Merriënboer, Çağlar Gülçehre, Dzmitry Bahdanau, Fethi Bougares
+Year: 2014
+
+Kyunghyun Cho, Bart van Merriënboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares, Holger Schwenk, Yoshua Bengio. Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP). 2014.

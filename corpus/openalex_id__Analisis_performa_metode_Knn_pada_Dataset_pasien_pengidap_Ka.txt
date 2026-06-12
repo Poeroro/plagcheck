@@ -1,0 +1,6 @@
+Analisis performa metode Knn pada Dataset pasien pengidap Kanker Payudara
+
+Authors: Dewi Cahyanti, A. Meutia Dewi Rahmayani, Syafira Ainy Husniar
+Year: 2020
+
+Abstrak-Kanker payudara adalah penyakit non kulit yang berasal dari sel kelenjar, saluran kelenjar, dan jaringan penunjang payudara. Paper ini menggunakan metode K Nearest Neighbor untuk mengklasifikasi dataset. K-Nearest Neighbor adalah metode untuk melakukan klasifikasi terhadap objek berdasarkan data pembelajaran yang jaraknya paling dekat dengan objek tersebut. Penelitian ini mencoba menerapkan metode knn pada dataset pasien pengidap penyakit kanker payudara, k yg diterapkan adalah k=3 hingga k=5 serta menerapkan crossvalidation dengan kfold=5, setelah dilakukan pengujian maka dengan metode KNN diperoleh hasil tertinggi untuk Akurasi dengan nilai 0,93 pada 20% keempat (K3), 20% Pertama(K4) dan 20% pertama(K5), untuk Presisi dengan nilai 0,97 pada 20% keempat(K3), untuk Recall dengan nilai 0,98 pada 20% ketiga (K3) dan F-measure dengan nilai 0,94 pada 20% keempat(K3) dan 20% ketiga(K5).

@@ -1,0 +1,6 @@
+<i>XDS</i>
+
+Authors: Wolfgang Kabsch
+Year: 2010
+
+The usage and control of recent modifications of the program package XDS for the processing of rotation images are described in the context of previous versions. New features include automatic determination of spot size and reflecting range and recognition and assignment of crystal symmetry. Moreover, the limitations of earlier package versions on the number of correction/scaling factors and the representation of pixel contents have been removed. Large program parts have been restructured for parallel processing so that the quality and completeness of collected data can be assessed soon after measurement.

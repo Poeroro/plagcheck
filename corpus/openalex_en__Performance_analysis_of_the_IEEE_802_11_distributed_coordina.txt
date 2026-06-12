@@ -1,0 +1,6 @@
+Performance analysis of the IEEE 802.11 distributed coordination function
+
+Authors: Giuseppe Bianchi
+Year: 2000
+
+The IEEE has standardized the 802.11 protocol for wireless local area networks. The primary medium access control (MAC) technique of 802.11 is called the distributed coordination function (DCF). The DCF is a carrier sense multiple access with collision avoidance (CSMA/CA) scheme with binary slotted exponential backoff. This paper provides a simple, but nevertheless extremely accurate, analytical model to compute the 802.11 DCF throughput, in the assumption of finite number of terminals and ideal channel conditions. The proposed analysis applies to both the packet transmission schemes employed by DCF, namely, the basic access and the RTS/CTS access mechanisms. In addition, it also applies to a combination of the two schemes, in which packets longer than a given threshold are transmitted according to the RTS/CTS mechanism. By means of the proposed model, we provide an extensive throughput performance evaluation of both access mechanisms of the 802.11 protocol.

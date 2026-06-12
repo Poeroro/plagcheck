@@ -1,0 +1,6 @@
+A field study of the software design process for large systems
+
+Authors: Bill Curtis, Herb Krasner, Neil Iscoe
+Year: 1988
+
+The problems of designing large software systems were studied through interviewing personnel from 17 large projects. A layered behavioral model is used to analyze how three of these problems—the thin spread of application domain knowledge, fluctuating and conflicting requirements, and communication bottlenecks and breakdowns—affected software productivity and quality through their impact on cognitive, social, and organizational processes.

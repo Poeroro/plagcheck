@@ -1,0 +1,6 @@
+Analisis Sentimen Masyarakat terhadap Calon Presiden Indonesia 2014 berdasarkan Opini dari Twitter Menggunakan Metode Naive Bayes Classifier
+
+Authors: Faishol Nurhuda, Sari Widya Sihwi, Afrizal Doewes
+Year: 2016
+
+Dalam penelitan ini akan dilakukan analisis sentimen masyarakat terhadap calon presiden dan wakil presiden Indonesia 2014 yang diungkapkan melalui jejaring sosial Twitter. Ada beberapa tahap untuk melakukan analisis sentimen, diantaranya adalah tahap pengumpulan data, praprocesing data, POS Tagging, ekstrasi opini menggunakan rule based dan klasifikasi opini menggunakan metode Naive Bayes Classifier.  Hasil dari penelitian ini didapatkan bahwa pasangan capres dan cawapres Prabowo Subianto dan Hatta Rajasa mendapatkan jumlah percakapan 53% dan pasangan Joko Widodo – Jusuf Kalla mendapatkan 47%. Sedangkan untuk hasil polaritas sentimen, Prabowo Subianto – Hatta Rajasa mendapatkan 47,7% untuk sentimen positif, 26,4% sentimen negatif dan 25,9% sentimen netral. Sedangkan pasangan Joko Widodo – Jusuf Kalla mendapatkan total 37,6% sentimen positif, 34,4% sentimen negatif, dan 27,9 sentimen netral.

@@ -1,0 +1,6 @@
+A SWOT analysis of ChatGPT: Implications for educational practice and research
+
+Authors: Mohammadreza Farrokhnia, Seyyed Kazem Banihashem, Omid Noroozi, A.E.J. Wals
+Year: 2023
+
+ChatGPT is an AI tool that has sparked debates about its potential implications for education. We used the SWOT analysis framework to outline ChatGPT’s strengths and weaknesses and to discuss its opportunities for and threats to education. The strengths include using a sophisticated natural language model to generate plausible answers, self-improving capability, and providing personalised and real-time responses. As such, ChatGPT can increase access to information, facilitate personalised and complex learning, and decrease teaching workload, thereby making key processes and tasks more efficient. The weaknesses are a lack of deep understanding, difficulty in evaluating the quality of responses, a risk of bias and discrimination, and a lack of higher-order thinking skills. Threats to education include a lack of understanding of the context, threatening academic integrity, perpetuating discrimination in education, democratising plagiarism, and declining high-order cognitive skills. We provide agenda for educational practice and research in times of ChatGPT.

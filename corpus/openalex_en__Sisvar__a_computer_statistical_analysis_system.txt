@@ -1,0 +1,6 @@
+Sisvar: a computer statistical analysis system
+
+Authors: Daniel Furtado Ferreira
+Year: 2011
+
+Sisvar is a statistical analysis system, first released in 1996 although its development began in 1994. The first version was done in the programming language Pascal and compiled with Borland Turbo Pascal 3. Sisvar was developed to achieve some specific goals. The first objective was to obtain software that could be used directly on the statistical experimental course of the Department of Exact Science at the Federal University of Lavras. The second objective was to initiate the development of a genuinely Brazilian free software program that met the demands and peculiarities of research conducted in the country. The third goal was to present statistical analysis software for the Brazilian scientific community that would allow research results to be analyzed efficiently and reliably. All of the initial goals were achieved. Sisvar gained acceptance by the scientific community because it provides reliable, accurate, precise, simple and robust results, and allows users a greater degree of interactivity.

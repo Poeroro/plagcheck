@@ -1,0 +1,6 @@
+Complex heatmaps reveal patterns and correlations in multidimensional genomic data
+
+Authors: Zuguang Gu, Roland Eils, Matthias Schlesner
+Year: 2016
+
+UNLABELLED: Parallel heatmaps with carefully designed annotation graphics are powerful for efficient visualization of patterns and relationships among high dimensional genomic data. Here we present the ComplexHeatmap package that provides rich functionalities for customizing heatmaps, arranging multiple parallel heatmaps and including user-defined annotation graphics. We demonstrate the power of ComplexHeatmap to easily reveal patterns and correlations among multiple sources of information with four real-world datasets. AVAILABILITY AND IMPLEMENTATION: The ComplexHeatmap package and documentation are freely available from the Bioconductor project: http://www.bioconductor.org/packages/devel/bioc/html/ComplexHeatmap.html CONTACT: m.schlesner@dkfz.de SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.

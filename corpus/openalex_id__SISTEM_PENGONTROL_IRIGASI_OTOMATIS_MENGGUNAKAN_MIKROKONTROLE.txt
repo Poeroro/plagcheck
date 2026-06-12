@@ -1,0 +1,6 @@
+SISTEM PENGONTROL IRIGASI OTOMATIS MENGGUNAKAN MIKROKONTROLER ARDUINO UNO
+
+Authors: Selamet Samsugi, Zainabun Mardiyansyah, Andi Nurkholis
+Year: 2020
+
+Penelitian ini bertujuan merancang dan mengimplementasikan sebuah rangkaian yang berfungsi untuk membuka dan menutup pintu irigasi secara otomatis. Dengan menggunakan sistem pengontrol irigasi otomatis agar dapat memudahkan petani dalam mengontrol masukknya air dalam aliran irigasi. Dengan berkembangnya teknologi, adanya sensor dan mikrokontroler, mempermudah dalam membuat alat pengontrol irigasi otomatis dengan menggunakan sensor ultrasonik. Untuk membaca jarak air apabila jarak air normal, maka motor servo akan terbuka 180º. Dan jika air mengalami ketinggian dalam jarak yang tertentu, maka motor servo akan bergerak menutup. Sebagai pengontrol jarak air, sensor ultrasonik membaca jarak air yang akan di tampilkan ke layar LCD. Adaptor berfungsi sebagai penyuplai arus AC (220V) ke DC (12V) yang digunakan untuk mengaliri arus ke arduino. Agar aliran irigasi berfungsi secara otomatis, maka diperlukan mikrokontroler Arduino UNO R3 untuk menerima datadata yang dikirim dari motor servo, sensor ultrasonik. Sehingga alat ini bisa diprogram untuk melakukan pengontrolan pada aliran irigasi berdasarkan perintah yang telah ditentukan.

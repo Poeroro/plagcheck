@@ -1,0 +1,6 @@
+Prediksi Harga Saham Menggunakan Improved Multiple Linear Regression untuk Pencegahan Data Outlier
+
+Authors: Abidatul Izzah, Ratna Widyastuti
+Year: 2017
+
+Seiring berkembangnya bisnis modern, prediksi harga saham selalu mendapat perhatian khusus oleh pakar ekonomi. Prediksi nilai saham menggunakan model Multiple Linear Regression (MLR) telah terbukti memberikan nilai prediksi yang presisi dan cukup baik. Namun di sisi lain, regresi linear memiliki beberapa kelemahan terhadap data outlier. Oleh karena itu pada penelitian ini dilakukan prediksi nilai harga saham menggunakan MLR yang dibantu dengan teknik K-Means dan Moving Average (MA) untuk mengatasi pengaruh data outlier. Pengujian diawali dengan pengumpulan data dan pra-proses data. Data harga saham yang akan digunakan dalam pengujian diperoleh dari laman finance.yahoo.com dengan kategori “Jakarta Composite Index (^JKSE)”. Selanjutnya proses prediksi dilakukan dengan hybrid MLR dengan K-Means dan MA untuk mengatasi titik-titik saham yang outlier. Dari hasil yang diperoleh, dapat dilihat bahwa pendekatan paling baik ditunjukkan oleh metode MLR dan MA yakni dengan nilai MSE sebesar 15087.465, RMSE sebesar 122.831, dan MAPE sebesar 3.255.

@@ -1,0 +1,6 @@
+Palladium-Catalyzed Cross-Coupling Reactions of Organoboron Compounds
+
+Authors: Norio Miyaura, Akira Suzuki
+Year: 1995
+
+Until recently, organoboronic acids have been of limited use in organic synthesis due to their low reactivity for ionic reactions. During the past two decades; however, it has become increasingly clear that they are valuable reagents capable of undergoing many carbon-carbon bond formations in organic syntheses. In 1979, catalytic carbon-carbon bond formation, via transmetalation between organoboron compounds and palladium(II) halides, was found to proceed in the presence of a base.

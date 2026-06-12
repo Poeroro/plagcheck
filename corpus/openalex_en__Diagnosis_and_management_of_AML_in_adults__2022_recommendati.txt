@@ -1,0 +1,6 @@
+Diagnosis and management of AML in adults: 2022 recommendations from an international expert panel on behalf of the ELN
+
+Authors: Hartmut Döhner, Andrew H. Wei, Frederick R. Appelbaum, Charles Craddock, Courtney D. DiNardo
+Year: 2022
+
+The 2010 and 2017 editions of the European LeukemiaNet (ELN) recommendations for diagnosis and management of acute myeloid leukemia (AML) in adults are widely recognized among physicians and investigators. There have been major advances in our understanding of AML, including new knowledge about the molecular pathogenesis of AML, leading to an update of the disease classification, technological progress in genomic diagnostics and assessment of measurable residual disease, and the successful development of new therapeutic agents, such as FLT3, IDH1, IDH2, and BCL2 inhibitors. These advances have prompted this update that includes a revised ELN genetic risk classification, revised response criteria, and treatment recommendations.

@@ -1,0 +1,6 @@
+Myopic Loss Aversion and the Equity Premium Puzzle
+
+Authors: Shlomo Benartzi, Richard H. Thaler
+Year: 1995
+
+The equity premium puzzle refers to the empirical fact that stocks have outperformed bonds over the last century by a surprisingly large margin. We offer a new explanation based on two behavioral concepts. First, investors are assumed to be “loss averse,” meaning that they are distinctly more sensitive to losses than to gains. Second, even long-term investors are assumed to evaluate their portfolios frequently. We dub this combination “myopic loss aversion.” Using simulations, we find that the size of the equity premium is consistent with the previously estimated parameters of prospect theory if investors evaluate their portfolios annually.

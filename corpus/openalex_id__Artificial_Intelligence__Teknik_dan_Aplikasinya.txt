@@ -1,0 +1,8 @@
+Artificial Intelligence: Teknik dan Aplikasinya
+
+Authors: Sri Kusumadewi
+Year: 2003
+
+Pada dasarnya buku ini terbagi atas 2 bagian yaitu:
+- Penyelesaian masalah dengan teknik artificial intelligence yang meliputi: masalah, ruang keadaan, dan pencarian; representasi pengetahuan; ketidakpastian, sistem pakar; dan game playing.
+- Pengantar soft computing, yang meliputi: logika fuzzy; jaringan syaraf tiruan, dan algoritma genetika.

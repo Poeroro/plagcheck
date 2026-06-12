@@ -1,0 +1,6 @@
+Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data
+
+Authors: John Lafferty, Andrew McCallum, Fernando C. N. Pereira
+Year: 2001
+
+We present Conditional Random Fields, a framework&#13;\nfor building probabilistic models to segment&#13;\nand label sequence data. Conditional random&#13;\nfields offer several advantages over hidden&#13;\nMarkov models and stochastic grammars&#13;\nfor such tasks, including the ability to relax&#13;\nstrong independence assumptions made in those&#13;\nmodels. Conditional random fields also avoid&#13;\na fundamental limitation of maximum entropy&#13;\nMarkov models (MEMMs) and other discriminative&#13;\nMarkov models based on directed graphical&#13;\nmodels, which can be biased towards states&#13;\nwith few successor states. We present iterative&#13;\nparameter estimation algorithms for conditional&#13;\nrandom fields and compare the performance of&#13;\nthe resulting models to HMMs and MEMMs on&#13;\nsynthetic and natural-language data.

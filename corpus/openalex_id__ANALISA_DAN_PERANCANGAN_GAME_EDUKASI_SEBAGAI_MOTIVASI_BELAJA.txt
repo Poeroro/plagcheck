@@ -1,0 +1,6 @@
+ANALISA DAN PERANCANGAN GAME EDUKASI SEBAGAI MOTIVASI BELAJAR UNTUK ANAK USIA DINI
+
+Authors: Diana Laily Fithri, Dave Andre Setiawan
+Year: 2017
+
+Analisa dan Perancangan Game edukasi untuk anak usia dini yang terdiri dari pengenalan angka dan huruf merupakan pengembangan dan pengenalan huruf dan angka untuk anak usia dini. Perancangan sistem dilakukan dengan model waterfall dan bahasa pemodelan menggunakan UML (United Modelling Language). Implementasi penelitian ini menghasilkan sebuah aplikasi Game Edukasi Berbasis Android yang sangat bermanfaat pada kalangan anak usia dini, disamping menempuh pembelajaran formal di sekolah, anak-anak dapat belajar sambil bermain dengan menggunakan aplikasi ini. Anak usia dini antara umur 3 – 6 tahun berada dalam masa Golden Periode (Periode Keemasan) perkembangan otak mereka. Dalam usia ini, mereka berada pada masa pertumbuhan dan perkembangan yang paling pesat baik fisik maupun mental. Oleh karena itu, penulis membuat game edukasi yang berbasis sistem operasi Android dengan harapan anak-anak dapat langsung menggunakan aplikasi permainan tersebut dan memperoleh pengetahuan lebih banyak serta merubah pola belajar agar tidak jenuh.

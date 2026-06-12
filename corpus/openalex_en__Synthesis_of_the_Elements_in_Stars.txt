@@ -1,0 +1,6 @@
+Synthesis of the Elements in Stars
+
+Authors: E. M. Burbidge, G. R. Burbidge, William A. Fowler, F. Hoyle
+Year: 1957
+
+this, the situation is not as complex as it might seem. Research in "classical" nuclear physics since 1932 has shown that all nuclei consist of two fundamental build- ing blocks. These are the proton and the neutron which are called nucleons in this context. As long as energies below the Ineson pmduction threshoM are not exceeded, all "prompt" nuclear processes can be described as the shufHing and reshuRhng of protons and neutrons into the variety of nucleonic packs called nuclei. Only in the slow beta-decay pmcesses is there any interchange be- tween protons and neutrons at low energies, and even there, as in the prompt. reactions, the number of nu- cleons remains constant. Only at very high energies can nucleons be produced or annihilated. Prompt nuclear processes plus the slow beta reactions make it possible in principle to transmute any one type of ' fth 'dK lty ' th th eeprocessesoperatca d have cenma e, w adding further gn general there is only one i c s rocessi slncc h a very long lifetime.

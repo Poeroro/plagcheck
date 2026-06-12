@@ -1,0 +1,6 @@
+Fundamentals of digital image processing
+
+Authors: Anil K. Jain
+Year: 1988
+
+Introduction. 1. Two Dimensional Systems and Mathematical Preliminaries. 2. Image Perception. 3. Image Sampling and Quantization. 4. Image Transforms. 5. Image Representation by Stochastic Models. 6. Image Enhancement. 7. Image Filtering and Restoration. 8. Image Analysis and Computer Vision. 9. Image Reconstruction From Projections. 10. Image Data Compression.

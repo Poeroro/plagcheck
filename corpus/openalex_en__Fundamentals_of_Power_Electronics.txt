@@ -1,0 +1,6 @@
+Fundamentals of Power Electronics
+
+Authors: Robert W. Erickson, Dragan Maksimović
+Year: 2020
+
+This textbook is intended for use in introductory power electronics courses and related fields for both senior undergraduates and first-year graduate students interested in converter circuits and electronics, control systems, and magnetic and power systems.

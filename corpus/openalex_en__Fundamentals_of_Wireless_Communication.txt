@@ -1,0 +1,6 @@
+Fundamentals of Wireless Communication
+
+Authors: David Tse, Pramod Viswanath
+Year: 2005
+
+The past decade has seen many advances in physical layer wireless communication theory and their implementation in wireless systems. This textbook takes a unified view of the fundamentals of wireless communication and explains the web of concepts underpinning these advances at a level accessible to an audience with a basic background in probability and digital communication. Topics covered include MIMO (multi-input, multi-output) communication, space-time coding, opportunistic communication, OFDM and CDMA. The concepts are illustrated using many examples from real wireless systems such as GSM, IS-95 (CDMA), IS-856 (1 x EV-DO), Flash OFDM and UWB (ultra-wideband). Particular emphasis is placed on the interplay between concepts and their implementation in real systems. An abundant supply of exercises and figures reinforce the material in the text. This book is intended for use on graduate courses in electrical and computer engineering and will also be of great interest to practising engineers

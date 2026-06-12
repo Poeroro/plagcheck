@@ -1,0 +1,6 @@
+Topological photonics
+
+Authors: Tomoki Ozawa, Hannah M. Price, A. Amo, Nathan Goldman, Mohammad Hafezi
+Year: 2019
+
+The robustness of the integer quantum Hall effect of electron systems is due to the existence of a topological invariant that characterizes the variation of the electron wave function over the Brillouin zone. Topological phenomena are generic features of waves in periodic media, and this article reviews how photonic systems such as waveguide arrays and photonic metamaterials allow exploration and application of topological effects in new physical regimes and in new devices.

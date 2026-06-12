@@ -1,0 +1,6 @@
+SISTEM PAKAR MENDIAGNOSA PENYAKIT KOLESTEROL PADA REMAJA DENGAN METODE CERTAINTY FACTOR (CF) BERBASIS WEB
+
+Authors: Hengki Tamando Sihotang
+Year: 2019
+
+Saat ini komputer telah banyak digunakan dalam dunia medis untuk membantu diagnosis suatu penyakit. Penyakit yang paling penting dan sering ditemukan adalah kolestrol. Pencegahan penyakit lebih baik dari pada pengobatannya. Oleh karena itu, pencegahan penyakit kolestrol ini diawali dengan pendiagnosaan dini. Salah satu teknik dalam mendiagnosis penyakit kolestrol ini adalah sistem pakar. Maka dari itu penelitian ini bertujuan menyusun sebuah sistem pakar yang digunakan untuk diagnosa awal penyakit kolestrol berdasarkan gejala yang dirasakan. Sistem akan menampilkan Besarnya kepercayaan gejala tersebut terhadap kemungkinan penyakit yang diderita pengguna. Besarnya nilai kepercayaan tersebut merupakan hasil perhitungan dengan menggunakan metode Certainty Factor(CF). Representasi pengetahuan yang digunakan pada penelitian ini adalah production rule. Metode inferensi yang digunakan untuk mendapatkan konklusi yaitu penalaran maju (forward chaining)

@@ -1,0 +1,6 @@
+Antenna engineering handbook
+
+Authors: H. Jasik
+Year: 1961
+
+Introduction to Antennas.Fundamentals of Antennas.Arrays of Discrete Elements.Dipoles and Monopoles.Loop Antennas.Small Antennas.Microstrip Antennas.Slot Antennas.Slot-Antenna Arrays.Leaky-Wave Antennas.Long-Wire Antennas.Surface-Wave Antennas and Surface-Wave Excited Arrays.Helical Antennas.Frequency-Independent Antennas.Horn Antennas.Lens Antennas.Reflector Antennas.Feeds for Lenses and Reflectors.Electromechanical Scanning Antennas.Frequency-Scan Antennas.Phased Arrays.Conformal and Low-Profile Arrays.Adaptive Antennas.Methods of Polarization Synthesis.Low-Frequency Antennas.Medium-Frequency Broadcast Antennas.High-Frequency Antennas.VHF and UHF Communications Antennas.TV and FM Transmitting Antennas.TV Receiving Antennas.Microwave-Relay Antennas, Radiometer Antennas.Radar Antennas.Microwave Beacon Antennas.Tracking Antennas.Satellite Antennas.Earth Station Antennas.Aircraft Antennas.Seeker Antennas.Direction-Finding Antennas and Systems.ECM and ESM Antennas.Radio-Telescope Antennas.Transmission Lines and Waveguide.Impedance Matching and Broadbanding.Radomes.Microwave Propagation.Antenna Measurements.Materials and Design Data.

@@ -1,0 +1,6 @@
+Prostaglandins and Inflammation
+
+Authors: Emanuela Ricciotti, Garret A. FitzGerald
+Year: 2011
+
+Prostaglandins are lipid autacoids derived from arachidonic acid. They both sustain homeostatic functions and mediate pathogenic mechanisms, including the inflammatory response. They are generated from arachidonate by the action of cyclooxygenase isoenzymes, and their biosynthesis is blocked by nonsteroidal antiinflammatory drugs, including those selective for inhibition of cyclooxygenase-2. Despite the clinical efficacy of nonsteroidal antiinflammatory drugs, prostaglandins may function in both the promotion and resolution of inflammation. This review summarizes insights into the mechanisms of prostaglandin generation and the roles of individual mediators and their receptors in modulating the inflammatory response. Prostaglandin biology has potential clinical relevance for atherosclerosis, the response to vascular injury and aortic aneurysm.

@@ -1,0 +1,6 @@
+Capacity of Multi‐antenna Gaussian Channels
+
+Authors: Emre Telatar
+Year: 1999
+
+Abstract We investigate the use of multiple transmitting and/or receiving antennas for single user communications over the additive Gaussian channel with and without fading. We derive formulas for the capacities and error exponents of such channels, and describe computational procedures to evaluate such formulas. We show that the potential gains of such multi‐antenna systems over single‐antenna systems is rather large under independenceassumptions for the fades and noises at different receiving antennas.

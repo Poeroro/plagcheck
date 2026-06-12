@@ -1,0 +1,6 @@
+Blockchain technology overview
+
+Authors: Dylan Yaga, Peter Mell, Nik Roby, Karen Scarfone
+Year: 2018
+
+The Information Technology Laboratory (ITL) at the National Institute of Standards and Technology (NIST) promotes the U.S. economy and public welfare by providing technical leadership for the Nation's measurement and standards infrastructure. ITL develops tests, test methods, reference data, proof of concept implementations, and technical analyses to advance the development and productive use of information technology. ITL's responsibilities include the development of management, administrative, technical, and physical

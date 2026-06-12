@@ -1,0 +1,6 @@
+A performance comparison of multi-hop wireless ad hoc network routing protocols
+
+Authors: J. Broch, David A. Maltz, David B. Johnson, Yih‐Chun Hu, Jorjeta G. Jetcheva
+Year: 1998
+
+An ad hoc network is a collection of wireless mobile nodes dynamically forming a temporary network without the use of any existing network infrastructure or centralized administration. Due to the limited transmission range of wireless network interfaces, multiple network &amp;quot;hops&amp;quot; may be needed for one node to exchange data with another across the network. In recent years, a variety of new routing protocols targeted specifically at this environment have been developed, but little performance information on each protocol and no realistic performance comparison between them is available. This paper presents the results of a detailed packet-level simulation comparing four multi-hop wireless ad hoc network routing protocols that cover a range of design choices: DSDV, TORA, DSR, and AODV. We have extended the ns-2 network simulator to accurately model the MAC and physical-layer behavior of the IEEE 802.11 wireless LAN standard, including a realistic wireless transmission channel model, and present the results of simulations of networks of 50 mobile nodes.

@@ -1,0 +1,6 @@
+Penerapan Algoritma K-Means Clustering Analysis Pada Penyakit Menular Manusia (Studi Kasus Kabupaten Majalengka)
+
+Authors: Ade Bastian
+Year: 2018
+
+Kesehatan merupakan hal yang berharga bagi manusia karena siapa saja dapat mengalami gangguan kesehatan, begitu pula pada manusia yang sangat rentan terhadap berbagai macam penyakit namun penyebabnya tidak kita sadari. Algoritma K-Means tidak terpengaruh terhadap urutan objek yang digunakan, hal ini dibuktikan ketika penulis mencoba menentukan secara acak titik awal pusat cluster dari salah satu objek pada permulaan perhitungan. Jumlah keanggotaan cluster yang dihasilkan berjumlah sama ketika menggunakan objek yang lain sebagai titik awal pusat cluster tersebut. Namun, hal ini hanya berpengaruh pada jumlah iterasi yang dilakukan. Pengelompokan objek (objek clustering) adalah salah satu proses dari objek mining yang bertujuan untuk mempartisi objek yang ada kedalam satu atau lebih cluster objek berdasarkan karakteristiknya.Penelitian ini mengkaji bagaimana penggunaan Algoritma K-Means Cluster Analysis dalam studi kasus penyakit menular manusia pada suatu objek. Penelitian ini mengkaji metode K-Means Cluster Analysis dalam penyakit menular pada manusia berdasarkan set variabel yang dibentuk per kecamatan tiap puskesmas yang jumlahnya ada 32 Kantor Puskesmas di Kabupaten Majalengka.

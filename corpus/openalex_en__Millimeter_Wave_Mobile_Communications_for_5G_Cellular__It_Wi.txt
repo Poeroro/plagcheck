@@ -1,0 +1,6 @@
+Millimeter Wave Mobile Communications for 5G Cellular: It Will Work!
+
+Authors: Theodore S. Rappaport, Shu Sun, Rimma Mayzus, Hang Zhao, Yaniv Azar
+Year: 2013
+
+The global bandwidth shortage facing wireless carriers has motivated the exploration of the underutilized millimeter wave (mm-wave) frequency spectrum for future broadband cellular communication networks. There is, however, little knowledge about cellular mm-wave propagation in densely populated indoor and outdoor environments. Obtaining this information is vital for the design and operation of future fifth generation cellular networks that use the mm-wave spectrum. In this paper, we present the motivation for new mm-wave cellular systems, methodology, and hardware for measurements and offer a variety of measurement results that show 28 and 38 GHz frequencies can be used when employing steerable directional antennas at base stations and mobile devices.

@@ -1,0 +1,6 @@
+Perancangan Perangkat Lunak untuk Menggambar Diagram Berbasis Android
+
+Authors: Wilianti Aliman
+Year: 2021
+
+Diagram UML merupakan sebuah alat bantu bagi seorang pengembang aplikasi untuk mendesain sistem. Penelitian yang dilakukan adalah perancangan perangkat lunak menggambar diagram UML berbasis android untuk meningkatkan mobilitas seorang pengembang aplikasi. Tujuan dari penelitian ini adalah untuk mengetahui informasi ketentuan setiap diagram UML khususnya use case diagram, activity diagram, dan class diagram untuk kebutuhan seorang analis dalam membangun sebuah sistem informasi. Membantu pengguna untuk menggambar diagram secara mobile, membantu pembelajaran analisis dan desain perancangan sebuah sistem informasi, dan sebagai penerapan dan pengembangan dari ilmu grafika komputer dan sistem informasi yang sudah dipelajari dan ditempuh selama perkuliahan. Metode penelitian yang digunakan adalah dengan menggunakan model System Development Life Cycle (SDLC) Prototype. Hasil penelitian yang didapatkan menunjukkan bahwa analisis, perancangan dan pengujian aplikasi menggambar diagram “Vistchart” pada aplikasi ini, pengguna memilih menu diagram yang akan digambar yaitu use case diagram, activity diagram atau class diagram.

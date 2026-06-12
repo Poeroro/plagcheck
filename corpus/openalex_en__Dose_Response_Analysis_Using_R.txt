@@ -1,0 +1,6 @@
+Dose-Response Analysis Using R
+
+Authors: Christian Ritz, Florent Baty, J. C. Streibig, Daniel Gerhard
+Year: 2015
+
+Dose-response analysis can be carried out using multi-purpose commercial statistical software, but except for a few special cases the analysis easily becomes cumbersome as relevant, non-standard output requires manual programming. The extension package drc for the statistical environment R provides a flexible and versatile infrastructure for dose-response analyses in general. The present version of the package, reflecting extensions and modifications over the last decade, provides a user-friendly interface to specify the model assumptions about the dose-response relationship and comes with a number of extractors for summarizing fitted models and carrying out inference on derived parameters. The aim of the present paper is to provide an overview of state-of-the-art dose-response analysis, both in terms of general concepts that have evolved and matured over the years and by means of concrete examples.

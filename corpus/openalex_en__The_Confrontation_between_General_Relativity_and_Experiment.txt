@@ -1,0 +1,6 @@
+The Confrontation between General Relativity and Experiment
+
+Authors: Clifford M. Will
+Year: 2014
+
+The status of experimental tests of general relativity and of theoretical frameworks for analyzing them is reviewed. Einstein's equivalence principle (EEP) is well supported by experiments such as the Eötvös experiment, tests of special relativity, and the gravitational redshift experiment. Ongoing tests of EEP and of the inverse square law are searching for new interactions arising from unification or quantum gravity. Tests of general relativity at the post-Newtonian level have reached high precision, including the light deflection, the Shapiro time delay, the perihelion advance of Mercury, and the Nordtvedt effect in lunar motion. Gravitational wave damping has been detected in an amount that agrees with general relativity to better than half a percent using the Hulse-Taylor binary pulsar, and other binary pulsar systems have yielded other tests, especially of strong-field effects. When direct observation of gravitational radiation from astrophysical sources begins, new tests of general relativity will be possible.

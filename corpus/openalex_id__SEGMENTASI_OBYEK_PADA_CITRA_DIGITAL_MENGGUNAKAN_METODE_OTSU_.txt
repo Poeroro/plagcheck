@@ -1,0 +1,6 @@
+SEGMENTASI OBYEK PADA CITRA DIGITAL MENGGUNAKAN METODE OTSU THRESHOLDING
+
+Authors: Slamet Imam Syafi’i, Rima Tri Wahyuningrum, Arif Muntasa
+Year: 2016
+
+Digital image has size and object in the form of foreground and background. To separate it, it is necessary to be conducted the image segmentation process. Otsu thresholding method is one of image segmentation method. In this research is divided into five processes, which are input image, pre-processing, segmentation, cleaning, and accuracy calculation. First process was input color images which consists of multiple objects. Second process was conversion from color image to grayscale image. Third process was automatically calculated threshold value using Otsu thresholding method, followed by binary image transformation. The fourth process, the result of third process is changed into negative image as the segmentation results, noise removal with a threshold value of 150, and morphology. The last accuracy calculation is conducted to measure proposed segmentation method performance. The experimental result have been compared to the image of Ground Truth as the direct user observation to calculate accuracy. To examine the proposed method, Weizmann Segmentation Database is used as data set. It conconsist of 30 color images. The experimental results show that 93.33% accuracy were achieved.

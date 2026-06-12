@@ -1,0 +1,6 @@
+Temperature Dependence of Thermal Conductivity Enhancement for Nanofluids
+
+Authors: Sarit K. Das, Nandy Putra, Peter Thiesen, Wilfried Roetzel
+Year: 2003
+
+Usual heat transfer fluids with suspended ultra fine particles of nanometer size are named as nanofluids, which have opened a new dimension in heat transfer processes. The recent investigations confirm the potential of nanofluids in enhancing heat transfer required for present age technology. The present investigation goes detailed into investigating the increase of thermal conductivity with temperature for nano fluids with water as base fluid and particles of Al2O3 or CuO as suspension material. A temperature oscillation technique is utilized for the measurement of thermal diffusivity and thermal conductivity is calculated from it. The results indicate an increase of enhancement characteristics with temperature, which makes the nanofluids even more attractive for applications with high energy density than usual room temperature measurements reported earlier.

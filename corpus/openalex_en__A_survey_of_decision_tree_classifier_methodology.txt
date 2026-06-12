@@ -1,0 +1,6 @@
+A survey of decision tree classifier methodology
+
+Authors: S.R. Safavian, D. A. Landgrebe
+Year: 1991
+
+A survey is presented of current methods for decision tree classifier (DTC) designs and the various existing issues. After considering potential advantages of DTCs over single-state classifiers, the subjects of tree structure design, feature selection at each internal node, and decision and search strategies are discussed. The relation between decision trees and neutral networks (NN) is also discussed.< <ETX xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">&gt;</ETX>

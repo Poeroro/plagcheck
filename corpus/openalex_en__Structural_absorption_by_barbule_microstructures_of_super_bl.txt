@@ -1,0 +1,6 @@
+Structural absorption by barbule microstructures of super black bird of paradise feathers
+
+Authors: Dakota E. McCoy, Teresa J. Feo, Todd Alan Harvey, Richard O. Prum
+Year: 2017
+
+Many studies have shown how pigments and internal nanostructures generate color in nature. External surface structures can also influence appearance, such as by causing multiple scattering of light (structural absorption) to produce a velvety, super black appearance. Here we show that feathers from five species of birds of paradise (Aves: Paradisaeidae) structurally absorb incident light to produce extremely low-reflectance, super black plumages. Directional reflectance of these feathers (0.05-0.31%) approaches that of man-made ultra-absorbent materials. SEM, nano-CT, and ray-tracing simulations show that super black feathers have titled arrays of highly modified barbules, which cause more multiple scattering, resulting in more structural absorption, than normal black feathers. Super black feathers have an extreme directional reflectance bias and appear darkest when viewed from the distal direction. We hypothesize that structurally absorbing, super black plumage evolved through sensory bias to enhance the perceived brilliance of adjacent color patches during courtship display.

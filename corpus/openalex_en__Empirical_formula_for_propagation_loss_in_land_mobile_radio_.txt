@@ -1,0 +1,6 @@
+Empirical formula for propagation loss in land mobile radio services
+
+Authors: Masayuki Hata
+Year: 1980
+
+An empirical formula for propagation loss is derived from Okumura's report in order to put his propagation prediction method to computational use. The propagation loss in an urban area is presented in a simple form: A + B log <inf xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">10</inf> R, where A and B are frequency and antenna height functions and R is the distance. The introduced formula is applicable to system designs for UHF and VHF land mobile radio services, with a small formulation error, under the following conditions: frequency range 100-1500 MHz, distance 1-20 km, base station antenna height 30-200 m, and vehicular antenna height 1-10 m.

@@ -1,0 +1,6 @@
+Attosecond physics
+
+Authors: Ferenc Krausz, Misha Ivanov
+Year: 2009
+
+Intense ultrashort light pulses comprising merely a few wave cycles became routinely available by the turn of the millennium. The technologies underlying their production and measurement as well as relevant theoretical modeling have been reviewed in the pages of Reviews of Modern Physics (Brabec and Krausz, 2000). Since then, measurement and control of the subcycle field evolution of few-cycle light have opened the door to a radically new approach to exploring and controlling processes of the microcosm. The hyperfast-varying electric field of visible light permitted manipulation and tracking of the atomic-scale motion of electrons. Striking implications include controlled generation and measurement of single attosecond pulses of extreme ultraviolet light as well as trains of them, and real-time observation of atomic-scale electron dynamics. The tools and techniques for steering and tracing electronic motion in atoms, molecules, and nanostructures are now becoming available, marking the birth of attosecond physics. In this article these advances are reviewed and some of the expected implications are addressed.

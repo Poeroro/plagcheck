@@ -1,0 +1,6 @@
+Combining labeled and unlabeled data with co-training
+
+Authors: Avrim Blum, Tom M. Mitchell
+Year: 1998
+
+We consider the problem of using a large unlabeled sample to boost performance of a learning algorit,hrn when only a small set of labeled examples is available.

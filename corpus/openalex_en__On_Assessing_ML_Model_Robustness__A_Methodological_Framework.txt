@@ -1,0 +1,6 @@
+On Assessing ML Model Robustness: A Methodological Framework (Academic Track)
+
+Authors: Awadid, Afef, Robert, Boris
+Year: 2025
+
+Due to their uncertainty and vulnerability to adversarial attacks, machine learning (ML) models can lead to severe consequences, including the loss of human life, when embedded in safety-critical systems such as autonomous vehicles. Therefore, it is crucial to assess the empirical robustness of such models before integrating them into these systems. ML model robustness refers to the ability of an ML model to be insensitive to input perturbations and maintain its performance. Against this background, the Confiance.ai research program proposes a methodological framework for assessing the empirical robustness of ML models. The framework encompasses methodological processes (guidelines) captured in Capella models, along with a set of supporting tools. This paper aims to provide an overview of this framework and its application in an industrial setting.

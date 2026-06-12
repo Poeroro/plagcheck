@@ -1,0 +1,6 @@
+Wireless Communications
+
+Authors: Andrea Goldsmith
+Year: 2005
+
+Wireless technology is a truly revolutionary paradigm shift, enabling multimedia communications between people and devices from any location. It also underpins exciting applications such as sensor networks, smart homes, telemedicine, and automated highways. This book provides a comprehensive introduction to the underlying theory, design techniques and analytical tools of wireless communications, focusing primarily on the core principles of wireless system design. The book begins with an overview of wireless systems and standards. The characteristics of the wireless channel are then described, including their fundamental capacity limits. Various modulation, coding, and signal processing schemes are then discussed in detail, including state-of-the-art adaptive modulation, multicarrier, spread spectrum, and multiple antenna techniques. The concluding chapters deal with multiuser communications, cellular system design, and ad-hoc network design. Design insights and tradeoffs are emphasized throughout the book. It contains many worked examples, over 200 figures, almost 300 homework exercises, over 700 references, and is an ideal textbook for students.

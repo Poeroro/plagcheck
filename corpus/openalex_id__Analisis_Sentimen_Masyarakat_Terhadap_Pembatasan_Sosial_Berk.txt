@@ -1,0 +1,6 @@
+Analisis Sentimen Masyarakat Terhadap Pembatasan Sosial Berksala Besar Menggunakan Algoritma Support Vector Machine
+
+Authors: Hennie Tuhuteru
+Year: 2020
+
+The spread of COVID-19 has become a pandemic throughout the world, including Indonesia. As the main door in Maluku, Ambon has become a new epicenter of the spread of coronavirus. This condition requires local governments to implement Large Scale Social Restrictions (LSSR) after being permitted by the Ministry of Health. This has become a polemic for some Ambonese people especially those who don't have a steady income. Many posts from social media discussing the LSSR that was implemented in Ambon. This study aims to find out how people's sentiment towards the LSSR implementation plan in Ambon through tweets and comments on social media platforms using sentiment analysis. The data obtained amounted to 1075 tweets and comments and separated between 350 training data and testing data of 725. The data classified using the Support Vector Machine (SVM) algorithm. The results of the study showed positive sentiment of 28%, a negative sentiment of 27%, and a neutral sentiment of 45%. It can be concluded that public sentiment towards the implementation of LSSR in Ambon based on posts on social media platforms is quite balanced between positive and negative sentiments and also dominated by neutral sentiments posts.

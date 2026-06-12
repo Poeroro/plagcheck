@@ -1,0 +1,6 @@
+Desain Dan Pengembangan Program Pelatihan berbasis Kompetensi: Implementasi Model ADDIE
+
+Authors: Benny Agus Pribadi
+Year: 2020
+
+Untuk dapat melaksanakan program pelatihan yang efektif dan efisien diperlukan adanya prosedur desain dan pengembangan yang sistematik dan sistemik. Dengan kata lain, sebuah program pelatihan perlu didesain dan dikem-bangkan secara bertahap dan menyeluruh agar dapat memfasilitasi peserta sehingga mampu mencapai kompe-tensi yang telah ditetapkan. Beberapa model desain dan pengembangan program pembelajaran dapat digunakan untuk memudahkan training manager dalam merancang dan mengembangkan program pelatihan yang efektif dan efisien.Buku ini akan mengupas salah satu model desain dan pengembangan sistem pembelajaran yang dapat digunakan untuk menciptakan program pelatihan yang efektif dan efi-sien. Program tersebut mampu meningkatkan kompetensi peserta, mampu memotivasi proses belajar peserta,mampu meningkatkan daya ingat atau retensi terhadap kompetensi yang dilatihkan dan mampu membuat peserta dapat meng-aplikasikan kompetensi yang dilatihkan dalam dunia kerja nyata.

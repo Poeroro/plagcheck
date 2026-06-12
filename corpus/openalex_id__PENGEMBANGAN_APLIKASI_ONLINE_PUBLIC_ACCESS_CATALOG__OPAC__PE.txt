@@ -1,0 +1,6 @@
+PENGEMBANGAN APLIKASI ONLINE PUBLIC ACCESS CATALOG (OPAC) PERPUSTAKAAN BERBASIS WEB PADA STAI AULIAURRASYIDDIN TEMBILAHAN
+
+Authors: Dini Azzahra, Siti Ramadhani
+Year: 2020
+
+Perpustakaan STAI Auliaurrasyidin memiliki kurang lebih 8000 buku yang terdiri dari berbagai jenis topik pembahasan. Buku tersebut disusun rapi didalam rak buku agar pengunjug menemukan buku yang diinginkan dengan mudah. Rak buku tersebut dilengkapi dengan abjad yang mewakili awal judul buku karena perpustakaan tersebut hanya memiliki sistem temu informasi buku atau OPAC (Online Public Access Catalog) yang berbasis local sehingga sangat menyulitkan jika mencari buku pada saat kita tidak berada dimeja komputer pencarian. Oleh sebab itu maka dikembangkanlah Aplikasi Online Public Access Catalog Perpustakaan berbasis Website menggunakan Bahasa pemrograman PHP dan dirancang menggunakan database MySQL guna untuk memudahkan dalam permasalahan tersebut. Aplikasi ini dikembangkan dengan menggunkana pendekatan metode RAD (Rapid Application Deployment) Serta Aplikasi OPAC yang dikembangkan telah melalui pengujian Black Box dan pengujian UAT dengan memperoleh hasil rentang kategori setuju.

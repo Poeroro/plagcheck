@@ -1,0 +1,6 @@
+Satellite Communications in the New Space Era: A Survey and Future Challenges
+
+Authors: Oltjon Kodheli, Eva Lagunas, Nicola Maturo, Shree Krishna Sharma, Bhavani Shankar
+Year: 2020
+
+Satellite communications (SatComs) have recently entered a period of renewed interest motivated by technological advances and nurtured through private investment and ventures. The present survey aims at capturing the state of the art in SatComs, while highlighting the most promising open research topics. Firstly, the main innovation drivers are motivated, such as new constellation types, on-board processing capabilities, non-terrestrial networks and space-based data collection/processing. Secondly, the most promising applications are described, i.e., 5G integration, space communications, Earth observation, aeronautical and maritime tracking and communication. Subsequently, an in-depth literature review is provided across five axes: i) system aspects, ii) air interface, iii) medium access, iv) networking, v) testbeds & prototyping. Finally, a number of future challenges and the respective open research topics are described.

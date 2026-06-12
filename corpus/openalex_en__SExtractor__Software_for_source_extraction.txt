@@ -1,0 +1,6 @@
+SExtractor: Software for source extraction
+
+Authors: E. Bertin, S. Arnouts
+Year: 1996
+
+We present the automated techniques we have developed for new software that optimally detects, deblends, measures and classifies sources from astronomical images: SExtractor (Source Extractor ). We show that a very reliable star/galaxy separation can be achieved on most images using a neural network trained with simulated images. Salient features of SExtractor include its ability to work on very large images, with minimal human intervention, and to deal with a wide variety of object shapes and magnitudes. It is therefore particularly suited to the analysis of large extragalactic surveys.

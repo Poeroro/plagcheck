@@ -1,0 +1,6 @@
+Cooperative communication in wireless networks
+
+Authors: Aria Nosratinia, T.E. Hunter, A. Hedayat
+Year: 2004
+
+Transmit diversity generally requires more than one antenna at the transmitter. However, many wireless devices are limited by size or hardware complexity to one antenna. Recently, a new class of methods called cooperative communication has been proposed that enables single-antenna mobiles in a multi-user environment to share their antennas and generate a virtual multiple-antenna transmitter that allows them to achieve transmit diversity. This article presents an overview of the developments in this burgeoning field.

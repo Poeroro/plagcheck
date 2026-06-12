@@ -1,0 +1,6 @@
+Deteksi dan Perhitungan Objek Berdasarkan Warna Menggunakan Color Object Tracking
+
+Authors: Dedy Agung Prabowo, Dedy Abdullah
+Year: 2018
+
+Perkembangan ilmu pengetahuan dan teknologi sekarang ini banyak menghasilkan alat-alat yang dapat membantu manusia dalam menyelesaikan pekerjaannya secara otomatis. Salah satu bidang ilmu yang mendukung dalam mempermudah pekerjaan manusia tersebut adalah computer vision. Masalah utama dalam computer vision adalah bagaimana mengenali gambar dan memanfaatkan gambar yang ditangkapnya. Tujuan dalam penelitian ini yaitu membangun system yang mampu mendeteki dan menghitung objek yang tertangkap oleh kamera berdasarkan warna. Hasil dari penelitian ini menunjukkan bahwa color object tracking dapat digunakan untuk mengenali dan menghitung warna yang ditentukan dengan kamera.

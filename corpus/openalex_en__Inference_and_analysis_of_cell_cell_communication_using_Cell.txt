@@ -1,0 +1,6 @@
+Inference and analysis of cell-cell communication using CellChat
+
+Authors: Suoqin Jin, Christian F. Guerrero‐Juarez, Lihua Zhang, Ivan Chang, Raúl Ramos
+Year: 2021
+
+Understanding global communications among cells requires accurate representation of cell-cell signaling links and effective systems-level analyses of those links. We construct a database of interactions among ligands, receptors and their cofactors that accurately represent known heteromeric molecular complexes. We then develop CellChat, a tool that is able to quantitatively infer and analyze intercellular communication networks from single-cell RNA-sequencing (scRNA-seq) data. CellChat predicts major signaling inputs and outputs for cells and how those cells and signals coordinate for functions using network analysis and pattern recognition approaches. Through manifold learning and quantitative contrasts, CellChat classifies signaling pathways and delineates conserved and context-specific pathways across different datasets. Applying CellChat to mouse and human skin datasets shows its ability to extract complex signaling patterns. Our versatile and easy-to-use toolkit CellChat and a web-based Explorer ( http://www.cellchat.org/ ) will help discover novel intercellular communications and build cell-cell communication atlases in diverse tissues.

@@ -1,0 +1,6 @@
+RoB 2: a revised tool for assessing risk of bias in randomised trials
+
+Authors: Jonathan A C Sterne, Jelena Savović, Matthew J. Page, Roy G. Elbers, Natalie Blencowe
+Year: 2019
+
+Assessment of risk of bias is regarded as an essential component of a systematic review on the effects of an intervention. The most commonly used tool for randomised trials is the Cochrane risk-of-bias tool. We updated the tool to respond to developments in understanding how bias arises in randomised trials, and to address user feedback on and limitations of the original tool.

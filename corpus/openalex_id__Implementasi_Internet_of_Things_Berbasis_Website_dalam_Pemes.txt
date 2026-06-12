@@ -1,0 +1,6 @@
+Implementasi Internet of Things Berbasis Website dalam Pemesanan Jasa Rumah Service Teknisi Komputer dan Jaringan Komputer
+
+Authors: Indah Purnama Sari, Ismail Hanif Batubara, Mhd. Basri, Al Hamidy Hazidar
+Year: 2022
+
+Pada website pemesanan jasa rumah teknisi atau di sebut dengan service computer dan jaringan computer atau di kenal internet merupakan website yang di rancangkan untuk menerima booking service untuk toko rumah teknisi computer dan jaringan internet. Pada kali ini website yang di rancangkan agar bisa mencatat riwayat servis dari PC Desktop, Laptop dan pada masalah jaringan computer. Aplikasi ini dibuat menggunakan bahasa pemrogramman Web, PHP dan HTML yang digunakan adalah MySQL dan xampp. Aplikasi ini memiliki 2 aktor yaitu Pelanggan, dan Teknisi. Hasil dari penelitian ini memberikan sistem pemesanan jasa rumahteknisi komputer berbasis web yang mudah, cepat dan akurat serta dapat diakses melalui berbagai gadget yang tersambung jaringan internet.

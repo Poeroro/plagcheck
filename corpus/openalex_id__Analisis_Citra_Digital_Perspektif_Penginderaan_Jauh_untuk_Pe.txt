@@ -1,0 +1,6 @@
+Analisis Citra Digital Perspektif Penginderaan Jauh untuk Pengelolaan Sumber Daya Alam
+
+Authors: I Nengah Surati Jaya
+Year: 2014
+
+Buku tentang pengolahan citra digital ini merupakan buku edisi ke-2 yang memuat uraian ringkas tentang teori dan praktek pengolahan citra digital. Buku ini tidak hanya menyajikan hal-hal yang bersifat umum dalam menurunkan informasi sumberdaya alam, tetapi juga dilengkapi dengan contoh-contoh aplikasi di dalam ilmu-ilmu keruangan. Buku ini sangat cocok untuk dijadikan pegangan bagi para pemula yang ingin belajar tentang penginderaan jauh terapan.

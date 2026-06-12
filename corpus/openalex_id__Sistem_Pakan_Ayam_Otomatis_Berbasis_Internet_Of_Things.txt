@@ -1,0 +1,6 @@
+Sistem Pakan Ayam Otomatis Berbasis Internet Of Things
+
+Authors: Ade Surahman, Bobi Aditama, Muhammad Bakri, Rasna Rasna
+Year: 2021
+
+Salah satu peternakan yang berkembang di Indonesia adalah peternakan ayam pedaging (broiler). Bagi usaha peternakan ayam pedaging, diperlukan pemeliharaan yang lebih baik dan kontinyu untuk menghasilkan ayam pedaging dengan kualitas yang baik. Banyak para peternak ayam pedaging masih menggunakan cara yang manual dalam memberi pakan ayam. Cara tersebut kurang efektif dan kurang efisien, selain itu juga membutuhkan banyak sumber daya manusia. Tugas akhir ini bertujuan untuk membangun sebuah Sistem Pakan Ayam Berbasis Internet of Things berbentuk prototype yang memanfaatkan internet sebagai media untuk pengendalian alat elektronik secara jarak jauh menggunakan mikrokontroler NodeMCU ESP8266, Servo MG995, dan LED indikator yang berkomunikasi dengan server MQTT ke Smartphone. Setelah dilakukan pengujian kerja sistem, hasil yang didapatkan menunjukkan bahwa sistem telah dapat bekerja dengan memberikan pakan secara otomatis. Informasi saat terhubung ke server, saat pemberian pakan, katup pakan terbuka dan tertutup dapat ditampilkan pada panel aplikasi.

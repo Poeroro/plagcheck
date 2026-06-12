@@ -1,0 +1,6 @@
+Analisis Sentimen Review Film Menggunakan TF-IDF dan Support Vector Machine
+
+Authors: Okta Ihza Gifari, Muh Adha, Fernandito Freddy, Fernandito Freddy Setlight Durrand
+Year: 2022
+
+Intisari—Dengan kemajuan teknologi saat ini seluruh informasi tentang semua film sudah tersedia di Internet. Jika informasi dikelola dengan baik maka dapat memberikan manfaat berupa informasi yang berguna untuk membantu individu atau organisasi untuk mengambil keputusan. Penelitian ini bertujuan untuk menjelaskan analisis sentimen pada dokumen film. Metode yang digunakan pada penelitian ini adalah TF-IDF (Term Frequency-Inverse Document Frequency) dan SVM (Support Vector Machine) . Metode ini dipilih karena mampu melakukan pembobotan terhadap kata dan mengklasifikasikan data berdimensi tinggi. Dari uji skenario yang dilakukan, diketahui bahwa algoritma TF-IDF dan SVM dapat digunakan untuk kasus review film dengan nilai Accuracy 85%, nilai Precision 100%, nilai Recall 70%, dan nilai F1-Score sebesar 82%.

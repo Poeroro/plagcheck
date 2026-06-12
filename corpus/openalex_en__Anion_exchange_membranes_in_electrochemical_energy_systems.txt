@@ -1,0 +1,6 @@
+Anion-exchange membranes in electrochemical energy systems
+
+Authors: John R. Varcoe, Plamen Atanassov, Dario R. Dekel, Andrew M. Herring, Michael A. Hickner
+Year: 2014
+
+A detailed perspective on the use of anion-exchange membranes in fuel cells, electrolysers, flow batteries, reverse electrodialysis, and bioelectrochemical systems.

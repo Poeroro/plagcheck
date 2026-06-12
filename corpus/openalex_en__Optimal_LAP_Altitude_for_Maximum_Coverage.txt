@@ -1,0 +1,6 @@
+Optimal LAP Altitude for Maximum Coverage
+
+Authors: Akram Al‐Hourani, Sithamparanathan Kandeepan, Simon Lardner
+Year: 2014
+
+Low-altitude aerial platforms (LAPs) have recently gained significant popularity as key enablers for rapid deployable relief networks where coverage is provided by onboard radio heads. These platforms are capable of delivering essential wireless communication for public safety agencies in remote areas or during the aftermath of natural disasters. In this letter, we present an analytical approach to optimizing the altitude of such platforms to provide maximum radio coverage on the ground. Our analysis shows that the optimal altitude is a function of the maximum allowed pathloss and of the statistical parameters of the urban environment, as defined by the International Telecommunication Union. Furthermore, we present a closed-form formula for predicting the probability of the geometrical line of sight between a LAP and a ground receiver.

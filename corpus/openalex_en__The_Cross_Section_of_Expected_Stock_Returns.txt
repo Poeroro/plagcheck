@@ -1,0 +1,6 @@
+The Cross‐Section of Expected Stock Returns
+
+Authors: Eugene F. Fama, Kenneth R. French
+Year: 1992
+
+ABSTRACT Two easily measured variables, size and book‐to‐market equity, combine to capture the cross‐sectional variation in average stock returns associated with market β , size, leverage, book‐to‐market equity, and earnings‐price ratios. Moreover, when the tests allow for variation in β that is unrelated to size, the relation between market β and average return is flat, even when β is the only explanatory variable.

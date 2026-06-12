@@ -1,0 +1,6 @@
+An Overview of Massive MIMO: Benefits and Challenges
+
+Authors: Lu Lu, Geoffrey Ye Li, A. Lee Swindlehurst, Alexei Ashikhmin, Rui Zhang
+Year: 2014
+
+Massive multiple-input multiple-output (MIMO) wireless communications refers to the idea equipping cellular base stations (BSs) with a very large number of antennas, and has been shown to potentially allow for orders of magnitude improvement in spectral and energy efficiency using relatively simple (linear) processing. In this paper, we present a comprehensive overview of state-of-the-art research on the topic, which has recently attracted considerable attention. We begin with an information theoretic analysis to illustrate the conjectured advantages of massive MIMO, and then we address implementation issues related to channel estimation, detection and precoding schemes. We particularly focus on the potential impact of pilot contamination caused by the use of non-orthogonal pilot sequences by users in adjacent cells. We also analyze the energy efficiency achieved by massive MIMO systems, and demonstrate how the degrees of freedom provided by massive MIMO systems enable efficient single-carrier transmission. Finally, the challenges and opportunities associated with implementing massive MIMO in future wireless communications systems are discussed.

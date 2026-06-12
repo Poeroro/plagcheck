@@ -1,0 +1,6 @@
+Blockchain technology: principles and applications
+
+Authors: Marc Pilkington
+Year: 2016
+
+This chapter expounds the main principles behind blockchain technology and some of its cutting-edge applications. We first present the core concepts of the blockchain. Secondly, we discuss a definition put forward by Vitalik Buterin, we sketch out the shift toward hybrid solutions, and we sum up the main features of decentralized crypto-ledger platforms. Thirdly, we show why the blockchain is a disruptive and foundational technology, but we expose the potential risks and drawbacks of public distributed ledgers that account for the shift toward hybrid solutions. Finally, we present a non-exhaustive list of important applications, bearing in mind the most recent developments.

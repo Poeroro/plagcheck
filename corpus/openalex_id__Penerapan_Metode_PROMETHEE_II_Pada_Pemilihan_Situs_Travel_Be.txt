@@ -1,0 +1,6 @@
+Penerapan Metode PROMETHEE II Pada Pemilihan Situs Travel Berdasarkan Konsumen
+
+Authors: Dinda Nabila Batubara, Dini Rizky Sitorus P, Agus Perdana Windarto
+Year: 2019
+
+Situs Travel merupakan tempat bagi Travel Agent untuk menawarkan jasa-jasa atau paket wisata mereka pada website berbasis online dan dengan situs travel, pelanggan tidak kesulitan dalam memesan paket wisata, mereka cukup memesan melalui smartphone tanpa harus ke biro travel agent. Banyaknya situs travel yang ada membuat para pelanggan bingung dan kesulitan dalam memilih situs travel yang tepat. Penelitian ini bertujuan untuk menganalisa situs travel yang tepat bagi konsumen dengan menerapkan metode PROMETHEE II. Data penelitian diperoleh dengan melakukan wawancara dan penyebaran angket secara random kepada 250 responden. Kriteria penilaian yang digunakan sebanyak 6: penilaian harga (C1), Pelayanan (C2), Interface (C3), Keamanan (C4), Promosi (C5), Sistem Pembayaran (C6) dan alternatif situs travel yang digunakan sebanyak 4: Traveloka (A1), Tiket.com (A2), Trivago (A3), Pegi-Pegi (A4). Hasil analisa menyebutkan bahwa PROMETHEE II dapat diterapkan dalam memilih situs travel dengan alternatif Tiket.com (A2) (net flow= 0.13) sebagai alternatif pertama dan alternatif pegi-pegi (A4) (net flow= 0.10) sebagai alternatif kedua.

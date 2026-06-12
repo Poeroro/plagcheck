@@ -1,0 +1,6 @@
+Pengaruh Ekspor, Impor, Nilai Tukar Rupiah, dan Tingkat Inflasi Terhadap Cadangan Devisa Indonesia
+
+Authors: Agustina Agustina, Reny
+Year: 2014
+
+Penelitian ini bertujuan untuk mengetahui dan menganalisis pengaruh Ekspor, Impor, Nilai Tukar Rupiah, dan Tingkat Inflasi terhadap Cadangan Devisa Indonesia baik secara simultan maupun parsial pada periode 2008 sampai 2012. Sampel dalam penelitian ini berjumlah 57 data yang akan dijadikan sebagai objek penelitian. Variabel dependen dalam penelitian ini adalah cadangan devisa Indonesia, sedangkan variabel independennya adalah ekspor, impor, nilai tukar rupiah, dan tingkat inflasi. Untuk melihat pengaruh variabel independen terhadap variabel dependen, peneliti melakukan penggujian analisis regresi linier berganda yang terlebih dahulu dilakukan uji asumsi klasik. Berdasarkan hasil penelitian yang diperoleh dapat diketahui bahwa secara simultan Ekspor, Impor, Nilai Tukar Rupiah dan Tingkat Inflasi berpengaruh terhadap Cadangan Devisa Indonesia. Namun secara parsial, Ekspor berpengaruh positif dan signifikan terhadap Cadangan Devisa Indonesia, Nilai Tukar Rupiah berpengaruh negatif signifikan terhadap Cadangan Devisa Indonesia sedangkan Impor dan Nilai Tukar Rupiah tidak berpengaruh terhadap Cadangan Devisa Indonesia.

@@ -1,0 +1,6 @@
+Luminescent metal–organic frameworks
+
+Authors: Mark D. Allendorf, Constance L. Bauer, Raghu Bhakta, Ronald J. T. Houk
+Year: 2009
+
+Metal-organic frameworks (MOFs) display a wide range of luminescent behaviors resulting from the multifaceted nature of their structure. In this critical review we discuss the origins of MOF luminosity, which include the linker, the coordinated metal ions, antenna effects, excimer and exciplex formation, and guest molecules. The literature describing these effects is comprehensively surveyed, including a categorization of each report according to the type of luminescence observed. Finally, we discuss potential applications of luminescent MOFs. This review will be of interest to researchers and synthetic chemists attempting to design luminescent MOFs, and those engaged in the extension of MOFs to applications such as chemical, biological, and radiation detection, medical imaging, and electro-optical devices (141 references).

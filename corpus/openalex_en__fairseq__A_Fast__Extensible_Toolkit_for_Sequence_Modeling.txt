@@ -1,0 +1,6 @@
+fairseq: A Fast, Extensible Toolkit for Sequence Modeling
+
+Authors: Myle Ott, Sergey Edunov, Alexei Baevski, Angela Fan, Sam Gross
+Year: 2019
+
+Myle Ott, Sergey Edunov, Alexei Baevski, Angela Fan, Sam Gross, Nathan Ng, David Grangier, Michael Auli. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (Demonstrations). 2019.

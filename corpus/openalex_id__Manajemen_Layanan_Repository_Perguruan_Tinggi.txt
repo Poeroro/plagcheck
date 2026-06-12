@@ -1,0 +1,6 @@
+Manajemen Layanan Repository Perguruan Tinggi
+
+Authors: Sri Ati Suwanto
+Year: 2017
+
+Repository dapat mendukung diseminasi hasil penelitian baik siswa maupun dosen dan dapat meningkatkan pangkat perguruan tinggi. Untuk dapat menampilkan repository yang baik, dibutuhkan manajemen repositori yang baik. Ada banyak model management repositori yang perlu dikaji. Oleh karena itu penelitian ini mengkaji bagaimana pengelolaan suatu layanan Intitutional Repository (IR) khususnya repositori digital. Tujuannya adalah untuk mengetahui bagaimana manajemen layanan repositori perguruan tinggi dengan menggunakan desain penelitian kualitatif dan jenis penelitian literature review. Metode peneltian yang digunakan adalah studi literatur. Hasilnya menunjukkan bahwa ada berbagai model manajemen untuk repositori institusi (IR), antara lain ditinjau dari sisi layanan yang isinya yaiut: 1) Kerangka kerja layanan; 2) Deposit yang dimediasi; 3) Komunikasi masa. Di samping itu untuk meningkatkan layanan repository perlu diimplementasikan komponen-komponen evaluasi dari pemeringkatan Webometrics, yaitu Size, Visibility, Rich files, Scholar, dan Altmetrics.Ada beberapa hal yang perlu dipersiapkan dalam pengembangan manajemen repositori perguruan tinggi.

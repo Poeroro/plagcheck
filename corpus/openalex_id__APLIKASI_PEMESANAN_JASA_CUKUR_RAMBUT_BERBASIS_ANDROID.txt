@@ -1,0 +1,6 @@
+APLIKASI PEMESANAN JASA CUKUR RAMBUT BERBASIS ANDROID
+
+Authors: Fajar Irvansyah, Setiawansyah Setiawansyah, Muhaqiqin Muhaqiqin
+Year: 2020
+
+Peluang usaha dalam bidang jasa cukur rambut merupakan peluang bagi para pelaku bisnis untuk dapat memenuhi permintaan yang berkaitan dengan penampilan. Kepuasan dan kepercayaan pelanggan menjadi hal utama dalam bisnis jasa cukur rambut. Umumnya pelayanan yang diberikan oleh pihak penyedia jasa cukur rambut masih bersifat konvensional belum adanya sistem pemesanan dalam artian pelanggan terkadang mengantri terlalu lama dilokasi tempat cukur dan bisa berdampak buruk bagi pengusaha jasa cukur rambut, karena adanya kemungkinan pelanggan pergi ketempat cukur lain. Pemanfaatan teknologi informasi terkini dapat digunakan untuk membangun sistem yang dapat menunjang dalam pemesanan jasa cukur rambut agar lebih mudah. Perancangan sistem berbasis android dirasa perlu untuk mempermudah pemesanan jasa cukur rambut. Dalam penelitian ini dikembangkan sebuah aplikasi pemesanan jasa cukur rambut berbasis android untuk mengurangi antrian pada penyedia jasa cukur rambut. Berdasarkan hasil pengujian sistem menggunakan pengujian ISO 25010 mendapatkan nilai sangat baik atau sistem dapat diterima dan dijalankan dengan baik

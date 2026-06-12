@@ -1,0 +1,6 @@
+High-impedance electromagnetic surfaces with a forbidden frequency band
+
+Authors: Daniel F. Sievenpiper, Lijun Zhang, R.F.J. Broas, N.G. Alexopolous, Eli Yablonovitch
+Year: 1999
+
+A new type of metallic electromagnetic structure has been developed that is characterized by having high surface impedance. Although it is made of continuous metal, and conducts dc currents, it does not conduct ac currents within a forbidden frequency band. Unlike normal conductors, this new surface does not support propagating surface waves, and its image currents are not phase reversed. The geometry is analogous to a corrugated metal surface in which the corrugations have been folded up into lumped-circuit elements, and distributed in a two-dimensional lattice. The surface can be described using solid-state band theory concepts, even though the periodicity is much less than the free-space wavelength. This unique material is applicable to a variety of electromagnetic problems, including new kinds of low-profile antennas.

@@ -1,0 +1,6 @@
+Klasifikasi Jeruk Nipis Terhadap Tingkat Kematangan Buah Berdasarkan Fitur Warna Menggunakan K-Nearest Neighbor
+
+Authors: Cinantya Paramita, Eko Hari Rachmawanto, Christy Atika Sari, De Rosal Ignatius Moses Setiadi
+Year: 2019
+
+In the process of classification of lime fruit previously done manually using the human eye is a very difficult thing to do. This is proven by being inconsistent and subjective, causing a low level of accuracy. Sometimes there are also differences of opinion from the human eye to one another. Therefore, to increase the level of accuracy and reduce the subjectivity of the human eye, this study proposes the K-Nearest Neighbor algorithm to classify the maturity level of lime based on the skin color of the lime. In this study, the K values used were 1, 3, 5, 7 and 9 to test the search for Euclidean distance and cityblock distance distances on images with pixel sizes of 512x512, 256x256 and 128x128. In the prerosesing stage, the extraction feature process uses mean RGB. The research that has been done proves that with Euclidean distance distance k = 3 and k = 7 has a percentage value of 92% and the cityblock distance distance k = 1 and k = 3 has a percentage value of 88%. Based on the level of accuracy possessed, the color feature k = 3 shows the best k value in the classification of the maturity level of the lime fruit.

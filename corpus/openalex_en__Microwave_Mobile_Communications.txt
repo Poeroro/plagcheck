@@ -1,0 +1,6 @@
+Microwave Mobile Communications
+
+Authors: William C. Jakes
+Year: 1994
+
+"This is an IEEE classic reissue of the book published by John Wiley &amp; Sons in 1974.This definitive text and reference covers all aspects of microwave mobile systems design. Encompassing ten years of advanced research in the field, it reviews basic microwave theory, explains how cellular systems work and presents useful techniques for effective systems development. Key features include: complete coverage of microwave propagation techniques to design successful cellular systems, extensive chapters covering the broad fundamentals of microwave usage in mobile radio propagation and the functions of mobile radio antennas, comprehensive treatment of modulation methods, interference, noise, layout and control of high-capacity systems, and more! The return of this classic volume should be welcomed by all those seeking an authoritative and complete source of information on this emerging technology."

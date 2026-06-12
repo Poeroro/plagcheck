@@ -1,0 +1,6 @@
+Editor's Choice Digesting Anomalies: An Investment Approach
+
+Authors: Kewei Hou, Xue Chen, Lu Zhang
+Year: None
+
+An empirical q-factor model consisting of the market factor, a size factor, an investment factor, and a profitability factor largely summarizes the cross section of average stock returns. A comprehensive examination of nearly 80 anomalies reveals that about one-half of the anomalies are insignificant in the broad cross section. More importantly, with a few exceptions, the q-factor model's performance is at least comparable to, and in many cases better than that of the Fama-French (1993) 3-factor model and the Carhart (1997) 4-factor model in capturing the remaining significant anomalies.

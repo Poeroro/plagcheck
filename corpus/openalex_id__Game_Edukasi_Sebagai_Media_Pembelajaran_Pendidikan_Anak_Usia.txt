@@ -1,0 +1,6 @@
+Game Edukasi Sebagai Media Pembelajaran Pendidikan Anak Usia Dini
+
+Authors: Anik Vega Vitianingsih
+Year: 2017
+
+Game edukasi sangat menarik untuk dikembangkan, ada beberapa kelebihan darigame edukasi dibandingkan dengan metode edukasi konvensional, salah satu kelebihan utama game edukasi adalah pada visualisasi dari permasalahan nyata. Berdasarkan pola yang dimiliki oleh game tersebut, pemain dituntut untuk belajar sehingga dapat menyelesaikan permasalahan yang ada. Status game, instruksi, dan tools yang disediakan oleh game akan membimbing pemain secara aktif untuk menggali informasi sehingga dapat memperkaya pengetahuan danstrategi saat bermain. Tujuan dari penelitian ini adalah untuk membuat aplikasi mobile game sebagai media alternatif pembelajaran untuk mengenal simbol, berhitung, mencocokkan gambar dan menyusun acak kata. Game ini bisa digunakan sebagai media alternatif pembelajaran guru Pendidikan Anak Usia Dini (PAUD) dalam mengubah cara belajar konvensional menjadi cara belajar simulasi game, sehingga dapat mengembangkan kreativitas anak, karena dalam game edukasi memiliki unsur tantangan, ketepatan, daya nalar dan etika. Kata Kunci— Game, Pembelajaran, Pendidikan Anak Usia Dini

@@ -1,0 +1,6 @@
+Structural Equation Modelling: Guidelines for Determining Model Fit
+
+Authors: Daire Hooper, Joseph Coughlan, Michael R. Mullen
+Year: 2008
+
+The following paper presents current thinking and research on fit indices for structural equation modelling. The paper presents a selection of fit indices that are widely regarded as the most informative indices available to researchers. As well as outlining each of these indices, guidelines are presented on their use. The paper also provides reporting strategies of these indices and concludes with a discussion on the future of fit indices.

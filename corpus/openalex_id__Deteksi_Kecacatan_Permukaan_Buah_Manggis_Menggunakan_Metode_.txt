@@ -1,0 +1,6 @@
+Deteksi Kecacatan Permukaan Buah Manggis Menggunakan Metode Deep Learning dengan Konvolusi Multilayer
+
+Authors: Laila Ma’rifatul Azizah, Sitti Fadillah Umayah, Febriyana Fajar
+Year: 2018
+
+Mangosteen is one of Indonesian potential export fruits. Nevertheless, mangosteens quality is compulsary. A good quality fruit surface is needed in export fruit. This is the reason of this research to detect the flaw in rind surface, particularly mangosteen. Some researcher has been done many type of image processing for fruit detection. However, there aren’t any research for mangosteen rind detection especially used Deep Learning. This research used CNN (Convolutional Neural Network) as deep learning method to detect mangosteen rind surface. Our research is to find configuration which was the best accurancy value. The rind detection calcuted between epoch and layer to obtain maximum accurancy value. This method achieved maximum value by parameter 4 layer and epoch value of 30. From our experiment, the test result for rind detection was 98% accurancy.

@@ -1,0 +1,6 @@
+Microwave Engineering
+
+Authors: David M. Pozar
+Year: 1990
+
+The 4th edition of this classic text provides a thorough coverage of RF and microwave engineering concepts, starting from fundamental principles of electrical engineering, with applications to microwave circuits and devices of practical importance. Coverage includes microwave network analysis, impedance matching, directional couplers and hybrids, microwave filters, ferrite devices, noise, nonlinear effects, and the design of microwave oscillators, amplifiers, and mixers. Material on microwave and RF systems includes wireless communications, radar, radiometry, and radiation hazards. A large

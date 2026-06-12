@@ -1,0 +1,6 @@
+A three-phase soft-switched high-power-density DC/DC converter for high-power applications
+
+Authors: R.W.A.A. De Doncker, D.M. Divan, M.H. Kheraluwala
+Year: 1991
+
+Three DC/DC converter topologies suitable for high-power-density high-power applications are presented. All three circuits operate in a soft-switched manner, making possible a reduction in device switching losses and an increase in switching frequency. The three-phase dual-bridge converter proposed is shown to have the most favorable characteristics. This converter consists of two three-phase inverter stages operating in a high-frequency six-step mode. In contrast to existing single-phase AC-link DC/DC converters, lower turn-off peak currents in the power devices and lower RMS current ratings for both the input and output filter capacitors are obtained. This is in addition to smaller filter element values due to the higher-frequency content of the input and output waveforms. Furthermore, the use of a three-phase symmetrical transformer instead of single-phase transformers and a better utilization of the available apparent power of the transformer (as a consequence of the controlled output inverter) significantly increase the power density attainable.< <ETX xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">&gt;</ETX>

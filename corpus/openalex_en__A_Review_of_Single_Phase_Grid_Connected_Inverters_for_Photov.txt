@@ -1,0 +1,6 @@
+A Review of Single-Phase Grid-Connected Inverters for Photovoltaic Modules
+
+Authors: Søren Bækhøj Kjær, J.K. Pedersen, Frede Blaabjerg
+Year: 2005
+
+This review focuses on inverter technologies for connecting photovoltaic (PV) modules to a single-phase grid. The inverters are categorized into four classifications: 1) the number of power processing stages in cascade; 2) the type of power decoupling between the PV module(s) and the single-phase grid; 3) whether they utilizes a transformer (either line or high frequency) or not; and 4) the type of grid-connected power stage. Various inverter topologies are presented, compared, and evaluated against demands, lifetime, component ratings, and cost. Finally, some of the topologies are pointed out as the best candidates for either single PV module or multiple PV module applications.

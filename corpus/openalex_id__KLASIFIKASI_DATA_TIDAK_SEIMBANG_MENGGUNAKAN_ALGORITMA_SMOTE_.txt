@@ -1,0 +1,6 @@
+KLASIFIKASI DATA TIDAK SEIMBANG MENGGUNAKAN ALGORITMA SMOTE DAN k-NEAREST NEIGHBOR
+
+Authors: Rimbun Siringoringo
+Year: 2018
+
+Unbalanced data classification is a crucial problem in the field of machine learning and data mining. Data imbalances have a poor impact on classification results where minority classes are often misclassified as a majority class. k-Nearest Neighbor is one of the most popular and simple classification methods but it is not equipped with the ability to work on unbalanced datasets. In this study, the Synthetic Minority Over-Sampling Technique (SMOTE) was applied to solve the class imbalance problem on the Credit Card Fraud dataset. By applying the 10-cross-validation evaluation scheme, it was found that SMOTE increases the mean of  G-Mean by 53.4% to 81.0% and the mean of  F-Measure by 38.7 to 81.8% Keywords : Class imbalance, Synthetic Minority Over-sampling Technique, k-Nearest Neighbor

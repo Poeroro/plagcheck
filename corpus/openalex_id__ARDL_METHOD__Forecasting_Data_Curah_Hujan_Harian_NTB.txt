@@ -1,0 +1,6 @@
+ARDL METHOD: Forecasting Data Curah Hujan Harian NTB
+
+Authors: Ulul Azmi, Zilullah Nazir Hadi, Siti Soraya
+Year: 2020
+
+Penelitian ini berisi tentang prediksi atau forecasting data iklim di Nusa Tenggara Barat (NTB) tahun 2011, yakni jumlah hari terjadinya hujan dengan menggunakan metode Autoregressive Distributed Lag (ARDL). Data yang digunakan yaitu data iklim di Nusa Tenggara Barat (NTB) dari tahun 2006 -2010, dengan menggunakan beberapa parameter error seperti Mean Absolute Deviation (MAD), Mean Squared Error (MSE), Root Mean Squared Error (RMSE) dan Mean Absolute Percentage Error (MAPE). Berdasarkan hasil simulasi data iklim di Nusa Tenggara Barat (NTB) tersebut, diperoleh prediksi jumlah hari terjadinya curah hujan pada tahun 2011 sebesar 226 hari dengan nilai MAD 20,8069, MSE 3,5569, RMSE 1,88597, dan MAPE 11,9297 . Dan prediksi jumlah hari terjadinya hujan pada tahun 2011 sebanyak 225,928 hari atau jika di bulatkan menjadi 226 hari dengan nilai parameter error MAD sebesar 20,8069, sehingga dapat disimpulkan pada tahun 2011 terjadi peningkatan jumlah hari terjadinya hujan di Nusa Tenggara Barat (NTB).

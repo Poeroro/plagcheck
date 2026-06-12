@@ -1,0 +1,6 @@
+K-NEAREST NEIGHBOR DENGAN FEATURE SELECTION MENGGUNAKAN BACKWARD ELIMINATION UNTUK PREDIKSI HARGA KOMODITI KOPI ARABIKA
+
+Authors: Andi Bode
+Year: 2017
+
+Kopi arabika tergolong salah satu komoditas unggulan didalam subsektor perkebunan di Indonesia karena memiliki peluang pasar yang baik di dalam negeri maupun luar negeri. Dalam penelitian ini akan dilakukan peramalan harga komoditi kopi arabika. Metode Time series adalah metode yang digunakan untuk peramalan dimasa lalu dan mengetahui nilai di masa yang akan datang. Seleksi fitur digunakan sebagai tujuan untuk memilih variabel-variabel yang signifikan dalam melakukan prediksi harga komoditi kopi arabika menggunakan K-Nearest Neighbor (KNN) dengan Backward Elimination (BE). Hasil eksperimen penelitian ini menunjukan dimana algoritma KNN dengan Backward Elimination dapat memperkecil nilai error, dibandingkan dengan KNN tanpa seleksi fitur dan BPNN, BPNN dengan Backward Elimination.

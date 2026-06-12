@@ -1,0 +1,6 @@
+Penerapan Prediksi Produksi Padi Menggunakan Artificial Neural Network Algoritma Backpropagation
+
+Authors: Hasdi Putra, Nabilah Ulfa Walmi
+Year: 2020
+
+Prediksi produksi padi menjadi penting dilakukan untuk menunjang pembangunan nasional sektor pertanian pada suatu negara atau wilayah. Artificial Neural Network (ANN) termasuk metode yang terbaik dalam melakukan prediksi. Masalah utamanya adalah bagaimana menentukan jumlah neuron dan hidden layer yang optimal sehingga akurasi prediksinya tinggi. Artikel ini bertujuan untuk merancang arsitektu ANN unutk melakukan prediksi terhadap produksi padi menggunakan ANN dengan algortima backpropagation. Tahapan penelitian yang dilakukan adalah mengumpulkan data produksi padi, melakukan pre-processing data, memproses prediksi, dan pengujian akurasi dan error serta implementasi. Dalam memproses prediksi dilakukan sesuai dengan rancangan model prediksi, yaitu parameter epoch, momentum, learning rate, hidden layer untuk menghasilkan keakuratan yang tinggi. Temuan yang diperolah berupa rancangan optimal untuk melakukan prediksi yaitu dengan menggunakan multilayer. Hasil pengujian sistem prediksi produksi padi yang terdiri dari 75 kali pengujian pada di 19 daerah di Sumatera Barat, diperoleh tingkat akurasi mencapai 88,14% atau dengan tingkat error yang relatif rendah yaitu 11,86%.

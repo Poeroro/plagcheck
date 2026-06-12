@@ -1,0 +1,6 @@
+An Overview on Edge Computing Research
+
+Authors: Keyan Cao, Yefan Liu, Gongjie Meng, Qimeng Sun
+Year: 2020
+
+With the rapid development of the Internet of Everything (IoE), the number of smart devices connected to the Internet is increasing, resulting in large-scale data, which has caused problems such as bandwidth load, slow response speed, poor security, and poor privacy in traditional cloud computing models. Traditional cloud computing is no longer sufficient to support the diverse needs of today's intelligent society for data processing, so edge computing technologies have emerged. It is a new computing paradigm for performing calculations at the edge of the network. Unlike cloud computing, it emphasizes closer to the user and closer to the source of the data. At the edge of the network, it is lightweight for local, small-scale data storage and processing. This article mainly reviews the related research and results of edge computing. First, it summarizes the concept of edge computing and compares it with cloud computing. Then summarize the architecture of edge computing, keyword technology, security and privacy protection, and finally summarize the applications of edge computing.

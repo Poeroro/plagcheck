@@ -1,0 +1,6 @@
+Detecting the number of clusters of individuals using the software <scp>structure</scp>: a simulation study
+
+Authors: Guillaume Evanno, Sébastien Regnaut, Jérôme Goudet
+Year: 2005
+
+The identification of genetically homogeneous groups of individuals is a long standing issue in population genetics. A recent Bayesian algorithm implemented in the software STRUCTURE allows the identification of such groups. However, the ability of this algorithm to detect the true number of clusters (K) in a sample of individuals when patterns of dispersal among populations are not homogeneous has not been tested. The goal of this study is to carry out such tests, using various dispersal scenarios from data generated with an individual-based model. We found that in most cases the estimated 'log probability of data' does not provide a correct estimation of the number of clusters, K. However, using an ad hoc statistic DeltaK based on the rate of change in the log probability of data between successive K values, we found that STRUCTURE accurately detects the uppermost hierarchical level of structure for the scenarios we tested. As might be expected, the results are sensitive to the type of genetic marker used (AFLP vs. microsatellite), the number of loci scored, the number of populations sampled, and the number of individuals typed in each sample.

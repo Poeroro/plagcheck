@@ -1,0 +1,6 @@
+The CES-D Scale
+
+Authors: Lenore Sawyer Radloff
+Year: 1977
+
+The CES-D scale is a short self-report scale designed to measure depressive symptomatology in the general population. The items of the scale are symptoms associated with depression which have been used in previously validated longer scales. The new scale was tested in household interview surveys and in psychiatric settings. It was found to have very high internal consistency and adequate test- retest repeatability. Validity was established by pat terns of correlations with other self-report measures, by correlations with clinical ratings of depression, and by relationships with other variables which support its construct validity. Reliability, validity, and factor structure were similar across a wide variety of demographic characteristics in the general population samples tested. The scale should be a useful tool for epidemiologic studies of de pression.

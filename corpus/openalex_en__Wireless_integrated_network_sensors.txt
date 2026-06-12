@@ -1,0 +1,6 @@
+Wireless integrated network sensors
+
+Authors: Gregory J. Pottie, William J. Kaiser
+Year: 2000
+
+For pervasive computing performance, exploit the physical limits of these densely distributed networks of embedded sensors, controls, and processors. W ireless integrated network sensors (WINS) provide distributed network and Internet access to sensors, controls, and processors deeply embedded in equipment, facilities, and the environment. The WINS network represents a new monitoring and control capability for applications in such industries as transportation, manufacturing, health care, environmental oversight, and safety and security. WINS combine microsensor technology and low-power signal processing, computation, and low-cost wireless networking in a compact system.

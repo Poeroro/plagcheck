@@ -1,0 +1,6 @@
+CellProfiler: image analysis software for identifying and quantifying cell phenotypes
+
+Authors: Anne E. Carpenter, Thouis R. Jones, Michael R. Lamprecht, Colin Clarke, In Han Kang
+Year: 2006
+
+Biologists can now prepare and image thousands of samples per day using automation, enabling chemical screens and functional genomics (for example, using RNA interference). Here we describe the first free, open-source system designed for flexible, high-throughput cell image analysis, CellProfiler. CellProfiler can address a variety of biological questions quantitatively, including standard assays (for example, cell count, size, per-cell protein levels) and complex morphological assays (for example, cell/organelle shape or subcellular patterns of DNA or protein staining).

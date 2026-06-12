@@ -1,0 +1,6 @@
+Theory of reproducing kernels
+
+Authors: N. Aronszajn
+Year: 1950
+
+May 7. Difference of reproducing kernels.354 8. Product of reproducing kernels.357 9. Limits of reproducing kernels.362 10.Construction of a r.k. by resolution of identity.368 11.Operators in spaces with reproducing kernels.371 12.The reproducing kernel of a sum of two closed subspaces.375 13.Final remarks in the general theory.380 Part II.Examples.384 1.I ntroductory remarks.384 (1) Bergman's kernels.384 (2) Harmonic kernels.386 2. Comparison domains.387 3. The difference of kernels.388 4. The square of a kernel introduced by Szeg.391 5.The kernel H{z, zi) for an ellipse.393 6. Construction of H(z, z) for a strip.394 7. Limits of increasing sequences of kernels.396 8. Construction of reproducing kernels by the projection-formula of 12, I.

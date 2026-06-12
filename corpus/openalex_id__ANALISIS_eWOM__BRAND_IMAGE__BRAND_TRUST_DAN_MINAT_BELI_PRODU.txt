@@ -1,0 +1,6 @@
+ANALISIS eWOM, BRAND IMAGE, BRAND TRUST DAN MINAT BELI PRODUK SMARTPHONE DI SURABAYA
+
+Authors: Hatane Semuel, Adi Suryanata Lianto
+Year: 2014
+
+This study was conducted to understand the influence of eWOM, through the Internet, on Brand Image, Brand Trust and Buying interest. More specific objectives of this research is to analyze the influence of eWOM on brand image, brand trust and buying interest of a smartphone. Research conducted on 250 consumers as purposive sampling, and analyzed using SPSS Version 13 to see the profile of consumers, measures of central tendency and variation of each indicator of variable of research, and SmartPLS Version 2:00 to examine the relationship of influence with SEM models. The results obtained, eWOM directly effect on brand image, brand trust and buying interest, while brand image directly influence brand trust and buying interest, and brand trust directly influence the buying interest. Brand image, brand trust is the mediation between eWOM and buying interest, such that in total it strengthen the influence. The strongest relationship is that eWOM positively influence brand image and eWOM postively influence buying interest.

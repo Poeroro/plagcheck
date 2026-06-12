@@ -1,0 +1,6 @@
+Strength and Breaking Mechanism of Multiwalled Carbon Nanotubes Under Tensile Load
+
+Authors: Min-Feng Yu, O. Lourie, Mark J. Dyer, Katerina Moloni, Thomas F. Kelly
+Year: 2000
+
+The tensile strengths of individual multiwalled carbon nanotubes (MWCNTs) were measured with a "nanostressing stage" located within a scanning electron microscope. The tensile-loading experiment was prepared and observed entirely within the microscope and was recorded on video. The MWCNTs broke in the outermost layer ("sword-in-sheath" failure), and the tensile strength of this layer ranged from 11 to 63 gigapascals for the set of 19 MWCNTs that were loaded. Analysis of the stress-strain curves for individual MWCNTs indicated that the Young's modulus E of the outermost layer varied from 270 to 950 gigapascals. Transmission electron microscopic examination of the broken nanotube fragments revealed a variety of structures, such as a nanotube ribbon, a wave pattern, and partial radial collapse.

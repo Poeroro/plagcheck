@@ -1,0 +1,6 @@
+Machine Learning : Teori, Studi Kasus dan Implementasi Menggunakan Python
+
+Authors: Ibnu Daqiqil Id
+Year: 2021
+
+Pada buku ini akan dibahas pengenalan konsep-konsep dasar Machine Learning beserta implementasi menggunakan Python. Selain membahas konsep dasar, beberapa metode yang umum digunakan juga dibahas dalam buku ini seperti regresi linear, logistik, naive bayes dan lain-lain. Setiap metode akan memiliki contoh kasus dan implementasi secara lengkap. Buku in akan selalu di update, Silakan cek di http://ibnu.daqiqil.id/

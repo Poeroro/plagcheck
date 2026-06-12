@@ -1,0 +1,6 @@
+CONVOLUTIONAL NEURAL NETWORK PADA KLASIFIKASI SIDIK JARI MENGGUNAKAN RESNET-50
+
+Authors: Novelita Dwi Miranda, Ledya Novamizanti, Syamsul Rizal
+Year: 2020
+
+Pengenalan sidik jari merupakan bagian dari teknologi biometrik. Klasifikasi sidik jari yang paling popular adalah Henry classification system. Henry membagi sidik jari berdasarkan garis polanya menjadi lima kelas yaitu arch (A), tented arch (T), left loop (L), right loop (R), dan whorl (W). Penelitian ini menggunakan Convolutional Neural Network (CNN) dengan model arsitektur Residual Network-50 (ResNet-50) untuk mengembangkan sistem klasifikasi sidik jari. Dataset yang digunakan diperoleh dari website National Institute of Standards and Technology (NIST) berupa citra sidik jari grayscale 8-bit. Hasil pengujian menunjukkan bahwa pemrosesan awal Contrast Limited Adaptive Histogram Equalization (CLAHE) dalam model CNN dapat meningkatkan performa akurasi dari sistem klasifikasi sidik jari sebesar 11,79%. Pada citra tanpa CLAHE diperoleh akurasi validasi 83,26%, sedangkan citra dengan CLAHE diperoleh akurasi validasi 95,05%.

@@ -1,0 +1,6 @@
+Towards Smart and Reconfigurable Environment: Intelligent Reflecting Surface Aided Wireless Network
+
+Authors: Qingqing Wu, Rui Zhang
+Year: 2019
+
+IRS is a new and revolutionizing technology that is able to significantly improve the performance of wireless communication networks, by smartly reconfiguring the wireless propagation environment with the use of massive low-cost passive reflecting elements integrated on a planar surface. Specifically, different elements of an IRS can independently reflect the incident signal by controlling its amplitude and/or phase and thereby collaboratively achieve fine-grained 3D passive beamforming for directional signal enhancement or nulling. In this article, we first provide an overview of the IRS technology, including its main applications in wireless communication, competitive advantages over existing technologies, hardware architecture as well as the corresponding new signal model. We then address the key challenges in designing and implementing the new IRS-aided hybrid (with both active and passive components) wireless network, as compared to the traditional network comprising active components only. Finally, numerical results are provided to show the great performance enhancement with the use of IRS in typical wireless networks.

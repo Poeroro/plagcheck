@@ -1,0 +1,6 @@
+Pfinder: real-time tracking of the human body
+
+Authors: Christopher R. Wren, A. Azarbayejani, Trevor Darrell, Alex Pentland
+Year: 1997
+
+Pfinder is a real-time system for tracking people and interpreting their behavior. It runs at 10 Hz on a standard SGI Indy computer, and has performed reliably on thousands of people in many different physical locations. The system uses a multiclass statistical model of color and shape to obtain a 2D representation of head and hands in a wide range of viewing conditions. Pfinder has been successfully used in a wide range of applications including wireless interfaces, video databases, and low-bandwidth coding.

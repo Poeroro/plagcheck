@@ -1,0 +1,6 @@
+Discrete-Time Signal Processing
+
+Authors: Alan V. Oppenheim, Ronald W. Schafer
+Year: 1989
+
+For senior/graduate-level courses in Discrete-Time Signal Processing. THE definitive, authoritative text on DSP -- ideal for those with an introductory-level knowledge of signals and systems. Written by prominent, DSP pioneers, it provides thorough treatment of the fundamental theorems and properties of discrete-time linear systems, filtering, sampling, and discrete-time Fourier Analysis. By focusing on the general and universal concepts in discrete-time signal processing, it remains vital and relevant to the new challenges arising in the field --without limiting itself to specific technologies with relatively short life spans.

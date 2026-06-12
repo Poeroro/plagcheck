@@ -1,0 +1,6 @@
+Penggunaan ChatGPT Untuk Pendidikan di Era Education 4.0: Usulan Inovasi Meningkatkan Keterampilan Menulis
+
+Authors: Adi Setiawan, Ulfah Khairiyah Luthfiyani
+Year: 2023
+
+ChatGPT OpenAI merupakan teknologi mesin berbasis kecerdasan buatan yang dilatih untuk bisa menirukan percakapan manusia menggunakan teknologi NLP (Natural Language Processing). Pada kenyataannya ChatGPT dapat dimanfaatkan untuk menghasilkan suatu tulisan yang cukup ilmiah atau bahkan buku dengan prompt yang dirumuskan di awal dengan teknik yang baik dan efektif. Sehingga peluang inovasi menggunakan teknologi ini terbuka lebar untuk pendidikan di Indonesia, salah satunya dalam meningkatkan kemampuan menulis peserta didik di sekolah/kampus untuk meraih enam kompetensi yang dibutuhkan di Era Education 4.0. Enam kompetensi itu adalah berpikir kritis, kolaborasi, komunikasi, kreativitas, pendidikan karakter dan kewarganegaraan. Hasil eksperimen yang dilakukan menggunakan ChatGPT dapat menghasilkan suatu tulisan berjumlah 693 kata di mana hasil ini masih bisa dikembangkan lebih lanjut untuk penugasan berikutnya bagi peserta didik. Total waktu yang dibutuhkan untuk menyelesaikan eksperimen ini lebih kurang 7 menit, termasuk waktu untuk mendokumentasikan hasil pemrosesan ChatGPT, namun tidak termasuk waktu untuk merumuskan dua prompt yang baik dan efektif sebelum eksperimen dilakukan.

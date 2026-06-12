@@ -1,0 +1,6 @@
+Science and technology roadmap for graphene, related two-dimensional crystals, and hybrid systems
+
+Authors: Andrea C. Ferrari, Francesco Bonaccorso, Vladimir I. Fal’ko, Konstantin S. Novoselov, Stephan Roche
+Year: 2014
+
+We present the science and technology roadmap for graphene, related two-dimensional crystals, and hybrid systems, targeting an evolution in technology, that might lead to impacts and benefits reaching into most areas of society. This roadmap was developed within the framework of the European Graphene Flagship and outlines the main targets and research areas as best understood at the start of this ambitious project. We provide an overview of the key aspects of graphene and related materials (GRMs), ranging from fundamental research challenges to a variety of applications in a large number of sectors, highlighting the steps necessary to take GRMs from a state of raw potential to a point where they might revolutionize multiple industries. We also define an extensive list of acronyms in an effort to standardize the nomenclature in this emerging field.

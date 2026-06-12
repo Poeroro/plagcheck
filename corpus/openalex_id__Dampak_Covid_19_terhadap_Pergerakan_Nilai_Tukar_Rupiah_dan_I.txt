@@ -1,0 +1,6 @@
+Dampak Covid-19 terhadap Pergerakan Nilai Tukar Rupiah dan Indeks Harga Saham Gabungan (IHSG)
+
+Authors: Haryanto Haryanto
+Year: 2020
+
+Studi ini meneliti dampak Covid-19 terhadap nilai tukar (Indonesia Rupiah terhadap Dollar AS) dan Indeks Harga Saham Gabungan (IHSG) di Indonesia. Penelitian ini menggunakan data harian kasus Covid-19, nilai tukar dan periode CSPI dari 2 Maret hingga 30 April 2020. Hasil analisis menunjukkan: (1) peningkatan 1% pada kasus Covid-19 menyebabkan depresiasi sebesar Rupiah terhadap Dollar AS sebesar 0,02%, (2) peningkatan 1% dalam kasus Covid-19, menyebabkan koreksi ke CSPI sebesar 0,03%, (3) peningkatan 1% dari CSPI mengarah ke apresiasi Rupiah terhadap Dollar AS sebesar 0,311% . Dengan demikian, Covid-19 berdampak pada depresiasi Rupiah terhadap Dollar AS, dan berdampak menurun pada CSPI, sehingga diperlukan intervensi kebijakan untuk mengendalikan penyebaran wabah Covid-19, mengendalikan kepanikan agar tidak berdampak pada Rupiah dan pasar saham melalui berbagai kebijakan stimulus.

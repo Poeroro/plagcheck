@@ -1,0 +1,6 @@
+Rational Expectations and the Theory of Price Movements
+
+Authors: John F. Muth
+Year: 1961
+
+In order to explain fairly simply how expectations are formed, we advance the hypothesis that they are essentially the same as the predictions of the relevant economic theory. In particular, the hypothesis asserts that the economy generally does not waste information, and that expectations depend specifically on the structure of the entire system. Methods of analysis, which are appropriate under special conditions, are described in the context of an isolated market with a fixed production lag. The interpretative value of the hypothesis is illustrated by introducing commodity speculation into the system. 1. INTRODUCTION THAT EXPECTATIONS of economic variables may be subject to error has, for some time, been recognized as an important part of most explanations of changes in the level of business activity. The ex ante analysis of the Stockholm School-although it has created its fair share of confusion-is a highly suggestive approach to short-run problems. It has undoubtedly been a

@@ -1,0 +1,6 @@
+PENGARUH DER, ROA, ROE, EPS DAN MVA TERHADAP HARGA SAHAM PADA INDEKS SAHAM SYARIAH INDONESIA
+
+Authors: Martina Rut Utami, Arif Darmawan
+Year: 2018
+
+Penelitian ini bertujuan untuk menguji pengaruh Debt to Equity Ratio (DER), Return on Asset (ROA), Return on Equity (ROE), Earning Per Share (EPS), Market Value Added (MVA) terhadap harga saham pada perusahaan manufaktur yang terdaftar di Indeks Saham Syariah Indonesia (ISSI) periode 2012-2016. Penarikan sampel penelitian menggunakan metode purposive sampling. Sampel yang digunakan adalah 53 perusahaan selama periode 2012-2016 sehingga total data yang diolah adalah 265 observasi. Sumber data yang digunakan dalam penelitian ini data sekunder berupa laporan keuangan tahunan basis data dan BEI. Teknik analisis yang digunakan adalah regresi data panel uji chow dan uji hausman. Hasil dari menunjukkan EPS dan MVA secara parsial berpengaruh positif terhadap harga saham. Hasil pengujian berbeda untuk variabel DER, ROA dan ROE secara parsial tidak berpengaruh terhadap harga saham.

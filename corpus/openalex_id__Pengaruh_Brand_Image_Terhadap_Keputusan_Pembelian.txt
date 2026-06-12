@@ -1,0 +1,6 @@
+Pengaruh Brand Image Terhadap Keputusan Pembelian
+
+Authors: Laila Dairina
+Year: 2022
+
+Penelitian ini bertujuan untuk menguji pengaruh brand image terhadap keputusan pembelian. Metode yang di gunakan dalam penelitian ini dengan kuisioner. Sampel dari penelitian ini adalah pengguna produk sepatu Converse di kawasan Bandar Lampung yang berjumlah 30 responden . Uji statistic dilakukan dengan menggunakan &lt;em&gt;Structural Equation Modelling&lt;/em&gt; berbasis PLS. Uji validitas menggunakan nilai factor loading, sedangkan uji realibilitas menggunakan nilai &lt;em&gt;Cronbach’s Alpha&lt;/em&gt;, reliabilitas komposit dan &lt;em&gt;Average Variance Extracted&lt;/em&gt; (AVE). Dari hipotesis yang di ajukan pada brand image pembelian dapat di hasilkan bahwa hipotesis tersebut berpengaruh positif dan signifikan terhadap keputusan pembelian produk Converse di Lampung.

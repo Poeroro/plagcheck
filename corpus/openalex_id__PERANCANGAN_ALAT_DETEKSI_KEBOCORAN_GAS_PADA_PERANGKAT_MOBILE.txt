@@ -1,0 +1,6 @@
+PERANCANGAN ALAT DETEKSI KEBOCORAN GAS PADA PERANGKAT MOBILE ANDROID DENGAN SENSOR MQ-2
+
+Authors: Ajeng Savitri Puspaningrum, Fadli Firdaus, Imam Ahmad, Harry Anggono
+Year: 2020
+
+Peranan gas LPG pada saat ini sangatlah penting bagi kehidupan manusia baik di rumah tangga maupun di industri. Namun, gas dapat berdampak negatif, terutama bila tidak diketahui telah terjadi kebocoran dari tabung atau tempat penyimpanan gas LPG tersebut. Penyebab dari bocor tabung gas ini bisa terjadi karena kebocoran pada selang, tabung atau pada regulatornya yang tidak terpasang dengan baik dan tabung gas yang didistribusikan memang kualitasnya kurang baik atau rusak fisik. Penelitian ini bertujuan untuk menghasil-kan sebuah perancangan alat deteksi kebocoran gas pada perangkat mobile android dengan sensor MQ-2 sebagai sensor gas, dan ethernet shield sebagai modul pada mikrokontroler untuk menghubungkan arduino dengan jaringan internet. Cara kerja alat ini yaitu, ketika sensor MQ-2 mendeteksi gas LPG maka sensor akan mengirimkan data ke mikrokontroler untuk diberikan respon berupa menyalakan kipas, buzzer sebagai alarm, dan alat ini dapat mengirimkan infor-masi data analog gas ke smartphone android mengguna-kan plaltform Cayenne melalui jaringan internet.

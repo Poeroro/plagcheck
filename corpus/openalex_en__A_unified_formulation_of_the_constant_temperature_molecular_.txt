@@ -1,0 +1,6 @@
+A unified formulation of the constant temperature molecular dynamics methods
+
+Authors: Shūichi Nosé
+Year: 1984
+
+Three recently proposed constant temperature molecular dynamics methods by: (i) Nosé (Mol. Phys., to be published); (ii) Hoover et al. [Phys. Rev. Lett. 48, 1818 (1982)], and Evans and Morriss [Chem. Phys. 77, 63 (1983)]; and (iii) Haile and Gupta [J. Chem. Phys. 79, 3067 (1983)] are examined analytically via calculating the equilibrium distribution functions and comparing them with that of the canonical ensemble. Except for effects due to momentum and angular momentum conservation, method (1) yields the rigorous canonical distribution in both momentum and coordinate space. Method (2) can be made rigorous in coordinate space, and can be derived from method (1) by imposing a specific constraint. Method (3) is not rigorous and gives a deviation of order N−1/2 from the canonical distribution (N the number of particles). The results for the constant temperature–constant pressure ensemble are similar to the canonical ensemble case.

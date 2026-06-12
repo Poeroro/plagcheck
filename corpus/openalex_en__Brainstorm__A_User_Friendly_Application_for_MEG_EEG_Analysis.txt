@@ -1,0 +1,6 @@
+Brainstorm: A User-Friendly Application for MEG/EEG Analysis
+
+Authors: François Tadel, Sylvain Baillet, John C. Mosher, Dimitrios Pantazis, Richard M. Leahy
+Year: 2011
+
+Brainstorm is a collaborative open-source application dedicated to magnetoencephalography (MEG) and electroencephalography (EEG) data visualization and processing, with an emphasis on cortical source estimation techniques and their integration with anatomical magnetic resonance imaging (MRI) data. The primary objective of the software is to connect MEG/EEG neuroscience investigators with both the best-established and cutting-edge methods through a simple and intuitive graphical user interface (GUI).

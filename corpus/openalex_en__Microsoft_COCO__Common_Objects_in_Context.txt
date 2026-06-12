@@ -1,0 +1,6 @@
+Microsoft COCO: Common Objects in Context
+
+Authors: Alinaghi, Negar, Giannopoulos, Ioannis
+Year: 2014
+
+RU-AI dataset is constructed based on three large publicly available datasets: Flickr8K, COCO, and Places205, by adding their corresponding machine-generated pairs.

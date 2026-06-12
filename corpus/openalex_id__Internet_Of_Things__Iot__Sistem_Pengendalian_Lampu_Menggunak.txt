@@ -1,0 +1,6 @@
+Internet Of Things (Iot) Sistem Pengendalian Lampu Menggunakan Raspberry Pi Berbasis Mobile
+
+Authors: Yoyon Efendi
+Year: 2018
+
+Internet of thing (IoT) merupakan suatu konsep yang bertujuan untuk memperluas manfaat dari konektivitas internet yang tersambung secara terus menerus. Internet of thing (IoT) bisa dimanfaatkan pada gedung untuk mengendalikan peralatan elektronik seperti lampu ruangan yang dapat dioperasikan dari jarak jauh melalui jaringan komputer. Penelitian ini bertujuan untuk membangun perangkat remote control dengan memanfaatkan teknologi internet untuk melakukan proses pengendalian lampu berbasis mobile. Penelitian dilakukan dengan membangun sebuah prototype dan aplikasi berbasis mobile menggunakan bahasa pemrograman python. Dalam penelitian ini terdapat fitur kendali yaitu kendali satu lampu yang digunakan untuk menghidupkan satu lampu dan kendali dua digunakan untuk menghidupkan lampu secara bersamaan.

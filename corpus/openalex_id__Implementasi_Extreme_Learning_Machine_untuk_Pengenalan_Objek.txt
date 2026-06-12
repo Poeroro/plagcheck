@@ -1,0 +1,6 @@
+Implementasi Extreme Learning Machine untuk Pengenalan Objek Citra Digital
+
+Authors: Zulfa Afiq Fikriya, Mohammad Isa Irawan, Soetrisno Soetrisno
+Year: 2017
+
+Abstrak— Pengenalan citra digital merupakan bagian yang sangat penting dalam computer vision yang menerapkan pattern recognition. Pengenalan citra digital bertujuan untuk menduplikasi kemampuan manusia dalam memahami informasi citra sehingga komputer dapat mengenali objek pada citra selayaknya manusia. Salah satu metode pattern recognition adalah Extreme Learning Machine (ELM). Extreme Learning Machine merupakan jaringan syaraf tiruan feedforward dengan satu hidden layer atau lebih dikenal dengan istilah single hidden layer feedforward neural networks (SLFNs). Extreme Learning Machine untuk pengenalan objek citra digital pada Tugas Akhir ini terdiri dari 2500 node pada input layer, 1250 node pada hidden layer, dan 3 node pada output layer. Dataset dikelompokkan berdasarkan ukuran objek dalam citra. Hasil uji coba dan evaluasi model dengan data testing menghasilkan tingkat akurasi sebesar 57,33% pada citra dengan objek berukuran kecil, 81,33% pada citra dengan objek berukuran sedang, dan 74,67% pada citra dengan objek berukuran besar.

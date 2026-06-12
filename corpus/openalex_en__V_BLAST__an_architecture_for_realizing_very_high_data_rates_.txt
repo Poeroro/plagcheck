@@ -1,0 +1,6 @@
+V-BLAST: an architecture for realizing very high data rates over the rich-scattering wireless channel
+
+Authors: P.W. Wolniansky, G.J. Foschini, G.D. Golden, Reinaldo A. Valenzuela
+Year: 2002
+
+Information theory research has shown that the rich-scattering wireless channel is capable of enormous theoretical capacities if the multipath is properly exploited. In this paper, we describe a wireless communication architecture known as vertical BLAST (Bell Laboratories Layered Space-Time) or V-BLAST, which has been implemented in real-time in the laboratory. Using our laboratory prototype, we have demonstrated spectral efficiencies of 20-40 bps/Hz in an indoor propagation environment at realistic SNRs and error rates. To the best of our knowledge, wireless spectral efficiencies of this magnitude are unprecedented and are furthermore unattainable using traditional techniques.

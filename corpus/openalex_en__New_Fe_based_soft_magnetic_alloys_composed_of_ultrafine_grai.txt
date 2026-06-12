@@ -1,0 +1,6 @@
+New Fe-based soft magnetic alloys composed of ultrafine grain structure
+
+Authors: Y. Yoshizawa, S Oguma, Kenta Yamauchi
+Year: 1988
+
+The magnetic properties of Fe-Si-B-M (M: additives) alloys prepared by annealing amorphous alloys made by the single roller method over their crystallization temperature have been investigated for development of new Fe-based soft magnetic alloys. Excellent soft magnetic properties were obtained by adding the two elements Cu and Nb to Fe-Si-B alloys. It was found that these new alloys, called ‘‘FINEMET,’’ have an ultrafine grain structure composed of bcc Fe solid solution. They are suitable for many kinds of magnetic components such as saturable reactors, choke coils, and transformers, because they have superior soft magnetic properties and a high saturation flux density, and because different types of B-H hysteresis loops are obtained by magnetic field annealing.

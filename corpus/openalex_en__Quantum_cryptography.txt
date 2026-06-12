@@ -1,0 +1,6 @@
+Quantum cryptography
+
+Authors: Nicolas Gisin, G. Ribordy, Wolfgang Tittel, Hugo Zbinden
+Year: 2002
+
+Quantum cryptography could well be the first application of quantum mechanics at the single-quantum level. The rapid progress in both theory and experiment in recent years is reviewed, with emphasis on open questions and technological issues.

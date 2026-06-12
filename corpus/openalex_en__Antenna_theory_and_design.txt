@@ -1,0 +1,6 @@
+Antenna theory and design
+
+Authors: W.L. Stutzman, G. Thiele
+Year: 1981
+
+Antenna Fundamentals and Definitions. Some Simple Radiating Systems and Antenna Practice. Arrays. Line Sources. Resonant Antennas: Wires and Patches. Broadband Antennas. Aperture Antennas. Antenna Synthesis. Antennas in Systems and Antenna Measurements. CEM for Antennas: The Method of Moments. CEM for Antennas: Finite Difference Time Domain Method. CEM for Antennas: High-Frequency Methods. Appendices. Index.

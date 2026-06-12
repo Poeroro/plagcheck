@@ -1,0 +1,9 @@
+def hello_world():
+    print("Hello, World!")
+    for i in range(10):
+        if i % 2 == 0:
+            print(i)
+
+class MyClass:
+    def __init__(self, name):
+        self.name = name

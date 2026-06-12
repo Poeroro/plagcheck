@@ -1,0 +1,6 @@
+SISTEM MONITORING pH AIR PADA AQUAPONIK MENGGUNAKAN MIKROKONTROLER ARDUINO UNO
+
+Authors: Yuri Rahmanto, Arinda Rifaini, Slamet Samsugi, Sampurna Dadi Riskiono
+Year: 2020
+
+Banyaknya pertanian modern (Aquaponik) yang dilakukan oleh petani dari kalangan masyarakat menengah atas maupun dari masyarakat kalangan bawah yang memiliki lahan terbatas, selain tidak memakan banyak tempat dan waktu yang terbuang, cara ini juga dapat menghasilkan panen yang maksimal, dengan memberikan perawatan yang tepat. dengan memonitoring pH air sangat penting dilakukan untuk mengetahui baik buruknya kualitas air. Air bersih dengan kualitas yang buruk dapat mengakibatkan dampak yang buruk bagi kesehatan tanaman dan ikan yaitu timbulnya berbagai penyakit. Perubahan pH air juga dapat menyebabkan berubahnya bau, rasa dan warna pada air. penelitian ini bertujuan merancang dan meng-implementasikan sebuah rangkaian yang berfungsi untuk memonitor tingkat kadar pH pada Air dengan memanfaatkan perkembangan teknologi saat ini. dengan adanya sensor dan mikrokontroler jenis Arduino Uno dapat mempermudah dalam membuat alat Monitoring otomatis. Mikrokontroler Pengukuran pH air dapat dilakukan dengan menggunakan pH meter dengan cara manual, maka dibuatlah sistem monitoring untuk memudahkan control pH air sehingga proses perawatan tanaman menjadi lebih baik dan mudah.

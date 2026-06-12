@@ -1,0 +1,6 @@
+Cancer statistics for the year 2020: An overview
+
+Authors: Jacques Ferlay, Murielle Colombet, Isabelle Soerjomataram, Donald Maxwell Parkin, Marion Piñeros
+Year: 2021
+
+Our study briefly reviews the data sources and methods used in compiling the International Agency for Research on Cancer (IARC) GLOBOCAN cancer statistics for the year 2020 and summarises the main results. National estimates were calculated based on the best available data on cancer incidence from population-based cancer registries (PBCR) and mortality from the World Health Organization mortality database. Cancer incidence and mortality rates for 2020 by sex and age groups were estimated for 38 cancer sites and 185 countries or territories worldwide. There were an estimated 19.3 million (95% uncertainty interval [UI]: 19.0-19.6 million) new cases of cancer (18.1 million excluding non-melanoma skin cancer) and almost 10.0 million (95% UI: 9.7-10.2 million) deaths from cancer (9.9 million excluding non-melanoma skin cancer) worldwide in 2020. The most commonly diagnosed cancers worldwide were female breast cancer (2.26 million cases), lung (2.21) and prostate cancers (1.41); the most common causes of cancer death were lung (1.79 million deaths), liver (830000) and stomach cancers (769000).

@@ -1,0 +1,6 @@
+IMPLEMENTASI TEKNOLOGI BIG DATA DI LEMBAGA PEMERINTAHAN INDONESIA
+
+Authors: Emyana Ruth Eritha Sirait
+Year: 2016
+
+&lt;p&gt;Peranan data sangat penting terutama memasuki era ledakan data atau "&lt;em&gt;Big Data&lt;/em&gt;". Oleh karenanya, pihak yang mampu mengolah dan memanfaatkan data-data yang sangat besar, cepat, variatif, dan kompleks, dapat mengambil keuntungan yang besar. Namun sayangnya, penerapan &lt;em&gt;Big Data&lt;/em&gt; analitik masih belum begitu populer di Indonesia, khususnya di lembaga pemerintahan. Penelitian ini dimaksudkan untuk melihat sejauh mana teknologi &lt;em&gt;Big Data&lt;/em&gt; sudah dimanfaatkan di beberapa lembaga pemerintahan, dan tantangan apa saja yang muncul dalam penerapannya. Diharapkan hasil kajian dapat memberikan informasi dan inspirasi sehingga implementasi teknologi &lt;em&gt;Big Data &lt;/em&gt;di Indonesia dapat semakin luas, khususnya di lembaga pemerintahan.&lt;/p&gt;

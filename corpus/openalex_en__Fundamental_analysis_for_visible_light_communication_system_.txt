@@ -1,0 +1,6 @@
+Fundamental analysis for visible-light communication system using LED lights
+
+Authors: Toshihiko Komine, Masaki Nakagawa
+Year: 2004
+
+White LED offers advantageous properties such as high brightness, reliability, lower power consumption and long lifetime. White LEDs are expected to serve in the next generation of lamps. An indoor visible-light communication system utilizing white LED lights has been proposed from our laboratory. In the proposed system, these devices are used not only for illuminating rooms but also for an optical wireless communication system. Generally, plural lights are installed in our room. So, their optical path difference must be considered. In this paper, we discuss about the influence of interference and reflection. Based on numerical analyses, we show that the system is expected to be the indoor communication of the next generation.

@@ -1,0 +1,6 @@
+On the Security and Performance of Proof of Work Blockchains
+
+Authors: Arthur Gervais, Ghassan Karame, Karl Wüst, Vasileios Glykantzis, Hubert Ritzdorf
+Year: 2016
+
+Proof of Work (PoW) powered blockchains currently account for more than 90% of the total market capitalization of existing digital cryptocurrencies. Although the security provisions of Bitcoin have been thoroughly analysed, the security guarantees of variant (forked) PoW blockchains (which were instantiated with different parameters) have not received much attention in the literature. This opens the question whether existing security analysis of Bitcoin's PoW applies to other implementations which have been instantiated with different consensus and/or network parameters.

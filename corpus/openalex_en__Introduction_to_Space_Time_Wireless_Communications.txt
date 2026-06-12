@@ -1,0 +1,6 @@
+Introduction to Space-Time Wireless Communications
+
+Authors: A. Paulraj, R.U. Nabar, D. Gore
+Year: 2003
+
+Wireless networks are under constant pressure to provide ever-higher data rates to increasing numbers of users with greater reliability. This book is an accessible introduction to every fundamental aspect of space-time wireless communications. Space-time processing technology is a powerful tool for improving system performance that already features in the UMTS and CDMA2000 mobile standards. The ideal volume for graduate students and professionals, it features homework problems and other supporting material on a companion website.

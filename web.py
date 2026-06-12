@@ -22,7 +22,7 @@ REPORT_DIR = ROOT / "reports"
 UPLOAD_DIR.mkdir(exist_ok=True)
 REPORT_DIR.mkdir(exist_ok=True)
 
-APP_VERSION = "0.4.0"
+APP_VERSION = "0.5.0"
 MAX_UPLOAD_MB = 10
 
 app = FastAPI(title="PlagCheck", version=APP_VERSION)

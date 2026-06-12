@@ -17,11 +17,12 @@ REPORT_DIR = ROOT / "reports"
 UPLOAD_DIR.mkdir(exist_ok=True)
 REPORT_DIR.mkdir(exist_ok=True)
 
-app = FastAPI(title="PlagCheck", version="0.3.0")
+app = FastAPI(title="PlagCheck", version="0.4.0")
 
 _engine: PlagEngine | None = None
 _corpus: Corpus | None = None
 _semantic_loaded: bool = False
+_ensemble_loaded: bool = False
 _cross_encoder_loaded: bool = False
 _ai_detector_loaded: bool = False
 
@@ -42,6 +43,14 @@ def ensure_semantic_loaded() -> None:
         _semantic_loaded = True
 
 
+def ensure_ensemble_loaded() -> None:
+    global _ensemble_loaded
+    eng = get_engine()
+    if not _ensemble_loaded:
+        eng.enable_ensemble()
+        _ensemble_loaded = True
+
+
 def ensure_cross_encoder_loaded() -> None:
     global _cross_encoder_loaded
     eng = get_engine()
@@ -51,6 +60,7 @@ def ensure_cross_encoder_loaded() -> None:
 
 
 def ensure_ai_detector_loaded() -> None:
+    """Pre-load both old and new AI detector models."""
     global _ai_detector_loaded
     if not _ai_detector_loaded:
         from core.ai_detector import _get_detector
@@ -73,6 +83,7 @@ async def health() -> dict:
         "status": "ok",
         "corpus_size": len(eng.corpus),
         "semantic_loaded": _semantic_loaded,
+        "ensemble_loaded": _ensemble_loaded,
         "cross_encoder_loaded": _cross_encoder_loaded,
         "ai_detector_loaded": _ai_detector_loaded,
     }
@@ -82,6 +93,7 @@ async def health() -> dict:
 async def check(
     file: UploadFile = File(...),
     semantic: bool = Form(False),
+    ensemble: bool = Form(False),
     cross_encoder: bool = Form(False),
     strip_citations: bool = Form(True),
     detect_ai: bool = Form(False),
@@ -97,38 +109,40 @@ async def check(
 
     try:
         engine = get_engine()
-        if semantic:
+        if ensemble:
+            ensure_ensemble_loaded()
+        elif semantic:
             ensure_semantic_loaded()
         if cross_encoder:
-            ensure_semantic_loaded()
+            if not ensemble:
+                ensure_semantic_loaded()
             ensure_cross_encoder_loaded()
         if detect_ai:
             ensure_ai_detector_loaded()
         result = engine.check(
             saved,
-            use_semantic=semantic,
+            use_semantic=semantic or ensemble,
             use_cross_encoder=cross_encoder,
             strip_citations=strip_citations,
+            use_ensemble=ensemble,
         )
         result_dict = result.to_dict()
-
-        # Add AI detection
         if detect_ai:
             try:
-                from core.ai_detector import detect_ai_text
+                from core.ai_detector_v2 import detect_ai_enhanced
                 from core.parser import parse_any
                 text = parse_any(saved)
-                ai = detect_ai_text(text, per_paragraph=False)
+                ai = detect_ai_enhanced(text, use_perplexity=True, use_stylometry=True)
                 result_dict["ai_detection"] = {
                     "ai_probability": ai.ai_probability,
                     "human_probability": ai.human_probability,
                     "verdict": ai.verdict,
                     "confidence": ai.confidence,
                     "model": ai.model_name,
+                    "signals": ai.signals,
                 }
             except Exception as e:  # noqa: BLE001
                 result_dict["ai_detection"] = {"error": str(e)}
-
         result.save_json(REPORT_DIR / f"{stamp}_{safe_name}.json")
         return result_dict
     except Exception as e:  # noqa: BLE001
@@ -139,6 +153,7 @@ async def check(
 async def report(
     file: UploadFile = File(...),
     semantic: bool = Form(False),
+    ensemble: bool = Form(False),
     cross_encoder: bool = Form(False),
     strip_citations: bool = Form(True),
     detect_ai: bool = Form(False),
@@ -153,29 +168,34 @@ async def report(
         shutil.copyfileobj(file.file, f)
 
     engine = get_engine()
-    if semantic:
+    if ensemble:
+        ensure_ensemble_loaded()
+    elif semantic:
         ensure_semantic_loaded()
     if cross_encoder:
-        ensure_semantic_loaded()
+        if not ensemble:
+            ensure_semantic_loaded()
         ensure_cross_encoder_loaded()
     if detect_ai:
         ensure_ai_detector_loaded()
     result = engine.check(
         saved,
-        use_semantic=semantic,
+        use_semantic=semantic or ensemble,
         use_cross_encoder=cross_encoder,
         strip_citations=strip_citations,
+        use_ensemble=ensemble,
     )
 
-    # AI detection
     ai_html = ""
     if detect_ai:
         try:
-            from core.ai_detector import detect_ai_text
+            from core.ai_detector_v2 import detect_ai_enhanced
             from core.parser import parse_any
             text = parse_any(saved)
-            ai = detect_ai_text(text, per_paragraph=False)
-            color = "hi" if ai.ai_probability > 0.8 else ("mid" if ai.ai_probability > 0.5 else "lo")
+            ai = detect_ai_enhanced(text, use_perplexity=True, use_stylometry=True)
+            sig_html = ""
+            for k, v in (ai.signals or {}).items():
+                sig_html += f"<div class='cite-stat'><div class='num'>{v}</div><div class='lbl'>{k}</div></div>"
             ai_html = f"""
             <div class="cite-box">
               <div class="lbl">AI Text Detection ({ai.model_name})</div>
@@ -185,13 +205,15 @@ async def report(
                 <div class="cite-stat"><div class="num">{ai.verdict}</div><div class="lbl">verdict</div></div>
                 <div class="cite-stat"><div class="num">{ai.confidence}</div><div class="lbl">confidence</div></div>
               </div>
+              <div class="cite-grid" style="margin-top:10px">
+                {sig_html}
+              </div>
             </div>
             """
         except Exception as e:  # noqa: BLE001
             ai_html = f'<div class="cite-box">AI detection failed: {e}</div>'
 
     html = engine.report_html(result)
-    # Inject AI detection block before matches section
     if ai_html:
         html = html.replace('<h2 style="font-size:16px;margin:0 0 12px">Top Matches',
                             ai_html + '<h2 style="font-size:16px;margin:0 0 12px">Top Matches')

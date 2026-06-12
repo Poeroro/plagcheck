@@ -14,6 +14,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
 from core import Corpus, PlagEngine
+from core.engine import ONNX_HYBRID_PATH
 
 ROOT = Path(__file__).parent
 UPLOAD_DIR = ROOT / "uploads"
@@ -320,11 +321,18 @@ async def health() -> dict:
     eng = get_engine()
     return {
         "status": "ok",
+        "version": APP_VERSION,
         "corpus_size": len(eng.corpus),
         "semantic_loaded": _semantic_loaded,
         "ensemble_loaded": _ensemble_loaded,
         "cross_encoder_loaded": _cross_encoder_loaded,
         "ai_detector_loaded": _ai_detector_loaded,
+        "primary_encoder": (
+            "ONNX Hybrid INT8" if _semantic_loaded and not _ensemble_loaded
+            else "ONNX Hybrid INT8 + PyTorch mpnet" if _ensemble_loaded
+            else "PyTorch (not yet loaded)"
+        ),
+        "onnx_model": str(ONNX_HYBRID_PATH.relative_to(ROOT)) if ONNX_HYBRID_PATH.exists() else "missing",
     }
 
 

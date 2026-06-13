@@ -26,25 +26,22 @@
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
         Cek Dokumen
       </a>
-      <a class="nav-item active" href="/riwayat">
+      <a class="nav-item" href="/riwayat">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
         Riwayat
-        <span class="nav-badge">{{ total_reports }}</span>
+        <span class="nav-badge" title="Jumlah dokumen dalam sesi ini">{{ total_reports }}</span>
       </a>
     </nav>
 
     <div class="sidebar-footer">
-      <div class="user-chip">
-        <div class="avatar">P</div>
-        <div>
-          <div class="user-name">Pengguna</div>
-          <div class="user-plan">Free Tier</div>
-        </div>
+      <div class="user-info">
+        <div class="user-name">Sesi Lokal</div>
+        <div class="user-plan" title="Cookie 30 hari, terenkripsi">Riwayat tersimpan di browser ini</div>
       </div>
-      <button class="theme-toggle" id="theme-toggle" title="Toggle theme" aria-label="Toggle theme" style="margin-top: 12px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 12px; font-size: 12px; font-weight: 500; color: var(--text-2);">
+      <button class="theme-toggle" id="theme-toggle" title="Ganti tema terang/gelap" aria-label="Ganti tema">
         <svg class="icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         <svg class="icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-        <span>Toggle theme</span>
+        <span class="theme-toggle-text">Tema</span>
       </button>
     </div>
   </aside>
@@ -54,7 +51,7 @@
 
     <!-- Top bar -->
     <div class="topbar">
-      <div class="crumbs"><a href="/">DoubleCheck</a> <span style="margin:0 6px;color:var(--text-4)">/</span> <a href="/riwayat">Riwayat</a> <span style="margin:0 6px;color:var(--text-4)">/</span> <span>{{ r.document_name }}</span></div>
+      <div class="crumbs"><a href="/">DoubleCheck</a> <span class="crumb-sep">/</span> <a href="/riwayat">Riwayat</a> <span class="crumb-sep">/</span> <span>{{ r.display_name }}</span></div>
       <div class="topbar-actions">
         <div class="download-dropdown" id="download-dropdown">
           <button class="icon-btn" id="download-toggle" title="Download laporan" aria-label="Download laporan">
@@ -75,7 +72,7 @@
             </a>
           </div>
         </div>
-        <button class="icon-btn" onclick="navigator.clipboard.writeText(window.location.href); this.title='Copied!'" title="Copy link">
+        <button class="icon-btn" onclick="navigator.clipboard.writeText(window.location.href); this.title='✓ Link disalin!'" title="Salin link laporan" aria-label="Salin link">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
         </button>
       </div>
@@ -113,26 +110,22 @@
               <span>📄 <b>{{ r.total_paragraphs }}</b> paragraf</span>
               <span>🚩 <b>{{ r.flagged_paragraphs }}</b> di-flag</span>
               <span>⏱ <b>{{ r.elapsed_seconds|round(1) }}s</b></span>
-              <span>📅 <b>{{ r.finished_at }}</b></span>
+              <span>📅 <b>{{ r.finished_at_human or r.finished_at }}</b></span>
             </div>
           </div>
           <div class="result-actions">
             <a href="/r/{{ r.id }}/pdf" class="btn primary" download>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               Download PDF
             </a>
             <a href="/r/{{ r.id }}/docx" class="btn" download>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-              DOCX
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Word
             </a>
             <a href="/r/{{ r.id }}/txt" class="btn" download>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
-              TXT
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
+              Teks
             </a>
-            <button class="btn" onclick="navigator.clipboard.writeText(window.location.href)">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-              Copy Link
-            </button>
           </div>
         </div>
 
@@ -199,12 +192,12 @@
             <div class="stat-card-bar"><div style="width: {{ (r.ai_detection.ai_probability * 100)|round(0)|int }}%"></div></div>
           </div>
           {% else %}
-          <div class="stat-card" style="opacity: 0.5">
+          <div class="stat-card" style="opacity: 0.6">
             <div class="stat-card-label">
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
               AI Text
             </div>
-            <div class="stat-card-value" style="font-size: 14px; color: var(--text-3)">Tidak di-cek</div>
+            <div class="stat-card-value" style="font-size: 12px; color: var(--text-3)">Tidak dianalisis</div>
             <div class="stat-card-bar"><div style="width: 0%"></div></div>
           </div>
           {% endif %}
@@ -317,7 +310,7 @@
 
           <div class="ai-score">
             <div class="ai-score-num">{{ (ai.ai_probability * 100)|round(0)|int }}%</div>
-            <div class="ai-score-label">kemungkinan AI-generated<br><span style="color:var(--text-4); font-size: 10px">{{ ai.model_name }}</span></div>
+            <div class="ai-score-label">kemungkinan AI-generated</div>
           </div>
 
           <div class="ai-bars">
@@ -390,8 +383,8 @@
         <div class="proc-card">
           <div class="proc-title">Performa</div>
           <div class="proc-row"><span class="proc-name">Total waktu</span><span class="proc-time">{{ r.elapsed_seconds|round(1) }}s</span></div>
-          <div class="proc-row"><span class="proc-name">Mulai</span><span class="proc-time">{{ r.started_at }}</span></div>
-          <div class="proc-row"><span class="proc-name">Selesai</span><span class="proc-time">{{ r.finished_at }}</span></div>
+          <div class="proc-row"><span class="proc-name">Mulai</span><span class="proc-time">{{ r.started_at_human or r.started_at }}</span></div>
+          <div class="proc-row"><span class="proc-name">Selesai</span><span class="proc-time">{{ r.finished_at_human or r.finished_at }}</span></div>
           <div class="proc-row"><span class="proc-name">Paragraf</span><span class="proc-time">{{ r.total_paragraphs }}</span></div>
           <div class="proc-row"><span class="proc-name">Sitasi di-strip</span><span class="proc-time">{{ r.citation_stats.inline_citations_stripped + r.citation_stats.footnote_refs_stripped }}</span></div>
           <div class="proc-row"><span class="proc-name">Kutipan di-strip</span><span class="proc-time">{{ r.citation_stats.direct_quotes_stripped + r.citation_stats.block_quotes_stripped }}</span></div>

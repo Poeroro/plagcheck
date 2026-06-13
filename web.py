@@ -380,15 +380,22 @@ def enrich_report(data: dict) -> dict:
     if ai and not ai.get("error"):
         ai["verdict_class"] = ai_verdict_class(ai.get("verdict", "MIXED"))
     # Clean up filename for display
+    # Filename format on disk: <timestamp>_<session_prefix>_<original_name>
+    # Example: "1781338150646_hotUU3aC_Aril Mira Rahayu - Revisi Tugas 3.json"
     raw = data.get("document_name", "")
-    if "_" in raw:
-        parts = raw.split("_", 1)
-        if parts[0].isdigit() and len(parts[0]) >= 10:
-            data["display_name"] = parts[1]
-        else:
-            data["display_name"] = raw
+    parts = raw.split("_", 2)
+    if len(parts) == 3 and parts[0].isdigit() and len(parts[0]) >= 10 and parts[1]:
+        clean_name = parts[2]
+    elif "_" in raw and raw.split("_", 1)[0].isdigit():
+        clean_name = raw.split("_", 1)[1]
     else:
-        data["display_name"] = raw
+        clean_name = raw
+    # Strip common document extensions from the display name for cleanness
+    for ext in (".txt", ".docx", ".doc", ".pdf", ".md", ".rtf"):
+        if clean_name.lower().endswith(ext):
+            clean_name = clean_name[: -len(ext)]
+            break
+    data["display_name"] = clean_name or raw
     # Compute citation reduction if not present
     cs = data.get("citation_stats") or {}
     if cs and "reduction_pct" not in cs:
@@ -399,6 +406,18 @@ def enrich_report(data: dict) -> dict:
         else:
             cs["reduction_pct"] = 0
         data["citation_stats"] = cs
+    # Human-readable timestamps
+    from datetime import datetime as _dt
+    for field in ("started_at", "finished_at"):
+        val = data.get(field, "")
+        if val and "T" in str(val):
+            try:
+                dt = _dt.fromisoformat(str(val).replace("Z", ""))
+                bulan = ["", "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+                         "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
+                data[field + "_human"] = f"{dt.day} {bulan[dt.month]} {dt.year}, {dt.strftime('%H:%M')}"
+            except Exception:
+                data[field + "_human"] = val
     return data
 
 
@@ -553,8 +572,6 @@ def _report_text(data: dict) -> str:
         lines.append(sub)
         lines.append(f"  Kemungkinan AI : {int(ai.get('ai_probability', 0) * 100)}%")
         lines.append(f"  Verdict        : {ai.get('verdict', '-')}")
-        if ai.get("model_name"):
-            lines.append(f"  Model          : {ai['model_name']}")
         sigs = ai.get("signals") or {}
         for k, label in [("roberta", "RoBERTa"), ("perplexity_score", "Perplexity"),
                          ("burstiness", "Burstiness"), ("stylometry_score", "Stylometry")]:
@@ -586,6 +603,20 @@ def _report_text(data: dict) -> str:
     return "\n".join(lines)
 
 
+def _download_stem(data: dict, fallback: str) -> str:
+    """Build a clean download filename stem from a report.
+    Strips the original document's file extension so that
+    ``report.txt`` doesn't become ``report.txt.pdf`` on download."""
+    name = (data.get("display_name") or "").strip() or fallback
+    for ext in (".txt", ".docx", ".doc", ".pdf", ".md", ".rtf"):
+        if name.lower().endswith(ext):
+            name = name[: -len(ext)]
+            break
+    safe = name.replace("/", "_").replace("\\", "_").replace('"', "'")
+    safe = safe.replace("\n", " ").replace("\r", " ")
+    return safe or "laporan"
+
+
 @app.get("/r/{report_id}/txt")
 async def report_txt(
     report_id: str,
@@ -594,7 +625,7 @@ async def report_txt(
     data, _ = load_report(report_id, session_id=sid)
     data = enrich_report(data)
     text = _report_text(data)
-    stem = (data.get("display_name") or report_id).replace("/", "_")
+    stem = _download_stem(data, report_id)
     return Response(
         text.encode("utf-8"),
         media_type="text/plain; charset=utf-8",
@@ -699,8 +730,6 @@ def _report_pdf(data: dict) -> bytes:
         pdf.set_text_color(80, 80, 90)
         pdf.cell(0, 5, f"Kemungkinan AI: {int(ai.get('ai_probability', 0) * 100)}%", ln=1)
         pdf.cell(0, 5, f"Verdict: {ai.get('verdict', '-')}", ln=1)
-        if ai.get("model_name"):
-            pdf.cell(0, 5, f"Model: {ai['model_name']}", ln=1)
         sigs = ai.get("signals") or {}
         for k, label in [("roberta", "RoBERTa"), ("perplexity_score", "Perplexity"),
                          ("burstiness", "Burstiness"), ("stylometry_score", "Stylometry")]:
@@ -771,7 +800,7 @@ async def report_pdf(
     data, _ = load_report(report_id, session_id=sid)
     data = enrich_report(data)
     pdf_bytes = _report_pdf(data)
-    stem = (data.get("display_name") or report_id).replace("/", "_")
+    stem = _download_stem(data, report_id)
     return Response(
         pdf_bytes,
         media_type="application/pdf",
@@ -872,8 +901,6 @@ def _report_docx(data: dict) -> bytes:
         doc.add_heading("AI Text Detection", level=2)
         doc.add_paragraph(f"Kemungkinan AI: {int(ai.get('ai_probability', 0) * 100)}%")
         doc.add_paragraph(f"Verdict: {ai.get('verdict', '-')}")
-        if ai.get("model_name"):
-            doc.add_paragraph(f"Model: {ai['model_name']}")
         sigs = ai.get("signals") or {}
         for k, label in [("roberta", "RoBERTa"), ("perplexity_score", "Perplexity"),
                          ("burstiness", "Burstiness"), ("stylometry_score", "Stylometry")]:
@@ -932,7 +959,7 @@ async def report_docx(
     data, _ = load_report(report_id, session_id=sid)
     data = enrich_report(data)
     docx_bytes = _report_docx(data)
-    stem = (data.get("display_name") or report_id).replace("/", "_")
+    stem = _download_stem(data, report_id)
     return Response(
         docx_bytes,
         media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document",

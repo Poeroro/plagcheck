@@ -74,6 +74,30 @@
   window.pcToast = toast;
 
   // -----------------------------------------------------------------------
+  // Result page tabs (Teks + Highlight / Side-by-side / Hanya Match)
+  // -----------------------------------------------------------------------
+  document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.doc-tab[data-tab]');
+    if (!tabs.length) return;
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        const target = tab.dataset.tab;
+        // Update tab active state
+        tabs.forEach(function (t) { t.classList.remove('active'); });
+        tab.classList.add('active');
+        // Update pane visibility
+        document.querySelectorAll('.doc-body[data-pane]').forEach(function (pane) {
+          if (pane.dataset.pane === target) {
+            pane.style.display = '';
+          } else {
+            pane.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+
+  // -----------------------------------------------------------------------
   // Download dropdown (results page)
   // -----------------------------------------------------------------------
   document.addEventListener('DOMContentLoaded', function () {

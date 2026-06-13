@@ -1,0 +1,24 @@
+[Unit]
+Description=PlagCheck - Indonesian Plagiarism Detection Service
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/plagcheck
+Environment="PATH=/home/ubuntu/plagcheck/venv/bin"
+ExecStart=/home/ubuntu/plagcheck/venv/bin/python -u web.py
+Restart=always
+RestartSec=10
+
+# Resource limits (PlagCheck uses ~1.5GB RAM with ONNX Hybrid)
+MemoryHigh=4G
+MemoryMax=6G
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=plagcheck
+
+[Install]
+WantedBy=multi-user.target

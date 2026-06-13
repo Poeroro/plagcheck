@@ -9,3 +9,5 @@ Total test cases: 70
 [  1/70] ✅ exact        actual=True detected=True score=0.841 (36.7s)
 [  2/70] ✅ paraphrase   actual=True detected=True score=0.831 (39.9s)
 [  3/70] ✅ light_modify actual=True detected=True score=0.781 (37.1s)
+[  4/70] ✅ exact        actual=True detected=True score=0.922 (37.6s)
+[  5/70] ✅ paraphrase   actual=True detected=True score=0.903 (38.2s)

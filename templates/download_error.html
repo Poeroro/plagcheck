@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File tidak tersedia — DoubleCheck</title>
+<link rel="stylesheet" href="/static/app.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✓✓</text></svg>">
+<style>
+body { font-family: var(--font-sans); background: var(--bg); color: var(--text); margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 20px; }
+.err-card { background: var(--bg-elev-1); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 32px; max-width: 480px; text-align: center; box-shadow: var(--shadow); }
+.err-icon { width: 64px; height: 64px; background: var(--red-soft); color: var(--red); border-radius: var(--radius-lg); display: grid; place-items: center; margin: 0 auto 16px; }
+.err-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+.err-desc { font-size: 13px; color: var(--text-2); margin-bottom: 20px; line-height: 1.5; }
+.err-actions { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.err-btn { padding: 8px 16px; border-radius: var(--radius); font-size: 13px; font-weight: 600; text-decoration: none; cursor: pointer; }
+.err-btn.primary { background: var(--grad-brand); color: #fff; }
+.err-btn.secondary { background: var(--bg-elev-2); color: var(--text); border: 1px solid var(--border); }
+.err-debug { font-size: 11px; color: var(--text-3); font-family: var(--font-mono); margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border-soft); }
+</style>
+</head>
+<body>
+<div class="err-card">
+  <div class="err-icon">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+  </div>
+  <div class="err-title">{{ title }}</div>
+  <div class="err-desc">{{ message }}</div>
+  <div class="err-actions">
+    <a href="/" class="err-btn primary">Cek Dokumen Baru</a>
+    <a href="/riwayat" class="err-btn secondary">Lihat Riwayat</a>
+  </div>
+  <div class="err-debug">{{ debug }}</div>
+</div>
+</body>
+</html>

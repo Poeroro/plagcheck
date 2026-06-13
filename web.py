@@ -40,6 +40,36 @@ app.mount("/static", StaticFiles(directory=str(ROOT / "static")), name="static")
 
 
 # -----------------------------------------------------------------------
+# HTML error page for download endpoints (so users see a friendly page,
+# not a JSON blob that gets saved as the filename)
+# -----------------------------------------------------------------------
+from starlette.requests import Request as _StarletteRequest
+
+_DOWNLOAD_PATH_RE = __import__("re").compile(r"^/r/[^/]+/(pdf|docx|txt)$")
+
+@app.exception_handler(404)
+async def download_not_found(request: _StarletteRequest, exc: HTTPException):
+    """Return HTML error page for download endpoints (not JSON)."""
+    if _DOWNLOAD_PATH_RE.match(request.url.path):
+        debug = f"path={request.url.path} · code=404"
+        return templates.TemplateResponse(
+            request,
+            "download_error.html",
+            {
+                "title": "File tidak tersedia",
+                "message": (
+                    "Laporan ini tidak ditemukan atau sesi browser kamu sudah berakhir. "
+                    "Coba cek dokumen baru, atau lihat riwayat kamu."
+                ),
+                "debug": debug,
+            },
+            status_code=404,
+        )
+    # Default JSON for other endpoints
+    return JSONResponse({"detail": exc.detail}, status_code=exc.status_code)
+
+
+# -----------------------------------------------------------------------
 # Session middleware: per-browser cookie-based privacy
 # -----------------------------------------------------------------------
 class SessionMiddleware(BaseHTTPMiddleware):
@@ -391,7 +421,8 @@ def enrich_report(data: dict) -> dict:
     else:
         clean_name = raw
     # Strip common document extensions from the display name for cleanness
-    for ext in (".txt", ".docx", ".doc", ".pdf", ".md", ".rtf"):
+    for ext in (".txt", ".docx", ".doc", ".pdf", ".md", ".rtf",
+                ".json", ".jsonl", ".csv", ".xlsx", ".xls", ".odt", ".pages"):
         if clean_name.lower().endswith(ext):
             clean_name = clean_name[: -len(ext)]
             break
@@ -608,13 +639,25 @@ def _download_stem(data: dict, fallback: str) -> str:
     Strips the original document's file extension so that
     ``report.txt`` doesn't become ``report.txt.pdf`` on download."""
     name = (data.get("display_name") or "").strip() or fallback
-    for ext in (".txt", ".docx", ".doc", ".pdf", ".md", ".rtf"):
+    for ext in (
+        ".txt", ".docx", ".doc", ".pdf", ".md", ".rtf",
+        ".json", ".jsonl", ".csv", ".xlsx", ".xls", ".odt", ".pages",
+    ):
         if name.lower().endswith(ext):
             name = name[: -len(ext)]
             break
     safe = name.replace("/", "_").replace("\\", "_").replace('"', "'")
     safe = safe.replace("\n", " ").replace("\r", " ")
     return safe or "laporan"
+
+
+def _safe_extension(original_name: str) -> str:
+    """Return a safe file extension from an uploaded filename.
+    Strips weird suffixes and defaults to .pdf for safety."""
+    for ext in (".pdf", ".docx", ".txt", ".doc", ".md", ".rtf"):
+        if original_name.lower().endswith(ext):
+            return ext
+    return ".pdf"
 
 
 @app.get("/r/{report_id}/txt")
@@ -1011,6 +1054,35 @@ async def check(
     contents = await file.read()
     if len(contents) > MAX_UPLOAD_MB * 1024 * 1024:
         raise HTTPException(400, f"file too large (max {MAX_UPLOAD_MB}MB)")
+
+    # Validate that the file content matches the extension
+    # (catches "renamed" files like a JSON file with .pdf extension)
+    head = contents[:16]
+    if ext == "pdf" and not head.startswith(b"%PDF-"):
+        raise HTTPException(
+            400,
+            "File .pdf ini bukan PDF yang valid (mungkin teks biasa yang di-rename). "
+            "Kalau ini dokumen teks, simpan sebagai .txt lalu upload ulang."
+        )
+    if ext == "docx" and not head.startswith(b"PK\x03\x04"):
+        raise HTTPException(
+            400,
+            "File .docx ini bukan dokumen Word yang valid (mungkin teks biasa yang di-rename). "
+            "Kalau ini dokumen teks, simpan sebagai .txt lalu upload ulang."
+        )
+    if ext == "txt":
+        # Quick sanity check: must decode as UTF-8 / latin-1 without too many garbage chars
+        try:
+            sample = contents[:4096].decode("utf-8", errors="strict")
+        except UnicodeDecodeError:
+            try:
+                sample = contents[:4096].decode("latin-1", errors="ignore")
+            except Exception:
+                raise HTTPException(
+                    400,
+                    "File .txt ini berisi byte yang bukan teks. "
+                    "Pastikan file ini adalah plain text UTF-8."
+                )
 
     # Scope all paths to the session prefix so other users can't see this upload
     sid_prefix = session_prefix(sid)

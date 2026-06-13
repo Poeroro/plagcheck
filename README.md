@@ -7,7 +7,7 @@
 [![Python 3.12](https://img.shields.io/badge/python-3.12-3776AB?style=for-the-badge&logo=python)](https://www.python.org)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22C55E?style=for-the-badge)](LICENSE)
 [![Corpus](https://img.shields.io/badge/corpus-7.2K_docs-F59E0B?style=for-the-badge)](https://github.com/Poeroro/plagcheck)
-[![F1 Score](https://img.shields.io/badge/F1-0.85+_(real_world)-EF4444?style=for-the-badge)](reports/f1_measurement_latest.json)
+[![F1 Score](https://img.shields.io/badge/F1-0.992_(Garuda_test)-EF4444?style=for-the-badge)](reports/F1_REPORT.md)
 
 ---
 
@@ -124,15 +124,15 @@ See `deploy/` for systemd unit + nginx config.
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| **F1 score** | **0.85-0.90** | Real-world Garuda test (20 papers × 3 variations) |
-| **Precision** | 0.85+ | Low false positive rate |
-| **Recall** | 0.80-0.85 | Catches exact + paraphrased |
+| **F1 score** | **0.992** | Real-world Garuda test (60 plagiarism + 10 legit, see [F1_REPORT.md](reports/F1_REPORT.md)) |
+| **Precision** | **1.000** | Zero false positives |
+| **Recall** | **0.983** | Catches exact + paraphrased + light-modified |
 | **Speed (MinHash)** | 0.1s/doc | Default fast mode |
 | **Speed (semantic)** | 18-20s/doc | Cache hit, full corpus scan |
 | **RAM** | 1.5 GB | ONNX Hybrid INT8 |
 | **Disk** | 800 MB | Models + 12MB cache |
 
-Latest F1 measurement: [`reports/f1_measurement_latest.json`](reports/f1_measurement_latest.json)
+Latest F1 measurement: [`reports/F1_REPORT.md`](reports/F1_REPORT.md) — **F1 0.992** on 70-case Garuda test.
 
 ---
 

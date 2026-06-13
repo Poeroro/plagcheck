@@ -2,16 +2,18 @@
 from __future__ import annotations
 
 import json
+import secrets
 import shutil
 import time
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
+from fastapi import Depends, FastAPI, File, Form, HTTPException, Request, Response, UploadFile
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from starlette.middleware.base import BaseHTTPMiddleware
 
 from core import Corpus, PlagEngine
 from core.engine import ONNX_HYBRID_PATH
@@ -22,12 +24,56 @@ REPORT_DIR = ROOT / "reports"
 UPLOAD_DIR.mkdir(exist_ok=True)
 REPORT_DIR.mkdir(exist_ok=True)
 
-APP_VERSION = "0.5.1"
+APP_VERSION = "0.6.0"
 MAX_UPLOAD_MB = 10
+
+# Per-session privacy: each browser gets its own cookie-stamped session ID
+# Reports and uploads are namespaced by this prefix so users can only see
+# their own documents. No login required — first visit creates a session.
+SESSION_COOKIE = "pc_sid"
+SESSION_MAX_AGE = 30 * 24 * 3600  # 30 days
+SESSION_PREFIX_LEN = 8  # first 8 alnum chars used in filename prefix (48 bits)
 
 app = FastAPI(title="PlagCheck", version=APP_VERSION)
 templates = Jinja2Templates(directory=str(ROOT / "templates"))
 app.mount("/static", StaticFiles(directory=str(ROOT / "static")), name="static")
+
+
+# -----------------------------------------------------------------------
+# Session middleware: per-browser cookie-based privacy
+# -----------------------------------------------------------------------
+class SessionMiddleware(BaseHTTPMiddleware):
+    """Attach a session ID to every request via HttpOnly Secure cookie.
+
+    On first visit, a fresh 32-byte URL-safe token is generated and set
+    as the pc_sid cookie. The token is also stored on request.state.sid
+    so endpoints can read it without re-parsing cookies.
+    """
+
+    async def dispatch(self, request: Request, call_next):
+        sid = request.cookies.get(SESSION_COOKIE)
+        if not _is_valid_sid(sid):
+            sid = secrets.token_urlsafe(32)
+        request.state.sid = sid
+        response = await call_next(request)
+        # Always set/refresh the cookie so the session stays alive
+        # (response.set_cookie is a no-op if the value matches; the
+        # browser updates the expiry either way).
+        response.set_cookie(
+            key=SESSION_COOKIE,
+            value=sid,
+            max_age=SESSION_MAX_AGE,
+            httponly=True,
+            samesite="lax",
+            secure=True,
+            path="/",
+        )
+        return response
+
+
+# Add session middleware (must come after route definitions to ensure
+# it wraps everything, but Starlette wraps in reverse so add before mount)
+app.add_middleware(SessionMiddleware)
 
 _engine: PlagEngine | None = None
 _corpus: Corpus | None = None
@@ -134,12 +180,58 @@ def humanize_time(iso: str) -> str:
 
 
 def build_id_from_path(path: Path) -> str:
-    return path.stem  # <timestamp>_<safe_filename>
+    return path.stem  # <timestamp>_<session_prefix>_<safe_filename>
 
 
-def list_recent_reports(limit: int = 20) -> list[dict]:
+def _is_valid_sid(sid: str) -> bool:
+    """Validate a session ID: at least 16 chars, alnum + - _ only."""
+    if not isinstance(sid, str) or len(sid) < 16 or len(sid) > 128:
+        return False
+    return all(c.isalnum() or c in "-_" for c in sid)
+
+
+def session_prefix(sid: str) -> str:
+    """Filesystem-safe prefix derived from session ID for filename scoping."""
+    return "".join(c for c in sid[:SESSION_PREFIX_LEN] if c.isalnum())[:SESSION_PREFIX_LEN]
+
+
+def get_session_id(request: Request) -> str:
+    """Read the session ID set by SessionMiddleware on request.state.
+
+    Endpoints that need the session ID should declare this as a
+    dependency. If the middleware did not run (e.g. on a synthetic
+    test request), a fresh ID is minted on the fly — but in normal
+    production flow it is always populated.
+    """
+    sid = getattr(request.state, "sid", None)
+    if not _is_valid_sid(sid):
+        sid = secrets.token_urlsafe(32)
+        request.state.sid = sid
+    return sid
+
+
+def list_recent_reports(limit: int = 20, session_id: str = "") -> list[dict]:
+    """List reports belonging to the given session only.
+
+    Filenames are scoped as <timestamp>_<session_prefix>_<safe_name>.json,
+    so we glob for files starting with the session prefix to enforce
+    cross-session isolation at the filesystem level.
+    """
     reports = []
-    for path in sorted(REPORT_DIR.glob("*.json"), key=lambda p: p.stat().st_mtime, reverse=True):
+    prefix = session_prefix(session_id) if session_id else ""
+    if not prefix:
+        # No valid session — return nothing rather than leak everything
+        return reports
+    # Filename format: <timestamp>_<session_prefix>_<name>.json
+    # The session prefix is the 2nd underscore-delimited token, so we
+    # glob for *_<prefix>_*.json and verify on the loaded result.
+    pattern = f"*_{prefix}_*.json"
+    for path in sorted(REPORT_DIR.glob(pattern), key=lambda p: p.stat().st_mtime, reverse=True):
+        # Defense in depth: confirm the second token matches
+        stem = path.stem
+        parts = stem.split("_", 2)
+        if len(parts) < 3 or parts[1] != prefix:
+            continue
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
         except Exception:
@@ -157,11 +249,15 @@ def list_recent_reports(limit: int = 20) -> list[dict]:
         # Skip orphan/empty entries
         if not raw_filename or raw_filename == "?" or data.get("total_paragraphs", 0) == 0:
             continue
-        # Clean up filename: strip "<timestamp>_" prefix
+        # Clean up filename: strip "<timestamp>_<session_prefix>_" prefix
         display_filename = raw_filename
         if "_" in display_filename:
-            parts = display_filename.split("_", 1)
-            if parts[0].isdigit() and len(parts[0]) >= 10:
+            parts = raw_filename.split("_", 2)
+            # New format: <ts>_<sid8>_<name> — strip first two
+            if len(parts) >= 3 and parts[0].isdigit() and len(parts[0]) >= 10:
+                display_filename = parts[2]
+            # Old format: <ts>_<name> — strip first
+            elif len(parts) >= 2 and parts[0].isdigit() and len(parts[0]) >= 10:
                 display_filename = parts[1]
         filetype = (raw_filename.split(".")[-1] or "txt").lower()
         if filetype not in ("pdf", "docx", "txt"):
@@ -183,14 +279,31 @@ def list_recent_reports(limit: int = 20) -> list[dict]:
     return reports[:limit]
 
 
-def load_report(report_id: str) -> tuple[dict, Path]:
-    """Return parsed report data + path. Raises 404 if not found."""
+def load_report(report_id: str, session_id: str = "") -> tuple[dict, Path]:
+    """Return parsed report data + path. Raises 404 if not found or
+    not owned by the given session (privacy enforcement)."""
+    # Defense in depth: reject obvious cross-session access
+    prefix = session_prefix(session_id) if session_id else ""
+    if not prefix:
+        raise HTTPException(404, "Report not found")
+    # Filename format: <timestamp>_<session_prefix>_<name>
+    # The session prefix is the 2nd underscore-delimited token.
+    parts = report_id.split("_", 2)
+    if len(parts) < 3 or parts[1] != prefix:
+        raise HTTPException(404, "Report not found")
     matches = list(REPORT_DIR.glob(f"{report_id}.*"))
     if not matches:
         raise HTTPException(404, "Report not found")
     json_path = next((m for m in matches if m.suffix == ".json"), None)
     if not json_path:
         raise HTTPException(404, "Report JSON not found")
+    # Final filesystem-level check: filename must contain the session prefix
+    if prefix not in json_path.name:
+        raise HTTPException(404, "Report not found")
+    # And the second token must match exactly
+    json_parts = json_path.stem.split("_", 2)
+    if len(json_parts) < 3 or json_parts[1] != prefix:
+        raise HTTPException(404, "Report not found")
     try:
         data = json.loads(json_path.read_text(encoding="utf-8"))
     except Exception as e:
@@ -235,9 +348,12 @@ def enrich_report(data: dict) -> dict:
 # Routes
 # -----------------------------------------------------------------------
 @app.get("/", response_class=HTMLResponse)
-async def index(request: Request) -> HTMLResponse:
+async def landing(
+    request: Request,
+    sid: str = Depends(get_session_id),
+) -> HTMLResponse:
     eng = get_engine()
-    recent = list_recent_reports(limit=5)
+    recent = list_recent_reports(limit=5, session_id=sid)
     return templates.TemplateResponse(
         request,
         "landing.html",
@@ -250,9 +366,12 @@ async def index(request: Request) -> HTMLResponse:
 
 
 @app.get("/riwayat", response_class=HTMLResponse)
-async def riwayat(request: Request) -> HTMLResponse:
+async def riwayat(
+    request: Request,
+    sid: str = Depends(get_session_id),
+) -> HTMLResponse:
     eng = get_engine()
-    recent = list_recent_reports(limit=50)
+    recent = list_recent_reports(limit=50, session_id=sid)
     return templates.TemplateResponse(
         request,
         "riwayat.html",
@@ -266,10 +385,14 @@ async def riwayat(request: Request) -> HTMLResponse:
 
 
 @app.get("/r/{report_id}", response_class=HTMLResponse)
-async def report_page(request: Request, report_id: str) -> HTMLResponse:
-    data, _ = load_report(report_id)
+async def report_page(
+    request: Request,
+    report_id: str,
+    sid: str = Depends(get_session_id),
+) -> HTMLResponse:
+    data, _ = load_report(report_id, session_id=sid)
     data = enrich_report(data)
-    total = len(list(REPORT_DIR.glob("*.json")))
+    total = len(list(REPORT_DIR.glob(f"*_{session_prefix(sid)}_*.json")))
     return templates.TemplateResponse(
         request,
         "results.html",
@@ -282,14 +405,21 @@ async def report_page(request: Request, report_id: str) -> HTMLResponse:
 
 
 @app.get("/r/{report_id}/json")
-async def report_json(report_id: str) -> JSONResponse:
-    data, _ = load_report(report_id)
+async def report_json(
+    report_id: str,
+    sid: str = Depends(get_session_id),
+) -> JSONResponse:
+    data, _ = load_report(report_id, session_id=sid)
     return JSONResponse(data)
 
 
 @app.get("/r/{report_id}/html")
-async def report_html(report_id: str) -> HTMLResponse:
-    data, json_path = load_report(report_id)
+async def report_html(
+    request: Request,
+    report_id: str,
+    sid: str = Depends(get_session_id),
+) -> HTMLResponse:
+    data, json_path = load_report(report_id, session_id=sid)
     data = enrich_report(data)
     eng = get_engine()
     # Reconstruct a CheckResult for the legacy report builder
@@ -338,12 +468,14 @@ async def health() -> dict:
 
 @app.post("/api/check")
 async def check(
+    request: Request,
     file: UploadFile = File(...),
     semantic: bool = Form(False),
     ensemble: bool = Form(False),
     cross_encoder: bool = Form(False),
     strip_citations: bool = Form(True),
     detect_ai: bool = Form(False),
+    sid: str = Depends(get_session_id),
 ) -> dict:
     if not file.filename:
         raise HTTPException(400, "no file")
@@ -359,10 +491,14 @@ async def check(
     if len(contents) > MAX_UPLOAD_MB * 1024 * 1024:
         raise HTTPException(400, f"file too large (max {MAX_UPLOAD_MB}MB)")
 
+    # Scope all paths to the session prefix so other users can't see this upload
+    sid_prefix = session_prefix(sid)
     stamp = int(time.time() * 1000)
-    saved = UPLOAD_DIR / f"{stamp}_{safe_name}"
+    # Saved file: <ts>_<sid8>_<safename>  (also acts as the public filename)
+    saved = UPLOAD_DIR / f"{stamp}_{sid_prefix}_{safe_name}"
     saved.write_bytes(contents)
-    report_id = f"{stamp}_{Path(safe_name).stem}"
+    # Report ID: <ts>_<sid8>_<safename.stem>
+    report_id = f"{stamp}_{sid_prefix}_{Path(safe_name).stem}"
 
     try:
         engine = get_engine()
@@ -386,6 +522,9 @@ async def check(
         )
 
         result_dict = result.to_dict()
+        # Override document_name with our session-scoped filename so the
+        # display in /riwayat can strip both the timestamp and session prefix
+        result_dict["document_name"] = f"{stamp}_{sid_prefix}_{safe_name}"
 
         if detect_ai:
             try:
@@ -448,6 +587,63 @@ async def report_legacy(
             if k in CitationStats.__dataclass_fields__}),
     )
     return HTMLResponse(eng.report_html(result))
+
+
+# -----------------------------------------------------------------------
+# Maintenance: periodic cleanup of old session reports
+# -----------------------------------------------------------------------
+def cleanup_old_reports(max_age_days: int = 7) -> dict:
+    """Delete reports and uploaded files older than `max_age_days`.
+
+    Filesystem layout: <timestamp>_<session_prefix>_<name>.[json|txt|pdf|docx].
+    The timestamp is the unix-millis at upload time, so we can simply
+    parse the first underscore-delimited part and compare to now.
+    Returns a stats dict for the caller to log.
+    """
+    import time as _time
+    cutoff_ms = int((_time.time() - max_age_days * 86400) * 1000)
+    deleted_reports = 0
+    deleted_uploads = 0
+    freed_bytes = 0
+
+    for path in REPORT_DIR.glob("*.json"):
+        stem = path.stem
+        first = stem.split("_", 1)[0] if "_" in stem else ""
+        if first.isdigit() and int(first) < cutoff_ms:
+            size = path.stat().st_size
+            path.unlink()
+            deleted_reports += 1
+            freed_bytes += size
+
+    for path in UPLOAD_DIR.glob("*"):
+        if path.is_file():
+            stem = path.stem
+            first = stem.split("_", 1)[0] if "_" in stem else ""
+            if first.isdigit() and int(first) < cutoff_ms:
+                size = path.stat().st_size
+                path.unlink()
+                deleted_uploads += 1
+                freed_bytes += size
+
+    return {
+        "deleted_reports": deleted_reports,
+        "deleted_uploads": deleted_uploads,
+        "freed_mb": round(freed_bytes / 1024 / 1024, 2),
+        "max_age_days": max_age_days,
+    }
+
+
+@app.post("/api/admin/cleanup")
+async def admin_cleanup(
+    max_age_days: int = 7,
+) -> dict:
+    """Trigger cleanup of old session-scoped reports.
+
+    Idempotent and safe — only touches files older than the cutoff.
+    Exposed without auth (admin endpoint) for now; restrict via firewall
+    or add token check before production.
+    """
+    return cleanup_old_reports(max_age_days=max_age_days)
 
 
 if __name__ == "__main__":

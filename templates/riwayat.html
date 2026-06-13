@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#4F46E5">
 <title>Riwayat — PlagCheck</title>
 <link rel="stylesheet" href="/static/app.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✓</text></svg>">
 <style>
-  .riwayat-page { max-width: 1000px; margin: 0 auto; padding: 32px; }
-  .riwayat-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
-  .riwayat-title { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
-  .riwayat-title span { color: var(--text-3); font-weight: 400; font-size: 14px; margin-left: 8px; }
-  .riwayat-list { background: var(--bg-elev-1); border: 1px solid var(--border-soft); border-radius: 12px; overflow: hidden; }
-  .riwayat-list .recent-item { grid-template-columns: 36px 1fr 100px 110px 90px 60px; }
-  .riwayat-empty { padding: 80px 20px; text-align: center; color: var(--text-3); }
-  .riwayat-empty-icon { width: 64px; height: 64px; margin: 0 auto 16px; background: var(--bg-elev-2); color: var(--text-3); border-radius: 16px; display: grid; place-items: center; }
-  .riwayat-empty-title { font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
-  .riwayat-action { display: flex; gap: 4px; justify-content: flex-end; }
-  .riwayat-action a { color: var(--text-3); padding: 4px; border-radius: 4px; }
-  .riwayat-action a:hover { background: var(--bg-elev-3); color: var(--text); }
+  .results-empty-search { padding: 40px 20px; text-align: center; color: var(--text-3); display: none; }
+  .results-empty-search.show { display: block; }
+  .results-empty-search-icon { width: 48px; height: 48px; margin: 0 auto 12px; background: var(--bg-elev-2); color: var(--text-3); border-radius: var(--radius-lg); display: grid; place-items: center; }
+  .results-empty-search-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
 </style>
 </head>
 <body>
 
 <div class="riwayat-page">
+  <nav class="nav" style="margin: -32px -24px 24px">
+    <div class="brand">
+      <a href="/" class="brand-link">
+        <div class="brand-mark"></div>
+        <div class="brand-text">PlagCheck<span>Riwayat · v{{ version }}</span></div>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a class="nav-link" href="/">Upload Baru</a>
+      <a class="nav-link" href="#">Riwayat</a>
+      <button class="theme-toggle" id="theme-toggle" title="Toggle theme" aria-label="Toggle theme" style="margin-left: 8px">
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+    </div>
+  </nav>
+
   <div class="riwayat-head">
-    <div class="riwayat-title">Riwayat Pengecekan <span>{{ recent|length }} dokumen</span></div>
+    <div class="riwayat-title">Riwayat Pengecekan <span id="total-count">{{ recent|length }} dokumen</span></div>
     <a href="/" class="btn-primary" style="text-decoration:none">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
       Cek Baru
@@ -35,36 +46,75 @@
   <div class="riwayat-list">
     <div class="riwayat-empty">
       <div class="riwayat-empty-icon">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
       </div>
       <div class="riwayat-empty-title">Belum ada pengecekan</div>
-      <div>Mulai dengan upload dokumen pertama kamu</div>
+      <div class="riwayat-empty-desc">Mulai dengan upload dokumen pertama kamu — bisa PDF, DOCX, atau TXT.</div>
+      <a href="/" class="btn-primary" style="text-decoration:none">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        Upload Dokumen
+      </a>
     </div>
   </div>
   {% else %}
-  <div class="riwayat-list">
+  <div class="riwayat-toolbar">
+    <input type="text" class="search-input" id="search" placeholder="Cari nama file…" autocomplete="off">
+    <button class="filter-chip active" data-filter="all">Semua <span class="count" id="count-all"></span></button>
+    <button class="filter-chip" data-filter="low">🟢 Rendah</button>
+    <button class="filter-chip" data-filter="med">🟡 Sedang</button>
+    <button class="filter-chip" data-filter="high">🔴 Tinggi</button>
+    <button class="filter-chip" data-filter="ai">🤖 AI</button>
+    <select class="filter-chip" id="sort" style="appearance: none; padding-right: 28px; background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%2394A3B8%22 stroke-width=%222%22%3E%3Cpolyline points=%226 9 12 15 18 9%22/%3E%3C/svg%3E'); background-repeat: no-repeat; background-position: right 10px center;">
+      <option value="newest">Terbaru</option>
+      <option value="oldest">Terlama</option>
+      <option value="highest">Skor Tertinggi</option>
+      <option value="lowest">Skor Terendah</option>
+    </select>
+  </div>
+
+  <div class="riwayat-list" id="riwayat-list">
     {% for r in recent %}
-    <a class="recent-item" href="/r/{{ r.id }}" style="text-decoration:none; color: inherit;">
+    <a class="recent-item"
+       href="/r/{{ r.id }}"
+       data-name="{{ r.filename|lower }}"
+       data-score="{{ r.score }}"
+       data-score-class="{{ r.score_class }}"
+       data-ai="{{ r.ai_label|default('') }}"
+       data-timestamp="{{ loop.index0 }}">
       <div class="file-icon {{ r.filetype }}">{{ r.filetype|upper }}</div>
       <div>
         <div class="recent-name">{{ r.filename }}</div>
         <div class="recent-meta">{{ r.paragraphs }} paragraf · {{ r.elapsed }}s · {{ r.finished_at_human }}</div>
       </div>
-      {% if r.ai_label %}
-      <div class="recent-ai {{ r.ai_class }}">AI {{ r.ai_label }}</div>
-      {% else %}
-      <div></div>
-      {% endif %}
+      {% if r.ai_label %}<div class="recent-ai {{ r.ai_class }}">AI {{ r.ai_label }}</div>{% else %}<div></div>{% endif %}
       <div class="recent-score {{ r.score_class }}">{{ r.score }}%</div>
       <div class="recent-time">{{ r.ago }}</div>
-      <div class="riwayat-action">
+      <div class="recent-arrow">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
       </div>
     </a>
     {% endfor %}
   </div>
+
+  <div class="results-empty-search" id="empty-search">
+    <div class="results-empty-search-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </div>
+    <div class="results-empty-search-title">Tidak ada hasil</div>
+    <div>Coba kata kunci lain atau hapus filter</div>
+  </div>
   {% endif %}
 </div>
 
+<script src="/static/app.js"></script>
+{% if recent|length > 0 %}
+<script>
+  // Initialize filter counts
+  (function() {
+    const items = document.querySelectorAll('#riwayat-list .recent-item');
+    document.getElementById('count-all').textContent = items.length;
+  })();
+</script>
+{% endif %}
 </body>
 </html>

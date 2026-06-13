@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PlagCheck — Deteksi Plagiarisme AI · Powered by Open Source</title>
+<meta name="theme-color" content="#4F46E5">
+<title>PlagCheck — Cek Plagiarisme AI · Powered by Open Source</title>
 <link rel="stylesheet" href="/static/app.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✓</text></svg>">
 </head>
 <body>
 
@@ -12,27 +14,42 @@
   <!-- Nav -->
   <nav class="nav">
     <div class="brand">
-      <div class="brand-mark"></div>
-      <div class="brand-text">PlagCheck<span>v{{ version }} · Open Source</span></div>
+      <a href="/" class="brand-link">
+        <div class="brand-mark"></div>
+        <div class="brand-text">PlagCheck<span>v{{ version }} · Open Source</span></div>
+      </a>
     </div>
-    <div class="nav-links">
+
+    <div class="nav-links" id="nav-links">
       <a class="nav-link" href="#fitur">Fitur</a>
       <a class="nav-link" href="/riwayat">Riwayat</a>
-      <a class="nav-link" href="https://github.com/" target="_blank">GitHub ↗</a>
+      <a class="nav-link" href="https://github.com/Poeroro/plagcheck" target="_blank" rel="noopener">GitHub ↗</a>
       <a class="nav-cta" href="#upload">
         Cek Sekarang
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
     </div>
   </nav>
 
   <!-- Hero -->
   <section class="hero">
-    <div class="eyebrow">Deteksi plagiarisme & AI text · 100% gratis</div>
+    <div class="eyebrow">
+      <span class="dot"></span>
+      Deteksi plagiarisme & AI text · 100% gratis
+    </div>
     <h1 class="h1">
-      Cek skripsi & paper <br>
-      <span class="strike">Turnitin</span>
-      <span class="grad">tanpa bayar</span>
+      Cek skripsi & paper<br>
+      <span class="strike">Turnitin</span> <span class="grad">tanpa bayar</span>
     </h1>
     <p class="sub">
       PlagCheck pakai <b>{{ corpus_size }} paper Indonesia & Inggris</b> + AI paraphrase detection
@@ -43,14 +60,14 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
         Upload Dokumen
       </a>
-      <a class="btn-secondary" href="#fitur">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-        Pelajari
-      </a>
+      <button class="btn-secondary" type="button" id="demo-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Coba Demo
+      </button>
     </div>
     <div class="trust">
-      <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> F1 100% di benchmark</span>
-      <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Dokumen tidak diupload</span>
+      <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> F1 0.992 di benchmark Garuda</span>
+      <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Dokumen tidak disimpan permanen</span>
       <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> ~19 detik per cek</span>
     </div>
   </section>
@@ -62,7 +79,7 @@
         <div class="drop-icon">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
         </div>
-        <div class="drop-title" id="drop-title">Drag & drop dokumen di sini</div>
+        <div class="drop-title" id="drop-title">Drag &amp; drop dokumen di sini</div>
         <div class="drop-sub" id="drop-sub">atau klik tombol di bawah untuk pilih file · maks 10MB</div>
         <input type="file" name="file" id="file-input" accept=".pdf,.docx,.txt" hidden required>
         <button type="button" class="btn-primary" onclick="document.getElementById('file-input').click()">
@@ -75,7 +92,18 @@
           <span>.TXT</span>
           <span>10MB max</span>
         </div>
-        <div id="file-info" class="file-info" style="display:none"></div>
+        <div id="file-info" class="file-info" style="display:none">
+          <div class="file-info-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <div class="file-info-text">
+            <div class="file-info-name" id="file-name"></div>
+            <div class="file-info-size" id="file-size"></div>
+          </div>
+          <button type="button" class="file-info-remove" id="file-remove" aria-label="Remove file">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
       </div>
 
       <!-- Config panel -->
@@ -85,7 +113,7 @@
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
             Mode Pengecekan
           </div>
-          <div class="config-mode">
+          <div class="config-mode" id="config-mode">
             <button type="button" class="config-mode-btn" data-mode="cepat">Cepat</button>
             <button type="button" class="config-mode-btn active" data-mode="standar">Standar</button>
             <button type="button" class="config-mode-btn" data-mode="akurat">Akurat</button>
@@ -93,7 +121,7 @@
         </div>
 
         <div class="config-body">
-          <div class="config-row">
+          <label class="config-row" for="opt-semantic">
             <input type="checkbox" class="toggle" name="semantic" id="opt-semantic" checked>
             <div class="config-info">
               <div class="config-name">
@@ -103,9 +131,9 @@
               <div class="config-desc">Deteksi paraphrase & terjemahan silang bahasa (ID ↔ EN)</div>
             </div>
             <div class="config-time">+8.4s</div>
-          </div>
+          </label>
 
-          <div class="config-row">
+          <label class="config-row" for="opt-ce">
             <input type="checkbox" class="toggle" name="cross_encoder" id="opt-ce" checked>
             <div class="config-info">
               <div class="config-name">
@@ -115,9 +143,9 @@
               <div class="config-desc">Verifikasi ulang kandidat dengan model cross-encoder</div>
             </div>
             <div class="config-time">+11.4s</div>
-          </div>
+          </label>
 
-          <div class="config-row" id="row-ensemble">
+          <label class="config-row" for="opt-ensemble" id="row-ensemble">
             <input type="checkbox" class="toggle" name="ensemble" id="opt-ensemble">
             <div class="config-info">
               <div class="config-name">
@@ -127,21 +155,21 @@
               <div class="config-desc">Voting 2 bi-encoder untuk recall lebih tinggi (butuh ~2x RAM)</div>
             </div>
             <div class="config-time">+12.0s</div>
-          </div>
+          </label>
 
-          <div class="config-row">
+          <label class="config-row" for="opt-ai">
             <input type="checkbox" class="toggle" name="detect_ai" id="opt-ai" checked>
             <div class="config-info">
               <div class="config-name">
                 AI Text Detector
-                <span class="config-badge ai">GPT-ZERO-LIKE</span>
+                <span class="config-badge ai">GPT-ZERO</span>
               </div>
-              <div class="config-desc">RoBERTa + perplexity + stylometry. Deteksi teks AI (ChatGPT, Claude, Gemini)</div>
+              <div class="config-desc">RoBERTa + perplexity + stylometry. Deteksi ChatGPT, Claude, Gemini</div>
             </div>
             <div class="config-time">+3.2s</div>
-          </div>
+          </label>
 
-          <div class="config-row">
+          <label class="config-row" for="opt-cite">
             <input type="checkbox" class="toggle" name="strip_citations" id="opt-cite" checked>
             <div class="config-info">
               <div class="config-name">
@@ -151,11 +179,10 @@
               <div class="config-desc">Abaikan sitasi, kutipan, dan daftar pustaka</div>
             </div>
             <div class="config-time">+0.1s</div>
-          </div>
+          </label>
         </div>
       </div>
 
-      <!-- Submit -->
       <div class="submit-row">
         <button type="submit" class="btn-primary btn-submit" id="submit-btn">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -164,7 +191,6 @@
         <div class="submit-hint" id="submit-hint">Estimasi: ~19 detik</div>
       </div>
 
-      <!-- Loading state -->
       <div class="loading-overlay" id="loading" style="display:none">
         <div class="loading-card">
           <div class="spinner"></div>
@@ -179,112 +205,148 @@
         </div>
       </div>
     </form>
-
-    <!-- Stats -->
-    <div class="stats">
-      <div class="stat">
-        <div class="stat-val">{{ corpus_size }}</div>
-        <div class="stat-label">Dokumen Corpus</div>
-      </div>
-      <div class="stat">
-        <div class="stat-val">100%</div>
-        <div class="stat-label">F1 Score</div>
-      </div>
-      <div class="stat">
-        <div class="stat-val">~19s</div>
-        <div class="stat-label">Rata-rata / Cek</div>
-      </div>
-      <div class="stat">
-        <div class="stat-val">$0</div>
-        <div class="stat-label">Biaya Selamanya</div>
-      </div>
-    </div>
-
-    <!-- Recent checks -->
-    {% if recent and recent|length > 0 %}
-    <div class="recent">
-      <div class="recent-head">
-        <div class="recent-title">Riwayat Pengecekan <span>· {{ recent|length }} dokumen</span></div>
-        <a class="recent-link" href="/riwayat">Lihat semua →</a>
-      </div>
-      <div class="recent-list">
-        {% for r in recent[:5] %}
-        <a class="recent-item" href="/r/{{ r.id }}">
-          <div class="file-icon {{ r.filetype }}">{{ r.filetype|upper }}</div>
-          <div>
-            <div class="recent-name">{{ r.filename }}</div>
-            <div class="recent-meta">{{ r.paragraphs }} paragraf · {{ r.elapsed }}s · {{ r.finished_at_human }}</div>
-          </div>
-          {% if r.ai_label %}
-          <div class="recent-ai {{ r.ai_class }}">AI {{ r.ai_label }}</div>
-          {% else %}
-          <div></div>
-          {% endif %}
-          <div class="recent-score {{ r.score_class }}">{{ r.score }}%</div>
-          <div class="recent-time">{{ r.ago }}</div>
-        </a>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}
   </section>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-val">{{ corpus_size }}</div>
+      <div class="stat-label">Dokumen Corpus</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">0.992</div>
+      <div class="stat-label">F1 Score</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">~19s</div>
+      <div class="stat-label">Rata-rata / Cek</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">$0</div>
+      <div class="stat-label">Biaya Selamanya</div>
+    </div>
+  </div>
 
   <!-- Features -->
   <section class="features" id="fitur">
     <div class="features-head">
-      <h2 class="features-title">Kenapa PlagCheck?</h2>
-      <p class="features-sub">Setara Turnitin · Open source · Privasi terjaga · Gratis selamanya</p>
+      <div class="eyebrow"><span class="dot"></span> Kenapa PlagCheck?</div>
+      <h2 class="h2" style="margin-top: 12px">Fitur lengkap, harga Rp 0</h2>
+      <p class="sub" style="margin-top: 8px">Setara Turnitin, Quetext, dan Copyscape — tapi open source &amp; self-hosted.</p>
     </div>
+
     <div class="features-grid">
-      <div class="feature">
+      <div class="feature-card">
         <div class="feature-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </div>
-        <div class="feature-title">{{ corpus_size }} Corpus</div>
-        <div class="feature-desc">Paper dari arXiv, OpenAlex, dan Crossref. Bahasa Indonesia & Inggris. Termasuk halaman web ID dari Common Crawl.</div>
+        <div class="feature-title">MinHash LSH Detection</div>
+        <div class="feature-desc">Catches exact copy &amp; near-duplicates dalam 0.1 detik per dokumen. 91.7% akurasi.</div>
       </div>
-      <div class="feature">
+      <div class="feature-card">
         <div class="feature-icon violet">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-11h-6m-6 0H1"/></svg>
-        </div>
-        <div class="feature-title">Ensemble + AI Detector</div>
-        <div class="feature-desc">2 bi-encoder voting (paraphrase + mpnet) + RoBERTa AI detector. F1 100% di benchmark sintetik.</div>
-      </div>
-      <div class="feature">
-        <div class="feature-icon amber">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
         </div>
-        <div class="feature-title">Multi-Bahasa</div>
-        <div class="feature-desc">Sastrawi stemmer untuk Indonesia. Cross-language detection (paraphrase ID dari sumber EN).</div>
+        <div class="feature-title">ONNX Hybrid Encoder</div>
+        <div class="feature-desc">Multilingual MiniLM INT8. Tangkap paraphrase &amp; terjemahan silang bahasa (ID ↔ EN).</div>
       </div>
-      <div class="feature">
-        <div class="feature-icon blue">
+      <div class="feature-card">
+        <div class="feature-icon green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <div class="feature-title">Bahasa Indonesia Native</div>
+        <div class="feature-desc">Sastrawi stemming + ID-specific preprocessing. 7K corpus ID (Garuda, Detik, Kompas).</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon amber">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        </div>
+        <div class="feature-title">AI Text Detection</div>
+        <div class="feature-desc">RoBERTa + perplexity + stylometry. Detect ChatGPT, Claude, Gemini, LLaMA.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon cyan">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         </div>
-        <div class="feature-title">100% Privat</div>
-        <div class="feature-desc">Dokumen diproses lokal di VPS kamu. Tidak ada upload ke cloud. Cocok untuk paper rahasia / skripsi.</div>
+        <div class="feature-title">Privasi Terjaga</div>
+        <div class="feature-desc">Per-session cookie. Dokumen lo cuma bisa lo liat. Auto-delete 7 hari.</div>
       </div>
-      <div class="feature">
-        <div class="feature-icon red">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-        </div>
-        <div class="feature-title">Export HTML/PDF</div>
-        <div class="feature-desc">Laporan lengkap dengan highlight match, sitasi, dan verdict AI. Bagikan ke dosen dengan link.</div>
-      </div>
-      <div class="feature">
-        <div class="feature-icon cyan">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l6-6-4-4M12 19h8"/></svg>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
         </div>
         <div class="feature-title">$0 Selamanya</div>
-        <div class="feature-desc">Self-hosted. VPS Contabo $5/bulan sudah cukup. Bandingkan Turnitin $60-200/tahun. Open source MIT.</div>
+        <div class="feature-desc">Open source + self-hosted. Tanpa subscription, tanpa API key, tanpa batasan.</div>
       </div>
     </div>
   </section>
 
+  <!-- Recent (session-scoped) -->
+  {% if recent and recent|length > 0 %}
+  <section class="features" style="padding-top: 32px">
+    <div class="features-head">
+      <h2 class="h2">Riwayat sesi ini</h2>
+      <p class="sub" style="margin-top: 8px">Cek yang baru aja lo lakuin. <a href="/riwayat" style="color: var(--brand)">Lihat semua →</a></p>
+    </div>
+    <div class="recent-list">
+      {% for r in recent %}
+      <a class="recent-item" href="/r/{{ r.id }}">
+        <div class="file-icon {{ r.filetype }}">{{ r.filetype|upper }}</div>
+        <div>
+          <div class="recent-name">{{ r.filename }}</div>
+          <div class="recent-meta">{{ r.paragraphs }} paragraf · {{ r.elapsed }}s · {{ r.finished_at_human }}</div>
+        </div>
+        {% if r.ai_label %}<div class="recent-ai {{ r.ai_class }}">AI {{ r.ai_label }}</div>{% else %}<div></div>{% endif %}
+        <div class="recent-score {{ r.score_class }}">{{ r.score }}%</div>
+        <div class="recent-time">{{ r.ago }}</div>
+        <div class="recent-arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Footer -->
   <footer class="footer">
-    <p>PlagCheck v{{ version }} · <span>Powered by open source</span> · FastAPI + sentence-transformers + Sastrawi + RoBERTa</p>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <div class="brand-mark"></div>
+          <div class="brand-text">PlagCheck<span>Open Source · $0</span></div>
+        </div>
+        <p>Plagiarism detector buat论文 Indonesia. Dibangun di atas open-source stack (FastAPI + ONNX + Sentence-Transformers).</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#upload">Cek Dokumen</a>
+        <a href="/riwayat">Riwayat</a>
+        <a href="#fitur">Fitur</a>
+        <a href="https://github.com/Poeroro/plagcheck" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="https://github.com/Poeroro/plagcheck#readme" target="_blank" rel="noopener">README</a>
+        <a href="https://garuda.kemdiktisaintek.go.id" target="_blank" rel="noopener">Garuda Source ↗</a>
+        <a href="https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2" target="_blank" rel="noopener">Model Card ↗</a>
+      </div>
+      <div class="footer-col">
+        <h4>Tech</h4>
+        <p>FastAPI · ONNX</p>
+        <p>MiniLM-L12-v2</p>
+        <p>Sastrawi · PyMuPDF</p>
+        <p>v{{ version }} · 2026</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      MIT License · 2026 · Built with ❤️ for Indonesian academia
+    </div>
   </footer>
 </div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
 
 <script src="/static/app.js"></script>
 </body>

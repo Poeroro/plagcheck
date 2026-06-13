@@ -24,7 +24,7 @@ REPORT_DIR = ROOT / "reports"
 UPLOAD_DIR.mkdir(exist_ok=True)
 REPORT_DIR.mkdir(exist_ok=True)
 
-APP_VERSION = "0.7.0"
+APP_VERSION = "0.7.1"
 MAX_UPLOAD_MB = 10
 
 # Per-session privacy: each browser gets its own cookie-stamped session ID
@@ -81,6 +81,64 @@ _semantic_loaded: bool = False
 _ensemble_loaded: bool = False
 _cross_encoder_loaded: bool = False
 _ai_detector_loaded: bool = False
+
+
+# -----------------------------------------------------------------------
+# Startup: pre-warm the ONNX encoder in a background thread so the first
+# user request doesn't pay the 5-10s model-load latency. The encoder is
+# the most commonly used one (Standar preset uses semantic), so warming
+# it removes the cold-start penalty for the typical user flow.
+# -----------------------------------------------------------------------
+import asyncio  # noqa: E402
+from contextlib import asynccontextmanager  # noqa: E402
+
+
+def _prewarm_semantic() -> None:
+    """Run in a thread; logs progress. Errors are non-fatal."""
+    try:
+        print("[startup] pre-warming ONNX semantic encoder (background)…", flush=True)
+        ensure_semantic_loaded()
+        print("[startup] ONNX encoder ready ✓", flush=True)
+    except Exception as e:  # noqa: BLE001
+        print(f"[startup] semantic pre-warm failed (non-fatal): {e}", flush=True)
+
+
+def _prewarm_optional() -> None:
+    """Best-effort pre-warm of cross-encoder and AI detector. Failures
+    are non-fatal — first request will still work, just cold-loads."""
+    try:
+        print("[startup] pre-warming cross-encoder (background)…", flush=True)
+        ensure_cross_encoder_loaded()
+        print("[startup] cross-encoder ready ✓", flush=True)
+    except Exception as e:  # noqa: BLE001
+        print(f"[startup] cross-encoder pre-warm failed (non-fatal): {e}", flush=True)
+    try:
+        print("[startup] pre-warming AI detector (background)…", flush=True)
+        ensure_ai_detector_loaded()
+        print("[startup] AI detector ready ✓", flush=True)
+    except Exception as e:  # noqa: BLE001
+        print(f"[startup] AI detector pre-warm failed (non-fatal): {e}", flush=True)
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup — run all pre-warms in a single background thread so they
+    # don't compete with the main event loop. ONNX first (most common),
+    # then CE + AI in sequence.
+    loop = asyncio.get_running_loop()
+
+    def _all_prewarm() -> None:
+        _prewarm_semantic()
+        _prewarm_optional()
+
+    loop.run_in_executor(None, _all_prewarm)
+    yield
+    # Shutdown (nothing to clean up explicitly)
+
+
+# Re-bind app to use the lifespan (FastAPI doesn't let us set lifespan at
+# construction time after add_middleware in some versions — re-create cleanly).
+app.router.lifespan_context = lifespan
 
 
 def get_engine() -> PlagEngine:

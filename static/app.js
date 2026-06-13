@@ -215,20 +215,31 @@
       const submitBtn = document.getElementById('submit-btn');
       const loading = document.getElementById('loading');
       const fileInput = document.getElementById('file-input');
+      const cancelBtn = document.getElementById('loading-cancel');
+      const elapsedEl = document.getElementById('loading-elapsed');
+      const titleEl = document.getElementById('loading-title');
+
       if (!fileInput.files || !fileInput.files[0]) {
         toast('Pilih file dulu', 'error');
         return;
       }
+
       submitBtn.disabled = true;
       loading.style.display = 'grid';
       const steps = document.querySelectorAll('.loading-step');
       steps.forEach(function (s) { s.classList.remove('active', 'done'); });
 
-      // Step 0: parse
-      steps[0].classList.add('active');
-      await new Promise(function (r) { setTimeout(r, 200); });
+      // Elapsed timer
+      const t0 = Date.now();
+      const elapsedTimer = setInterval(function () {
+        const s = Math.floor((Date.now() - t0) / 1000);
+        const mm = String(Math.floor(s / 60)).padStart(2, '0');
+        const ss = String(s % 60).padStart(2, '0');
+        elapsedEl.textContent = mm + ':' + ss;
+      }, 250);
 
-      const fd = new FormData(form);
+      // Step transitions (4s per step → all 5 done at 20s)
+      // After all done, the title changes to "Hampir selesai..." to reassure the user
       let stepIdx = 0;
       const stepTimer = setInterval(function () {
         stepIdx++;
@@ -236,22 +247,54 @@
           steps[stepIdx - 1].classList.remove('active');
           steps[stepIdx - 1].classList.add('done');
           if (stepIdx < steps.length) steps[stepIdx].classList.add('active');
+        } else {
+          // All steps shown — switch to a friendlier "almost done" message
+          // so the user doesn't think we're stuck on the last step
+          titleEl.textContent = 'Hampir selesai… menyusun laporan';
         }
       }, 4000);
 
+      // First step: parse
+      steps[0].classList.add('active');
+      await new Promise(function (r) { setTimeout(r, 200); });
+
+      // AbortController for cancel button
+      const controller = new AbortController();
+      const onCancel = function () {
+        controller.abort();
+      };
+      cancelBtn.addEventListener('click', onCancel);
+
+      const fd = new FormData(form);
+
       try {
-        const r = await fetch('/api/check', { method: 'POST', body: fd });
+        const r = await fetch('/api/check', {
+          method: 'POST', body: fd,
+          signal: controller.signal,
+        });
         const data = await r.json();
         clearInterval(stepTimer);
+        clearInterval(elapsedTimer);
         steps.forEach(function (s) { s.classList.remove('active'); s.classList.add('done'); });
-        if (!r.ok) throw new Error(data.detail || 'Gagal');
+        titleEl.textContent = 'Selesai! Mengalihkan…';
+        if (!r.ok) throw new Error(data.detail || ('HTTP ' + r.status));
         await new Promise(function (res) { setTimeout(res, 300); });
         window.location.href = '/r/' + data.id;
       } catch (err) {
         clearInterval(stepTimer);
+        clearInterval(elapsedTimer);
+        cancelBtn.removeEventListener('click', onCancel);
+        if (err.name === 'AbortError') {
+          titleEl.textContent = 'Dibatalkan';
+          toast('Pengecekan dibatalkan', 'info');
+        } else {
+          titleEl.textContent = 'Gagal';
+          toast('Error: ' + err.message, 'error');
+        }
         loading.style.display = 'none';
         submitBtn.disabled = false;
-        toast('Error: ' + err.message, 'error');
+        // Reset title for next attempt
+        setTimeout(function () { titleEl.textContent = 'Menganalisis dokumen...'; }, 1500);
       }
     });
   });

@@ -564,6 +564,32 @@ input, textarea, select { font-family: inherit; color: inherit; }
 .loading-step.active { background: var(--brand-soft); color: var(--brand); }
 .loading-step.done { background: var(--green-soft); color: var(--green); }
 
+.loading-elapsed {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-3);
+  margin-top: -10px;
+  margin-bottom: 14px;
+  font-variant-numeric: tabular-nums;
+}
+.loading-cancel {
+  margin-top: 16px;
+  padding: 8px 16px;
+  background: transparent;
+  color: var(--text-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+.loading-cancel:hover {
+  background: var(--bg-elev-2);
+  color: var(--text);
+  border-color: var(--border-hover);
+}
+
 /* ==========================================================================
    STATS / FEATURES
    ========================================================================== */

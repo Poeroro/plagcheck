@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#4F46E5">
-<title>{{ r.document_name }} — PlagCheck</title>
+<title>{{ r.document_name }} — DoubleCheck</title>
 <link rel="stylesheet" href="/static/app.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✓</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✓✓</text></svg>">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
     <div class="brand">
       <a href="/" class="brand-link">
         <div class="brand-mark"></div>
-        <div class="brand-text">PlagCheck<span>v{{ version }}</span></div>
+        <div class="brand-text">DoubleCheck<span>v{{ version }}</span></div>
       </a>
     </div>
 
@@ -54,7 +54,7 @@
 
     <!-- Top bar -->
     <div class="topbar">
-      <div class="crumbs"><a href="/">PlagCheck</a> <span style="margin:0 6px;color:var(--text-4)">/</span> <a href="/riwayat">Riwayat</a> <span style="margin:0 6px;color:var(--text-4)">/</span> <span>{{ r.document_name }}</span></div>
+      <div class="crumbs"><a href="/">DoubleCheck</a> <span style="margin:0 6px;color:var(--text-4)">/</span> <a href="/riwayat">Riwayat</a> <span style="margin:0 6px;color:var(--text-4)">/</span> <span>{{ r.document_name }}</span></div>
       <div class="topbar-actions">
         <div class="download-dropdown" id="download-dropdown">
           <button class="icon-btn" id="download-toggle" title="Download laporan" aria-label="Download laporan">

@@ -1,4 +1,4 @@
-"""Show PlagCheck corpus composition statistics.
+"""Show DoubleCheck corpus composition statistics.
 
 Usage:
     python scripts/corpus_stats.py
@@ -60,7 +60,7 @@ def main() -> int:
             en_count += 1
 
     # Report
-    print(f"=== PlagCheck Corpus Stats ===\n")
+    print(f"=== DoubleCheck Corpus Stats ===\n")
     print(f"Total documents: {len(files):,}")
     print(f"Total size: {total_size / 1024 / 1024:.1f} MB")
     print(f"Total words: {total_words / 1_000_000:.2f}M ({total_words:,})")

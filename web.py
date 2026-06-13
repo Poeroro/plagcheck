@@ -1,4 +1,4 @@
-"""PlagCheck FastAPI web server — production version."""
+"""DoubleCheck FastAPI web server — production version."""
 from __future__ import annotations
 
 import json
@@ -24,7 +24,7 @@ REPORT_DIR = ROOT / "reports"
 UPLOAD_DIR.mkdir(exist_ok=True)
 REPORT_DIR.mkdir(exist_ok=True)
 
-APP_VERSION = "0.6.1"
+APP_VERSION = "0.7.0"
 MAX_UPLOAD_MB = 10
 
 # Per-session privacy: each browser gets its own cookie-stamped session ID
@@ -34,7 +34,7 @@ SESSION_COOKIE = "pc_sid"
 SESSION_MAX_AGE = 30 * 24 * 3600  # 30 days
 SESSION_PREFIX_LEN = 8  # first 8 alnum chars used in filename prefix (48 bits)
 
-app = FastAPI(title="PlagCheck", version=APP_VERSION)
+app = FastAPI(title="DoubleCheck", version=APP_VERSION)
 templates = Jinja2Templates(directory=str(ROOT / "templates"))
 app.mount("/static", StaticFiles(directory=str(ROOT / "static")), name="static")
 
@@ -466,7 +466,7 @@ def _report_text(data: dict) -> str:
     sep = "=" * 64
     sub = "-" * 64
     lines.append(sep)
-    lines.append("  PlagCheck — Laporan Pengecekan Plagiarisme")
+    lines.append("  DoubleCheck — Laporan Pengecekan Plagiarisme")
     lines.append(sep)
     lines.append("")
     lines.append(f"  Dokumen      : {name}")
@@ -523,7 +523,7 @@ def _report_text(data: dict) -> str:
                 lines.append(f"      Kutipan: {qt[:300]}{'…' if len(qt) > 300 else ''}")
     lines.append("")
     lines.append(sep)
-    lines.append(f"  PlagCheck · {datetime.utcnow().isoformat(timespec='seconds', sep=' ')}")
+    lines.append(f"  DoubleCheck · {datetime.utcnow().isoformat(timespec='seconds', sep=' ')}")
     lines.append(sep)
     return "\n".join(lines)
 
@@ -568,7 +568,7 @@ def _report_pdf(data: dict) -> bytes:
     # Title
     pdf.set_font("Helvetica", "B", 18)
     pdf.set_text_color(40, 40, 60)
-    pdf.cell(0, 10, "PlagCheck", ln=1)
+    pdf.cell(0, 10, "DoubleCheck", ln=1)
     pdf.set_font("Helvetica", "", 11)
     pdf.set_text_color(100, 100, 110)
     pdf.cell(0, 6, "Laporan Pengecekan Plagiarisme", ln=1)
@@ -692,7 +692,7 @@ def _report_pdf(data: dict) -> bytes:
     pdf.line(10, pdf.get_y(), 200, pdf.get_y())
     pdf.set_text_color(150, 150, 160)
     pdf.set_font("Helvetica", "I", 8)
-    pdf.cell(0, 5, f"PlagCheck · {datetime.utcnow().isoformat(timespec='seconds', sep=' ')}", ln=1)
+    pdf.cell(0, 5, f"DoubleCheck · {datetime.utcnow().isoformat(timespec='seconds', sep=' ')}", ln=1)
 
     out = pdf.output(dest="S")
     return bytes(out)
@@ -750,7 +750,7 @@ def _report_docx(data: dict) -> bytes:
         section.bottom_margin = Cm(2)
 
     # Title
-    title = doc.add_heading("PlagCheck", level=0)
+    title = doc.add_heading("DoubleCheck", level=0)
     title.alignment = WD_ALIGN_PARAGRAPH.LEFT
     sub = doc.add_paragraph("Laporan Pengecekan Plagiarisme")
     for run in sub.runs:
@@ -855,7 +855,7 @@ def _report_docx(data: dict) -> bytes:
     # Footer
     doc.add_paragraph()
     p = doc.add_paragraph()
-    r = p.add_run(f"PlagCheck · {datetime.utcnow().isoformat(timespec='seconds', sep=' ')}")
+    r = p.add_run(f"DoubleCheck · {datetime.utcnow().isoformat(timespec='seconds', sep=' ')}")
     r.italic = True
     r.font.size = Pt(8)
     r.font.color.rgb = RGBColor(0x90, 0x90, 0xA0)

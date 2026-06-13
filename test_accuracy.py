@@ -1,5 +1,5 @@
 """
-PlagCheck comprehensive self-test suite — 20+ real test cases.
+DoubleCheck comprehensive self-test suite — 20+ real test cases.
 
 Validates accuracy across 3 modes (MinHash, Semantic, Semantic+CE) plus
 AI text detection. Includes synthetic + real-world test cases.
@@ -251,7 +251,7 @@ def run_suite(engine: PlagEngine, cases: list[TestCase], mode: str) -> dict:
 
 def main() -> None:
     print("=" * 78)
-    print("PlagCheck comprehensive self-test suite")
+    print("DoubleCheck comprehensive self-test suite")
     print("=" * 78)
 
     print("\n[corpus] loading...")

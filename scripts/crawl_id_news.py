@@ -1,7 +1,7 @@
 """Indonesian news corpus crawler.
 
 Pulls article URLs from sitemap.xml of major Indonesian news outlets,
-extracts title + body, saves to corpus/ as .txt files for PlagCheck.
+extracts title + body, saves to corpus/ as .txt files for DoubleCheck.
 
 Sources (Tier 1 - quick wins):
 - Detik.com         (largest ID portal, ~20k+ URLs available)
@@ -41,7 +41,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CORPUS_DIR = ROOT / "corpus"
 STATE_FILE = Path(__file__).resolve().parent / ".crawl_state.json"
 
-UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 PlagCheck/0.5 (research; +https://plagcheck.tempmeil.xyz)"
+UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 DoubleCheck/1.0 (research; +https://plagcheck.tempmeil.xyz)"
 
 SOURCES = {
     "detik": {

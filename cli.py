@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-PlagCheck CLI — $0 plagiarism checker.
+"""DoubleCheck CLI — plagiarism checker.
 
 Usage:
   python3 cli.py build-corpus --query "machine learning" --sources arxiv,s2 --out corpus.txt

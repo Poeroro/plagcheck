@@ -1,4 +1,4 @@
-"""PlagCheck engine: orchestrator for parse → fingerprint → match → report.
+"""DoubleCheck engine: orchestrator for parse → fingerprint → match → report.
 
 Pipeline:
   1. Parse document
@@ -179,7 +179,7 @@ def _windowed_jaccard(query_shingles: set[str], corpus_text: str,
 
 
 class PlagEngine:
-    """PlagCheck orchestrator with multi-model ensemble support."""
+    """DoubleCheck orchestrator with multi-model ensemble support."""
 
     def __init__(self, corpus: Corpus, *, near_threshold: float = DEFAULT_NEAR,
                  semantic_threshold: float = DEFAULT_SEMANTIC,

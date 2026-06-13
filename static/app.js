@@ -1,10 +1,10 @@
-/* PlagCheck client-side JS v2
+/* DoubleCheck client-side JS v2
    - Theme toggle (light/dark) with localStorage persistence
    - Mobile menu toggle
    - Drag-and-drop file UX
-   - Demo button (load sample doc)
    - Riwayat search/filter/sort
    - Toast notifications
+   - Download dropdown (results page)
 */
 
 (function () {
@@ -201,38 +201,6 @@
         btn.classList.add('active');
         applyPreset(btn.dataset.mode);
       });
-    });
-  });
-
-  // -----------------------------------------------------------------------
-  // Demo button — fetch a built-in sample and submit
-  // -----------------------------------------------------------------------
-  document.addEventListener('DOMContentLoaded', function () {
-    const demoBtn = document.getElementById('demo-btn');
-    const form = document.getElementById('check-form');
-    if (!demoBtn || !form) return;
-    demoBtn.addEventListener('click', async function () {
-      demoBtn.disabled = true;
-      const oldText = demoBtn.innerHTML;
-      demoBtn.innerHTML = '<span style="opacity: 0.7">Memuat sample…</span>';
-      try {
-        const r = await fetch('/static/samples/sample_thesis.txt');
-        if (!r.ok) throw new Error('Sample not found');
-        const blob = await r.blob();
-        const file = new File([blob], 'sample_thesis.txt', { type: 'text/plain' });
-        const input = document.getElementById('file-input');
-        const dt = new DataTransfer();
-        dt.items.add(file);
-        input.files = dt.files;
-        input.dispatchEvent(new Event('change', { bubbles: true }));
-        toast('Sample dimuat, klik "Mulai Pengecekan"', 'success');
-        document.getElementById('upload').scrollIntoView({ behavior: 'smooth' });
-      } catch (e) {
-        toast('Gagal memuat sample: ' + e.message, 'error');
-      } finally {
-        demoBtn.disabled = false;
-        demoBtn.innerHTML = oldText;
-      }
     });
   });
 

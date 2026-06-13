@@ -18,7 +18,7 @@ import requests
 from .corpus import CorpusDoc
 
 
-USER_AGENT = "PlagCheck/0.1 (research; contact: admin@tempmeil.xyz)"
+USER_AGENT = "DoubleCheck/1.0 (research; contact: admin@tempmeil.xyz)"
 RATE_LIMIT_DELAY = 0.3
 HTTP_TIMEOUT = 60
 

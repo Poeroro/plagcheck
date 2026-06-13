@@ -1,4 +1,4 @@
-"""PlagCheck — $0 budget plagiarism checker."""
+"""DoubleCheck — plagiarism checker."""
 from .parser import parse_any, split_paragraphs, split_sentences
 from .fingerprint import make_minhash, estimate_jaccard, build_lsh
 from .corpus import Corpus, CorpusDoc

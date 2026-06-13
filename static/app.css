@@ -741,6 +741,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 @media (max-width: 768px) {
   .h1 { font-size: 36px; }
+  .h2 { font-size: 24px; }
   .stats, .features-grid, .stat-row { grid-template-columns: 1fr 1fr; }
   .recent-item { grid-template-columns: 32px 1fr 80px; }
   .recent-item .recent-ai, .recent-item .recent-time { display: none; }
@@ -751,4 +752,65 @@ button { font-family: inherit; cursor: pointer; }
   .result-header { flex-direction: column; align-items: flex-start; }
   .gauge { align-self: center; }
   .result-actions { width: 100%; justify-content: flex-end; }
+  .nav { padding: 12px 0; }
+  .brand-text span { display: none; }
+  .feature-card { padding: 16px; }
+  .panel { padding: 16px; }
+  .upload-area { padding: 24px 16px; }
+  .upload-icon { width: 40px; height: 40px; font-size: 18px; }
+  .config-panel { padding: 16px; }
+  .config-grid { gap: 10px; }
+  .match-card { padding: 12px; }
+  .match-preview { font-size: 12px; }
+  .gauge { width: 140px; height: 140px; }
+  .gauge-num { font-size: 32px; }
+  .gauge-svg { width: 140px; height: 140px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+  .footer { padding: 32px 0 16px; }
+}
+@media (max-width: 480px) {
+  .h1 { font-size: 28px; line-height: 1.2; }
+  .h2 { font-size: 20px; }
+  .container { padding: 0 12px; }
+  .main { padding: 12px; }
+  .nav-cta { padding: 6px 10px; font-size: 12px; }
+  .brand-text { font-size: 13px; }
+  .brand-mark { width: 26px; height: 26px; }
+  .stats { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .stat-value { font-size: 18px; }
+  .stat-label { font-size: 10px; }
+  .config-grid, .stat-row { grid-template-columns: 1fr; }
+  .features-grid { grid-template-columns: 1fr; }
+  .preset-row { flex-direction: column; align-items: stretch; gap: 8px; }
+  .preset-btn { width: 100%; }
+  .upload-area { padding: 20px 12px; }
+  .upload-title { font-size: 14px; }
+  .upload-hint { font-size: 11px; }
+  .submit-btn { width: 100%; padding: 14px; font-size: 14px; }
+  .panel { padding: 12px; border-radius: 8px; }
+  .result-header h1 { font-size: 18px; }
+  .gauge { width: 120px; height: 120px; }
+  .gauge-svg { width: 120px; height: 120px; }
+  .gauge-num { font-size: 28px; }
+  .match-card { padding: 10px; }
+  .match-meta { font-size: 10px; flex-wrap: wrap; }
+  .match-preview { font-size: 11px; }
+  .ai-score-num { font-size: 22px; }
+  .nav { padding: 10px 0; }
+  .footer-col h4 { font-size: 13px; }
+  .footer-col a, .footer-col p { font-size: 12px; }
+  .toast { left: 12px; right: 12px; max-width: none; }
+}
+/* Touch-friendly: larger tap targets on small screens */
+@media (hover: none) and (pointer: coarse) {
+  .nav-cta, .submit-btn, .preset-btn, .toggle { min-height: 44px; }
+  .file-input-label, .upload-area { cursor: pointer; }
+  .match-card:hover { transform: none; }
+}
+/* Print-friendly */
+@media print {
+  .nav, .sidebar, .footer, .config-panel, .result-actions { display: none; }
+  body { background: #fff; color: #000; }
+  .panel, .match-card { background: #fff; border-color: #ccc; }
+  .container { max-width: 100%; padding: 0; }
 }

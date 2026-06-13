@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import os
 import secrets
 import shutil
 import time
@@ -24,7 +25,7 @@ REPORT_DIR = ROOT / "reports"
 UPLOAD_DIR.mkdir(exist_ok=True)
 REPORT_DIR.mkdir(exist_ok=True)
 
-APP_VERSION = "0.7.1"
+APP_VERSION = "0.7.3"
 MAX_UPLOAD_MB = 10
 
 # Per-session privacy: each browser gets its own cookie-stamped session ID
@@ -135,13 +136,30 @@ def _prewarm_semantic() -> None:
 
 def _prewarm_optional() -> None:
     """Best-effort pre-warm of cross-encoder and AI detector. Failures
-    are non-fatal — first request will still work, just cold-loads."""
+    are non-fatal — first request will still work, just cold-loads.
+    Skipped entirely if RAM is below threshold."""
+    avail_mb = _available_ram_mb()
+    threshold = float(os.environ.get("PC_PREWARM_MIN_RAM_MB", "1500"))
+    if avail_mb < threshold:
+        print(
+            f"[startup] skip optional pre-warm (RAM {avail_mb:.0f}MB < {threshold:.0f}MB threshold)",
+            flush=True,
+        )
+        return
     try:
         print("[startup] pre-warming cross-encoder (background)…", flush=True)
         ensure_cross_encoder_loaded()
         print("[startup] cross-encoder ready ✓", flush=True)
     except Exception as e:  # noqa: BLE001
         print(f"[startup] cross-encoder pre-warm failed (non-fatal): {e}", flush=True)
+    # Skip AI detector by default — it's 1.5GB and often causes OOM.
+    # Enable explicitly with PC_PREWARM_AI=1
+    if os.environ.get("PC_PREWARN_AI", "") not in ("1", "true", "yes"):
+        print(
+            "[startup] skip AI detector pre-warm (set PC_PREWARN_AI=1 to enable; ~1.5GB)",
+            flush=True,
+        )
+        return
     try:
         print("[startup] pre-warming AI detector (background)…", flush=True)
         ensure_ai_detector_loaded()
@@ -150,11 +168,24 @@ def _prewarm_optional() -> None:
         print(f"[startup] AI detector pre-warm failed (non-fatal): {e}", flush=True)
 
 
+def _available_ram_mb() -> float:
+    """Return currently available RAM in MB, or a large number on failure."""
+    try:
+        with open("/proc/meminfo") as f:
+            for line in f:
+                if line.startswith("MemAvailable:"):
+                    return int(line.split()[1]) / 1024.0
+    except Exception:
+        pass
+    return 9999.0
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Startup — run all pre-warms in a single background thread so they
-    # don't compete with the main event loop. ONNX first (most common),
-    # then CE + AI in sequence.
+    # Startup — run pre-warms in a single background thread. Only the
+    # most-used model (ONNX semantic) is mandatory; cross-encoder and
+    # AI detector are best-effort and respect a RAM threshold so we
+    # don't OOM on small VPS instances.
     loop = asyncio.get_running_loop()
 
     def _all_prewarm() -> None:
@@ -1043,6 +1074,16 @@ async def check(
 ) -> dict:
     if not file.filename:
         raise HTTPException(400, "no file")
+
+    # RAM guard — refuse early if system is critically low (avoid mid-check OOM)
+    avail_mb = _available_ram_mb()
+    min_required = 350  # 350MB headroom for ONNX + corpus + check
+    if avail_mb < min_required:
+        raise HTTPException(
+            503,
+            f"Server sedang sibuk (RAM tersedia {avail_mb:.0f}MB). "
+            f"Coba lagi dalam 1-2 menit. Kalau masalah berlanjut, hubungi admin.",
+        )
 
     # Validate file
     safe_name = Path(file.filename).name

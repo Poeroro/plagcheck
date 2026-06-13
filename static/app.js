@@ -74,6 +74,28 @@
   window.pcToast = toast;
 
   // -----------------------------------------------------------------------
+  // Download dropdown (results page)
+  // -----------------------------------------------------------------------
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.getElementById('download-toggle');
+    const menu = document.getElementById('download-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        menu.classList.toggle('open');
+      });
+      document.addEventListener('click', function (e) {
+        if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+          menu.classList.remove('open');
+        }
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') menu.classList.remove('open');
+      });
+    }
+  });
+
+  // -----------------------------------------------------------------------
   // Drag & drop + file picker
   // -----------------------------------------------------------------------
   document.addEventListener('DOMContentLoaded', function () {

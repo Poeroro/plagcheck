@@ -24,7 +24,7 @@ REPORT_DIR = ROOT / "reports"
 UPLOAD_DIR.mkdir(exist_ok=True)
 REPORT_DIR.mkdir(exist_ok=True)
 
-APP_VERSION = "0.6.0"
+APP_VERSION = "0.6.1"
 MAX_UPLOAD_MB = 10
 
 # Per-session privacy: each browser gets its own cookie-stamped session ID
@@ -443,6 +443,442 @@ async def report_html(
     return HTMLResponse(
         html,
         headers={"Content-Disposition": f'attachment; filename="{report_id}.html"'},
+    )
+
+
+# ---------- Plain-text export ----------
+
+def _report_text(data: dict) -> str:
+    """Build a clean plain-text report from enriched data."""
+    name = data.get("display_name") or data.get("document_name", "dokumen")
+    score = data.get("overall_score", 0) * 100
+    flagged = data.get("flagged_paragraphs", 0)
+    total = data.get("total_paragraphs", 0)
+    risk = data.get("risk_label", "-")
+    started = data.get("started_at", "")
+    finished = data.get("finished_at", "")
+    elapsed = data.get("elapsed_seconds", 0)
+    matches = data.get("matches", []) or []
+    ai = data.get("ai_detection") or {}
+    cite = data.get("citation_stats") or {}
+
+    lines: list[str] = []
+    sep = "=" * 64
+    sub = "-" * 64
+    lines.append(sep)
+    lines.append("  PlagCheck — Laporan Pengecekan Plagiarisme")
+    lines.append(sep)
+    lines.append("")
+    lines.append(f"  Dokumen      : {name}")
+    lines.append(f"  Mulai        : {started}")
+    lines.append(f"  Selesai      : {finished}")
+    lines.append(f"  Durasi       : {elapsed:.1f} detik")
+    lines.append(f"  Paragraf     : {flagged} di-flag dari {total}")
+    lines.append("")
+    lines.append(f"  SKOR KEMIRIPAN : {score:.1f}%   ({risk})")
+    lines.append(sub)
+    if cite:
+        lines.append(
+            f"  Sitasi di-strip : inline={cite.get('inline_citations_stripped', 0)}, "
+            f"footnote={cite.get('footnote_refs_stripped', 0)}"
+        )
+        lines.append(
+            f"  Kutipan        : direct={cite.get('direct_quotes_stripped', 0)}, "
+            f"block={cite.get('block_quotes_stripped', 0)}"
+        )
+        if cite.get("reduction_pct"):
+            lines.append(f"  Reduksi total  : {int(cite['reduction_pct'])}%")
+        lines.append(sub)
+    if ai:
+        lines.append("")
+        lines.append("  AI TEXT DETECTION")
+        lines.append(sub)
+        lines.append(f"  Kemungkinan AI : {int(ai.get('ai_probability', 0) * 100)}%")
+        lines.append(f"  Verdict        : {ai.get('verdict', '-')}")
+        if ai.get("model_name"):
+            lines.append(f"  Model          : {ai['model_name']}")
+        sigs = ai.get("signals") or {}
+        for k, label in [("roberta", "RoBERTa"), ("perplexity_score", "Perplexity"),
+                         ("burstiness", "Burstiness"), ("stylometry_score", "Stylometry")]:
+            v = sigs.get(k)
+            if v is not None:
+                lines.append(f"    - {label:<12}: {int(v * 100)}%")
+        lines.append(sub)
+    lines.append("")
+    if not matches:
+        lines.append("  Tidak ada match yang terdeteksi.")
+        lines.append("  Dokumen ini bersih dari plagiarisme.")
+    else:
+        lines.append(f"  SUMBER MIRIP ({len(matches)} match)")
+        lines.append(sub)
+        for i, m in enumerate(matches, 1):
+            pct = m.get("score", 0) * 100
+            lines.append(f"\n  [{i}] {m.get('source_title', '(tanpa judul)')}  —  {pct:.1f}%")
+            lines.append(f"      Tipe   : {m.get('source_type', '-')}")
+            url = m.get("source_url")
+            if url:
+                lines.append(f"      Link   : {url}")
+            qt = (m.get("query_text") or "").strip().replace("\n", " ")
+            if qt:
+                lines.append(f"      Kutipan: {qt[:300]}{'…' if len(qt) > 300 else ''}")
+    lines.append("")
+    lines.append(sep)
+    lines.append(f"  PlagCheck · {datetime.utcnow().isoformat(timespec='seconds', sep=' ')}")
+    lines.append(sep)
+    return "\n".join(lines)
+
+
+@app.get("/r/{report_id}/txt")
+async def report_txt(
+    report_id: str,
+    sid: str = Depends(get_session_id),
+) -> Response:
+    data, _ = load_report(report_id, session_id=sid)
+    data = enrich_report(data)
+    text = _report_text(data)
+    stem = (data.get("display_name") or report_id).replace("/", "_")
+    return Response(
+        text.encode("utf-8"),
+        media_type="text/plain; charset=utf-8",
+        headers={"Content-Disposition": f'attachment; filename="{stem}.txt"'},
+    )
+
+
+# ---------- PDF export ----------
+
+def _report_pdf(data: dict) -> bytes:
+    from fpdf import FPDF
+
+    name = data.get("display_name") or data.get("document_name", "dokumen")
+    score = data.get("overall_score", 0) * 100
+    flagged = data.get("flagged_paragraphs", 0)
+    total = data.get("total_paragraphs", 0)
+    risk = data.get("risk_label", "-")
+    started = data.get("started_at", "")
+    finished = data.get("finished_at", "")
+    elapsed = data.get("elapsed_seconds", 0)
+    matches = data.get("matches", []) or []
+    ai = data.get("ai_detection") or {}
+    cite = data.get("citation_stats") or {}
+
+    pdf = FPDF(orientation="P", unit="mm", format="A4")
+    pdf.set_auto_page_break(auto=True, margin=15)
+    pdf.add_page()
+
+    # Title
+    pdf.set_font("Helvetica", "B", 18)
+    pdf.set_text_color(40, 40, 60)
+    pdf.cell(0, 10, "PlagCheck", ln=1)
+    pdf.set_font("Helvetica", "", 11)
+    pdf.set_text_color(100, 100, 110)
+    pdf.cell(0, 6, "Laporan Pengecekan Plagiarisme", ln=1)
+    pdf.ln(2)
+
+    # Header bar
+    pdf.set_draw_color(220, 220, 230)
+    pdf.set_line_width(0.3)
+    pdf.line(10, pdf.get_y(), 200, pdf.get_y())
+    pdf.ln(4)
+
+    # Document info
+    pdf.set_text_color(30, 30, 40)
+    pdf.set_font("Helvetica", "B", 11)
+    pdf.cell(0, 6, _safe_pdf(name), ln=1)
+    pdf.set_font("Helvetica", "", 9)
+    pdf.set_text_color(110, 110, 120)
+    pdf.cell(0, 5, f"Mulai: {started}", ln=1)
+    pdf.cell(0, 5, f"Selesai: {finished}    Durasi: {elapsed:.1f}s", ln=1)
+    pdf.cell(0, 5, f"Paragraf: {flagged} di-flag dari {total}", ln=1)
+    pdf.ln(3)
+
+    # Big score box
+    pdf.set_fill_color(245, 246, 250)
+    pdf.set_draw_color(220, 220, 230)
+    if score > 30:
+        rgb = (220, 60, 70)
+    elif score > 10:
+        rgb = (220, 150, 50)
+    else:
+        rgb = (40, 170, 100)
+    pdf.set_font("Helvetica", "B", 26)
+    pdf.set_text_color(*rgb)
+    pdf.cell(95, 18, f"  {score:.1f}%", border=1, ln=0, fill=True)
+    pdf.set_font("Helvetica", "B", 14)
+    pdf.cell(95, 18, f"  {risk}", border=1, ln=1, fill=True)
+    pdf.set_text_color(80, 80, 90)
+    pdf.set_font("Helvetica", "I", 9)
+    pdf.cell(0, 5, "Skor kemiripan keseluruhan", ln=1)
+    pdf.ln(3)
+
+    # Citation strip
+    if cite and any(cite.get(k) for k in (
+        "inline_citations_stripped", "footnote_refs_stripped",
+        "direct_quotes_stripped", "block_quotes_stripped"
+    )):
+        pdf.set_font("Helvetica", "B", 11)
+        pdf.set_text_color(30, 30, 40)
+        pdf.cell(0, 6, "Pembersihan Sitasi", ln=1)
+        pdf.set_font("Helvetica", "", 9)
+        pdf.set_text_color(80, 80, 90)
+        pdf.cell(0, 5, (
+            f"Sitasi di-strip: inline={cite.get('inline_citations_stripped', 0)}, "
+            f"footnote={cite.get('footnote_refs_stripped', 0)}"
+        ), ln=1)
+        pdf.cell(0, 5, (
+            f"Kutipan: direct={cite.get('direct_quotes_stripped', 0)}, "
+            f"block={cite.get('block_quotes_stripped', 0)}"
+        ), ln=1)
+        if cite.get("reduction_pct"):
+            pdf.cell(0, 5, f"Reduksi total: {int(cite['reduction_pct'])}%", ln=1)
+        pdf.ln(2)
+
+    # AI detection
+    if ai:
+        pdf.set_font("Helvetica", "B", 11)
+        pdf.set_text_color(30, 30, 40)
+        pdf.cell(0, 6, "AI Text Detection", ln=1)
+        pdf.set_font("Helvetica", "", 9)
+        pdf.set_text_color(80, 80, 90)
+        pdf.cell(0, 5, f"Kemungkinan AI: {int(ai.get('ai_probability', 0) * 100)}%", ln=1)
+        pdf.cell(0, 5, f"Verdict: {ai.get('verdict', '-')}", ln=1)
+        if ai.get("model_name"):
+            pdf.cell(0, 5, f"Model: {ai['model_name']}", ln=1)
+        sigs = ai.get("signals") or {}
+        for k, label in [("roberta", "RoBERTa"), ("perplexity_score", "Perplexity"),
+                         ("burstiness", "Burstiness"), ("stylometry_score", "Stylometry")]:
+            v = sigs.get(k)
+            if v is not None:
+                pdf.cell(0, 5, f"  - {label}: {int(v * 100)}%", ln=1)
+        pdf.ln(2)
+
+    # Matches
+    pdf.set_font("Helvetica", "B", 11)
+    pdf.set_text_color(30, 30, 40)
+    pdf.cell(0, 6, f"Sumber Mirip ({len(matches)} match)", ln=1)
+
+    if not matches:
+        pdf.set_font("Helvetica", "I", 10)
+        pdf.set_text_color(80, 80, 90)
+        pdf.cell(0, 6, "Tidak ada match yang terdeteksi. Dokumen ini bersih.", ln=1)
+    else:
+        pdf.set_font("Helvetica", "", 9)
+        for i, m in enumerate(matches, 1):
+            pct = m.get("score", 0) * 100
+            if pct > 70:
+                rgb = (220, 60, 70)
+            elif pct > 40:
+                rgb = (220, 150, 50)
+            else:
+                rgb = (40, 170, 100)
+            pdf.set_text_color(*rgb)
+            pdf.set_font("Helvetica", "B", 10)
+            pdf.cell(0, 6, f"[{i}] {pct:.1f}%  —  {_safe_pdf(m.get('source_title', ''))[:70]}", ln=1)
+            pdf.set_text_color(100, 100, 110)
+            pdf.set_font("Helvetica", "", 8)
+            pdf.cell(0, 4, f"   Tipe: {m.get('source_type', '-')}", ln=1)
+            url = m.get("source_url")
+            if url:
+                pdf.cell(0, 4, f"   Link: {_safe_pdf(url)[:80]}", ln=1)
+            qt = (m.get("query_text") or "").strip().replace("\n", " ")
+            if qt:
+                pdf.set_text_color(80, 80, 90)
+                pdf.set_font("Helvetica", "I", 8)
+                pdf.multi_cell(0, 4, f"   {_safe_pdf(qt[:280])}{'...' if len(qt) > 280 else ''}")
+            pdf.ln(1)
+
+    # Footer
+    pdf.ln(4)
+    pdf.set_draw_color(220, 220, 230)
+    pdf.line(10, pdf.get_y(), 200, pdf.get_y())
+    pdf.set_text_color(150, 150, 160)
+    pdf.set_font("Helvetica", "I", 8)
+    pdf.cell(0, 5, f"PlagCheck · {datetime.utcnow().isoformat(timespec='seconds', sep=' ')}", ln=1)
+
+    out = pdf.output(dest="S")
+    return bytes(out)
+
+
+def _safe_pdf(s: str) -> str:
+    """Strip non-latin-1 chars for Helvetica core font."""
+    if not s:
+        return ""
+    return s.encode("latin-1", "replace").decode("latin-1")
+
+
+@app.get("/r/{report_id}/pdf")
+async def report_pdf(
+    report_id: str,
+    sid: str = Depends(get_session_id),
+) -> Response:
+    data, _ = load_report(report_id, session_id=sid)
+    data = enrich_report(data)
+    pdf_bytes = _report_pdf(data)
+    stem = (data.get("display_name") or report_id).replace("/", "_")
+    return Response(
+        pdf_bytes,
+        media_type="application/pdf",
+        headers={"Content-Disposition": f'attachment; filename="{stem}.pdf"'},
+    )
+
+
+# ---------- DOCX export ----------
+
+def _report_docx(data: dict) -> bytes:
+    from docx import Document
+    from docx.shared import Pt, RGBColor, Cm
+    from docx.enum.text import WD_ALIGN_PARAGRAPH
+
+    name = data.get("display_name") or data.get("document_name", "dokumen")
+    score = data.get("overall_score", 0) * 100
+    flagged = data.get("flagged_paragraphs", 0)
+    total = data.get("total_paragraphs", 0)
+    risk = data.get("risk_label", "-")
+    started = data.get("started_at", "")
+    finished = data.get("finished_at", "")
+    elapsed = data.get("elapsed_seconds", 0)
+    matches = data.get("matches", []) or []
+    ai = data.get("ai_detection") or {}
+    cite = data.get("citation_stats") or {}
+
+    doc = Document()
+
+    # Page margins
+    for section in doc.sections:
+        section.left_margin = Cm(2)
+        section.right_margin = Cm(2)
+        section.top_margin = Cm(2)
+        section.bottom_margin = Cm(2)
+
+    # Title
+    title = doc.add_heading("PlagCheck", level=0)
+    title.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    sub = doc.add_paragraph("Laporan Pengecekan Plagiarisme")
+    for run in sub.runs:
+        run.font.size = Pt(11)
+        run.font.color.rgb = RGBColor(0x70, 0x70, 0x80)
+    sub.alignment = WD_ALIGN_PARAGRAPH.LEFT
+
+    # Document info
+    p = doc.add_paragraph()
+    r = p.add_run(name)
+    r.bold = True
+    r.font.size = Pt(13)
+    for label, value in [
+        ("Mulai", started),
+        ("Selesai", finished),
+        ("Durasi", f"{elapsed:.1f} detik"),
+        ("Paragraf", f"{flagged} di-flag dari {total}"),
+    ]:
+        para = doc.add_paragraph()
+        para.add_run(f"{label}: ").bold = True
+        para.add_run(value)
+        for run in para.runs:
+            run.font.size = Pt(10)
+
+    doc.add_paragraph()  # spacer
+
+    # Score box
+    score_p = doc.add_paragraph()
+    if score > 30:
+        rgb = RGBColor(0xC0, 0x30, 0x40)
+    elif score > 10:
+        rgb = RGBColor(0xC0, 0x80, 0x20)
+    else:
+        rgb = RGBColor(0x20, 0x90, 0x60)
+    score_run = score_p.add_run(f"SKOR KEMIRIPAN: {score:.1f}%    ")
+    score_run.bold = True
+    score_run.font.size = Pt(18)
+    score_run.font.color.rgb = rgb
+    risk_run = score_p.add_run(f"({risk})")
+    risk_run.font.size = Pt(12)
+    risk_run.font.color.rgb = rgb
+
+    # Citation strip
+    if cite and any(cite.get(k) for k in (
+        "inline_citations_stripped", "footnote_refs_stripped",
+        "direct_quotes_stripped", "block_quotes_stripped"
+    )):
+        doc.add_heading("Pembersihan Sitasi", level=2)
+        for k, v in [
+            ("Sitasi inline di-strip", cite.get("inline_citations_stripped", 0)),
+            ("Footnote di-strip", cite.get("footnote_refs_stripped", 0)),
+            ("Kutipan langsung di-strip", cite.get("direct_quotes_stripped", 0)),
+            ("Kutipan block di-strip", cite.get("block_quotes_stripped", 0)),
+        ]:
+            doc.add_paragraph(f"{k}: {v}")
+        if cite.get("reduction_pct"):
+            doc.add_paragraph(f"Reduksi total: {int(cite['reduction_pct'])}%")
+
+    # AI detection
+    if ai:
+        doc.add_heading("AI Text Detection", level=2)
+        doc.add_paragraph(f"Kemungkinan AI: {int(ai.get('ai_probability', 0) * 100)}%")
+        doc.add_paragraph(f"Verdict: {ai.get('verdict', '-')}")
+        if ai.get("model_name"):
+            doc.add_paragraph(f"Model: {ai['model_name']}")
+        sigs = ai.get("signals") or {}
+        for k, label in [("roberta", "RoBERTa"), ("perplexity_score", "Perplexity"),
+                         ("burstiness", "Burstiness"), ("stylometry_score", "Stylometry")]:
+            v = sigs.get(k)
+            if v is not None:
+                doc.add_paragraph(f"  • {label}: {int(v * 100)}%")
+
+    # Matches
+    doc.add_heading(f"Sumber Mirip ({len(matches)} match)", level=2)
+    if not matches:
+        doc.add_paragraph("Tidak ada match yang terdeteksi. Dokumen ini bersih.")
+    else:
+        for i, m in enumerate(matches, 1):
+            pct = m.get("score", 0) * 100
+            head = doc.add_paragraph()
+            r = head.add_run(f"[{i}] {m.get('source_title', '(tanpa judul)')}  —  {pct:.1f}%")
+            r.bold = True
+            if pct > 70:
+                r.font.color.rgb = RGBColor(0xC0, 0x30, 0x40)
+            elif pct > 40:
+                r.font.color.rgb = RGBColor(0xC0, 0x80, 0x20)
+            else:
+                r.font.color.rgb = RGBColor(0x20, 0x90, 0x60)
+            doc.add_paragraph(f"Tipe: {m.get('source_type', '-')}")
+            url = m.get("source_url")
+            if url:
+                doc.add_paragraph(f"Link: {url}")
+            qt = (m.get("query_text") or "").strip()
+            if qt:
+                p = doc.add_paragraph()
+                run = p.add_run(qt[:600] + ("..." if len(qt) > 600 else ""))
+                run.italic = True
+                run.font.size = Pt(10)
+                run.font.color.rgb = RGBColor(0x60, 0x60, 0x70)
+            doc.add_paragraph()
+
+    # Footer
+    doc.add_paragraph()
+    p = doc.add_paragraph()
+    r = p.add_run(f"PlagCheck · {datetime.utcnow().isoformat(timespec='seconds', sep=' ')}")
+    r.italic = True
+    r.font.size = Pt(8)
+    r.font.color.rgb = RGBColor(0x90, 0x90, 0xA0)
+
+    from io import BytesIO
+    buf = BytesIO()
+    doc.save(buf)
+    return buf.getvalue()
+
+
+@app.get("/r/{report_id}/docx")
+async def report_docx(
+    report_id: str,
+    sid: str = Depends(get_session_id),
+) -> Response:
+    data, _ = load_report(report_id, session_id=sid)
+    data = enrich_report(data)
+    docx_bytes = _report_docx(data)
+    stem = (data.get("display_name") or report_id).replace("/", "_")
+    return Response(
+        docx_bytes,
+        media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        headers={"Content-Disposition": f'attachment; filename="{stem}.docx"'},
     )
 
 

@@ -17,7 +17,7 @@
     <div class="brand">
       <a href="/" class="brand-link">
         <div class="brand-mark"></div>
-        <div class="brand-text">PlagCheck<span>v{{ version }} · $0</span></div>
+        <div class="brand-text">PlagCheck<span>v{{ version }}</span></div>
       </a>
     </div>
 
@@ -30,10 +30,6 @@
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
         Riwayat
         <span class="nav-badge">{{ total_reports }}</span>
-      </a>
-      <a class="nav-item" href="/">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-        Corpus
       </a>
     </nav>
 
@@ -60,12 +56,25 @@
     <div class="topbar">
       <div class="crumbs"><a href="/">PlagCheck</a> <span style="margin:0 6px;color:var(--text-4)">/</span> <a href="/riwayat">Riwayat</a> <span style="margin:0 6px;color:var(--text-4)">/</span> <span>{{ r.document_name }}</span></div>
       <div class="topbar-actions">
-        <a href="/r/{{ r.id }}/html" class="icon-btn" title="Download HTML" download>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        </a>
-        <a href="/r/{{ r.id }}/json" class="icon-btn" title="Download JSON" download>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-        </a>
+        <div class="download-dropdown" id="download-dropdown">
+          <button class="icon-btn" id="download-toggle" title="Download laporan" aria-label="Download laporan">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </button>
+          <div class="download-menu" id="download-menu">
+            <a class="download-item" href="/r/{{ r.id }}/pdf" download>
+              <span class="dl-fmt">PDF</span>
+              <span class="dl-desc">Laporan rapi, siap cetak</span>
+            </a>
+            <a class="download-item" href="/r/{{ r.id }}/docx" download>
+              <span class="dl-fmt">DOCX</span>
+              <span class="dl-desc">Editable di Microsoft Word</span>
+            </a>
+            <a class="download-item" href="/r/{{ r.id }}/txt" download>
+              <span class="dl-fmt">TXT</span>
+              <span class="dl-desc">Plain text, ringan</span>
+            </a>
+          </div>
+        </div>
         <button class="icon-btn" onclick="navigator.clipboard.writeText(window.location.href); this.title='Copied!'" title="Copy link">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
         </button>
@@ -104,22 +113,25 @@
               <span>📄 <b>{{ r.total_paragraphs }}</b> paragraf</span>
               <span>🚩 <b>{{ r.flagged_paragraphs }}</b> di-flag</span>
               <span>⏱ <b>{{ r.elapsed_seconds|round(1) }}s</b></span>
-              <span>🔍 <b>{{ r.corpus_size }}</b> corpus</span>
               <span>📅 <b>{{ r.finished_at }}</b></span>
             </div>
           </div>
           <div class="result-actions">
-            <a href="/r/{{ r.id }}/html" class="btn" download>
+            <a href="/r/{{ r.id }}/pdf" class="btn primary" download>
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              HTML
+              Download PDF
             </a>
-            <a href="/r/{{ r.id }}/json" class="btn" download>
+            <a href="/r/{{ r.id }}/docx" class="btn" download>
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-              JSON
+              DOCX
             </a>
-            <button class="btn primary" onclick="navigator.clipboard.writeText(window.location.href)">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
-              Bagikan
+            <a href="/r/{{ r.id }}/txt" class="btn" download>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
+              TXT
+            </a>
+            <button class="btn" onclick="navigator.clipboard.writeText(window.location.href)">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              Copy Link
             </button>
           </div>
         </div>
@@ -133,7 +145,7 @@
           </div>
           <div class="summary-body">
             <div class="summary-title">{{ r.flagged_paragraphs }} match terdeteksi</div>
-            <div class="summary-desc">Match tertinggi: <b>{{ (top_match.score * 100)|round(1) }}%</b> dari sumber <b>"{{ top_match.source_title }}"</b> ({{ top_match.source_type }}). Disarankan: parafrase atau tambahkan sitasi eksplisit.</div>
+            <div class="summary-desc">Disarankan: parafrase atau tambahkan sitasi eksplisit.</div>
           </div>
           <div class="summary-actions">
             <button class="summary-action" onclick="document.querySelector('.match-item')?.scrollIntoView({behavior:'smooth'})">Lihat Match</button>
@@ -146,7 +158,7 @@
           </div>
           <div class="summary-body">
             <div class="summary-title">Tidak ada match yang terdeteksi</div>
-            <div class="summary-desc">Dokumen ini bersih dari plagiarisme terhadap {{ r.corpus_size }} dokumen di corpus. Tetap jaga orisinalitas!</div>
+            <div class="summary-desc">Dokumen ini bersih dari plagiarisme. Tetap jaga orisinalitas!</div>
           </div>
         </div>
         {% endif %}
@@ -221,7 +233,7 @@
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
               </div>
               <div class="empty-title">Tidak ada match terdeteksi</div>
-              <div class="empty-desc">Dokumen ini bersih dari {{ r.corpus_size }} dokumen di corpus. Tidak ada paragraf yang perlu di-flag.</div>
+              <div class="empty-desc">Dokumen ini bersih. Tidak ada paragraf yang perlu di-flag.</div>
             </div>
             {% else %}
             {% for m in r.matches %}
@@ -424,6 +436,5 @@
     });
   });
 </script>
-<script src="/static/app.js"></script>
 </body>
 </html>

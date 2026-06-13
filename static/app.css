@@ -791,6 +791,46 @@ input, textarea, select { font-family: inherit; color: inherit; }
 }
 .icon-btn:hover { background: var(--bg-elev-2); color: var(--text); }
 
+/* Download dropdown */
+.download-dropdown { position: relative; }
+.download-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 240px;
+  background: var(--bg-elev-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 6px;
+  z-index: 100;
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+}
+.download-menu.open { display: flex; }
+.download-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text);
+  transition: background-color 0.12s;
+}
+.download-item:hover { background: var(--bg-elev-2); }
+.dl-fmt {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--brand);
+  letter-spacing: 0.02em;
+}
+.dl-desc {
+  font-size: 11px;
+  color: var(--text-3);
+}
+
 .results-page { display: grid; grid-template-columns: 1fr 320px; gap: 24px; }
 
 .result-header {
@@ -815,6 +855,34 @@ input, textarea, select { font-family: inherit; color: inherit; }
 .gauge-label { font-size: 9px; color: var(--text-3); font-weight: 700; letter-spacing: 0.08em; margin-top: 2px; }
 
 .result-info { flex: 1; min-width: 0; }
+.result-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.result-actions .btn {
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 8px 14px;
+  background: var(--bg-elev-1);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: inline-flex; align-items: center; gap: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s, transform 0.1s;
+}
+.result-actions .btn:hover { background: var(--bg-elev-2); border-color: var(--border-hover); }
+.result-actions .btn.primary {
+  background: var(--grad-brand);
+  color: #fff;
+  border: none;
+  box-shadow: var(--shadow-brand);
+}
+.result-actions .btn.primary:hover { transform: translateY(-1px); }
 .result-filename { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
 .display-name { font-size: 16px; font-weight: 700; overflow: hidden; text-overflow: ellipsis; }
 .pill {

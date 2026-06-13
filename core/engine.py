@@ -123,7 +123,7 @@ from .corpus import _preprocess_indonesian, looks_indonesian as _looks_id_paragr
 
 # Default thresholds
 DEFAULT_NEAR = 0.30
-DEFAULT_SEMANTIC = 0.80
+DEFAULT_SEMANTIC = 0.75  # was 0.85 → 0.80 → 0.75. Cross-language paraphrase (ID↔EN) + Garuda ID paraphrase both score ~0.75-0.82.
 DEFAULT_CROSS_ENCODER = 0.50
 
 # Default ensemble models (lighter, faster, all multilingual)
@@ -260,7 +260,10 @@ class PlagEngine:
     # ------------------------------------------------------------------
     def _get_corpus_embeddings_for_model(self, model, model_name: str,
                                           corpus_chunks: list[CorpusDoc]):
-        """Get or build cache for a specific model."""
+        """Get or build cache for a specific model. Supports incremental
+        updates: if the cache has SOME of the chunks but not all, only
+        encodes the missing ones and merges.
+        """
         import numpy as np
         import json as _json
 
@@ -268,19 +271,60 @@ class PlagEngine:
             return self._embeddings_cache[model_name]
 
         current_ids = [c.doc_id for c in corpus_chunks]
+        current_id_to_idx = {cid: i for i, cid in enumerate(current_ids)}
         cache_file = self.cache_dir / f"emb_{model_name.replace('/', '_').replace('-', '_')}.npz"
         meta_file = self.cache_dir / f"ids_{model_name.replace('/', '_').replace('-', '_')}.json"
 
+        # Try to load existing cache and incrementally update
         if cache_file.exists() and meta_file.exists():
             try:
                 saved_ids = _json.loads(meta_file.read_text(encoding="utf-8"))
-                if saved_ids == current_ids and len(saved_ids) == len(corpus_chunks):
+                saved_id_to_idx = {sid: i for i, sid in enumerate(saved_ids)}
+                # Find which current IDs are missing from cache
+                missing = [cid for cid in current_ids if cid not in saved_id_to_idx]
+                if not missing and len(saved_ids) == len(current_ids):
+                    # Perfect match: load and return
                     data = np.load(cache_file)
                     self._embeddings_cache[model_name] = data["emb"]
                     return data["emb"]
-            except Exception:  # noqa: BLE001
-                pass
+                if missing:
+                    # Partial cache: encode only missing chunks
+                    print(f"[engine] Cache miss: {len(missing)} new chunks "
+                          f"(have {len(saved_ids)}/{len(current_ids)}). "
+                          f"Encoding delta only...", flush=True)
+                    data = np.load(cache_file)
+                    old_emb = data["emb"]
+                    # Texts of missing chunks
+                    missing_texts = [c.text for c in corpus_chunks
+                                     if c.doc_id in missing]
+                    new_emb = model.encode(missing_texts, normalize_embeddings=True,
+                                           show_progress_bar=False, batch_size=32)
+                    # Build new array in current_ids order
+                    merged = np.zeros((len(current_ids), old_emb.shape[1]),
+                                      dtype=old_emb.dtype)
+                    for i, cid in enumerate(current_ids):
+                        if cid in saved_id_to_idx:
+                            merged[i] = old_emb[saved_id_to_idx[cid]]
+                        else:
+                            # new_emb index = position in `missing` list
+                            new_idx = missing.index(cid)
+                            merged[i] = new_emb[new_idx]
+                    # Normalize
+                    norms = np.linalg.norm(merged, axis=1, keepdims=True).clip(min=1e-12)
+                    merged = merged / norms
+                    # Save updated cache
+                    np.savez_compressed(cache_file, emb=merged)
+                    meta_file.write_text(_json.dumps(current_ids, ensure_ascii=False),
+                                        encoding="utf-8")
+                    self._embeddings_cache[model_name] = merged
+                    return merged
+                # Else: lengths differ but no missing IDs (probably reordering)
+                # Fall through to full re-encode
+            except Exception as e:  # noqa: BLE001
+                print(f"[engine] cache load failed, full re-encode: {e}", flush=True)
 
+        # Full re-encode (slow path)
+        print(f"[engine] Full re-encode of {len(corpus_chunks)} chunks...", flush=True)
         texts = [c.text for c in corpus_chunks]
         emb = model.encode(texts, normalize_embeddings=True,
                            show_progress_bar=False, batch_size=32)
@@ -290,7 +334,7 @@ class PlagEngine:
             meta_file.write_text(_json.dumps(current_ids, ensure_ascii=False),
                                 encoding="utf-8")
         except Exception as e:  # noqa: BLE001
-            print(f"[engine] cache save failed for {model_name}: {e}")
+            print(f"[engine] cache save failed for {model_name}: {e}", flush=True)
 
         self._embeddings_cache[model_name] = emb
         return emb
